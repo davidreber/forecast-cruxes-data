@@ -1,0 +1,349 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.71,
+      "narrative" : "Starting from the central Mediterranean reference class, current counts indicate a high but uncertain risk path to 900 deaths by end of March 2026. The 71% posterior reflects substantial but not guaranteed probability, with weather, SAR capacity, and policy actions as key uncertainties shaping the outcome.",
+      "summary" : [ "Anchor on the IOM Missing Migrants Project central Mediterranean fatalities; historical toll ~2,000–2,500 per year (e.g., 2024 ~2,452).", "Early-2026 counts (~606 deaths by February) imply a high pace into March, requiring roughly 290 more deaths to hit 900.", "Upward drivers: high year-to-date toll, weather-related risk spikes, and ongoing SAR/capsize incidents; downward driver: potential policy/SAR improvements may dampen fatalities.", "Bayesian posterior ~71% suggests a plausible but not certain path to 900 by end-March; calibrated range reflects remaining uncertainty." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.35,
+          "basis" : "Reference class: Central Mediterranean fatalities per year as tracked by IOM Missing Migrants; historically ~2,000–2,500/year (e.g., 2024 ~2,452). Early 2026 counts around 606 by February provide a windowed anchor; anchor probability 0.35 reflects a conservative starting point before updates."
+        },
+        "factor_updates" : [ {
+          "factor" : "Early-2026 mortality already high (≈606 deaths by Feb)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "A high year-to-date toll signals an elevated risk trajectory into March, making 900 by end of March more plausible than a lower baseline."
+        }, {
+          "factor" : "Central Mediterranean weather risk spikes (seasonal storms)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Severe weather events can sharply increase fatalities and drive monthly totals upward."
+        }, {
+          "factor" : "Ongoing search-and-rescue constraints and repeated capsizing incidents",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Continued SAR limitations and incidents raise danger with uncertain magnitude."
+        }, {
+          "factor" : "Policy/SAR capacity improvements or humanitarian interventions",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Improved SAR capacity or policy actions could reduce crossings and save lives, dampening the toll."
+        }, {
+          "factor" : "Data gaps and undercount risk",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Reporting lags and undercount risk could hide additional deaths, adding uncertainty to the estimate."
+        } ],
+        "synthesis_rationale" : "Primary drivers are the high early-year toll and expected March weather risks, with policy/SAR improvements acting as a meaningful counterbalance. Given potential correlation among factors (weather, crossings, and SAR responses), a Bayesian-style calibration yields a posterior near 0.71; the range 0.60–0.82 captures remaining uncertainty."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.71,\n  \"range_low\": 0.60,\n  \"range_high\": 0.82,\n  \"summary\": [\n    \"Anchor on the IOM Missing Migrants Project central Mediterranean fatalities; historical toll ~2,000–2,500 per year (e.g., 2024 ~2,452).\",\n    \"Early-2026 counts (~606 deaths by February) imply a high pace into March, requiring roughly 290 more deaths to hit 900.\",\n    \"Upward drivers: high year-to-date toll, weather-related risk spikes, and ongoing SAR/capsize incidents; downward driver: potential policy/SAR improvements may dampen fatalities.\",\n    \"Bayesian posterior ~71% suggests a plausible but not certain path to 900 by end-March; calibrated range reflects remaining uncertainty.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Starting from the central Mediterranean reference class, current counts indicate a high but uncertain risk path to 900 deaths by end of March 2026. The 71% posterior reflects substantial but not guaranteed probability, with weather, SAR capacity, and policy actions as key uncertainties shaping the outcome.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.35,\n      \"basis\": \"Reference class: Central Mediterranean fatalities per year as tracked by IOM Missing Migrants; historically ~2,000–2,500/year (e.g., 2024 ~2,452). Early 2026 counts around 606 by February provide a windowed anchor; anchor probability 0.35 reflects a conservative starting point before updates.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Early-2026 mortality already high (≈606 deaths by Feb)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A high year-to-date toll signals an elevated risk trajectory into March, making 900 by end of March more plausible than a lower baseline.\"\n      },\n      {\n        \"factor\": \"Central Mediterranean weather risk spikes (seasonal storms)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Severe weather events can sharply increase fatalities and drive monthly totals upward.\"\n      },\n      {\n        \"factor\": \"Ongoing search-and-rescue constraints and repeated capsizing incidents\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Continued SAR limitations and incidents raise danger with uncertain magnitude.\"\n      },\n      {\n        \"factor\": \"Policy/SAR capacity improvements or humanitarian interventions\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Improved SAR capacity or policy actions could reduce crossings and save lives, dampening the toll.\"\n      },\n      {\n        \"factor\": \"Data gaps and undercount risk\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Reporting lags and undercount risk could hide additional deaths, adding uncertainty to the estimate.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Primary drivers are the high early-year toll and expected March weather risks, with policy/SAR improvements acting as a meaningful counterbalance. Given potential correlation among factors (weather, crossings, and SAR responses), a Bayesian-style calibration yields a posterior near 0.71; the range 0.60–0.82 captures remaining uncertainty.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.6, 0.82 ]
+    }, {
+      "probability" : 0.71,
+      "narrative" : "Starting from a modest anchor, the evidence of a deadly start to 2026 combined with ongoing weather hazards and SAR pressures increases the odds of reaching 900 deaths by end-March. While still uncertain due to data gaps and policy responses, the calibrated posterior probability sits around 71%.",
+      "summary" : [ "Early 2026 counts show about 606 Mediterranean deaths or missing through February, signaling a high risk of continued fatalities into March.", "Weather shocks and ongoing capsizes on the Central Mediterranean raise the probability of March fatalities, making 900 by end-March plausible but not guaranteed.", "SAR constraints and policy dynamics introduce both upward and downward pressures, adding substantial uncertainty to the March total allocation.", "Data gaps and reporting lags temper confidence, but the posterior probability remains numerically robust at ~71% for reaching 900 deaths by end of March." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.35,
+          "basis" : "reference_class is Mediterranean Central route fatalities per IOM Missing Migrants Project; base-rate annual toll (~2,000–2,500) provides a plausible starting point. 0.35 reflects a conservative starting belief before applying factor updates given the early-year volatility observed in 2026."
+        },
+        "factor_updates" : [ {
+          "factor" : "Early-2026 mortality already high (≈606 deaths by end-February)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "A high year-to-date toll suggests elevated risk into March; increases probability of reaching or approaching 900 deaths by end of March."
+        }, {
+          "factor" : "Central Mediterranean weather risk spikes (seasonal storms)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Seasonal weather and storms drive rapid increases in fatalities and SAR complications, elevating March risk."
+        }, {
+          "factor" : "Ongoing search-and-rescue constraints and repeated capsizing incidents",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Continued SAR limitations and incidents contribute to higher fatalities but with uncertain magnitude."
+        }, {
+          "factor" : "Policy/SAR capacity improvements or humanitarian interventions",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Stronger SAR or policy actions could curb crossings and reduce deaths, offsetting upward pressures."
+        }, {
+          "factor" : "Data gaps and undercount risk",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Reporting lags and missing-at-sea cases introduce uncertainty; if unaccounted, true toll could exceed reported figures."
+        } ],
+        "synthesis_rationale" : "The 0.71 posterior emerges from updating the anchor with multiple, partially correlated factors that predominantly push upward but include a meaningful downward channel from policy/SAR improvements. Given data gaps and potential weather-driven shocks, the calibration accepts correlation among factors and uses a moderate-to-high uncertainty frame, yielding a posterior around 71% with a calibrated range roughly 60–82%."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.71,\n  \"range_low\": 0.60,\n  \"range_high\": 0.82,\n  \"summary\": [\n    \"Early 2026 counts show about 606 Mediterranean deaths or missing through February, signaling a high risk of continued fatalities into March.\",\n    \"Weather shocks and ongoing capsizes on the Central Mediterranean raise the probability of March fatalities, making 900 by end-March plausible but not guaranteed.\",\n    \"SAR constraints and policy dynamics introduce both upward and downward pressures, adding substantial uncertainty to the March total allocation.\",\n    \"Data gaps and reporting lags temper confidence, but the posterior probability remains numerically robust at ~71% for reaching 900 deaths by end of March.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Starting from a modest anchor, the evidence of a deadly start to 2026 combined with ongoing weather hazards and SAR pressures increases the odds of reaching 900 deaths by end-March. While still uncertain due to data gaps and policy responses, the calibrated posterior probability sits around 71%.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.35,\n      \"basis\": \"reference_class is Mediterranean Central route fatalities per IOM Missing Migrants Project; base-rate annual toll (~2,000–2,500) provides a plausible starting point. 0.35 reflects a conservative starting belief before applying factor updates given the early-year volatility observed in 2026.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Early-2026 mortality already high (≈606 deaths by end-February)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A high year-to-date toll suggests elevated risk into March; increases probability of reaching or approaching 900 deaths by end of March.\"\n      },\n      {\n        \"factor\": \"Central Mediterranean weather risk spikes (seasonal storms)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Seasonal weather and storms drive rapid increases in fatalities and SAR complications, elevating March risk.\"\n      },\n      {\n        \"factor\": \"Ongoing search-and-rescue constraints and repeated capsizing incidents\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Continued SAR limitations and incidents contribute to higher fatalities but with uncertain magnitude.\"\n      },\n      {\n        \"factor\": \"Policy/SAR capacity improvements or humanitarian interventions\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Stronger SAR or policy actions could curb crossings and reduce deaths, offsetting upward pressures.\"\n      },\n      {\n        \"factor\": \"Data gaps and undercount risk\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Reporting lags and missing-at-sea cases introduce uncertainty; if unaccounted, true toll could exceed reported figures.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The 0.71 posterior emerges from updating the anchor with multiple, partially correlated factors that predominantly push upward but include a meaningful downward channel from policy/SAR improvements. Given data gaps and potential weather-driven shocks, the calibration accepts correlation among factors and uses a moderate-to-high uncertainty frame, yielding a posterior around 71% with a calibrated range roughly 60–82%.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.6, 0.82 ]
+    }, {
+      "probability" : 0.28,
+      "narrative" : "Current year-to-date deaths (≈606 by end-February) make reaching 900 by end-March plausible but not certain. Upward pressure from weather and ongoing crossings competes with potential SAR/policy improvements and data gaps, yielding a modest probability with substantial uncertainty.",
+      "summary" : [ "Early-2026 mortality around 606 by February end implies a non-negligible chance March could add hundreds more.", "Weather shocks and ongoing Central Mediterranean capsizes increase March mortality risk.", "Policy/SAR capacity changes could dampen fatalities, while a potential mass-casualty event presents a tail risk that could push totals higher.", "Data gaps and reporting lags introduce uncertainty, so March totals could be undercounted." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.35,
+          "basis" : "Anchor on the reference class of Mediterranean migrant fatalities tracked by IOM Missing Migrants Project; historically ~2,000–2,500 annual deaths, with January–March totals providing a meaningful quarter-by-quarter anchor for end-March prospects."
+        },
+        "factor_updates" : [ {
+          "factor" : "Early-2026 mortality already high (≈606 deaths by end-February)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "A high year-to-date toll elevates the risk trajectory into March; reaching 900 by end-March would require roughly 294 additional deaths, which, while challenging, is within potential March volatility."
+        }, {
+          "factor" : "Central Mediterranean weather risk spikes (seasonal storms)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Severe weather can rapidly increase fatalities and disrupt rescue operations, increasing March mortality potential."
+        }, {
+          "factor" : "Policy/SAR capacity improvements or humanitarian interventions",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Enhanced SAR capacity or policy actions reducing crossings could dampen fatalities, lowering the probability of hitting 900 by March end."
+        }, {
+          "factor" : "Mass casualty risk event (single large capsizing)",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "A single major incident could abruptly push March totals toward or beyond 900, representing a high-impact tail risk."
+        }, {
+          "factor" : "Data gaps and undercount risk",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Reporting lags and missing-at-sea cases could mean the actual March toll is higher than documented, increasing upside risk."
+        } ],
+        "synthesis_rationale" : "Weighing a modest upward impulse from year-to-date mortality and weather risks against potential downward pressure from SAR/policy actions, with a notable tail risk from a mass-casualty incident and data gaps. The calibrated probability around 28% reflects substantial uncertainty and the possibility of a sharp March spike, but the base expectation remains that 900 by end-March is unlikely rather than highly probable."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.28,\n  \"range_low\": 0.18,\n  \"range_high\": 0.40,\n  \"summary\": [\n    \"Early-2026 mortality around 606 by February end implies a non-negligible chance March could add hundreds more.\",\n    \"Weather shocks and ongoing Central Mediterranean capsizes increase March mortality risk.\",\n    \"Policy/SAR capacity changes could dampen fatalities, while a potential mass-casualty event presents a tail risk that could push totals higher.\",\n    \"Data gaps and reporting lags introduce uncertainty, so March totals could be undercounted.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Current year-to-date deaths (≈606 by end-February) make reaching 900 by end-March plausible but not certain. Upward pressure from weather and ongoing crossings competes with potential SAR/policy improvements and data gaps, yielding a modest probability with substantial uncertainty.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.35,\n      \"basis\": \"Anchor on the reference class of Mediterranean migrant fatalities tracked by IOM Missing Migrants Project; historically ~2,000–2,500 annual deaths, with January–March totals providing a meaningful quarter-by-quarter anchor for end-March prospects.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Early-2026 mortality already high (≈606 deaths by end-February)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A high year-to-date toll elevates the risk trajectory into March; reaching 900 by end-March would require roughly 294 additional deaths, which, while challenging, is within potential March volatility.\"\n      },\n      {\n        \"factor\": \"Central Mediterranean weather risk spikes (seasonal storms)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Severe weather can rapidly increase fatalities and disrupt rescue operations, increasing March mortality potential.\"\n      },\n      {\n        \"factor\": \"Policy/SAR capacity improvements or humanitarian interventions\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Enhanced SAR capacity or policy actions reducing crossings could dampen fatalities, lowering the probability of hitting 900 by March end.\"\n      },\n      {\n        \"factor\": \"Mass casualty risk event (single large capsizing)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"A single major incident could abruptly push March totals toward or beyond 900, representing a high-impact tail risk.\"\n      },\n      {\n        \"factor\": \"Data gaps and undercount risk\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Reporting lags and missing-at-sea cases could mean the actual March toll is higher than documented, increasing upside risk.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Weighing a modest upward impulse from year-to-date mortality and weather risks against potential downward pressure from SAR/policy actions, with a notable tail risk from a mass-casualty incident and data gaps. The calibrated probability around 28% reflects substantial uncertainty and the possibility of a sharp March spike, but the base expectation remains that 900 by end-March is unlikely rather than highly probable.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.18, 0.4 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.5700615213754125,
+      "range" : [ 0.28, 0.71 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.7142857142857144,
+    "raw-posterior" : 0.992726287376862,
+    "capped" : true,
+    "prior" : 0.2,
+    "factors" : [ {
+      "name" : "Policy crackdown and reduced crossings in Europe",
+      "p-yes" : 0.35,
+      "p-no" : 0.6,
+      "bf" : 0.5833333333333334
+    }, {
+      "name" : "Risk of a major single mass casualty incident in March",
+      "p-yes" : 0.8,
+      "p-no" : 0.2,
+      "bf" : 4.0
+    }, {
+      "name" : "Search-and-rescue capacity and NGO/Coast Guard responses",
+      "p-yes" : 0.4,
+      "p-no" : 0.6,
+      "bf" : 0.6666666666666667
+    }, {
+      "name" : "Central Mediterranean weather risk spikes (seasonal storms)",
+      "p-yes" : 0.65,
+      "p-no" : 0.3,
+      "bf" : 2.166666666666667
+    }, {
+      "name" : "European SAR capacity and migration policy environment",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "Early-2026 mortality already high (≈606 deaths by end-February)",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "Weather shocks and ongoing capsizes in Central Mediterranean",
+      "p-yes" : 0.65,
+      "p-no" : 0.3,
+      "bf" : 2.166666666666667
+    }, {
+      "name" : "Surge in early-2026 Mediterranean deaths",
+      "p-yes" : 0.65,
+      "p-no" : 0.3,
+      "bf" : 2.166666666666667
+    }, {
+      "name" : "Ongoing search-and-rescue constraints and repeated capsizing incidents",
+      "p-yes" : 0.6,
+      "p-no" : 0.4,
+      "bf" : 1.4999999999999998
+    }, {
+      "name" : "Policy/SAR capacity improvements or humanitarian interventions",
+      "p-yes" : 0.3,
+      "p-no" : 0.6,
+      "bf" : 0.5
+    }, {
+      "name" : "Volume of Libyan-origin crossings and smuggling activity in early 2026",
+      "p-yes" : 0.65,
+      "p-no" : 0.3,
+      "bf" : 2.166666666666667
+    }, {
+      "name" : "Data gaps and undercount risk",
+      "p-yes" : 0.5,
+      "p-no" : 0.4,
+      "bf" : 1.25
+    }, {
+      "name" : "March 2026 central Mediterranean sea-state and weather conditions",
+      "p-yes" : 0.65,
+      "p-no" : 0.3,
+      "bf" : 2.166666666666667
+    }, {
+      "name" : "Historical annual toll base-rate (~2,000–2,500/year)",
+      "p-yes" : 0.5,
+      "p-no" : 0.5,
+      "bf" : 1.0
+    } ]
+  },
+  "question" : "Will the IOM Missing Migrants Project record at least 900 Mediterranean migrant deaths in 2026 before April 2026?",
+  "probability" : 0.55,
+  "summary" : [ "Ensemble average is 57%, but objections argue that reaching 900 deaths by end-March is unlikely given current counts.", "Approximately 606 deaths had occurred by end-February; reaching 900 would require a large March spike (~294 more deaths), which is atypical for the Central Mediterranean monthly pattern.", "There is a non-zero upside risk from a mass-casualty event or severe weather, though such events are unpredictable and not guaranteed.", "Policy/SAR improvements could dampen fatalities, supporting a modest downward tilt from the ensemble while maintaining notable uncertainty." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.57,
+    "critique_assessment" : "Objections are valid and collectively favor a downward adjustment from the ensemble, given the unlikely March spike unless a rare mass casualty event occurs.",
+    "adjustment" : "Adjusted from 0.57 to 0.55 to reflect a cautious downward tilt; the range accommodates residual upside risk from potential mass casualty events and weather-driven spikes."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.25,
+      "reference-class" : "Mediterranean migrant deaths per year as tracked by IOM Missing Migrants Project; historically the Mediterranean toll is around 2,000–2,500 deaths annually (e.g., 2024 reported about 2,452). Monthly totals vary, with spikes during severe weather, but typical monthly deaths are in the low hundreds across years.",
+      "sources" : [ {
+        "url" : "https://apnews.com/article/10d5d7edbd0705be629c2c73923c9bbc",
+        "claim" : "AP News notes that by late February 2026, at least 606 migrants had died or gone missing in the Mediterranean in the first two months of 2026."
+      }, {
+        "url" : "https://www.theguardian.com/world/2026/feb/23/migrants-die-trying-to-cross-mediterranean-2026",
+        "claim" : "The Guardian reports that by February 2026, more than 600 migrants had died or disappeared in the Mediterranean, the deadliest start to a year since IOM began tracking in 2014."
+      }, {
+        "url" : "https://www.lemonde.fr/en/international/article/2026/02/12/2026-could-quickly-become-deadliest-year-for-migrants-crossing-the-mediterranean_6750405_4.html",
+        "claim" : "Le Monde notes that by February 10, 2026, the Mediterranean death toll had already surpassed earlier years, with reports of over 524 deaths or missing."
+      }, {
+        "url" : "https://www.aljazeera.com/news/2026/2/9/at-least-53-people-dead-or-missing-after-boat-capsizes-off-libya",
+        "claim" : "Al Jazeera reports a recent central Mediterranean capsizing contributing to the early-2026 toll, illustrating ongoing fatalities in the route."
+      }, {
+        "url" : "https://www.dw.com/en/migrant-deaths-reach-record-high-in-2024-iom-says/a-71994593",
+        "claim" : "DW reports that the 2024 Mediterranean death toll was about 2,452, illustrating the scale of fatalities on this route."
+      }, {
+        "url" : "https://www.theguardian.com/world/2026/feb/23/migrants-die-trying-to-cross-mediterranean-2026",
+        "claim" : "As of February 2026, over 600 people have died or gone missing in the Mediterranean, marking the deadliest start to a year since IOM began recording data in 2014."
+      }, {
+        "url" : "https://www.independent.co.uk/news/world/migrant-deaths-2026-mediterranean-crossings-b2921445.html",
+        "claim" : "January 2026 was the deadliest month on record for migrants; reports indicate hundreds died in the Mediterranean early in 2026."
+      }, {
+        "url" : "https://www.reuters.com/world/europe/migrant-deaths-start-2026-mediterranean-606-2026-02-26/",
+        "claim" : "Reuters reports 606 migrant deaths in the Mediterranean in the first two months of 2026."
+      }, {
+        "url" : "https://www.newarab.com/news/at-least-606-migrants-dead-or-missing-med-start-2026-un",
+        "claim" : "New Arab reports 606 deaths or missing in the Mediterranean in 2026 as of late February."
+      }, {
+        "url" : "https://www.lemonde.fr/en/international/article/2026/02/12/2026-could-quickly-become-deadliest-year-for-migrants-crossing-the-mediterranean_6750405_4.html",
+        "claim" : "Le Monde notes early February 2026 totals (over 524 died or disappeared by Feb 10) indicating a deadly start to 2026."
+      }, {
+        "url" : "https://apnews.com/article/migrants-boat-crete-greece-capsize-deaths-10d5d7edbd0705be629c2c73923c9bbc",
+        "claim" : "At least 606 migrants have died or gone missing in the Mediterranean in the first two months of 2026 (IOM Missing Migrants Project)."
+      }, {
+        "url" : "https://www.theguardian.com/world/2026/feb/23/migrants-die-trying-to-cross-mediterranean-2026",
+        "claim" : "As of February 23, 2026, at least 606 people have died or gone missing in the Mediterranean, per IOM."
+      }, {
+        "url" : "https://www.lemonde.fr/en/international/article/2026/02/12/2026-could-quickly-become-deadliest-year-for-migrants-crossing-the-mediterranean_6750405_4.html",
+        "claim" : "From January 1 to February 10, 2026, at least 524 migrants died or were reported missing in the Mediterranean according to IOM."
+      }, {
+        "url" : "https://en.hespress.com/132400-at-least-606-migrants-dead-or-missing-in-med-since-start-of-2026-un.html",
+        "claim" : "606 migrants dead or missing in the Mediterranean since the start of 2026 (as of February 2026), per IOM."
+      }, {
+        "url" : "https://www.aljazeera.com/news/2026/2/9/at-least-53-people-dead-or-missing-after-boat-capsizes-off-libya",
+        "claim" : "IOM reported an incident on February 6 (central Mediterranean) with at least 53 dead or missing; by February 9, 2026 the central Mediterranean toll was at least 484 for the year."
+      } ],
+      "confidence" : "low"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Early-2026 mortality already high (≈606 deaths by end-February)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "A high year-to-date toll signals an elevated risk trajectory into March, making 900 by end of March more plausible than if early counts were normal."
+      }, {
+        "name" : "Central Mediterranean weather risk spikes (seasonal storms)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Severe weather events can quickly raise fatalities and are a known driver of monthly toll spikes."
+      }, {
+        "name" : "Ongoing search-and-rescue constraints and repeated capsizing incidents",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Continued SAR limitations and incidents increase danger, contributing to higher death tolls but with uncertain magnitude."
+      }, {
+        "name" : "Policy/SAR capacity improvements or humanitarian interventions",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "If SAR capacity increases or policy actions reduce risk, March fatalities could be dampened."
+      }, {
+        "name" : "Historical annual toll base-rate (~2,000–2,500/year)",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "The annual toll suggests substantial fatalities overall, but monthly distribution varies; this factor alone does not deterministically push to 900 by March."
+      }, {
+        "name" : "Surge in early-2026 Mediterranean deaths",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "By late February 2026, about 606 deaths/missing—described as the deadliest start to a year since IOM began recording—implies March would need roughly 290 more deaths to reach 900, making the outcome plausible but not assured due to weather-driven risks (sources: Guardian, AP News)."
+      }, {
+        "name" : "Weather shocks and ongoing capsizes in Central Mediterranean",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Incidents such as the Feb 6–9 capsizes off Libya and Crete, plus severe weather, elevate mortality risks and could push totals toward 900 if March conditions stay harsh (Guardian reports)."
+      }, {
+        "name" : "Policy crackdown and reduced crossings in Europe",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Italy's hardening migration policies and broader EU measures could reduce crossings, potentially lowering the death toll (Guardian coverage)."
+      }, {
+        "name" : "Search-and-rescue capacity and NGO/Coast Guard responses",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Calls for stronger SAR and regional cooperation could save lives and dampen the death toll, depending on implementation (Guardian coverage)."
+      }, {
+        "name" : "Data gaps and undercount risk",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Hundreds of missing-at-sea cases and reporting lags introduce uncertainty; if unverified cases are in the thousands, the true toll could exceed 900 (coverage notes in Guardian reporting)."
+      }, {
+        "name" : "March 2026 central Mediterranean sea-state and weather conditions",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Forecasts and recent incidents point to March bringing rough seas and storms in the central Mediterranean, increasing fatalities risk and complicating search-and-rescue operations."
+      }, {
+        "name" : "Volume of Libyan-origin crossings and smuggling activity in early 2026",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "High departure volumes from Libya observed in early 2026 imply continued pressure for risky crossings, elevating the potential death toll."
+      }, {
+        "name" : "European SAR capacity and migration policy environment",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Tighter controls and reduced rescue capacity linked to policy shifts and pushbacks may lower survivorship and increase fatalities."
+      }, {
+        "name" : "Risk of a major single mass casualty incident in March",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "A single large capsizing or disaster could abruptly push March totals toward or beyond 900."
+      } ],
+      "confidence" : "low"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "low",
+  "range" : [ 0.45, 0.65 ],
+  "synthesis" : "The forecast is shifted slightly downward from the 57% ensemble due to the strong view that a March spike to 900 is unlikely, though tail risk from a mass-casualty event keeps the outcome plausible. The final probability remains uncertain and context-sensitive to weather and SAR dynamics."
+}

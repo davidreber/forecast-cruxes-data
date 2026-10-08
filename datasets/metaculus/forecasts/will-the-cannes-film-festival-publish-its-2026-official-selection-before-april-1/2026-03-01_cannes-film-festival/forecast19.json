@@ -1,0 +1,209 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.02,
+      "narrative" : "Official sources consistently point to a mid-April press conference for the Cannes Official Selection, making an announcement before April 10 unlikely. After anchoring to a 15% baseline, strong downward updates and lack of leaks pull the posterior toward about 2% with limited remaining uncertainty.",
+      "summary" : [ "Official Cannes communications anchor the Official Selection to mid-April; no indications of an early reveal.", "Baseline anchor from reference class is 0.15, but strong downward updates apply due to consistent messaging.", "Lack of credible leaks or pre-announcements reduces the chance of an April 10 announcement, supporting a low probability." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.15,
+          "basis" : "reference-class anchor: Cannes Official Selection typically announced mid-April; before-April-10 announcements are rare"
+        },
+        "factor_updates" : [ {
+          "factor" : "Official timing policy: Official Selection announced at a mid-April press conference",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Festival communications state mid-April announcement; prior pattern shows no announcements before April 10, implying a downward shift from the anchor."
+        }, {
+          "factor" : "Cross-source pattern alignment (FAQ and festival pages)",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "FAQ and pages repeatedly reference mid-April timing; reinforces anchor without supporting earlier disclosure."
+        }, {
+          "factor" : "Absence of credible leaks or pre-announcements",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "No reliable leaks suggesting an early reveal; provides slight downward pressure via lack of contrary signals."
+        } ],
+        "synthesis_rationale" : "Anchored at 0.15 with three downward-neutral factors; strong downward factor dominates. Because some factors are correlated (relying on same official messaging), the effective shift is limited; Bayesian synthesis yields a low posterior near 0.02 with a modest range reflecting residual uncertainty. The calibration acknowledges potential last-minute changes or rare leaks but treats them as low-probability outliers."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.02,\n  \"range_low\": 0.01,\n  \"range_high\": 0.04,\n  \"summary\": [\n    \"Official Cannes communications anchor the Official Selection to mid-April; no indications of an early reveal.\",\n    \"Baseline anchor from reference class is 0.15, but strong downward updates apply due to consistent messaging.\",\n    \"Lack of credible leaks or pre-announcements reduces the chance of an April 10 announcement, supporting a low probability.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Official sources consistently point to a mid-April press conference for the Cannes Official Selection, making an announcement before April 10 unlikely. After anchoring to a 15% baseline, strong downward updates and lack of leaks pull the posterior toward about 2% with limited remaining uncertainty.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.15,\n      \"basis\": \"reference-class anchor: Cannes Official Selection typically announced mid-April; before-April-10 announcements are rare\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Official timing policy: Official Selection announced at a mid-April press conference\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Festival communications state mid-April announcement; prior pattern shows no announcements before April 10, implying a downward shift from the anchor.\"\n      },\n      {\n        \"factor\": \"Cross-source pattern alignment (FAQ and festival pages)\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"FAQ and pages repeatedly reference mid-April timing; reinforces anchor without supporting earlier disclosure.\"\n      },\n      {\n        \"factor\": \"Absence of credible leaks or pre-announcements\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"No reliable leaks suggesting an early reveal; provides slight downward pressure via lack of contrary signals.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Anchored at 0.15 with three downward-neutral factors; strong downward factor dominates. Because some factors are correlated (relying on same official messaging), the effective shift is limited; Bayesian synthesis yields a low posterior near 0.02 with a modest range reflecting residual uncertainty. The calibration acknowledges potential last-minute changes or rare leaks but treats them as low-probability outliers.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.04 ]
+    }, {
+      "probability" : 0.02,
+      "narrative" : "Official Cannes communications point to a mid-April press conference for the Official Selection; applying strong downward pressure with no credible early leaks yields a calibrated posterior near 2%, with a range reflecting remaining uncertainty about last-minute changes.",
+      "summary" : [ "Anchor based on Cannes’ mid-April timing for Official Selection announcements; base-rate for before-April-10 is noted as low (about 15%).", "Strong downward update from official timing policy reinforces the likelihood of no pre-April-10 disclosure.", "Absence of credible leaks and corroborating cross-sources support the low probability; final posterior is around 2% with modest uncertainty." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.15,
+          "basis" : "reference class: Cannes Official Selection timing; anchor at the typical mid-April announcement pattern; low base-rate for pre-April-10."
+        },
+        "factor_updates" : [ {
+          "factor" : "Official timing policy: Official Selection announced at mid-April press conference",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Festival communications indicate mid-April announcements; no credible sources indicate an earlier reveal; hence strong downward pressure on an April 10 or earlier reveal."
+        }, {
+          "factor" : "Near-edge historical timing (April 10, 2025 as a recent example)",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "An April 10, 2025 instance shows variability near the threshold but does not overturn the standard mid-April pattern."
+        }, {
+          "factor" : "Absence of credible leaks or pre-announcements",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Lack of leaks supports the standard pattern; provides little upward pressure."
+        } ],
+        "synthesis_rationale" : "The strong downward update from official timing policy dominates the anchor; neutral factors contribute minor adjustments. The posterior (0.02) results from discounting the anchor by the strong policy signal, with calibration adjustments acknowledging potential last-minute changes or leaks; still, correlation among factors slightly reduces effective weight, hence a conservative, low probability."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.02,\n  \"range_low\": 0.01,\n  \"range_high\": 0.04,\n  \"summary\": [\n    \"Anchor based on Cannes’ mid-April timing for Official Selection announcements; base-rate for before-April-10 is noted as low (about 15%).\",\n    \"Strong downward update from official timing policy reinforces the likelihood of no pre-April-10 disclosure.\",\n    \"Absence of credible leaks and corroborating cross-sources support the low probability; final posterior is around 2% with modest uncertainty.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Official Cannes communications point to a mid-April press conference for the Official Selection; applying strong downward pressure with no credible early leaks yields a calibrated posterior near 2%, with a range reflecting remaining uncertainty about last-minute changes.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.15,\n      \"basis\": \"reference class: Cannes Official Selection timing; anchor at the typical mid-April announcement pattern; low base-rate for pre-April-10.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Official timing policy: Official Selection announced at mid-April press conference\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Festival communications indicate mid-April announcements; no credible sources indicate an earlier reveal; hence strong downward pressure on an April 10 or earlier reveal.\"\n      },\n      {\n        \"factor\": \"Near-edge historical timing (April 10, 2025 as a recent example)\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"An April 10, 2025 instance shows variability near the threshold but does not overturn the standard mid-April pattern.\"\n      },\n      {\n        \"factor\": \"Absence of credible leaks or pre-announcements\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Lack of leaks supports the standard pattern; provides little upward pressure.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The strong downward update from official timing policy dominates the anchor; neutral factors contribute minor adjustments. The posterior (0.02) results from discounting the anchor by the strong policy signal, with calibration adjustments acknowledging potential last-minute changes or leaks; still, correlation among factors slightly reduces effective weight, hence a conservative, low probability.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.04 ]
+    }, {
+      "probability" : 0.12,
+      "narrative" : "The Cannes pattern is clear: the Official Selection is slated for mid-April, not before April 10. With no credible leaks and consistent official messaging, the probability of an early publish remains low, centering around roughly 12% with modest uncertainty.",
+      "summary" : [ "Official Cannes communications indicate the Official Selection will be announced at a mid-April press conference, making an announcement before April 10 unlikely.", "Cross-source references (FAQ, festival pages) reinforce the mid-April timing pattern, anchoring expectations away from early releases.", "The absence of credible leaks or pre-announcements further lowers the probability of an early reveal, supporting a conservative forecast.", "Historical near-edge timing (April 10, 2025) suggests a tiny wiggle room but is insufficient to overturn the established mid-April norm." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.15,
+          "basis" : "The reference class and anchor come from official Cannes communications stating mid-April timing; base rate for before-Apr-10 is understood to be low."
+        },
+        "factor_updates" : [ {
+          "factor" : "Official timing policy: Official Selection announced at a mid-April press conference",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Festival communications explicitly frame the reveal as mid-April, making an early (before April 10) release unlikely."
+        }, {
+          "factor" : "Near-edge historical timing (April 10, 2025 as a recent example)",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Shows occasional proximity to early April, but does not overturn the established mid-April norm."
+        }, {
+          "factor" : "Absence of credible leaks or pre-announcements",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Lack of leaks reduces pressure for an early reveal."
+        } ],
+        "synthesis_rationale" : "The synthesis weighs the strong downward signal from official timing policy most heavily, with weaker corroboration from historical wiggle and lack of leaks. The anchor of 0.15 is modestly nudged downward to 0.12 to reflect the strong mid-April pattern, while acknowledging small residual uncertainty due to potential last-minute exceptions."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.12,\n  \"range_low\": 0.07,\n  \"range_high\": 0.20,\n  \"summary\": [\n    \"Official Cannes communications indicate the Official Selection will be announced at a mid-April press conference, making an announcement before April 10 unlikely.\",\n    \"Cross-source references (FAQ, festival pages) reinforce the mid-April timing pattern, anchoring expectations away from early releases.\",\n    \"The absence of credible leaks or pre-announcements further lowers the probability of an early reveal, supporting a conservative forecast.\",\n    \"Historical near-edge timing (April 10, 2025) suggests a tiny wiggle room but is insufficient to overturn the established mid-April norm.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"The Cannes pattern is clear: the Official Selection is slated for mid-April, not before April 10. With no credible leaks and consistent official messaging, the probability of an early publish remains low, centering around roughly 12% with modest uncertainty.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.15,\n      \"basis\": \"The reference class and anchor come from official Cannes communications stating mid-April timing; base rate for before-Apr-10 is understood to be low.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Official timing policy: Official Selection announced at a mid-April press conference\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Festival communications explicitly frame the reveal as mid-April, making an early (before April 10) release unlikely.\"\n      },\n      {\n        \"factor\": \"Near-edge historical timing (April 10, 2025 as a recent example)\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Shows occasional proximity to early April, but does not overturn the established mid-April norm.\"\n      },\n      {\n        \"factor\": \"Absence of credible leaks or pre-announcements\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Lack of leaks reduces pressure for an early reveal.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The synthesis weighs the strong downward signal from official timing policy most heavily, with weaker corroboration from historical wiggle and lack of leaks. The anchor of 0.15 is modestly nudged downward to 0.12 to reflect the strong mid-April pattern, while acknowledging small residual uncertainty due to potential last-minute exceptions.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.07, 0.2 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.0370158678138739,
+      "range" : [ 0.02, 0.12 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.017341040462427747,
+    "raw-posterior" : 2.0023233300854352E-8,
+    "capped" : true,
+    "prior" : 0.15,
+    "factors" : [ {
+      "name" : "Official announcement schedule pattern (mid-April press conference)",
+      "p-yes" : 0.05,
+      "p-no" : 0.92,
+      "bf" : 0.05434782608695652
+    }, {
+      "name" : "Cross-source pattern alignment (FAQ and festival pages)",
+      "p-yes" : 0.08,
+      "p-no" : 0.9,
+      "bf" : 0.08888888888888889
+    }, {
+      "name" : "Absence of credible leaks or pre-announcements",
+      "p-yes" : 0.07,
+      "p-no" : 0.93,
+      "bf" : 0.07526881720430108
+    }, {
+      "name" : "Official timing policy: Official Selection announced at a mid-April press conference",
+      "p-yes" : 0.04,
+      "p-no" : 0.95,
+      "bf" : 0.04210526315789474
+    }, {
+      "name" : "Near-edge historical timing (April 10, 2025 as a recent example)",
+      "p-yes" : 0.1,
+      "p-no" : 0.88,
+      "bf" : 0.11363636363636365
+    }, {
+      "name" : "Official selection timing pattern (mid-April press conference)",
+      "p-yes" : 0.06,
+      "p-no" : 0.92,
+      "bf" : 0.06521739130434782
+    } ]
+  },
+  "question" : "Will the Cannes Film Festival publish its 2026 official selection before April 10, 2026?",
+  "probability" : 0.12,
+  "summary" : [ "Ensemble aggregate is very low at 4%, reflecting the mid-April announcement pattern and historical timing.", "Objections correctly flag a non-zero risk of an earlier reveal due to strategic shifts or credible leaks.", "Threshold-based analysis suggests a plausible base-rate around 15% for before-April-10, warranting a modest upward recalibration." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.04,
+    "critique_assessment" : "Objections are valid in highlighting non-zero risk but do not overturn the overarching pattern of mid-April announcements; the risk remains bounded and credible.",
+    "adjustment" : "Adjusted upward from 0.04 to 0.12 to reflect non-zero risk from the objections, while keeping the range consistent with a conservative, plausible uncertainty band (0.08–0.18)."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.15,
+      "reference-class" : "Cannes Official Selection announcement timing (mid-April pattern for release; base rate for before April 10 is low).",
+      "sources" : [ {
+        "url" : "https://www.festival-cannes.com/en/faq/",
+        "claim" : "The 2025 Official Selection will be announced at the press conference on mid-April."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2026_Cannes_Film_Festival",
+        "claim" : "The official selection line-up is expected to be released in mid-April."
+      }, {
+        "url" : "https://www.festival-cannes.com/en/programmation/",
+        "claim" : "The films of the Official Selection and the events of the 79th edition will be unveiled during the press conference to be held in mid-April in Paris."
+      }, {
+        "url" : "https://www.festival-cannes.com/en/faq/",
+        "claim" : "FAQ indicates that the 2025 Official Selection will be announced at the press conference on mid-April."
+      }, {
+        "url" : "https://www.festival-cannes.com/en/",
+        "claim" : "Festival de Cannes 2026 page states that the 2026 Official Selection will be announced in mid-April."
+      } ],
+      "confidence" : "high"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Official announcement schedule pattern (mid-April press conference)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Festival communications indicate the Official Selection is unveiled at a mid-April press conference, and historical patterns show no announcements before April 10, 2026."
+      }, {
+        "name" : "Cross-source pattern alignment (FAQ and festival pages)",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "FAQ and festival pages consistently reference mid-April timing, which reinforces the anchor without implying earlier disclosure."
+      }, {
+        "name" : "Absence of credible leaks or pre-announcements",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "No reliable leaks or credible reports have pointed to an before-April-10 reveal; thus little upward pressure on early publication."
+      }, {
+        "name" : "Official timing policy: Official Selection announced at a mid-April press conference",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Festival communications across the FAQ, press programme, and the 2026 edition page state the Official Selection is unveiled at a mid-April press conference, making an announcement before April 10 unlikely."
+      }, {
+        "name" : "Near-edge historical timing (April 10, 2025 as a recent example)",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "The 2025 Official Selection was announced on April 10, showing that early to mid-April is possible; this introduces a small amount of timing variability but does not overturn the mid-April norm."
+      }, {
+        "name" : "Official selection timing pattern (mid-April press conference)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Festival communications indicate the 2026 Official Selection will be announced at a mid-April press conference in Paris, not before April 10 (consistent with FAQ and mid-April date). See sources turn0search1, turn0search4."
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "medium",
+  "range" : [ 0.08, 0.18 ],
+  "synthesis" : "Historical pattern points to mid-April announcements, making pre-April-10 releases unlikely, but non-zero risk from policy shifts or leaks justifies a modest upward adjustment from the ensemble. The calibrated probability centers around 12%, with a plausible range that acknowledges uncertainty."
+}

@@ -1,0 +1,152 @@
+{
+ "name": "march_madness",
+ "description": "2026 NCAA men's tournament matchups. Introspected premises: gpt-5.4-nano asked in advance what would decide each matchup, five prompts, one call each, array of objects response schema. Extracted premises: gpt-5.4-mini extraction from pairs of disagreeing forecasts.",
+ "question_ids": [
+  "akron-vs-texas-tech",
+  "alabama-vs-hofstra",
+  "alabama-vs-michigan",
+  "alabama-vs-texas-tech",
+  "arizona-vs-arkansas",
+  "arizona-vs-liu",
+  "arizona-vs-michigan",
+  "arizona-vs-purdue",
+  "arizona-vs-utah-state",
+  "arkansas-vs-hawaii",
+  "arkansas-vs-high-point",
+  "cal-baptist-vs-kansas",
+  "clemson-vs-iowa",
+  "duke-vs-siena",
+  "duke-vs-st-johns",
+  "duke-vs-tcu",
+  "duke-vs-uconn",
+  "florida-vs-iowa",
+  "florida-vs-prairie-view-am",
+  "furman-vs-uconn",
+  "georgia-vs-saint-louis",
+  "gonzaga-vs-kennesaw-state",
+  "high-point-vs-wisconsin",
+  "houston-vs-idaho",
+  "houston-vs-illinois",
+  "houston-vs-texas-am",
+  "illinois-vs-iowa",
+  "illinois-vs-penn",
+  "illinois-vs-uconn",
+  "illinois-vs-vcu",
+  "iowa-state-vs-kentucky",
+  "iowa-state-vs-tennessee",
+  "iowa-state-vs-tennessee-state",
+  "iowa-vs-nebraska",
+  "kansas-vs-st-johns",
+  "kentucky-vs-santa-clara",
+  "lehigh-vs-prairie-view-am",
+  "louisville-vs-michigan-state",
+  "louisville-vs-south-florida",
+  "mcneese-vs-vanderbilt",
+  "miami-vs-missouri",
+  "miami-vs-purdue",
+  "michigan-state-vs-north-dakota-state",
+  "michigan-state-vs-uconn",
+  "michigan-vs-saint-louis",
+  "michigan-vs-tennessee",
+  "michigan-vs-uconn",
+  "nebraska-vs-troy",
+  "nebraska-vs-vanderbilt",
+  "north-carolina-vs-vcu",
+  "northern-iowa-vs-st-johns",
+  "ohio-state-vs-tcu",
+  "purdue-vs-queens",
+  "saint-marys-vs-texas-am",
+  "tennessee-vs-virginia",
+  "ucf-vs-ucla",
+  "ucla-vs-uconn",
+  "utah-state-vs-villanova",
+  "virginia-vs-wright-state"
+ ],
+ "inclusion_rule": "every matchup with a known winner that both pools cover (59)",
+ "pools": "introspected.json and extracted.json hold every premise as the models produced it, in recorded order, repeats kept. The package removes repeated texts before it selects (rule in build_checks.deduplication) and reports how many it removed.",
+ "noise_reference": "noise_reference/introspected.json is an independent second introspection sample with the same model, prompts and schema; the verifier's tolerances are measured from runs on it",
+ "provenance": {
+  "introspected": {
+   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59/apriori/apriori_contrasts_merged.json",
+   "sha256": "2145f30aaf8d4df1ccee15b93a79e1fe57efe9d30c3522ce57845baf41cbb5ce"
+  },
+  "introspection_metadata": {
+   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59/apriori/apriori_metadata_2026-09-21T22-08-29.json",
+   "sha256": "5210000a251f05cb3a4a9e862361747a8641dbd4a190835fc0210ad24da84192"
+  },
+  "introspected_noise_reference": {
+   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59_rep2/apriori/apriori_contrasts_merged.json",
+   "sha256": "4742a1fc9e1a511cf640cf2197c55f2cdb65f55c62ee0f3a2d1b5d79ba12b8cc"
+  },
+  "introspection_metadata_noise_reference": {
+   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59_rep2/apriori/apriori_metadata_2026-09-22T13-28-37.json",
+   "sha256": "47375c4b88c2ebcc34942368be659fa0a9cc3e8ad6edde4b2dca04e3c2aa827e"
+  },
+  "extracted": {
+   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness/cruxes/intermediate_contrasts_2026-03-19T03-52-42.json",
+   "sha256": "34d54734361b1ab02622a67d794543f8ab6a1162f70dc55871263e2fca5fb666"
+  },
+  "extracted_deduplicated_by_research_code": {
+   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59_dedup/cruxes/intermediate_contrasts_dedup_2026-09-23T16-21-28.json",
+   "sha256": "b3224151c1175f72e9dade92e9777ca14311d64ef90baf941093d4c2d0129081"
+  },
+  "question_list": {
+   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59_dedup/apriori/set_inclusion_resolved_p1_pos_only_2026-09-23T17-35-08.json",
+   "sha256": "9ccac3fcface43cf1b7cc49025b2380bcf8c7d446563de282729e02740b1f27d"
+  },
+  "ground_truth": {
+   "path": "/net/projects/veitch/forecast-cruxes/march_madness/ground_truth_full_2026.json",
+   "sha256": "5eed6f45345348dad2567a7c9b1f81aa39ad8a28310af897c632bee763447720"
+  }
+ },
+ "build_checks": {
+  "introspected": {
+   "questions": 59,
+   "premises": 4182,
+   "min_pool": 63,
+   "max_pool": 86
+  },
+  "extracted": {
+   "questions": 59,
+   "premises": 9504,
+   "min_pool": 137,
+   "max_pool": 197
+  },
+  "introspected_noise_reference": {
+   "questions": 59,
+   "premises": 4307,
+   "min_pool": 62,
+   "max_pool": 87
+  },
+  "deduplication": {
+   "rule": "repeated premise texts removed before selection: texts equal after collapsing whitespace runs to one space (case sensitive, no fuzzy matching) are repeats; the first occurrence is kept verbatim in place",
+   "introspected": {
+    "removed": 0,
+    "questions_with_repeats": 0,
+    "required": [
+     0,
+     0
+    ],
+    "equal_to_research_code_pools": "the recorded pool itself, which has no repeats"
+   },
+   "extracted": {
+    "removed": 88,
+    "questions_with_repeats": 36,
+    "required": [
+     88,
+     36
+    ],
+    "equal_to_research_code_pools": {
+     "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59_dedup/cruxes/intermediate_contrasts_dedup_2026-09-23T16-21-28.json",
+     "sha256": "b3224151c1175f72e9dade92e9777ca14311d64ef90baf941093d4c2d0129081"
+    }
+   },
+   "noise_reference_introspected": {
+    "removed": 0,
+    "questions_with_repeats": 0
+   }
+  },
+  "scouting_reports_copied": 61,
+  "teams": 61
+ }
+}

@@ -1,0 +1,357 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.01,
+      "narrative" : "Anchoring on the Baden-Württemberg reference class with current polls showing CDU/Greens ahead and AfD well behind, and applying factors for electoral system, historical precedent, and forecast convergence yields a calibrated posterior near 1%. The main upside risk is a late AfD surge, but all credible signals point to a highly unlikely plurality for AfD.",
+      "summary" : [ "Late-February 2026 polls show CDU/Greens ahead of AfD in Baden-Württemberg, with AfD around 18–20%.", "BW's 120-seat, 5% threshold system plus historical precedent make AfD plurality unlikely.", "Bayesian updates from anchor 5% with strong poll-based downs push posterior toward 1%, with small upside risk from late swings." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.05,
+          "basis" : "Reference class: Baden-Württemberg Landtag elections with 120 seats, 5% threshold; historical pattern: AfD has not been plurality; recent polls commonly show CDU/Greens leading. Anchor probability reflects a plausible base-rate that AfD could win plurality in theory but is low."
+        },
+        "factor_updates" : [ {
+          "factor" : "Polls showing CDU/Greens ahead of AfD",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Late-February 2026 polls place CDU ~28–31%, Greens ~22–27%, AfD ~18–20%, reducing AfD's chances of being the largest party."
+        }, {
+          "factor" : "Historical base-rate: AfD has never won the most seats in BW",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Long-run pattern strongly discourages AfD plurality in BW."
+        }, {
+          "factor" : "Electoral system and 5% threshold in a 120-seat BW Landtag",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Even with >5%, seat math tends to favor CDU/Greens; plurality requires outsizing both."
+        }, {
+          "factor" : "Convergence among major forecasts favoring CDU/Greens",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Multiple polls/forecasts agree CDU/Greens lead; AfD plurality remains unlikely."
+        }, {
+          "factor" : "Possible late campaign surge for AfD",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "A late swing could raise AfD share; but current data do not indicate such a surge."
+        } ],
+        "synthesis_rationale" : "The final probability reflects applying strong downward updates from polls, base-rate, and institutional constraints, tempered by a modest upward update for a potential late surge. Given correlation among polls and forecasts, the updates are treated as partially overlapping; calibration caveats acknowledged. The resulting posterior is set at 1% with a conservative wide uncertainty range."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.01,\n  \"range_low\": 0.01,\n  \"range_high\": 0.03,\n  \"summary\": [\n    \"Late-February 2026 polls show CDU/Greens ahead of AfD in Baden-Württemberg, with AfD around 18–20%.\",\n    \"BW's 120-seat, 5% threshold system plus historical precedent make AfD plurality unlikely.\",\n    \"Bayesian updates from anchor 5% with strong poll-based downs push posterior toward 1%, with small upside risk from late swings.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Anchoring on the Baden-Württemberg reference class with current polls showing CDU/Greens ahead and AfD well behind, and applying factors for electoral system, historical precedent, and forecast convergence yields a calibrated posterior near 1%. The main upside risk is a late AfD surge, but all credible signals point to a highly unlikely plurality for AfD.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.05,\n      \"basis\": \"Reference class: Baden-Württemberg Landtag elections with 120 seats, 5% threshold; historical pattern: AfD has not been plurality; recent polls commonly show CDU/Greens leading. Anchor probability reflects a plausible base-rate that AfD could win plurality in theory but is low.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Polls showing CDU/Greens ahead of AfD\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Late-February 2026 polls place CDU ~28–31%, Greens ~22–27%, AfD ~18–20%, reducing AfD's chances of being the largest party.\"\n      },\n      {\n        \"factor\": \"Historical base-rate: AfD has never won the most seats in BW\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Long-run pattern strongly discourages AfD plurality in BW.\"\n      },\n      {\n        \"factor\": \"Electoral system and 5% threshold in a 120-seat BW Landtag\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Even with >5%, seat math tends to favor CDU/Greens; plurality requires outsizing both.\"\n      },\n      {\n        \"factor\": \"Convergence among major forecasts favoring CDU/Greens\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Multiple polls/forecasts agree CDU/Greens lead; AfD plurality remains unlikely.\"\n      },\n      {\n        \"factor\": \"Possible late campaign surge for AfD\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A late swing could raise AfD share; but current data do not indicate such a surge.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The final probability reflects applying strong downward updates from polls, base-rate, and institutional constraints, tempered by a modest upward update for a potential late surge. Given correlation among polls and forecasts, the updates are treated as partially overlapping; calibration caveats acknowledged. The resulting posterior is set at 1% with a conservative wide uncertainty range.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.01, 0.03 ]
+    }, {
+      "probability" : 0.01,
+      "narrative" : "The latest polling and historical patterns strongly constrain AfD’s chances of being the largest party in BW. While a late surge is a potential upside risk, there is no current evidence of such a shift; the posterior remains around 1% given the demonstrated gaps and system dynamics.",
+      "summary" : [ "Late-February 2026 polls show CDU/Greens ahead of AfD in Baden-Württemberg, with AfD polling around 18–20%.", "Historical precedent and the 5% threshold in a 120-seat BW Landtag make AfD unlikely to win the most seats.", "Bayesian updating from multiple correlated factors yields a very small posterior probability for AfD plurality, around 1%." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.05,
+          "basis" : "reference class anchor around a 5% base-rate for AfD winning the most seats in BW, reflecting historical patterns and the typical underperformance of AfD in this state."
+        },
+        "factor_updates" : [ {
+          "factor" : "Polls showing CDU/Greens ahead of AfD",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Late-February 2026 polls place CDU ~28–31% and Greens ~22–27% vs AfD ~18–20%, reducing AfD’s likelihood of plurality."
+        }, {
+          "factor" : "Historical base-rate: AfD has never won the most seats in BW",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Historical precedent anchors expectations toward non-plurality for AfD in BW."
+        }, {
+          "factor" : "Electoral system and 5% threshold in a 120-seat BW Landtag",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Proportional representation with a 5% hurdle makes achieving a plurality unlikely given current vote shares."
+        }, {
+          "factor" : "Convergence among major forecasts favoring CDU/Greens",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Multiple polls forecasting CDU/Greens ahead reduce the chance of AfD being the largest party."
+        }, {
+          "factor" : "Possible late campaign surge for AfD",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "A late shift could elevate AfD toward low-20s, modestly increasing plurality risk, though no current evidence supports this."
+        } ],
+        "synthesis_rationale" : "The final probability (1%) reflects downward updates from a 5% anchor due to corroborating polls, consistent forecast consensus, and structural constraints, tempered by a modest acknowledgment of late-surge risk. Given the high correlation among polling factors, the calibration treats updates as collectively supportive of a very low posterior, with the range capturing plausible uncertainty around a small upset possibility."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.01,\n  \"range_low\": 0.01,\n  \"range_high\": 0.03,\n  \"summary\": [\n    \"Late-February 2026 polls show CDU/Greens ahead of AfD in Baden-Württemberg, with AfD polling around 18–20%.\",\n    \"Historical precedent and the 5% threshold in a 120-seat BW Landtag make AfD unlikely to win the most seats.\",\n    \"Bayesian updating from multiple correlated factors yields a very small posterior probability for AfD plurality, around 1%.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"The latest polling and historical patterns strongly constrain AfD’s chances of being the largest party in BW. While a late surge is a potential upside risk, there is no current evidence of such a shift; the posterior remains around 1% given the demonstrated gaps and system dynamics.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.05,\n      \"basis\": \"reference class anchor around a 5% base-rate for AfD winning the most seats in BW, reflecting historical patterns and the typical underperformance of AfD in this state.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Polls showing CDU/Greens ahead of AfD\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Late-February 2026 polls place CDU ~28–31% and Greens ~22–27% vs AfD ~18–20%, reducing AfD’s likelihood of plurality.\"\n      },\n      {\n        \"factor\": \"Historical base-rate: AfD has never won the most seats in BW\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Historical precedent anchors expectations toward non-plurality for AfD in BW.\"\n      },\n      {\n        \"factor\": \"Electoral system and 5% threshold in a 120-seat BW Landtag\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Proportional representation with a 5% hurdle makes achieving a plurality unlikely given current vote shares.\"\n      },\n      {\n        \"factor\": \"Convergence among major forecasts favoring CDU/Greens\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Multiple polls forecasting CDU/Greens ahead reduce the chance of AfD being the largest party.\"\n      },\n      {\n        \"factor\": \"Possible late campaign surge for AfD\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A late shift could elevate AfD toward low-20s, modestly increasing plurality risk, though no current evidence supports this.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The final probability (1%) reflects downward updates from a 5% anchor due to corroborating polls, consistent forecast consensus, and structural constraints, tempered by a modest acknowledgment of late-surge risk. Given the high correlation among polling factors, the calibration treats updates as collectively supportive of a very low posterior, with the range capturing plausible uncertainty around a small upset possibility.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.03 ]
+    }, {
+      "probability" : 0.1,
+      "narrative" : "Current polling suggests AfD is unlikely to win the most seats in BW, but a plausible late surge or polling undercount could raise the odds into the low-to-mid single digits. The final probability is calibrated as a cautious, modest tail-risk estimate given the state’s historical patterns and current poll signals.",
+      "summary" : [ "Late-February 2026 polls place CDU and Greens ahead of AfD in Baden-Württemberg, making AfD plurality unlikely.", "Historical base-rate in BW shows AfD has never won the most seats; anchor around 5%.", "However, a potential late surge, poll undercount, or turnout shifts could push AfD into plurality, yielding a non-negligible but still small probability.", "The contrarian updates acknowledge tail risks while keeping the overall probability modest." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.05,
+          "basis" : "Reference-class historical pattern: in Baden-Württemberg Landtag elections, AfD has never won the most seats; anchor reflects low base probability consistent with prior results and current polls showing CDU/Greens ahead."
+        },
+        "factor_updates" : [ {
+          "factor" : "Late campaign surge for AfD",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Even a modest late surge could lift AfD to the low-20s, increasing the probability of plurality against CDU/Greens."
+        }, {
+          "factor" : "Poll undercount or social desirability bias favoring AfD",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "If poll methodologies miss a portion of AfD supporters, actual support could be higher than indicated, raising plurality chances."
+        }, {
+          "factor" : "Turnout dynamics boosting AfD in rural areas",
+          "direction" : "up",
+          "magnitude" : "low",
+          "rationale" : "Turnout differentials could favor AfD in pivotal districts, affecting seat distribution and plurality potential."
+        }, {
+          "factor" : "Strength of green or CDU coalition weaknesses",
+          "direction" : "down",
+          "magnitude" : "weak",
+          "rationale" : "In the contrarian view, if CDU/Greens stumble electorally, AfD's probability could rise; however, current data show solid leads for CDU/Greens, so this dampens probability."
+        } ],
+        "synthesis_rationale" : "Anchor 5% baseline is updated upward by evidence of possible late developments and polling biases; however, the overall weights keep probability low. The synthesis combines a base-rate tail risk with patchy evidence, resulting in a calibrated 10% center with a wide plausible range. Calibration reflects limited tail-scenario support and high uncertainty in state-level polling, resulting in a range of 5–18% around a 10% center."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.10,\n  \"range_low\": 0.05,\n  \"range_high\": 0.18,\n  \"summary\": [\n    \"Late-February 2026 polls place CDU and Greens ahead of AfD in Baden-Württemberg, making AfD plurality unlikely.\",\n    \"Historical base-rate in BW shows AfD has never won the most seats; anchor around 5%.\",\n    \"However, a potential late surge, poll undercount, or turnout shifts could push AfD into plurality, yielding a non-negligible but still small probability.\",\n    \"The contrarian updates acknowledge tail risks while keeping the overall probability modest.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Current polling suggests AfD is unlikely to win the most seats in BW, but a plausible late surge or polling undercount could raise the odds into the low-to-mid single digits. The final probability is calibrated as a cautious, modest tail-risk estimate given the state’s historical patterns and current poll signals.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.05,\n      \"basis\": \"Reference-class historical pattern: in Baden-Württemberg Landtag elections, AfD has never won the most seats; anchor reflects low base probability consistent with prior results and current polls showing CDU/Greens ahead.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Late campaign surge for AfD\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Even a modest late surge could lift AfD to the low-20s, increasing the probability of plurality against CDU/Greens.\"\n      },\n      {\n        \"factor\": \"Poll undercount or social desirability bias favoring AfD\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"If poll methodologies miss a portion of AfD supporters, actual support could be higher than indicated, raising plurality chances.\"\n      },\n      {\n        \"factor\": \"Turnout dynamics boosting AfD in rural areas\",\n        \"direction\": \"up\",\n        \"magnitude\": \"low\",\n        \"rationale\": \"Turnout differentials could favor AfD in pivotal districts, affecting seat distribution and plurality potential.\"\n      },\n      {\n        \"factor\": \"Strength of green or CDU coalition weaknesses\",\n        \"direction\": \"down\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"In the contrarian view, if CDU/Greens stumble electorally, AfD's probability could rise; however, current data show solid leads for CDU/Greens, so this dampens probability.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Anchor 5% baseline is updated upward by evidence of possible late developments and polling biases; however, the overall weights keep probability low. The synthesis combines a base-rate tail risk with patchy evidence, resulting in a calibrated 10% center with a wide plausible range. Calibration reflects limited tail-scenario support and high uncertainty in state-level polling, resulting in a range of 5–18% around a 10% center.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.05, 0.18 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.021970881688108176,
+      "range" : [ 0.01, 0.1 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.005235602094240837,
+    "raw-posterior" : 1.3430845116837188E-6,
+    "capped" : true,
+    "prior" : 0.05,
+    "factors" : [ {
+      "name" : "Possible late campaign surge for AfD",
+      "p-yes" : 0.6,
+      "p-no" : 0.4,
+      "bf" : 1.4999999999999998
+    }, {
+      "name" : "Polls showing CDU/Greens ahead of AfD",
+      "p-yes" : 0.2,
+      "p-no" : 0.8,
+      "bf" : 0.25
+    }, {
+      "name" : "Top-two-party dynamic favoring CDU/Greens in seat allocation",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Historical base-rate: AfD has never won the most seats",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Turnout differentials among electorate groups",
+      "p-yes" : 0.55,
+      "p-no" : 0.45,
+      "bf" : 1.2222222222222223
+    }, {
+      "name" : "Seat-level math under BW's 120-seat Landtag and 5% threshold",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Potential late surge or turnout effects that could boost AfD",
+      "p-yes" : 0.6,
+      "p-no" : 0.4,
+      "bf" : 1.4999999999999998
+    }, {
+      "name" : "Electoral-system constraints and historical patterns",
+      "p-yes" : 0.3,
+      "p-no" : 0.7,
+      "bf" : 0.4285714285714286
+    }, {
+      "name" : "Convergence among major forecasts favoring CDU/Greens",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Poll lead of CDU/Greens over AfD in Baden-Württemberg (late Feb 2026)",
+      "p-yes" : 0.2,
+      "p-no" : 0.8,
+      "bf" : 0.25
+    }, {
+      "name" : "Electoral system and 5% threshold in a 120-seat BW Landtag",
+      "p-yes" : 0.3,
+      "p-no" : 0.7,
+      "bf" : 0.4285714285714286
+    }, {
+      "name" : "Tail risk of late swing or poll misestimation",
+      "p-yes" : 0.6,
+      "p-no" : 0.4,
+      "bf" : 1.4999999999999998
+    }, {
+      "name" : "Current polling gap between AfD and CDU/Greens",
+      "p-yes" : 0.2,
+      "p-no" : 0.8,
+      "bf" : 0.25
+    }, {
+      "name" : "Electoral-system constraints and historical patterns (5% threshold, 120 seats)",
+      "p-yes" : 0.3,
+      "p-no" : 0.7,
+      "bf" : 0.4285714285714286
+    }, {
+      "name" : "Turnout differential among electorate groups",
+      "p-yes" : 0.55,
+      "p-no" : 0.45,
+      "bf" : 1.2222222222222223
+    }, {
+      "name" : "Historical precedent and forecast consensus",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    } ]
+  },
+  "question" : "Will AfD win the most seats in the Baden-Württemberg Landtag election?",
+  "probability" : 0.08,
+  "summary" : [ "Late-February 2026 polls place CDU and Greens ahead of AfD (AfD ~18–20%), reducing the likelihood of AfD winning the most seats.", "Historical precedent in Baden-Württemberg shows AfD has not won the most seats, anchoring expectations toward a non-plurality outcome.", "BW's 5% threshold and 120-seat structure complicate translating roughly 20% vote share into the most seats, especially with top-two parties ahead in most forecasts.", "The ensemble around 2% underestimates the current poll-driven risk; credible data justify a calibrated central estimate around 7–8%, with a plausible range of 4–12%." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.02,
+    "critique_assessment" : "Objections are valid and indicate a systematic underestimation by the ensemble given credible late-Feb polls and structural factors; an upward calibration is warranted.",
+    "adjustment" : "Raised central probability from 0.02 to 0.08 to reflect credible poll data and base-rate constraints; the 4–12% range captures remaining uncertainty without implying implausible outcomes."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.06,
+      "reference-class" : "Baden-Württemberg Landtag elections (state-level, 120 seats) in a multi-party system with a 5% threshold; historically, AfD has not been the plurality in BW and polls routinely show CDU or Greens ahead in recent cycles, making AfD's plurality probability a rare outcome within this reference class.",
+      "sources" : [ {
+        "url" : "https://www.infratest-dimap.de/umfragen-analysen/bundeslaender/baden-wuerttemberg/sonntagsfrage/",
+        "claim" : "26.02.2026 poll: CDU 28%, SPD 7%, Grüne 27%, FDP 6%, Linke 5.5%, AfD 18%, Freie Wähler 8.5% (BW, 1,530 respondents)."
+      }, {
+        "url" : "https://presseportal.zdf.de/pressemitteilung/zdf-politbarometer-extra-baden-wuerttemberg-februar-2026",
+        "claim" : "ZDF-Politbarometer Extra (Feb 2026) projection: Greens 25%, CDU 27%, AfD 19%, SPD 9%, FDP 6%, Linke 6%, Others 8%."
+      }, {
+        "url" : "https://www.landtagswahl-bw.de/",
+        "claim" : "Official BW Landtag election site with information on the 2026 election and current polls/trends."
+      }, {
+        "url" : "https://www.swp.de/baden-wuerttemberg/umfrage-zur-landtagswahl-bw-cdu-haelt-gruene-auf-distanz-afd-und-linke-auf-dem-vormarsch-78057198.html",
+        "claim" : "SWP article (May 2025) describing CDU leading the race, with AfD and Die Linke on the rise."
+      }, {
+        "url" : "https://www.welt.de/politik/deutschland/article256094224/Umfrage-AfD-in-Baden-Wuerttemberg-erstmals-vor-den-Gruenen-aber-eine-Partei-gewinnt-noch-mehr.html",
+        "claim" : "INSA poll shows AfD at about 19%, CDU at about 31%, Greens at about 17%."
+      }, {
+        "url" : "https://politpro.eu/de/baden-wuerttemberg/wahlumfragen/infratest-dimap-2026-02-25/landtagswahl",
+        "claim" : "Infratest dimap poll (Feb 25–26, 2026) has CDU ~28%, Greens ~27%, AfD ~18%."
+      }, {
+        "url" : "https://landtag-bw.de/de/aktuelles/dpa-nachrichten/neue-insa-umfrage-sieht-aufholjagd-der-gruenen-620394",
+        "claim" : "INSA poll (Feb 17–23, 2026) shows AfD ~20%, CDU ~28%, Greens ~22%."
+      }, {
+        "url" : "https://www.ntv.de/infografik/Infografik-id30409438.html",
+        "claim" : "Infographic showing Infratest dimap results (Feb 26, 2026): CDU leading, Greens close behind, AfD around 18%."
+      }, {
+        "url" : "https://de.wikipedia.org/wiki/Landtagswahl_in_Baden-W%C3%BCrttemberg_2026",
+        "claim" : "Poll snapshots around 2025–2026 show CDU ~29%, Greens ~23%, AfD ~20% in Baden-Württemberg."
+      }, {
+        "url" : "https://www.swr.de/swraktuell/baden-wuerttemberg/bw-trend/aktuelle-umfrage-sonntagsfrage-landtagswahl-2026-oezdemir-hagel-102.html",
+        "claim" : "BW-Trend Mai 2025 shows CDU as the strongest, AfD around 19%, Greens around 21-23%."
+      }, {
+        "url" : "https://www.welt.de/politik/deutschland/article256094224/Umfrage-AfD-in-Baden-Wuerttemberg-erstmals-vor-den-Gruenen-aber-eine-Partei-gewinnt-noch-mehr.html",
+        "claim" : "INSA poll indicates CDU ~31%, AfD ~19%, Greens ~17%."
+      }, {
+        "url" : "https://www.staatsanzeiger.de/debatten-im-landtag/cdu-liegt-bei-umfrage-von-gruenen-oezdemir-liegt-vor-hagel/",
+        "claim" : "Two polls reported: INSA CDU ~31%, Greens ~17%; Infratest dimap CDU ~29%, AfD ~22%."
+      }, {
+        "url" : "https://www.staatsanzeiger.de/nachrichten/politik-und-verwaltung/umfragen-und-aktuelle-entwicklungen-zur-landtagswahl-2026/",
+        "claim" : "January 2026 poll: CDU 29%, Greens 23%, AfD 20%."
+      }, {
+        "url" : "https://de.statista.com/statistik/daten/studie/154904/umfrage/sonntagsfrage-zur-landtagswahl-in-baden-wuerttemberg/",
+        "claim" : "May 2025 INSA poll cited: CDU 31%, AfD 19%, Greens 20%."
+      }, {
+        "url" : "https://www.swp.de/baden-wuerttemberg/landtagswahl-2026-neue-insa-umfrage-bestaetigt-aufholjagd-der-gruenen-78667008.html",
+        "claim" : "February 2026 INSA: CDU 28%, Greens 22%, AfD 20%."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2026_Baden-W%C3%BCrttemberg_state_election",
+        "claim" : "General context: 2026 Baden-Württemberg state election scheduled for March 2026; AfD prominence noted in lead-up coverage."
+      } ],
+      "confidence" : "high"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Polls showing CDU/Greens ahead of AfD",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Late-February 2026 polls place CDU ~28–31% and Greens ~22–27% vs AfD ~18–20%, making AfD the clear non-plurality in BW."
+      }, {
+        "name" : "Historical base-rate: AfD has never won the most seats in BW",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Historical results show AfD cannot be the largest party in BW Landtag, anchoring the probability toward a non-plurality outcome."
+      }, {
+        "name" : "Electoral system and 5% threshold in a 120-seat BW Landtag",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Proportional representation with a 5% threshold makes achieving the largest seat share unlikely without a high vote share."
+      }, {
+        "name" : "Convergence among major forecasts favoring CDU/Greens",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Forecasts from Infratest dimap and related polls consistently place CDU/Greens ahead of AfD, supporting a low probability for AfD plurality."
+      }, {
+        "name" : "Possible late campaign surge for AfD",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "A late rally could push AfD poll share higher (toward 25%+), increasing the chance of being the largest party."
+      }, {
+        "name" : "Current polling gap between AfD and CDU/Greens",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Late-February 2026 polls place AfD around 18–20% while CDU sits near 28–29% and Greens around 25–27% in Baden-Württemberg, meaning AfD would need to outpoll both rivals to become the largest party (e.g., Infratest dimap Feb 25–26: CDU 28%, Greens 27%, AfD 18%; ZDF Politbarometer Extra Feb 2026: CDU 27%, Greens 25%, AfD 19%)."
+      }, {
+        "name" : "Seat-level math under BW's 120-seat Landtag and 5% threshold",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Projections show the top two parties (CDU/Greens) consistently ahead of AfD, with AfD trailing in seat estimates; even if AfD clears the 5% threshold, they would not surpass CDU or Greens to win the most seats (e.g., Infratest dimap Feb 25–26: CDU 28%, Greens 27%, AfD 18%; projected seat shares indicate CDU/Greens as plurality)."
+      }, {
+        "name" : "Historical precedent and forecast consensus",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Historically AfD has not been the plurality in BW, and late-February 2026 polls consistently show CDU/Greens ahead of AfD; multiple sources place AfD around 18–20% with top two well ahead, making AfD winning the most seats unlikely (e.g., INSA/Infratest dimap readings)."
+      }, {
+        "name" : "Tail risk of late swing or poll misestimation",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Although current polling points to AfD around 18–20%, a late swing or undercount could push AfD into the low-20s; however, even in such scenarios the top-two lead appears robust in the cited polls (e.g., INSA Feb. 17–23 2026: CDU ~28%, Greens ~22%, AfD ~20%)."
+      }, {
+        "name" : "Poll lead of CDU/Greens over AfD in Baden-Württemberg (late Feb 2026)",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Latest polls show CDU around 28–31%, Greens ~25–27%, AfD ~18–20% in BW, making AfD far from plurality."
+      }, {
+        "name" : "Electoral-system constraints and historical patterns (5% threshold, 120 seats)",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "The 5% hurdle and seat distribution in BW make it unlikely for AfD to win the most seats given current vote shares."
+      }, {
+        "name" : "Top-two-party dynamic favoring CDU/Greens in seat allocation",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Even if AfD remains around 20%, seat math tends to favor CDU/Greens to secure a plurality."
+      }, {
+        "name" : "Potential late surge or turnout effects that could boost AfD",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "A hypothetical late shift or stronger turnout among AfD supporters could raise their seat prospects, though no evidence in late Feb polls indicates this trend."
+      }, {
+        "name" : "Turnout differentials among electorate groups",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Turnout patterns can shift seat shares; if AfD turnout outperforms CDU/Greens, their probability to win more seats could rise."
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "high",
+  "range" : [ 0.04, 0.12 ],
+  "synthesis" : "Recent polls strongly favor CDU/Greens over AfD in Baden-Württemberg, and historical patterns plus the electoral system make AfD plurality unlikely. The ensemble estimate of 2% is too low given these factors, so the calibrated probability centers around 7–8%, with a 4–12% plausible range."
+}

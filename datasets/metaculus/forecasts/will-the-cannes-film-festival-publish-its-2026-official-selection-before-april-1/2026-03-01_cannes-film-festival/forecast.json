@@ -1,0 +1,204 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.03,
+      "narrative" : "Anchors on the Cannes-provided mid-April timing and historical precedent. The explicit window pushes the probability downward, with only a weak historical exception, resulting in a calibrated 3% likelihood of an early pre-April-10 publication.",
+      "summary" : [ "Cannes has stated the Official Selection will be unveiled at a mid-April press conference in 2026, not before April 10.", "Past practice shows an April 10, 2025 reveal, but the explicit timing window makes earlier publication unlikely.", "No fixed 2026 announcement date has been published yet, adding uncertainty but not strong evidence for an early reveal.", "Bayesian update yields a low posterior probability of pre-April 10 publication: 3%." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.05,
+          "basis" : "Reference class anchored on historical timing patterns and explicit mid-April timing; represents a prior probability that a pre-April-10 publication could occur."
+        },
+        "factor_updates" : [ {
+          "factor" : "Mid-April official announcement window",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Cannes explicitly indicates the Official Selection will be unveiled in mid-April, which is typically after April 10, lowering the chance of an earlier reveal."
+        }, {
+          "factor" : "Past precedent: April 10, 2025 announcement",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "There is at least one instance of an early-April-like reveal; however, it is not the norm and the announcement was still within that mid-April window."
+        }, {
+          "factor" : "No fixed 2026 announce date published yet",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Lack of a published fixed date means uncertainty remains; this factor does not decisively tilt toward pre-April 10."
+        } ],
+        "synthesis_rationale" : "The anchor suggests a modest starting probability for a pre-April-10 reveal. The strong downward pressure from the official mid-April window dominates, tempered slightly by a weak precedent of an April 10 date and the absence of a fixed 2026 date, resulting in a low posterior of 3% after calibration for correlated factors."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.03,\n  \"range_low\": 0.01,\n  \"range_high\": 0.05,\n  \"summary\": [\n    \"Cannes has stated the Official Selection will be unveiled at a mid-April press conference in 2026, not before April 10.\",\n    \"Past practice shows an April 10, 2025 reveal, but the explicit timing window makes earlier publication unlikely.\",\n    \"No fixed 2026 announcement date has been published yet, adding uncertainty but not strong evidence for an early reveal.\",\n    \"Bayesian update yields a low posterior probability of pre-April 10 publication: 3%.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Anchors on the Cannes-provided mid-April timing and historical precedent. The explicit window pushes the probability downward, with only a weak historical exception, resulting in a calibrated 3% likelihood of an early pre-April-10 publication.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.05,\n      \"basis\": \"Reference class anchored on historical timing patterns and explicit mid-April timing; represents a prior probability that a pre-April-10 publication could occur.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Mid-April official announcement window\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Cannes explicitly indicates the Official Selection will be unveiled in mid-April, which is typically after April 10, lowering the chance of an earlier reveal.\"\n      },\n      {\n        \"factor\": \"Past precedent: April 10, 2025 announcement\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"There is at least one instance of an early-April-like reveal; however, it is not the norm and the announcement was still within that mid-April window.\"\n      },\n      {\n        \"factor\": \"No fixed 2026 announce date published yet\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Lack of a published fixed date means uncertainty remains; this factor does not decisively tilt toward pre-April 10.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The anchor suggests a modest starting probability for a pre-April-10 reveal. The strong downward pressure from the official mid-April window dominates, tempered slightly by a weak precedent of an April 10 date and the absence of a fixed 2026 date, resulting in a low posterior of 3% after calibration for correlated factors.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.01, 0.05 ]
+    }, {
+      "probability" : 0.03,
+      "narrative" : "The Cannes signal that the Official Selection will be unveiled in mid-April strongly shifts probability away from an early, pre-April-10 reveal. A rare but nonzero precedent (April 10, 2025) and the absence of a fixed 2026 date add uncertainty, yielding a low posterior of about 3%.",
+      "summary" : [ "Bayesian posterior for before-April-10 publication is 3% after updates.", "Official window is mid-April, which lowers likelihood of pre-April-10 announcement.", "There is a weak precedent (April 10, 2025) that keeps a nonzero chance.", "No firm 2026 date yet; uncertainty remains about timing and communications." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.05,
+          "basis" : "Starting from a modest baseline probability before applying updates, reflecting historical patterns of official selections landing in mid-April and a prior year showing April 10 as a possible reveal date."
+        },
+        "factor_updates" : [ {
+          "factor" : "Official announcement window is mid-April (not early April)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Festival communications state the Official Selection will be unveiled in mid-April, which is typically after April 10, reducing the likelihood of an earlier reveal."
+        }, {
+          "factor" : "Past precedent: 2025 announcement occurred on April 10",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "A concrete earlier date happened in a prior year, which preserves a nonzero chance of an earlier reveal in some cycles."
+        }, {
+          "factor" : "No explicit official 2026 announcement date yet",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "As of now there is no fixed date published for 2026, introducing uncertainty and allowing for potential shifts."
+        } ],
+        "synthesis_rationale" : "The posterior probability (3%) results from a downward pull anchored by mid-April timing, tempered by historical but isolated precedents and ongoing uncertainty due to no fixed 2026 date. The combination suggests a low probability of an announcement before April 10, with residual, correlated uncertainty across factors."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.03,\n  \"range_low\": 0.02,\n  \"range_high\": 0.05,\n  \"summary\": [\n    \"Bayesian posterior for before-April-10 publication is 3% after updates.\",\n    \"Official window is mid-April, which lowers likelihood of pre-April-10 announcement.\",\n    \"There is a weak precedent (April 10, 2025) that keeps a nonzero chance.\",\n    \"No firm 2026 date yet; uncertainty remains about timing and communications.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"The Cannes signal that the Official Selection will be unveiled in mid-April strongly shifts probability away from an early, pre-April-10 reveal. A rare but nonzero precedent (April 10, 2025) and the absence of a fixed 2026 date add uncertainty, yielding a low posterior of about 3%.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.05,\n      \"basis\": \"Starting from a modest baseline probability before applying updates, reflecting historical patterns of official selections landing in mid-April and a prior year showing April 10 as a possible reveal date.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Official announcement window is mid-April (not early April)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Festival communications state the Official Selection will be unveiled in mid-April, which is typically after April 10, reducing the likelihood of an earlier reveal.\"\n      },\n      {\n        \"factor\": \"Past precedent: 2025 announcement occurred on April 10\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"A concrete earlier date happened in a prior year, which preserves a nonzero chance of an earlier reveal in some cycles.\"\n      },\n      {\n        \"factor\": \"No explicit official 2026 announcement date yet\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"As of now there is no fixed date published for 2026, introducing uncertainty and allowing for potential shifts.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The posterior probability (3%) results from a downward pull anchored by mid-April timing, tempered by historical but isolated precedents and ongoing uncertainty due to no fixed 2026 date. The combination suggests a low probability of an announcement before April 10, with residual, correlated uncertainty across factors.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.02, 0.05 ]
+    }, {
+      "probability" : 0.12,
+      "narrative" : "Official Cannes messaging points to a mid-April reveal for 2026, making pre-April-10 publication unlikely. While a rare earlier reveal occurred in 2025 (April 10), that single data point is insufficient to rewrite the baseline. The current signals imply a low-but-not-zero chance of an earlier reveal if extraordinary circumstances arise.",
+      "summary" : [ "Cannes publicly indicates the Official Selection will be unveiled in mid-April 2026, which makes an announcement before April 10 unlikely.", "Past precedent shows the 2025 reveal occurred on April 10, but that is one data point and does not indicate a broader shift.", "The absence of a fixed 2026 date publicly announced yet is consistent with the mid-April window, not with an earlier-than-April-10 timing.", "A pre-April-10 reveal would require an extraordinary scheduling change or a leak, for which there is no current evidence." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.15,
+          "basis" : "Reference class: probabilities of pre-April-10 announcements given official statements emphasize mid-April, with a rare historical exception (April 10, 2025). The anchor reflects a cautious base rate to calibrate updates."
+        },
+        "factor_updates" : [ {
+          "factor" : "Official announcement window is mid-April (not early April)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Festival communications specify a mid-April press conference for unveiling, which generally implies the official selection is announced after April 10. This is the dominant signal reducing the chance of a pre-April-10 publication."
+        }, {
+          "factor" : "Past precedent: 2025 announcement occurred on April 10",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "While a 2025 April 10 reveal shows the window can include that date, it does not establish a pattern for earlier announcements; it serves as a historical data point rather than a predictor."
+        }, {
+          "factor" : "No explicit official 2026 date published yet",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Lack of a fixed date aligns with the stated mid-April window but does not indicate earlier timing; provides context without shifting probability."
+        } ],
+        "synthesis_rationale" : "The strong update toward a mid-April window dominates the weak, neutral signals. Calibrating with a cautious anchor around 15%, the resulting probability area centers around 12%, with a roughly 6–20% uncertainty range to accommodate rare exceptions or last-minute schedule changes. Calibration notes: as more official statements surface, update should push probability further downward if the mid-April window remains the explicit plan; otherwise, adjust upward if an earlier date is announced."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.12,\n  \"range_low\": 0.06,\n  \"range_high\": 0.20,\n  \"summary\": [\n    \"Cannes publicly indicates the Official Selection will be unveiled in mid-April 2026, which makes an announcement before April 10 unlikely.\",\n    \"Past precedent shows the 2025 reveal occurred on April 10, but that is one data point and does not indicate a broader shift.\",\n    \"The absence of a fixed 2026 date publicly announced yet is consistent with the mid-April window, not with an earlier-than-April-10 timing.\",\n    \"A pre-April-10 reveal would require an extraordinary scheduling change or a leak, for which there is no current evidence.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Official Cannes messaging points to a mid-April reveal for 2026, making pre-April-10 publication unlikely. While a rare earlier reveal occurred in 2025 (April 10), that single data point is insufficient to rewrite the baseline. The current signals imply a low-but-not-zero chance of an earlier reveal if extraordinary circumstances arise.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.15,\n      \"basis\": \"Reference class: probabilities of pre-April-10 announcements given official statements emphasize mid-April, with a rare historical exception (April 10, 2025). The anchor reflects a cautious base rate to calibrate updates.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Official announcement window is mid-April (not early April)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Festival communications specify a mid-April press conference for unveiling, which generally implies the official selection is announced after April 10. This is the dominant signal reducing the chance of a pre-April-10 publication.\"\n      },\n      {\n        \"factor\": \"Past precedent: 2025 announcement occurred on April 10\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"While a 2025 April 10 reveal shows the window can include that date, it does not establish a pattern for earlier announcements; it serves as a historical data point rather than a predictor.\"\n      },\n      {\n        \"factor\": \"No explicit official 2026 date published yet\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Lack of a fixed date aligns with the stated mid-April window but does not indicate earlier timing; provides context without shifting probability.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The strong update toward a mid-April window dominates the weak, neutral signals. Calibrating with a cautious anchor around 15%, the resulting probability area centers around 12%, with a roughly 6–20% uncertainty range to accommodate rare exceptions or last-minute schedule changes. Calibration notes: as more official statements surface, update should push probability further downward if the mid-April window remains the explicit plan; otherwise, adjust upward if an earlier date is announced.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.06, 0.2 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.04826672075463282,
+      "range" : [ 0.03, 0.12 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.03225806451612902,
+    "raw-posterior" : 0.0016869989543394897,
+    "capped" : true,
+    "prior" : 0.25,
+    "factors" : [ {
+      "name" : "Historical timing pattern (April 10, 2025 announcement)",
+      "p-yes" : 0.22,
+      "p-no" : 0.78,
+      "bf" : 0.28205128205128205
+    }, {
+      "name" : "FAQ describes mid-April timing for Official Selection announcements",
+      "p-yes" : 0.2,
+      "p-no" : 0.8,
+      "bf" : 0.25
+    }, {
+      "name" : "No explicit official 2026 announcement date published yet",
+      "p-yes" : 0.5,
+      "p-no" : 0.5,
+      "bf" : 1.0
+    }, {
+      "name" : "Official announcement window is mid-April (not early April)",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Past precedent: 2025 announcement occurred on April 10",
+      "p-yes" : 0.55,
+      "p-no" : 0.45,
+      "bf" : 1.2222222222222223
+    }, {
+      "name" : "Official Cannes press conference timing indicates mid-April unveiling",
+      "p-yes" : 0.15,
+      "p-no" : 0.85,
+      "bf" : 0.17647058823529413
+    }, {
+      "name" : "Historical precedent of announcements around mid-April (including April 10, 2025)",
+      "p-yes" : 0.5,
+      "p-no" : 0.5,
+      "bf" : 1.0
+    } ]
+  },
+  "question" : "Will the Cannes Film Festival publish its 2026 official selection before April 10, 2026?",
+  "probability" : 0.03,
+  "summary" : [ "Cannes has signaled mid-April 2026 timing for the Official Selection announcement, reducing the likelihood of a pre-April 10 publication.", "Past precedent shows some years with April 10 announcements, but the explicit mid-April window makes earlier disclosure less probable.", "The ensemble estimate (5%) is too high given the timing commitments; a calibrated probability around a few percent is warranted, with a nonzero but small chance of an earlier reveal." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.05,
+    "critique_assessment" : "Objections regarding mid-April timing are valid and indicate downward pressure on the pre-April 10 likelihood; historical data shows both mid-April clustering and rare earlier occurrences.",
+    "adjustment" : "Adjusted from 0.05 to 0.03 to reflect explicit mid-April timing and historical precedent, while preserving a low but nonzero chance of an earlier reveal (range 1% to 7%)."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : null,
+      "reference-class" : null,
+      "sources" : [ ],
+      "confidence" : "low"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Historical timing pattern (April 10, 2025 announcement)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The Official Selection for 2025 was announced on April 10, 2025, suggesting announcements commonly cluster around that date and making an earlier publication before April 10, 2026 less likely. (sources: turn1search5, turn1search4)"
+      }, {
+        "name" : "FAQ describes mid-April timing for Official Selection announcements",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Festival FAQs indicate the Official Selection is announced in mid-April, a window that typically post-dates April 10. (source: turn1search1)"
+      }, {
+        "name" : "No explicit official 2026 announcement date published yet",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "While 2026 submission is open and the process appears to follow a similar pattern, there is no publicly fixed date for the 2026 Official Selection announcement as of now. (source: turn2search0)"
+      }, {
+        "name" : "Official announcement window is mid-April (not early April)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Festival communications state the Official Selection will be unveiled at a press conference in mid-April in Paris, not before April 10. (sources: turn1search0, turn1search2)"
+      }, {
+        "name" : "Past precedent: 2025 announcement occurred on April 10",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "The 2025 Official Selection was unveiled on April 10, 2025, showing that an early-April date is possible in this cycle. (sources: turn1search5, turn1search0)"
+      }, {
+        "name" : "Official Cannes press conference timing indicates mid-April unveiling",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Cannes explicitly states that the Official Selection will be unveiled at a press conference held in mid-April 2026, which is typically after April 10, so the probability of publication before April 10 is reduced. ([festival-cannes.com](https://www.festival-cannes.com/en/press/programme/?utm_source=openai))"
+      }, {
+        "name" : "Historical precedent of announcements around mid-April (including April 10, 2025)",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Past coverage shows a lineup announced around mid-April (e.g., April 10, 2025), indicating timing around that window is possible but not guaranteed to be earlier than April 10. ([theguardian.com](https://www.theguardian.com/film/2025/apr/10/scarlett-johansson-paul-mescal-and-josh-oconnor-set-for-cannes-2025-as-lineup-announced?utm_source=openai))"
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "high",
+  "range" : [ 0.01, 0.07 ],
+  "synthesis" : "The strongest objection is Cannes' explicit mid-April timing, which lowers the chance of a pre-April 10 announcement. While an April 10 reveal has occurred before, the official timing pattern suggests only a small possibility of earlier publication, justifying a downward adjustment from 5% to about 3%."
+}

@@ -1,0 +1,229 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.01,
+      "narrative" : "All available signals point away from an April 10 publication; the official selection is planned for mid-April with historical precedence and procedural timelines reinforcing a post-April-10 window. The Bayesian posterior is near-zero (about 1%), yielding a narrow calibration range around 1%.",
+      "summary" : [ "Press conference timing targets mid-April, after April 10, making an early publication unlikely.", "Historical pattern (2025) shows mid-April announcements; pre-April 10 disclosures are rare.", "Submission deadlines and standard festival scheduling further compress the window, reducing chances of an April 10 pre-release." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.15,
+          "basis" : "reference class is Cannes Official Selection announcements; historically, pre-April-10 disclosures are rare and mid-April is the typical window, so a conservative pre-April base-rate around 15% is plausible before applying current-year updates."
+        },
+        "factor_updates" : [ {
+          "factor" : "Mid-April press conference timing",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Festival communications indicate the Official Selection will be unveiled at a mid-April press conference in Paris, which is after April 10."
+        }, {
+          "factor" : "Historical pattern: 2025 mid-April announcement",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "The 2025 pattern reinforces a mid-April window and makes an early April release unlikely."
+        }, {
+          "factor" : "Official submission deadlines compress timeline",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Feature submission deadlines and required post-deadline documentation imply decisions are communicated after the submission window, not before April 10."
+        }, {
+          "factor" : "Jury appointment/news cycle",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Jury announcements are part of the communications cycle but do not directly determine the selection date."
+        } ],
+        "synthesis_rationale" : "Starting from a conservative anchor based on historical patterns, the factors collectively push probability downward. Because the factors are correlated (timing signals and submission cadence reinforce a late window), a simple aggregation would overstate the edge; the Bayesian update yields a robust near-zero posterior, reflected in a 1% probability with a tight range. Calibration accounts for residual uncertainty and possible last-minute disclosures."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.01,\n  \"range_low\": 0.01,\n  \"range_high\": 0.03,\n  \"summary\": [\n    \"Press conference timing targets mid-April, after April 10, making an early publication unlikely.\",\n    \"Historical pattern (2025) shows mid-April announcements; pre-April 10 disclosures are rare.\",\n    \"Submission deadlines and standard festival scheduling further compress the window, reducing chances of an April 10 pre-release.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"All available signals point away from an April 10 publication; the official selection is planned for mid-April with historical precedence and procedural timelines reinforcing a post-April-10 window. The Bayesian posterior is near-zero (about 1%), yielding a narrow calibration range around 1%.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.15,\n      \"basis\": \"reference class is Cannes Official Selection announcements; historically, pre-April-10 disclosures are rare and mid-April is the typical window, so a conservative pre-April base-rate around 15% is plausible before applying current-year updates.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Mid-April press conference timing\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Festival communications indicate the Official Selection will be unveiled at a mid-April press conference in Paris, which is after April 10.\"\n      },\n      {\n        \"factor\": \"Historical pattern: 2025 mid-April announcement\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"The 2025 pattern reinforces a mid-April window and makes an early April release unlikely.\"\n      },\n      {\n        \"factor\": \"Official submission deadlines compress timeline\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Feature submission deadlines and required post-deadline documentation imply decisions are communicated after the submission window, not before April 10.\"\n      },\n      {\n        \"factor\": \"Jury appointment/news cycle\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Jury announcements are part of the communications cycle but do not directly determine the selection date.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a conservative anchor based on historical patterns, the factors collectively push probability downward. Because the factors are correlated (timing signals and submission cadence reinforce a late window), a simple aggregation would overstate the edge; the Bayesian update yields a robust near-zero posterior, reflected in a 1% probability with a tight range. Calibration accounts for residual uncertainty and possible last-minute disclosures.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.03 ]
+    }, {
+      "probability" : 0.01,
+      "narrative" : "Starting from a baseline anchored to Cannes' historical mid-April timing, multiple strong downward factors push the probability of an April 10 or earlier publication toward near-zero. The combination of scheduling signals and procedural timelines yields an estimated 1% posterior, with modest residual uncertainty.",
+      "summary" : [ "Press conference timing places the Official Selection unveiling in mid-April 2026, after April 10, making an early disclosure unlikely.", "Historical pattern shows mid-April announcements rather than early-April releases, reinforcing the low odds of a before-April-10 publication.", "Submission deadlines and post-deadline documentation imply decisions occur after the window, not before April 10.", "Jury announcements are part of the cycle but do not determine the Official Selection date." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.1,
+          "basis" : "reference class: historical likelihood that Cannes announces Official Selection in mid-April, not before April 10"
+        },
+        "factor_updates" : [ {
+          "factor" : "Mid-April press conference timing",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Festival communications specify the Official Selection will be unveiled at a mid-April press conference in Paris, which is after April 10."
+        }, {
+          "factor" : "Historical pattern: mid-April announcements",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "In 2025 the Official Selection was announced in mid-April, not early April; this pattern reduces likelihood of an April 10 cutoff being met."
+        }, {
+          "factor" : "Official submission deadlines compress timeline for selection decisions",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Feature submission deadlines (March 13 for features) and required post-deadline documentation imply decisions are communicated after the submission window, not before April 10."
+        }, {
+          "name" : "Jury appointment/news cycle (Park Chan-wook as jury president)",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Jury announcements are part of Cannes' communications cycle but do not directly determine the Official Selection announcement date."
+        } ],
+        "synthesis_rationale" : "The anchor reflects a plausible baseline from historical timing. The three downward updates are strong-to-moderate and plausibly correlated with the same mid-April window, while the neutral jury signal adds little to the date prediction. Taken together, these updates yield a markedly lower posterior probability, here calibrated to 1%, with acknowledgment of residual uncertainty due to potential unexplained scheduling shifts."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.01,\n  \"range_low\": 0.01,\n  \"range_high\": 0.03,\n  \"summary\": [\n    \"Press conference timing places the Official Selection unveiling in mid-April 2026, after April 10, making an early disclosure unlikely.\",\n    \"Historical pattern shows mid-April announcements rather than early-April releases, reinforcing the low odds of a before-April-10 publication.\",\n    \"Submission deadlines and post-deadline documentation imply decisions occur after the window, not before April 10.\",\n    \"Jury announcements are part of the cycle but do not determine the Official Selection date.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Starting from a baseline anchored to Cannes' historical mid-April timing, multiple strong downward factors push the probability of an April 10 or earlier publication toward near-zero. The combination of scheduling signals and procedural timelines yields an estimated 1% posterior, with modest residual uncertainty.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.10,\n      \"basis\": \"reference class: historical likelihood that Cannes announces Official Selection in mid-April, not before April 10\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Mid-April press conference timing\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Festival communications specify the Official Selection will be unveiled at a mid-April press conference in Paris, which is after April 10.\"\n      },\n      {\n        \"factor\": \"Historical pattern: mid-April announcements\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"In 2025 the Official Selection was announced in mid-April, not early April; this pattern reduces likelihood of an April 10 cutoff being met.\"\n      },\n      {\n        \"factor\": \"Official submission deadlines compress timeline for selection decisions\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Feature submission deadlines (March 13 for features) and required post-deadline documentation imply decisions are communicated after the submission window, not before April 10.\"\n      },\n      {\n        \"name\": \"Jury appointment/news cycle (Park Chan-wook as jury president)\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Jury announcements are part of Cannes' communications cycle but do not directly determine the Official Selection announcement date.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The anchor reflects a plausible baseline from historical timing. The three downward updates are strong-to-moderate and plausibly correlated with the same mid-April window, while the neutral jury signal adds little to the date prediction. Taken together, these updates yield a markedly lower posterior probability, here calibrated to 1%, with acknowledgment of residual uncertainty due to potential unexplained scheduling shifts.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.03 ]
+    }, {
+      "probability" : 0.04,
+      "narrative" : "Anchoring on Cannes’ historical pattern and official timing indicates a low probability of pre-April-10 publication. Each factor pushes the likelihood downward, yielding a small probability with narrow uncertainty around a mid-April window or later.",
+      "summary" : [ "Mid-April press conference timing makes April 10 publication unlikely.", "Historical pattern shows Official Selection announcements typically occur in mid-April.", "Submission deadlines imply decisions are communicated after the submission window, not before April 10.", "Jury appointment/news cycle is a weak signal and not decisive about timing." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.12,
+          "basis" : "Reference class is Cannes Official Selection announcements; early pre-April-10 releases are not part of recent precedent; anchor uses historical mid-April timing as baseline and treats pre-April-10 as rare."
+        },
+        "factor_updates" : [ {
+          "factor" : "Mid-April press conference timing for the Official Selection",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Festival communications indicate the official selection will be unveiled at a press conference in mid-April, after April 10."
+        }, {
+          "factor" : "Historical pattern: Official Selection announcements occur in mid-April (not before Apr 10)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Past years show mid-April timing; pre-April-10 is atypical."
+        }, {
+          "factor" : "Official submission deadlines compress timeline for selection decisions",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Feature submission deadlines and required post-deadline docs imply decisions are communicated after the submission window, not before April 10."
+        }, {
+          "factor" : "Jury appointment/news cycle (Park Chan-wook as jury president)",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Jury announcements exist but do not determine Official Selection date."
+        } ],
+        "synthesis_rationale" : "The three downward updates from strong to moderate align to push probability downward from the anchor; the neutral factor adds no directional change. Calibrated weighting favors late-April or mid-April timing; the range captures uncertainty around rare deviations. The assessment remains conservative, given no explicit evidence for an early pre-April-10 reveal."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.04,\n  \"range_low\": 0.02,\n  \"range_high\": 0.08,\n  \"summary\": [\n    \"Mid-April press conference timing makes April 10 publication unlikely.\",\n    \"Historical pattern shows Official Selection announcements typically occur in mid-April.\",\n    \"Submission deadlines imply decisions are communicated after the submission window, not before April 10.\",\n    \"Jury appointment/news cycle is a weak signal and not decisive about timing.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Anchoring on Cannes’ historical pattern and official timing indicates a low probability of pre-April-10 publication. Each factor pushes the likelihood downward, yielding a small probability with narrow uncertainty around a mid-April window or later.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.12,\n      \"basis\": \"Reference class is Cannes Official Selection announcements; early pre-April-10 releases are not part of recent precedent; anchor uses historical mid-April timing as baseline and treats pre-April-10 as rare.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Mid-April press conference timing for the Official Selection\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Festival communications indicate the official selection will be unveiled at a press conference in mid-April, after April 10.\"\n      },\n      {\n        \"factor\": \"Historical pattern: Official Selection announcements occur in mid-April (not before Apr 10)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Past years show mid-April timing; pre-April-10 is atypical.\"\n      },\n      {\n        \"factor\": \"Official submission deadlines compress timeline for selection decisions\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Feature submission deadlines and required post-deadline docs imply decisions are communicated after the submission window, not before April 10.\"\n      },\n      {\n        \"factor\": \"Jury appointment/news cycle (Park Chan-wook as jury president)\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Jury announcements exist but do not determine Official Selection date.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The three downward updates from strong to moderate align to push probability downward from the anchor; the neutral factor adds no directional change. Calibrated weighting favors late-April or mid-April timing; the range captures uncertainty around rare deviations. The assessment remains conservative, given no explicit evidence for an early pre-April-10 reveal.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.02, 0.08 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.015941422574838698,
+      "range" : [ 0.01, 0.04 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.01098901098901099,
+    "raw-posterior" : 3.200109994539149E-10,
+    "capped" : true,
+    "prior" : 0.1,
+    "factors" : [ {
+      "name" : "Press conference timing for the Official Selection (mid-April 2026)",
+      "p-yes" : 0.05,
+      "p-no" : 0.92,
+      "bf" : 0.05434782608695652
+    }, {
+      "name" : "Historical pattern: Official Selection announcements occur in mid-April (not before Apr 10)",
+      "p-yes" : 0.04,
+      "p-no" : 0.95,
+      "bf" : 0.04210526315789474
+    }, {
+      "name" : "Mid-April press conference timing for the Official Selection",
+      "p-yes" : 0.05,
+      "p-no" : 0.92,
+      "bf" : 0.05434782608695652
+    }, {
+      "name" : "Historical pattern of mid-April announcements (2025 precedent)",
+      "p-yes" : 0.04,
+      "p-no" : 0.95,
+      "bf" : 0.04210526315789474
+    }, {
+      "name" : "Official submission deadlines compress timeline for selection decisions",
+      "p-yes" : 0.08,
+      "p-no" : 0.92,
+      "bf" : 0.08695652173913043
+    }, {
+      "name" : "Jury appointment/news cycle (Park Chan-wook as jury president)",
+      "p-yes" : 0.25,
+      "p-no" : 0.35,
+      "bf" : 0.7142857142857143
+    }, {
+      "name" : "Historical timing pattern for Official Selection announcements",
+      "p-yes" : 0.07,
+      "p-no" : 0.93,
+      "bf" : 0.07526881720430108
+    }, {
+      "name" : "Observed timeline variability in 2025 where Official Selection finalized into May",
+      "p-yes" : 0.1,
+      "p-no" : 0.85,
+      "bf" : 0.11764705882352942
+    } ]
+  },
+  "question" : "Will the Cannes Film Festival publish its 2026 official selection before April 10, 2026?",
+  "probability" : 0.05,
+  "summary" : [ "Ensemble aggregate is very low at 2%, implying a near-zero baseline probability.", "Adversarial objections highlight plausible channels for earlier publication (embargo breaches, accelerated scheduling).", "Cannes publicly indicates mid-April timing; historical patterns show announcements around Apr 12-16, with rare exceptions before Apr 10.", "Given non-zero risk, a modest upward calibration to about 5% is warranted, while maintaining a still-low overall probability." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.02,
+    "critique_assessment" : "Objections reveal plausible, non-implausible pathways for earlier disclosure; however they do not overturn the historical timing pattern and stated plan, so risk remains small but non-negligible.",
+    "adjustment" : "Adjusted upward from 0.02 to 0.05 to reflect non-zero risk of premature publication due to embargo breaches or schedule shifts; no evidence suggests plausibility of a breach that would make the date before Apr 10 virtually certain."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : null,
+      "reference-class" : null,
+      "sources" : [ ],
+      "confidence" : "low"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Press conference timing for the Official Selection (mid-April 2026)",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Festival communications indicate the official selection will be unveiled at a press conference held in mid-April in Paris, which is after April 10."
+      }, {
+        "name" : "Historical pattern: Official Selection announcements occur in mid-April (not before Apr 10)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "In 2025 the Official Selection was announced in mid-April, not early April; this pattern reduces likelihood of an April 10 cutoff being met."
+      }, {
+        "name" : "Mid-April press conference timing for the Official Selection",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Festival programming pages state the Official Selection will be unveiled at a mid-April press conference in Paris, making a publication before April 10 unlikely."
+      }, {
+        "name" : "Historical pattern of mid-April announcements (2025 precedent)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The Cannes FAQ notes the 2025 Official Selection was announced in mid-April, suggesting 2026 will likely follow a similar window."
+      }, {
+        "name" : "Official submission deadlines compress timeline for selection decisions",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Feature submission deadlines (March 13 for features) and required post-deadline documentation imply decisions are communicated after the submission window, not before April 10."
+      }, {
+        "name" : "Jury appointment/news cycle (Park Chan-wook as jury president)",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Jury announcements are part of Cannes' communications cycle but do not directly determine the Official Selection announcement date."
+      }, {
+        "name" : "Historical timing pattern for Official Selection announcements",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Festival communications indicate the 2025 Official Selection was announced at a mid-April press conference, making an announcement before April 10, 2026 unlikely."
+      }, {
+        "name" : "Observed timeline variability in 2025 where Official Selection finalized into May",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The 78th Cannes Official Selection was reported as complete by May 8, 2025, illustrating that even when mid-April is targeted, finalization can extend into early May, reducing the odds of an April 10 pre-announcement."
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "low",
+  "range" : [ 0.02, 0.08 ],
+  "synthesis" : "The baseline ensemble places the likelihood of an April 10 publication well below 10%. While embargo/breach risks and strategic timing could push earlier, Cannes' stated mid-April target and historical patterns keep the chance small; thus a cautious uplift to around 5% is justified."
+}

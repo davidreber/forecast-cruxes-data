@@ -1,0 +1,330 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.81,
+      "narrative" : "Recent record-breaking public auctions at top houses, including Klimt Lederer (Nov 2025) and Magritte (Nov 2024), indicate strong capacity for $100M+ paintings. After updating from the base-rate evidence, the posterior probability rises to 0.81, though macro risks and rare outliers keep the range uncertain within a broad band.",
+      "summary" : [ "Strong precedent of public-auction paintings reaching or exceeding $100M at Christie’s and Sotheby’s (e.g., Picasso 2010, Salvator Mundi 2017, Warhol 2022, Klimt Lederer 2025).", "Klimt Lederer portrait sold for $236.4M at Sotheby’s in November 2025 demonstrates peak demand for top-tier works and uplifts the odds of another $100M+ sale before May 1, 2026.", "Magritte’s $121.2M sale at Christie’s in November 2024 confirms durable capacity for marquee works to cross the $100M threshold.", "Horizon includes upside from three-house competition and global bidding reach, tempered by macro headwinds that could dampen ultra-high-ticket art purchases.", "Bayesian posterior (0.81) reflects strong corroborating evidence and calibrates higher than the initial anchor, with acknowledgment of potential data-artifact and market-cycle risks." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.35,
+          "basis" : "Baseline probability for a $100M+ painting sale within the reference class of marquee public-art auctions at Christie’s, Sotheby’s, or Phillips; chosen to anchor the Bayesian updating before incorporating strong late-2024 to 2025 sale evidence."
+        },
+        "factor_updates" : [ {
+          "factor" : "Recent marquee public-auction records at Christie’s and Sotheby’s",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Public sales exceeding $100 million at Christie’s and Sotheby’s in 2024–25 demonstrate sustained high-end demand."
+        }, {
+          "factor" : "Klimt, Portrait of Elisabeth Lederer sold for $236.4M",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "A recent public auction record for a painting at a leading house signals very strong demand for top-tier works and raises the odds of another $100M+ sale before May 1, 2026."
+        }, {
+          "factor" : "Magritte, $121.2M at Christie’s (Nov 2024)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Demonstrates sustained price power for marquee works and reinforces market capacity to reach or exceed $100M in public auctions."
+        }, {
+          "factor" : "Three-house competition and marquee catalogues",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Active bidding dynamics among Christie’s, Sotheby’s, and Phillips heighten price discovery for top-tier works."
+        }, {
+          "factor" : "Macro headwinds and potential cooling of luxury markets",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Macro conditions could dampen risk appetite and bid activity for ultra-high-ticket art."
+        }, {
+          "factor" : "Possible data artifact/outliers",
+          "direction" : "down",
+          "magnitude" : "weak",
+          "rationale" : "A few extreme outliers can inflate near-term probabilities; calibration accounts for that."
+        } ],
+        "synthesis_rationale" : "The final 0.81 posterior integrates strong corroborating sale evidence with moderate downward pressures for macro headwinds and potential data artifacts; factors are treated with appropriate caution regarding correlations."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.81,\n  \"range_low\": 0.70,\n  \"range_high\": 0.90,\n  \"summary\": [\n    \"Strong precedent of public-auction paintings reaching or exceeding $100M at Christie’s and Sotheby’s (e.g., Picasso 2010, Salvator Mundi 2017, Warhol 2022, Klimt Lederer 2025).\",\n    \"Klimt Lederer portrait sold for $236.4M at Sotheby’s in November 2025 demonstrates peak demand for top-tier works and uplifts the odds of another $100M+ sale before May 1, 2026.\",\n    \"Magritte’s $121.2M sale at Christie’s in November 2024 confirms durable capacity for marquee works to cross the $100M threshold.\",\n    \"Horizon includes upside from three-house competition and global bidding reach, tempered by macro headwinds that could dampen ultra-high-ticket art purchases.\",\n    \"Bayesian posterior (0.81) reflects strong corroborating evidence and calibrates higher than the initial anchor, with acknowledgment of potential data-artifact and market-cycle risks.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Recent record-breaking public auctions at top houses, including Klimt Lederer (Nov 2025) and Magritte (Nov 2024), indicate strong capacity for $100M+ paintings. After updating from the base-rate evidence, the posterior probability rises to 0.81, though macro risks and rare outliers keep the range uncertain within a broad band.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.35,\n      \"basis\": \"Baseline probability for a $100M+ painting sale within the reference class of marquee public-art auctions at Christie’s, Sotheby’s, or Phillips; chosen to anchor the Bayesian updating before incorporating strong late-2024 to 2025 sale evidence.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Recent marquee public-auction records at Christie’s and Sotheby’s\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Public sales exceeding $100 million at Christie’s and Sotheby’s in 2024–25 demonstrate sustained high-end demand.\"\n      },\n      {\n        \"factor\": \"Klimt, Portrait of Elisabeth Lederer sold for $236.4M\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"A recent public auction record for a painting at a leading house signals very strong demand for top-tier works and raises the odds of another $100M+ sale before May 1, 2026.\"\n      },\n      {\n        \"factor\": \"Magritte, $121.2M at Christie’s (Nov 2024)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Demonstrates sustained price power for marquee works and reinforces market capacity to reach or exceed $100M in public auctions.\"\n      },\n      {\n        \"factor\": \"Three-house competition and marquee catalogues\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Active bidding dynamics among Christie’s, Sotheby’s, and Phillips heighten price discovery for top-tier works.\"\n      },\n      {\n        \"factor\": \"Macro headwinds and potential cooling of luxury markets\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Macro conditions could dampen risk appetite and bid activity for ultra-high-ticket art.\"\n      },\n      {\n        \"factor\": \"Possible data artifact/outliers\",\n        \"direction\": \"down\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"A few extreme outliers can inflate near-term probabilities; calibration accounts for that.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The final 0.81 posterior integrates strong corroborating sale evidence with moderate downward pressures for macro headwinds and potential data artifacts; factors are treated with appropriate caution regarding correlations.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.7, 0.9 ]
+    }, {
+      "probability" : 0.81,
+      "narrative" : "Recent record-setting public-auction sales at major houses indicate strong ongoing demand for paintings at or above $100 million. When combined with a history of similar outcomes, the updated probability of a $100M+ public sale before May 1, 2026 is 0.81, with a broad but plausible uncertainty range reflecting macro risks.",
+      "summary" : [ "Klimt, Portrait of Elisabeth Lederer sold for $236.4M at Sotheby’s New York in November 2025, demonstrating current market capacity for top-tier paintings at public auction.", "Magritte’s Magritte painting sold for $121.2M at Christie’s in November 2024, reinforcing sustained high-end demand for marquee works.", "Historical precedent shows multiple $100M+ public-auction paintings at Christie’s and Sotheby’s (e.g., Picasso 2010, Salvator Mundi 2017, Warhol 2022) creating a high base rate for such outcomes.", "A Bayesian update together with these precedents yields a posterior probability of 0.81, though macro headwinds could modestly temper future ultra-high-end sales." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.295,
+          "basis" : "Initial forecast anchor drawn from prior forecasts of a $100M+ public auction sale at Christie’s/Sotheby’s/Phillips before May 1, 2026 (reference class: marquee high-end auctions)."
+        },
+        "factor_updates" : [ {
+          "factor" : "Klimt, Portrait of Elisabeth Lederer sold for $236.4M at Sotheby’s (Nov 2025)",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "A recent record-setting sale demonstrates the market's capacity to sustain multiple-digit public auctions, elevating the probability of another $100M+ event."
+        }, {
+          "factor" : "Magritte painting sold for $121.2M at Christie's (Nov 2024)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Shows continued price power for marquee works and supports the robustness of the high-end auction market."
+        }, {
+          "factor" : "Historical precedent of multiple $100M+ public-auction paintings at Christie’s/Sotheby’s",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Past occurrences (Picasso 2010, Salvator Mundi 2017, Warhol 2022) establish a high ceiling and recurring likelihood for such outcomes."
+        }, {
+          "factor" : "Macro headwinds and potential cooling of luxury markets",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Macro conditions could temper ultra-high-end bidding, providing a counterweight to the upside."
+        } ],
+        "synthesis_rationale" : "Starting from a modest anchor (0.295), the strong recent records in 2024–2025 markedly shift probability upward due to persistent demand and liquidity for top-tier paintings at Christie’s/Sotheby’s. However, the assessment integrates the dampening effect of macro headwinds, yielding a calibrated posterior of 0.81 with an uncertainty band spanning roughly 0.72–0.90 to reflect residual risk and potential data variability."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.81,\n  \"range_low\": 0.72,\n  \"range_high\": 0.90,\n  \"summary\": [\n    \"Klimt, Portrait of Elisabeth Lederer sold for $236.4M at Sotheby’s New York in November 2025, demonstrating current market capacity for top-tier paintings at public auction.\",\n    \"Magritte’s Magritte painting sold for $121.2M at Christie’s in November 2024, reinforcing sustained high-end demand for marquee works.\",\n    \"Historical precedent shows multiple $100M+ public-auction paintings at Christie’s and Sotheby’s (e.g., Picasso 2010, Salvator Mundi 2017, Warhol 2022) creating a high base rate for such outcomes.\",\n    \"A Bayesian update together with these precedents yields a posterior probability of 0.81, though macro headwinds could modestly temper future ultra-high-end sales.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Recent record-setting public-auction sales at major houses indicate strong ongoing demand for paintings at or above $100 million. When combined with a history of similar outcomes, the updated probability of a $100M+ public sale before May 1, 2026 is 0.81, with a broad but plausible uncertainty range reflecting macro risks.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.295,\n      \"basis\": \"Initial forecast anchor drawn from prior forecasts of a $100M+ public auction sale at Christie’s/Sotheby’s/Phillips before May 1, 2026 (reference class: marquee high-end auctions).\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Klimt, Portrait of Elisabeth Lederer sold for $236.4M at Sotheby’s (Nov 2025)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"A recent record-setting sale demonstrates the market's capacity to sustain multiple-digit public auctions, elevating the probability of another $100M+ event.\"\n      },\n      {\n        \"factor\": \"Magritte painting sold for $121.2M at Christie's (Nov 2024)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Shows continued price power for marquee works and supports the robustness of the high-end auction market.\"\n      },\n      {\n        \"factor\": \"Historical precedent of multiple $100M+ public-auction paintings at Christie’s/Sotheby’s\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Past occurrences (Picasso 2010, Salvator Mundi 2017, Warhol 2022) establish a high ceiling and recurring likelihood for such outcomes.\"\n      },\n      {\n        \"factor\": \"Macro headwinds and potential cooling of luxury markets\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Macro conditions could temper ultra-high-end bidding, providing a counterweight to the upside.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a modest anchor (0.295), the strong recent records in 2024–2025 markedly shift probability upward due to persistent demand and liquidity for top-tier paintings at Christie’s/Sotheby’s. However, the assessment integrates the dampening effect of macro headwinds, yielding a calibrated posterior of 0.81 with an uncertainty band spanning roughly 0.72–0.90 to reflect residual risk and potential data variability.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.72, 0.9 ]
+    }, {
+      "probability" : 0.95,
+      "narrative" : "Recent 100M+ public-auction records (Klimt Lederer in 2025 and Magritte in 2024) plus a strong history of 100M+ sales at Christie's and Sotheby’s push the odds toward a 100M+ public sale before May 2026. While macro risks exist, the preponderance of high-end evidence supports a high-calibration probability, though not absolute certainty.",
+      "summary" : [ "Klimt, Portrait of Elisabeth Lederer, sold for $236.4M at Sotheby’s in November 2025, demonstrating market capacity for 100M+ public auctions by a major house within the horizon.", "Magritte’s $121.2M sale at Christie’s in November 2024 provides a corroborating datapoint that marquee works continue to command top-end prices.", "Historical precedent shows multiple 100M+ public auctions at Christie’s/Sotheby’s (Picasso 2010, Salvator Mundi 2017, Warhol 2022), supporting a high ceiling and repeatability.", "Overall market demand among ultra-high-net-worth collectors and broader bidding reach strengthens the case for at least one 100M+ public sale before May 1, 2026, though macro headwinds keep a nonzero risk." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.35,
+          "basis" : "Reference class is high-end public-art auctions at Christie’s/Sotheby’s/Phillips; the initial conservative anchor (~29.5% from the Metaculus forecast) is used as a baseline prior, but new 2024–2025 data justify a substantial upward revision."
+        },
+        "factor_updates" : [ {
+          "factor" : "Klimt, Portrait of Elisabeth Lederer sold for $236.4M at Sotheby’s (Nov 2025)",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "A concrete contemporary datapoint exceeding 100M at a top house within the window directly boosts the probability of another 100M+ public sale before May 1, 2026."
+        }, {
+          "factor" : "Magritte, painting sold for $121.2M at Christie’s (Nov 2024)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Demonstrates ongoing market power for marquee works and capacity to sustain 100M+ outcomes in recent years."
+        }, {
+          "factor" : "Historical precedent of 100M+ public auctions at Christie’s/Sotheby’s (Picasso 2010, Salvator Mundi 2017, Warhol 2022)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "A track record of multiple 100M+ sales establishes a high ceiling and repeatability in this reference class."
+        }, {
+          "factor" : "Three-house competition and marquee catalogues",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Active bidding dynamics among the top houses increase price discovery and the odds of a 100M+ result."
+        }, {
+          "factor" : "Ultra-high-net-worth demand and liquidity",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Sustained UHNW appetite for tangible, high-value assets supports continued capacity for top-end auctions."
+        }, {
+          "factor" : "Macro-economic headwinds and potential cooling",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "If macro conditions deteriorate, bidding in ultra-high-ticket art could soften, tempering the probability somewhat."
+        } ],
+        "synthesis_rationale" : "The strongest evidence comes from the Klimt Lederer 2025 sale, which materially raises the ceiling for 100M+ results. Combined with prior 2024–2022 records and a robust demand pool, this supports a high-probability forecast, even after accounting for macro risks. The final probability (0.95) reflects a high-confidence calibration with a wide but not absolute range, acknowledging potential data outliers and economic volatility."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.95,\n  \"range_low\": 0.85,\n  \"range_high\": 0.99,\n  \"summary\": [\n    \"Klimt, Portrait of Elisabeth Lederer, sold for $236.4M at Sotheby’s in November 2025, demonstrating market capacity for 100M+ public auctions by a major house within the horizon.\",\n    \"Magritte’s $121.2M sale at Christie’s in November 2024 provides a corroborating datapoint that marquee works continue to command top-end prices.\",\n    \"Historical precedent shows multiple 100M+ public auctions at Christie’s/Sotheby’s (Picasso 2010, Salvator Mundi 2017, Warhol 2022), supporting a high ceiling and repeatability.\",\n    \"Overall market demand among ultra-high-net-worth collectors and broader bidding reach strengthens the case for at least one 100M+ public sale before May 1, 2026, though macro headwinds keep a nonzero risk.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Recent 100M+ public-auction records (Klimt Lederer in 2025 and Magritte in 2024) plus a strong history of 100M+ sales at Christie's and Sotheby’s push the odds toward a 100M+ public sale before May 2026. While macro risks exist, the preponderance of high-end evidence supports a high-calibration probability, though not absolute certainty.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.35,\n      \"basis\": \"Reference class is high-end public-art auctions at Christie’s/Sotheby’s/Phillips; the initial conservative anchor (~29.5% from the Metaculus forecast) is used as a baseline prior, but new 2024–2025 data justify a substantial upward revision.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Klimt, Portrait of Elisabeth Lederer sold for $236.4M at Sotheby’s (Nov 2025)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"A concrete contemporary datapoint exceeding 100M at a top house within the window directly boosts the probability of another 100M+ public sale before May 1, 2026.\"\n      },\n      {\n        \"factor\": \"Magritte, painting sold for $121.2M at Christie’s (Nov 2024)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Demonstrates ongoing market power for marquee works and capacity to sustain 100M+ outcomes in recent years.\"\n      },\n      {\n        \"factor\": \"Historical precedent of 100M+ public auctions at Christie’s/Sotheby’s (Picasso 2010, Salvator Mundi 2017, Warhol 2022)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A track record of multiple 100M+ sales establishes a high ceiling and repeatability in this reference class.\"\n      },\n      {\n        \"factor\": \"Three-house competition and marquee catalogues\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Active bidding dynamics among the top houses increase price discovery and the odds of a 100M+ result.\"\n      },\n      {\n        \"factor\": \"Ultra-high-net-worth demand and liquidity\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Sustained UHNW appetite for tangible, high-value assets supports continued capacity for top-end auctions.\"\n      },\n      {\n        \"factor\": \"Macro-economic headwinds and potential cooling\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"If macro conditions deteriorate, bidding in ultra-high-ticket art could soften, tempering the probability somewhat.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The strongest evidence comes from the Klimt Lederer 2025 sale, which materially raises the ceiling for 100M+ results. Combined with prior 2024–2022 records and a robust demand pool, this supports a high-probability forecast, even after accounting for macro risks. The final probability (0.95) reflects a high-confidence calibration with a wide but not absolute range, acknowledging potential data outliers and economic volatility.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.85, 0.99 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.8752451175861224,
+      "range" : [ 0.81, 0.95 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.8108108108108109,
+    "raw-posterior" : 0.9998146501995347,
+    "capped" : true,
+    "prior" : 0.3,
+    "factors" : [ {
+      "name" : "Recent marquee public-auction records at Christie’s and Sotheby’s",
+      "p-yes" : 0.92,
+      "p-no" : 0.08,
+      "bf" : 11.5
+    }, {
+      "name" : "Historical base rate of 100M+ public-sale paintings at top houses",
+      "p-yes" : 0.88,
+      "p-no" : 0.12,
+      "bf" : 7.333333333333334
+    }, {
+      "name" : "Scarcity of blue-chip paintings relative to 100M+ thresholds",
+      "p-yes" : 0.8,
+      "p-no" : 0.2,
+      "bf" : 4.0
+    }, {
+      "name" : "Wealth concentration and active global collecting (e.g., major private collections transacting at high prices)",
+      "p-yes" : 0.85,
+      "p-no" : 0.15,
+      "bf" : 5.666666666666667
+    }, {
+      "name" : "Auction-house marketing, guarantees, and expanded global bidding reach",
+      "p-yes" : 0.78,
+      "p-no" : 0.22,
+      "bf" : 3.5454545454545454
+    }, {
+      "name" : "Macro-economic volatility and uncertainty",
+      "p-yes" : 0.65,
+      "p-no" : 0.35,
+      "bf" : 1.8571428571428574
+    } ]
+  },
+  "question" : "Will Christie’s, Sotheby’s, or Phillips report a public auction sale of a painting for at least US$100 million before May 1, 2026?",
+  "probability" : 0.95,
+  "summary" : [ "Klimt Lederer's Nov 2025 sale at Sotheby's for $236.4M demonstrates the market's capacity for 100M+ public paintings within the horizon.", "Historical records show multiple 100M+ public-auction paintings at Christie’s/Sotheby’s, establishing a high baseline for such outcomes.", "The horizon has already delivered the event, effectively resolving the forecast in the affirmative before May 1, 2026.", "Macro headwinds exist but do not negate the realized threshold within the target window." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.88,
+    "critique_assessment" : "Objections correctly note downward pressures, but they do not negate that a 100M+ public sale occurred within the horizon, which substantially increases the likelihood of another such sale before May 1, 2026.",
+    "adjustment" : "Raised from 0.88 to 0.95 due to the threshold breach already occurring (Klimt Lederer 2025) and corroborating high-end precedent; downward macro concerns are acknowledged but insufficient to offset the realized event."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.6316666666666667,
+      "reference-class" : "High-end public art auctions for paintings sold by Christie’s, Sotheby’s, or Phillips at or above $100 million",
+      "sources" : [ {
+        "url" : "https://www.metaculus.com/questions/42243/public-auction-sale-of-a-painting-for-at-least-us1/",
+        "claim" : "Forecasts assigned a 29.5% chance that Christie’s, Sotheby’s, or Phillips would report a public auction sale of a painting for at least US$100 million before May 1, 2026."
+      }, {
+        "url" : "https://www.bloomberg.com/news/articles/2024-11-20/magritte-sells-for-121-million-at-christie-s-and-sets-auction-record",
+        "claim" : "A Magritte painting sold for $121.2 million at Christie’s in New York in November 2024, setting an artist auction record."
+      }, {
+        "url" : "https://apnews.com/article/ef4c0b1ccb2841c078ff59756fe6d7b2",
+        "claim" : "Klimt’s Portrait of Elisabeth Lederer sold at Sotheby’s in New York in November 2025 for $236.4 million, the highest price for modern art at auction."
+      }, {
+        "url" : "https://www.sothebys.com/en/articles/the-new-york-sales-november-2025-breuer-results",
+        "claim" : "Sotheby’s November 2025 Breuer-week results highlighted Klimt Lederer’s $236.4 million sale as part of a record New York sale week."
+      }, {
+        "url" : "https://press.christies.com/christies-sells-leonardo-da-vincis-500-year",
+        "claim" : "Christie’s sold Salvator Mundi (Leonardo da Vinci) for $450,312,500, setting a new auction record for any work of art."
+      }, {
+        "url" : "https://www.christies.com/en/stories/2017-highlight-leonardo-salvator-mundi-6f32f4dd4b274ec1b0d99037a7c6d97e",
+        "claim" : "Christie’s 2017 sale of Salvator Mundi achieved $450.3 million, a historic high for art sold at auction."
+      }, {
+        "url" : "https://www.bloomberg.com/news/articles/2012-05-03/munch-s-the-scream-sets-record-fetching-120-million",
+        "claim" : "Munch’s The Scream sold for $119.9 million at Sotheby’s in 2012, a record for a work at auction."
+      }, {
+        "url" : "https://www.washingtonpost.com/style/2010/05/05/picasso-painting-sells-for-record-1065m/",
+        "claim" : "Picasso’s Nude, Green Leaves and Bust sold for $106.5 million at Christie's in 2010, a record at the time."
+      }, {
+        "url" : "https://www.theguardian.com/artanddesign/2022/may/09/andy-warhol-marilyn-monroe-portrait-auction",
+        "claim" : "Warhol's Shot Sage Blue Marilyn sold for $195 million at Christie’s in 2022, a record for a 20th-century artwork at auction."
+      }, {
+        "url" : "https://www.wsj.com/articles/klimt-cattelan-sothebys-auction-record-breuer-lauder-eb31ccbe",
+        "claim" : "Gustav Klimt’s Portrait of Elisabeth Lederer sold for $236.4 million at Sotheby’s in 2025 (modern-art auction record), illustrating continued high-end demand at major houses."
+      }, {
+        "url" : "https://www.christies.com/en/stories/2017-highlight-leonardo-salvator-mundi-6f32f4dd4b274ec1b0d99037a7c6d97e",
+        "claim" : "Leonardo da Vinci’s Salvator Mundi sold for $450,312,500 at Christie’s New York on November 15, 2017."
+      }, {
+        "url" : "https://washingtonpost.com/style/2010/05/04/picasso-painting-sells-record-1065m/",
+        "claim" : "Pablo Picasso’s Nude, Green Leaves and Bust sold for $106.5 million at Christie’s in New York (May 2010), a record at the time."
+      }, {
+        "url" : "https://www.forbes.com/sites/vannale/2015/05/11/picasso-painting-sells-for-179-million-setting-new-auction-record-giacometti-sculpture-sells-for-141-million/",
+        "claim" : "Picasso Les Femmes d’Alger (Version O) sold for $179.4 million at Christie’s in New York, May 2015."
+      }, {
+        "url" : "https://washingtonpost.com/style/2025/11/19/klimt-portrait-sothebys-auction-record/",
+        "claim" : "Gustav Klimt’s Portrait of Elisabeth Lederer sold at Sotheby’s New York for $236.4 million in November 2025, a modern-art auction record."
+      }, {
+        "url" : "https://apnews.com/article/ef4c0b1ccb2841c078ff59756fe6d7b2",
+        "claim" : "AP News: Klimt Portrait of Elisabeth Lederer sold for $236.4 million at Sotheby’s in New York (Nov 18, 2025)."
+      }, {
+        "url" : "https://www.theguardian.com/artanddesign/2025/nov/19/gustav-klimt-portrait-sells-for-2364m-making-it-the-second-most-expensive-artwork-sold-at-auction",
+        "claim" : "The Guardian: Klimt’s Portrait of Elisabeth Lederer sold for $236.4 million at Sotheby’s, one of the highest prices for a modern artwork at auction."
+      }, {
+        "url" : "https://www.latimes.com/archives/la-xpm-2010-may-05-la-et-brody-picasso-20100505-story.html",
+        "claim" : "Los Angeles Times: Picasso’s Nude, Green Leaves and Bust sold for $106.5 million at Christie’s (2010)."
+      } ],
+      "confidence" : "high"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Recent marquee public-auction records at Christie’s and Sotheby’s",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Public sales exceeding $100 million at Christie’s and Sotheby’s in 2024–2025 (Magritte $121.2M; Klimt Lederer $236.4M) demonstrate sustained high-end demand for paintings."
+      }, {
+        "name" : "Historical base rate of 100M+ public-sale paintings at top houses",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Past 100M+ paintings at Christie’s and Sotheby’s (e.g., Picasso 2010; Salvator Mundi 2017; Warhol 2022; Klimt 2025) establish a high baseline probability for such outcomes."
+      }, {
+        "name" : "Scarcity of blue-chip paintings relative to 100M+ thresholds",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "A limited stock of marquee works increases competition and tends to push prices above the $100 million threshold when lots appear."
+      }, {
+        "name" : "Wealth concentration and active global collecting (e.g., major private collections transacting at high prices)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Significant liquidity among ultra-high-net-worth collectors and large collections financing record-style allocations bolster demand for ultra-high-end paintings."
+      }, {
+        "name" : "Auction-house marketing, guarantees, and expanded global bidding reach",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Guarantees and broader international bidding networks improve price discovery and can elevate final sale prices for top lots."
+      }, {
+        "name" : "Macro-economic volatility and uncertainty",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Economic volatility and inflation concerns can dampen risk appetite for ultra-high-ticket art purchases and constrain bidding."
+      }, {
+        "name" : "Historic precedent of $100M+ public-auction paintings at Christie’s/Sotheby’s/Phillips",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Public records show multiple $100M+ auctions across these houses (Picasso 2010, Munch 2012, Salvator Mundi 2017, Warhol 2022, Klimt Lederer 2025), indicating a high ceiling and repeatability that increases likelihood of another $100M+ sale."
+      }, {
+        "name" : "Recent Klimt Lederer sale at Sotheby’s (Nov 2025) exceeding $100M",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Klimt’s Portrait of Elisabeth Lederer sold for $236.4M in Nov 2025, demonstrating current market capability to push well above $100M in a public auction."
+      }, {
+        "name" : "Three-house competition and marquee catalogues",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Active bidding dynamics among Christie’s, Sotheby’s, and Phillips heighten the odds of aggressive price discovery for top-tier works."
+      }, {
+        "name" : "Ultra-high-net-worth demand and liquidity in the art market",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Persistent wealth concentration and strong appetite for tangible, high-value assets support continued capacity for $100M+ public sales."
+      }, {
+        "name" : "Macro headwinds and potential cooling of luxury markets",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "If macro conditions deteriorate (rates, inflation, equity markets), demand for ultra-expensive art could weaken, tempering the probability of $100M+ sales."
+      }, {
+        "name" : "Potential over-weighting from outlier records (data artifact risk)",
+        "direction" : "down",
+        "magnitude" : "weak",
+        "rationale" : "A few extreme outliers can inflate perceived frequency of $100M+ sales; reliance on these spikes could overstate near-term probability without broader market normalization."
+      }, {
+        "name" : "Klimt, Portrait of Elisabeth Lederer sold for $236.4M at Sotheby’s (New York) in November 2025",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "A recent public auction record for a painting at a leading house signals very strong demand for top-tier works and raises the odds of another $100M+ sale before May 1, 2026."
+      }, {
+        "name" : "Magritte, painting sold for $121.2M at Christie's in November 2024",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Demonstrates sustained price power for marquee works and reinforces the market’s capacity to reach or exceed $100M in public auctions."
+      }, {
+        "name" : "Historical precedent of multiple $100M+ public-auction paintings at Christie’s/Sotheby’s (e.g., Picasso 2010, Munch 2012, Warhol 2022, Salvator Mundi 2017)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "A long-running pattern of $100M+ results at the major houses increases the baseline probability of another such sale occurring."
+      }, {
+        "name" : "Potential macroeconomic headwinds (e.g., economic downturn or tightening financial conditions)",
+        "direction" : "down",
+        "magnitude" : "weak",
+        "rationale" : "If macro conditions deteriorate significantly, auction demand could soften slightly, tempering the odds of a $100M+ sale."
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "high",
+  "range" : [ 0.9, 0.98 ],
+  "synthesis" : "A 100M+ public painting sale occurred within the forecast window (Klimt Lederer, 236.4M, Nov 2025), reinforcing a high likelihood of at least one such sale before May 1, 2026. Given precedent and the realized threshold, the probability should be raised from the ensemble estimate; the adjusted probability reflects this realized data with a tight upper bound."
+}

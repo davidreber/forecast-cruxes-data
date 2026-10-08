@@ -1,0 +1,378 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.81,
+      "narrative" : "Anchoring on Hungary’s history of 2/3 majorities and integrating current signals, the estimate leans toward a credible chance of a supermajority but remains uncertain. The opposition’s consolidation behind Tisza and market signals push the odds up, while incumbency advantages and turnout volatility cap certainty. Calibrated posterior: 81% with an approximate 0.73–0.89 uncertainty range.",
+      "summary" : [ "Historical baseline: 2/3 majorities occurred in 4 of 9 post-1990 elections, anchoring a non-negligible prior for a constitutional majority.", "Opposition unity behind Tisza increases the odds of a large bloc forming that could reach a 2/3 majority.", "Prediction-market sentiment and currency-market implications suggest upside for the opposition under certain scenarios, though divergence remains.", "Incumbency advantages and electoral-system amplification for Fidesz keep the outcome uncertain and restrain the upside potential.", "Turnout dynamics and vote fragmentation risk add noise, preventing a guaranteed 2/3 outcome despite favorable signals." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.44,
+          "basis" : "Historical frequency of two-thirds majorities under post-1990 Hungary (4 out of 9 elections), used to anchor the reference class and baseline probability."
+        },
+        "factor_updates" : [ {
+          "factor" : "Opposition unity behind Tisza",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Consolidation behind a single opposition banner reduces vote-splitting and increases the chance of a large bloc achieving a 2/3 majority (supportive media coverage and FT reporting)."
+        }, {
+          "factor" : "Prediction-market sentiment toward Tisza",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Some prediction-market instruments and polls tilt toward Tisza, signaling higher odds of a substantial opposition share, though results are not uniform."
+        }, {
+          "factor" : "Incumbency and electoral-system advantages for Fidesz",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Historical amplification for Fidesz under the current system suggests a structural barrier to a guaranteed 2/3, even with broad support."
+        }, {
+          "factor" : "Economic/currency market signals about regime change",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Markets pricing in potential regime change if the opposition wins raises perceived upside for a large bloc but also reflects uncertainty."
+        }, {
+          "factor" : "Poll divergence and turnout uncertainty",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Divergent polls and turnout dynamics introduce ambiguity, tempering confidence in a decisive 2/3 outcome."
+        } ],
+        "synthesis_rationale" : "Starting from a 0.44 anchor based on historical frequency, I applied moderate positive deltas from opposition unity, market sentiment, and perceived regime-change implications, while accounting for incumbent advantages and turnout/poll uncertainties. The result is a calibrated posterior of 0.81 with a plausibly wide but bounded uncertainty range (0.73–0.89) to reflect model fragility and electoral-system idiosyncrasies."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.81,\n  \"range_low\": 0.73,\n  \"range_high\": 0.89,\n  \"summary\": [\n    \"Historical baseline: 2/3 majorities occurred in 4 of 9 post-1990 elections, anchoring a non-negligible prior for a constitutional majority.\",\n    \"Opposition unity behind Tisza increases the odds of a large bloc forming that could reach a 2/3 majority.\",\n    \"Prediction-market sentiment and currency-market implications suggest upside for the opposition under certain scenarios, though divergence remains.\",\n    \"Incumbency advantages and electoral-system amplification for Fidesz keep the outcome uncertain and restrain the upside potential.\",\n    \"Turnout dynamics and vote fragmentation risk add noise, preventing a guaranteed 2/3 outcome despite favorable signals.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Anchoring on Hungary’s history of 2/3 majorities and integrating current signals, the estimate leans toward a credible chance of a supermajority but remains uncertain. The opposition’s consolidation behind Tisza and market signals push the odds up, while incumbency advantages and turnout volatility cap certainty. Calibrated posterior: 81% with an approximate 0.73–0.89 uncertainty range.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.44,\n      \"basis\": \"Historical frequency of two-thirds majorities under post-1990 Hungary (4 out of 9 elections), used to anchor the reference class and baseline probability.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Opposition unity behind Tisza\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Consolidation behind a single opposition banner reduces vote-splitting and increases the chance of a large bloc achieving a 2/3 majority (supportive media coverage and FT reporting).\"\n      },\n      {\n        \"factor\": \"Prediction-market sentiment toward Tisza\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Some prediction-market instruments and polls tilt toward Tisza, signaling higher odds of a substantial opposition share, though results are not uniform.\"\n      },\n      {\n        \"factor\": \"Incumbency and electoral-system advantages for Fidesz\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Historical amplification for Fidesz under the current system suggests a structural barrier to a guaranteed 2/3, even with broad support.\"\n      },\n      {\n        \"factor\": \"Economic/currency market signals about regime change\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Markets pricing in potential regime change if the opposition wins raises perceived upside for a large bloc but also reflects uncertainty.\"\n      },\n      {\n        \"factor\": \"Poll divergence and turnout uncertainty\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Divergent polls and turnout dynamics introduce ambiguity, tempering confidence in a decisive 2/3 outcome.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a 0.44 anchor based on historical frequency, I applied moderate positive deltas from opposition unity, market sentiment, and perceived regime-change implications, while accounting for incumbent advantages and turnout/poll uncertainties. The result is a calibrated posterior of 0.81 with a plausibly wide but bounded uncertainty range (0.73–0.89) to reflect model fragility and electoral-system idiosyncrasies.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.73, 0.89 ]
+    }, {
+      "probability" : 0.81,
+      "narrative" : "Starting from a long-run base rate of ~44% for a 2/3 majority in Hungary's current system, multiple recent factors pull the probability toward a high-80s posterior. The strongest drivers are opposition unity behind Tisza and market signals suggesting potential regime change, but structural biases and turnout uncertainty keep the range wide around the central estimate.",
+      "summary" : [ "Bayesian posterior for a supermajority in 2026 Hungary is 81%, reflecting calibration against the historical base rate.", "Key updates: opposition unity behind Tisza, predictive-market signals showing upside for Tisza, and enduring incumbency/system advantages that could still help Fidesz.", "Poll divergence and turnout uncertainty temper confidence, keeping outcomes highly contingent on district-level results and mobilization." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.44,
+          "basis" : "Historical base-rate: 2/3 majorities occurred in 4 of 9 post-1990 elections under Hungary's current system, giving a starting anchor near 0.44."
+        },
+        "factor_updates" : [ {
+          "factor" : "Opposition unity behind Tisza",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "FT reports opposition groups uniting behind Tisza and some polls showing Tisza leading, increasing the odds that a large bloc could emerge."
+        }, {
+          "factor" : "Prediction-market sentiment toward Tisza",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Divergent polls and some markets reflect upside for Tisza, signaling a credible path to a 2/3 majority for the opposition in certain scenarios."
+        }, {
+          "factor" : "Incumbency and electoral-system advantages for Fidesz",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Historical wins under the current system show Fidesz can still convert broad support into a near-2/3 outcome, providing a downside anchor."
+        }, {
+          "factor" : "Economic/currency market signals about regime change",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Market commentary suggests a potential regime change is priced in if the opposition wins, which reinforces the upside case for a 2/3 outcome under certain market scenarios."
+        }, {
+          "factor" : "Poll divergence and uncertainty",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Mixed polls across firms create uncertainty, preventing a single-direction move and supporting a wide potential range."
+        }, {
+          "factor" : "Historical base-rate for 2/3 outcomes",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Past frequency of 2/3 outcomes offers a modest baseline, but current dynamics can push probabilities above or below this mark."
+        } ],
+        "synthesis_rationale" : "Starting from the anchor 0.44, multiple moderate upward updates from opposition unity, market sentiment, and incumbency effects were integrated, with weak neutral factors and historical precedent providing calibration. The resulting posterior of 0.81 reflects a calibrated consolidation of evidence, while acknowledging substantial uncertainty due to polling divergence and turnout effects. The range accommodates plausible variation given district-level sensitivity and potential fragmentation."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.81,\n  \"range_low\": 0.72,\n  \"range_high\": 0.90,\n  \"summary\": [\n    \"Bayesian posterior for a supermajority in 2026 Hungary is 81%, reflecting calibration against the historical base rate.\",\n    \"Key updates: opposition unity behind Tisza, predictive-market signals showing upside for Tisza, and enduring incumbency/system advantages that could still help Fidesz.\",\n    \"Poll divergence and turnout uncertainty temper confidence, keeping outcomes highly contingent on district-level results and mobilization.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Starting from a long-run base rate of ~44% for a 2/3 majority in Hungary's current system, multiple recent factors pull the probability toward a high-80s posterior. The strongest drivers are opposition unity behind Tisza and market signals suggesting potential regime change, but structural biases and turnout uncertainty keep the range wide around the central estimate.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.44,\n      \"basis\": \"Historical base-rate: 2/3 majorities occurred in 4 of 9 post-1990 elections under Hungary's current system, giving a starting anchor near 0.44.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Opposition unity behind Tisza\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"FT reports opposition groups uniting behind Tisza and some polls showing Tisza leading, increasing the odds that a large bloc could emerge.\"\n      },\n      {\n        \"factor\": \"Prediction-market sentiment toward Tisza\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Divergent polls and some markets reflect upside for Tisza, signaling a credible path to a 2/3 majority for the opposition in certain scenarios.\"\n      },\n      {\n        \"factor\": \"Incumbency and electoral-system advantages for Fidesz\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Historical wins under the current system show Fidesz can still convert broad support into a near-2/3 outcome, providing a downside anchor.\"\n      },\n      {\n        \"factor\": \"Economic/currency market signals about regime change\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Market commentary suggests a potential regime change is priced in if the opposition wins, which reinforces the upside case for a 2/3 outcome under certain market scenarios.\"\n      },\n      {\n        \"factor\": \"Poll divergence and uncertainty\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Mixed polls across firms create uncertainty, preventing a single-direction move and supporting a wide potential range.\"\n      },\n      {\n        \"factor\": \"Historical base-rate for 2/3 outcomes\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Past frequency of 2/3 outcomes offers a modest baseline, but current dynamics can push probabilities above or below this mark.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from the anchor 0.44, multiple moderate upward updates from opposition unity, market sentiment, and incumbency effects were integrated, with weak neutral factors and historical precedent providing calibration. The resulting posterior of 0.81 reflects a calibrated consolidation of evidence, while acknowledging substantial uncertainty due to polling divergence and turnout effects. The range accommodates plausible variation given district-level sensitivity and potential fragmentation.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.72, 0.9 ]
+    }, {
+      "probability" : 0.52,
+      "narrative" : "Starting from a historical baseline around 0.44 for a 2/3 majority, the opposition’s consolidation behind Tisza and market/poll signals push the odds modestly higher, but incumbent advantages and fragmentation risk cap the rise. The result is a measured tilt toward a possible 2/3 outcome, yet with substantial uncertainty due to turnout and district-level dynamics.",
+      "summary" : [ "Opposition unity behind Tisza increases the odds that a non-Fidesz bloc could reach a 2/3 majority.", "Prediction-market signals and credible polls show divergent outcomes, suggesting upside risk to a large bloc but with substantial uncertainty.", "Incumbency advantages and the electoral-system amplification for Fidesz temper the likelihood of a 2/3 win, keeping probability near the historical baseline.", "Turnout dynamics and the risk of vote fragmentation introduce further uncertainty, preventing a strong confidence in any single outcome." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.44,
+          "basis" : "Historical reference: in post-1990 Hungary, 2/3 majorities occurred in 4 of 9 elections (approx. 44%), establishing a baseline probability for any party/coalition achieving a supermajority."
+        },
+        "factor_updates" : [ {
+          "factor" : "Opposition unity behind Tisza",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "FT reports opposition groups uniting behind Tisza and some polls showing Tisza leading, which raises the odds that a large opposition bloc could reach or approach a two-thirds majority."
+        }, {
+          "factor" : "Prediction-market sentiment toward Tisza",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Diversified polls and markets implying upside for a large bloc suggest the potential for a 2/3 outcome, adding weight to an above-baseline probability."
+        }, {
+          "factor" : "Incumbency and electoral-system advantages for Fidesz",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Past electoral-system amplification benefits Fidesz; even with opposition gains, structural biases can limit the translation of broad support into a 2/3 victory for any bloc."
+        }, {
+          "factor" : "Turnout dynamics and mobilization of inactive voters",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Mobilization of previously inactive voters could tilt results in favor of whichever bloc consolidates support, increasing the chance of a large bloc achieving 2/3."
+        }, {
+          "factor" : "Third-party fragmentation risk (e.g., Our Homeland Movement)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Additional parties can dilute a bloc’s vote share and hinder reaching a 2/3 majority, reducing the odds of a clear constitutional majority for any single bloc."
+        } ],
+        "synthesis_rationale" : "Starting from a 0.44 anchor, the updates tilt toward higher odds of a large bloc (notably the opposition) achieving 2/3 due to unity and turnout potential, while countervailing forces (incumbency advantages, fragmentation risk) dampen that rise. The synthesis yields a modest above-baseline probability with a broad uncertainty range, hence the 0.52 central estimate and 0.38–0.60 range, reflecting calibration for political-outcome uncertainty and potential turnout/distribution effects."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.52,\n  \"range_low\": 0.38,\n  \"range_high\": 0.60,\n  \"summary\": [\n    \"Opposition unity behind Tisza increases the odds that a non-Fidesz bloc could reach a 2/3 majority.\",\n    \"Prediction-market signals and credible polls show divergent outcomes, suggesting upside risk to a large bloc but with substantial uncertainty.\",\n    \"Incumbency advantages and the electoral-system amplification for Fidesz temper the likelihood of a 2/3 win, keeping probability near the historical baseline.\",\n    \"Turnout dynamics and the risk of vote fragmentation introduce further uncertainty, preventing a strong confidence in any single outcome.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Starting from a historical baseline around 0.44 for a 2/3 majority, the opposition’s consolidation behind Tisza and market/poll signals push the odds modestly higher, but incumbent advantages and fragmentation risk cap the rise. The result is a measured tilt toward a possible 2/3 outcome, yet with substantial uncertainty due to turnout and district-level dynamics.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.44,\n      \"basis\": \"Historical reference: in post-1990 Hungary, 2/3 majorities occurred in 4 of 9 elections (approx. 44%), establishing a baseline probability for any party/coalition achieving a supermajority.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Opposition unity behind Tisza\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"FT reports opposition groups uniting behind Tisza and some polls showing Tisza leading, which raises the odds that a large opposition bloc could reach or approach a two-thirds majority.\"\n      },\n      {\n        \"factor\": \"Prediction-market sentiment toward Tisza\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Diversified polls and markets implying upside for a large bloc suggest the potential for a 2/3 outcome, adding weight to an above-baseline probability.\"\n      },\n      {\n        \"factor\": \"Incumbency and electoral-system advantages for Fidesz\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Past electoral-system amplification benefits Fidesz; even with opposition gains, structural biases can limit the translation of broad support into a 2/3 victory for any bloc.\"\n      },\n      {\n        \"factor\": \"Turnout dynamics and mobilization of inactive voters\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Mobilization of previously inactive voters could tilt results in favor of whichever bloc consolidates support, increasing the chance of a large bloc achieving 2/3.\"\n      },\n      {\n        \"factor\": \"Third-party fragmentation risk (e.g., Our Homeland Movement)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Additional parties can dilute a bloc’s vote share and hinder reaching a 2/3 majority, reducing the odds of a clear constitutional majority for any single bloc.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a 0.44 anchor, the updates tilt toward higher odds of a large bloc (notably the opposition) achieving 2/3 due to unity and turnout potential, while countervailing forces (incumbency advantages, fragmentation risk) dampen that rise. The synthesis yields a modest above-baseline probability with a broad uncertainty range, hence the 0.52 central estimate and 0.38–0.60 range, reflecting calibration for political-outcome uncertainty and potential turnout/distribution effects.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.38, 0.6 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.7297499604939555,
+      "range" : [ 0.52, 0.81 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.8134358976975667,
+    "raw-posterior" : 0.8134358976975667,
+    "capped" : false,
+    "prior" : 0.44,
+    "factors" : [ {
+      "name" : "Market expectations of a government change",
+      "p-yes" : 0.55,
+      "p-no" : 0.45,
+      "bf" : 1.2222222222222223
+    }, {
+      "name" : "Historical precedent for 2/3 majorities",
+      "p-yes" : 0.5,
+      "p-no" : 0.5,
+      "bf" : 1.0
+    }, {
+      "name" : "Independent polling showing Fidesz trailing",
+      "p-yes" : 0.3,
+      "p-no" : 0.65,
+      "bf" : 0.4615384615384615
+    }, {
+      "name" : "Poll divergence and uncertainty",
+      "p-yes" : 0.55,
+      "p-no" : 0.45,
+      "bf" : 1.2222222222222223
+    }, {
+      "name" : "Electoral-system amplification and historical precedence",
+      "p-yes" : 0.62,
+      "p-no" : 0.38,
+      "bf" : 1.631578947368421
+    }, {
+      "name" : "Historical base-rate for 2/3 outcomes",
+      "p-yes" : 0.5,
+      "p-no" : 0.5,
+      "bf" : 1.0
+    }, {
+      "name" : "Economic/currency market signals about regime change",
+      "p-yes" : 0.6,
+      "p-no" : 0.4,
+      "bf" : 1.4999999999999998
+    }, {
+      "name" : "Incumbency and electoral-system advantages for Fidesz",
+      "p-yes" : 0.65,
+      "p-no" : 0.35,
+      "bf" : 1.8571428571428574
+    }, {
+      "name" : "Seat-projection hints near but below 2/3 for Fidesz",
+      "p-yes" : 0.2,
+      "p-no" : 0.6,
+      "bf" : 0.33333333333333337
+    }, {
+      "name" : "Prediction-market sentiment toward Tisza",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "Forecast divergence and market signals indicating uncertainty",
+      "p-yes" : 0.5,
+      "p-no" : 0.5,
+      "bf" : 1.0
+    }, {
+      "name" : "Vote fragmentation risk from third parties",
+      "p-yes" : 0.25,
+      "p-no" : 0.7,
+      "bf" : 0.35714285714285715
+    }, {
+      "name" : "Opposition unity behind Tisza",
+      "p-yes" : 0.75,
+      "p-no" : 0.25,
+      "bf" : 3.0
+    }, {
+      "name" : "Turnout dynamics and mobilization of inactive voters",
+      "p-yes" : 0.68,
+      "p-no" : 0.32,
+      "bf" : 2.125
+    } ]
+  },
+  "question" : "Will any political party or coalition acquire a supermajority in the 2026 Hungarian parliamentary elections?",
+  "probability" : 0.68,
+  "summary" : [ "Ensemble aggregate is 0.73, but objections about polling volatility, turnout uncertainty, and vote fragmentation warrant tempering the confidence.", "Historical base-rate suggests 2/3 majorities are not guaranteed; threshold is plausible but not assured.", "Opposition unity behind Tisza and mixed polls create both upside and downside risks, making the outcome highly nuanced.", "The threshold (133 seats) remains possible; projection dispersion implies a wide but credible range." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.73,
+    "critique_assessment" : "The objections are valid and identify real risks that could erode a clean two-thirds win, including turnout dynamics and vote-splitting; no implausible scenarios are invoked.",
+    "adjustment" : "Adjusted downward from 0.73 to 0.68 to reflect the balance of downside risks (volatility, fragmentation, base-rate) with ongoing upside from Tisza unity and market signals; range captures persistent uncertainty."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.42,
+      "reference-class" : "Past Hungarian parliamentary elections since 1990, under the current 199-seat system established in 2011 (and earlier 386-seat parliament), where the winner achieved a two-thirds majority (133+ seats) in 2010 (263/386) and 2014 (133/199), 2018 (135/199), and 2022 (135/199).",
+      "sources" : [ {
+        "url" : "https://globalsecurity.org/military/world/europe/hu-politics-system.htm",
+        "claim" : "Under the post-2011 system, Fidesz-KDNP won a two-thirds majority: 263 of 386 seats in 2010 and 133 of 199 in 2014, 135 of 199 in 2018, and 135 of 199 in 2022."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2022_Hungarian_parliamentary_election",
+        "claim" : "In 2022, Fidesz-KDNP won a two-thirds majority (135 of 199 seats)."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2026_Hungarian_parliamentary_election",
+        "claim" : "Election date is set for 12 April 2026; polls track Fidesz vs. TISZA and other parties."
+      }, {
+        "url" : "https://apnews.com/article/71b54205f00252ca7c466eb5407a2aa1",
+        "claim" : "AP reports the election date for 12 April 2026 and that Fidesz trails in independent polls."
+      }, {
+        "url" : "https://euronews.com/2026/02/19/hungarian-polls-split-on-april-election-outcome-as-fidesz-and-tisza-trade-leads",
+        "claim" : "Euronews summarizes multiple polls with differing leads (Tisza ahead in some, Fidesz in others) and notes prediction-market sentiment."
+      }, {
+        "url" : "https://www.ft.com/content/85210187-c757-4432-bb57-6b636a669e72",
+        "claim" : "Financial Times reports opposition groups uniting behind Tisza; polls show Tisza leading in some polls; discussion of potential for a Tisza majority."
+      }, {
+        "url" : "https://apnews.com/article/hungary-election-scheduled-orban-challenge-magyar-71b54205f00252ca7c466eb5407a2aa1",
+        "claim" : "AP reports that Viktor Orbán's Fidesz party is trailing the opposition Tisza in most independent polls ahead of the April 2026 election."
+      }, {
+        "url" : "https://telex.hu/english/2026/01/14/tisza-party-gains-ground-again-currently-12-percentage-points-ahead-of-fidesz-among-likely-voters",
+        "claim" : "Medián poll cited by Telex shows Tisza at 40% versus Fidesz at 33% among likely voters, with 19% undecided."
+      }, {
+        "url" : "https://hungarytoday.hu/government-parties-maintain-strong-lead-in-latest-polls",
+        "claim" : "Real-PR seat calculator projected Fidesz-KDNP to about 64% of seats, a near two-thirds majority under current calculations."
+      }, {
+        "url" : "https://euronews.com/2026/02/19/hungarian-polls-split-on-april-election-outcome-as-fidesz-and-tisza-trade-leads",
+        "claim" : "Euronews reports polls split among firms, with some showing Fidesz ahead and others showing Tisza ahead, reflecting divergent forecasts."
+      }, {
+        "url" : "https://www.bloomberg.com/news/articles/2025-08-11/barclays-sees-substantial-forint-gain-if-hungary-opposition-wins-2026-vote",
+        "claim" : "Barclays notes that the forint could strengthen if the opposition wins, signaling that markets price in a potential government change and that outcomes remain uncertain."
+      }, {
+        "url" : "https://www.budapesttimes.hu/hungary/orange-at-times-blue-at-others/",
+        "claim" : "Election-monitor style analyses in Budapest Times show mixed predictions: government-aligned polls close to the previous result, while government-critical polls sometimes favor Tisza."
+      }, {
+        "url" : "https://www.dw.com/en/hungary-election-two-thirds-majority-2010/a-5504778",
+        "claim" : "In 2010 Fidesz won a two-thirds majority (263 of 386 seats)."
+      }, {
+        "url" : "https://www.rferl.org/a/hungary-election-officials-confirm-two-thirds-majority-for-orban-s-party/29168838.html",
+        "claim" : "Final results in 2018 confirmed Fidesz won a two-thirds majority (133 of 199 seats)."
+      }, {
+        "url" : "https://hungarytoday.hu/hungarian-election-2022-results/",
+        "claim" : "In 2022 Fidesz-KDNP won 135 seats and maintained a two-thirds majority."
+      }, {
+        "url" : "https://www.cnbc.com/2018/04/09/hungary-viktor-orban-wins-supermajority-for-third-consecutive-term-in-office.html",
+        "claim" : "2018: Fidesz wins a two-thirds majority."
+      }, {
+        "url" : "https://apnews.com/article/71b54205f00252ca7c466eb5407a2aa1",
+        "claim" : "Hungary sets election date for April 12, 2026; polls show mixed results with opposition lead in some polls."
+      }, {
+        "url" : "https://www.euronews.com/2026/02/19/hungarian-polls-split-on-april-election-outcome-as-fidesz-and-tisza-trade-leads",
+        "claim" : "Polls show divergent outcomes: some with Tisza leading, others with Fidesz leading."
+      } ],
+      "confidence" : "high"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Opposition unity behind Tisza",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "FT reports opposition groups are uniting behind Tisza and some polls show Tisza leading, increasing the odds that a non-Fidesz 2/3 majority could emerge."
+      }, {
+        "name" : "Prediction-market sentiment toward Tisza",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Euronews notes prediction markets reflect divergent polls but in some instruments sentiment favors Tisza, signaling higher odds of a 2/3 majority for the opposition."
+      }, {
+        "name" : "Incumbency and electoral-system advantages for Fidesz",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Past elections show Fidesz benefiting from the current system and electoral geography, reinforcing the possibility that Fidesz could still win a 2/3 majority."
+      }, {
+        "name" : "Economic/currency market signals about regime change",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Barclays and market commentary price in a potential regime change if the opposition wins, which raises the probability that any party could reach 2/3."
+      }, {
+        "name" : "Poll divergence and uncertainty",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Polls split between Fidesz and Tisza across firms, creating ambiguity and limiting a confident directional push."
+      }, {
+        "name" : "Historical base-rate for 2/3 outcomes",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "2/3 majorities have occurred in 4 of 9 post-1990 elections (about 44%), suggesting a non-negligible but not dominant baseline."
+      }, {
+        "name" : "Opposition consolidation behind Tisza",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Opposition unity behind Tisza reduces vote-splitting and raises the odds that Tisza could reach or approach a two-thirds majority. ([ft.com](https://www.ft.com/content/85210187-c757-4432-bb57-6b636a669e72?utm_source=openai))"
+      }, {
+        "name" : "Electoral-system amplification and historical precedence",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Hungary's 199-seat system and past 2/3 outcomes show that a unified bloc can translate broad support into a constitutional majority when conditions align. ([osw.waw.pl](https://www.osw.waw.pl/en/publikacje/osw-commentary/2026-02-05/osw-monitor-hungary-election-no-1?utm_source=openai))"
+      }, {
+        "name" : "Turnout dynamics and mobilization of inactive voters",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Mobilizing previously inactive voters could tilt results toward whichever bloc consolidates support, potentially lifting 2/3 prospects. ([osw.waw.pl](https://www.osw.waw.pl/en/publikacje/osw-commentary/2026-02-05/osw-monitor-hungary-election-no-1?utm_source=openai))"
+      }, {
+        "name" : "Vote fragmentation risk from third parties (e.g., Our Homeland Movement)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The presence of additional parties can dilute a bloc’s share and hinder a 2/3 majority. ([euronews.com](https://www.euronews.com/2026/02/19/hungarian-polls-split-on-april-election-outcome-as-fidesz-and-tisza-trade-leads?utm_source=openai))"
+      }, {
+        "name" : "Forecast divergence and market signals indicating uncertainty",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Divergent polls and mixed prediction-market signals reduce forecast confidence and make a 2/3 outcome less certain. ([euronews.com](https://www.euronews.com/2026/02/19/hungarian-polls-split-on-april-election-outcome-as-fidesz-and-tisza-trade-leads?utm_source=openai))"
+      }, {
+        "name" : "Opposition unity behind Tisza",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "FT reports opposition groups uniting behind Tisza, and polls show Tisza leading in some surveys, increasing odds of a large bloc (FT)."
+      }, {
+        "name" : "Poll divergence and turnout uncertainty",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Polls are split across firms and turnout remains a key unknown, creating uncertainty about any 2/3 outcome (AP; Euronews; FT)."
+      }, {
+        "name" : "Market expectations of a government change",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Barclays notes the forint could strengthen if the opposition wins, signaling financial markets price in a potential shift in government (Barclays)."
+      }, {
+        "name" : "Independent polling showing Fidesz trailing",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "AP reports Fidesz trailing in independent polls ahead of the April 2026 election, reducing the odds of a 2/3 majority for Fidesz (AP)."
+      }, {
+        "name" : "Historical precedent for 2/3 majorities",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Historically, 2/3 majorities occurred in 4 of 9 post-1990 elections, suggesting the outcome remains uncertain (DW; RFE/RL; Hungary Today)."
+      }, {
+        "name" : "Seat-projection hints near but below 2/3 for Fidesz",
+        "direction" : "down",
+        "magnitude" : "weak",
+        "rationale" : "Real-PR seat calculator projections suggest Fidesz around 64% of seats, implying the current trajectory may fall short of a constitutional 2/3 majority (Hungary Today)."
+      } ],
+      "confidence" : "medium"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "medium",
+  "range" : [ 0.6, 0.78 ],
+  "synthesis" : "The 73% ensemble suggests a strong chance of a supermajority, but credible objections about polling volatility, turnout, and fragmentation reduce confidence to a mid-range estimate. The final probability acknowledges both potential opposition consolidation and structural advantages for incumbents."
+}

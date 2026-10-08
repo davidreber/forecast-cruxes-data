@@ -1,0 +1,380 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.08,
+      "narrative" : "Using a ULCC base-rate anchor around 46% within 24 months, updates from Frontier's liquidity and no-filing reduce risk, while sector distress and debt maturities raise risk. The net Bayesian posterior is 8% for bankruptcy before May 1, 2026, with a plausible range of 5–11% reflecting ongoing uncertainty.",
+      "summary" : [ "Starting from the ULCC reference-class base-rate anchor (~46% bankruptcy probability over 24 months).", "Frontier's liquidity cushion and absence of a bankruptcy filing reduce near-term risk, pulling the probability downward.", "ULCC sector distress signals and near-term debt maturities push the risk upward, balancing sector dynamics.", "Calibrated Bayesian combination yields a final posterior probability of 8% with a 5–11% uncertainty band." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.46,
+          "basis" : "Reference class: US-listed airline carriers (ULCC/low-cost) with Altman Z-score distress zones; market-based 24-month bankruptcy probability cited around 45.74%."
+        },
+        "factor_updates" : [ {
+          "factor" : "Frontier liquidity cushion (undrawn revolver and long-dated debt maturities)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Undrawn $205M revolver and debt maturities through 2029 provide liquidity runway, reducing near-term default risk and pulling probability down from the anchor."
+        }, {
+          "factor" : "No bankruptcy filing indicated in Frontier's 2025-03-31 10-Q",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Absence of bankruptcy filing as of March 31, 2025 lowers near-term risk."
+        }, {
+          "factor" : "ULCC sector distress signals (Spirit bankruptcy, Altman Z-score in distress/grey zone)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Sector-level distress increases risk for Frontier; ULCC peers show distress metrics."
+        }, {
+          "factor" : "Near-term debt maturities (remainder 2025 and 2026)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Upcoming principal repayments create rollover risk; could raise distress if revenues weaken."
+        }, {
+          "factor" : "Pending Verizon merger close by early 2026",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Strategic deal could stabilize balance sheet and operations, offsetting some distress risk."
+        }, {
+          "factor" : "Forecast dispersion across sources",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Wide divergence in forecasts reflects uncertainty; calibrates but not directional."
+        } ],
+        "synthesis_rationale" : "The anchor of ≈0.46 is tempered by both downward drivers (liquidity, no-filing, Verizon deal) and upward drivers (sector distress, debt maturities). Because updates may be correlated (sector distress contributing to 24-month risk), a Bayesian calibration yields a modest posterior of 0.08; the 5–11% range accommodates calibration error and forecast dispersion."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.08,\n  \"range_low\": 0.05,\n  \"range_high\": 0.11,\n  \"summary\": [\n    \"Starting from the ULCC reference-class base-rate anchor (~46% bankruptcy probability over 24 months).\",\n    \"Frontier's liquidity cushion and absence of a bankruptcy filing reduce near-term risk, pulling the probability downward.\",\n    \"ULCC sector distress signals and near-term debt maturities push the risk upward, balancing sector dynamics.\",\n    \"Calibrated Bayesian combination yields a final posterior probability of 8% with a 5–11% uncertainty band.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Using a ULCC base-rate anchor around 46% within 24 months, updates from Frontier's liquidity and no-filing reduce risk, while sector distress and debt maturities raise risk. The net Bayesian posterior is 8% for bankruptcy before May 1, 2026, with a plausible range of 5–11% reflecting ongoing uncertainty.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.46,\n      \"basis\": \"Reference class: US-listed airline carriers (ULCC/low-cost) with Altman Z-score distress zones; market-based 24-month bankruptcy probability cited around 45.74%.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Frontier liquidity cushion (undrawn revolver and long-dated debt maturities)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Undrawn $205M revolver and debt maturities through 2029 provide liquidity runway, reducing near-term default risk and pulling probability down from the anchor.\"\n      },\n      {\n        \"factor\": \"No bankruptcy filing indicated in Frontier's 2025-03-31 10-Q\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Absence of bankruptcy filing as of March 31, 2025 lowers near-term risk.\"\n      },\n      {\n        \"factor\": \"ULCC sector distress signals (Spirit bankruptcy, Altman Z-score in distress/grey zone)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Sector-level distress increases risk for Frontier; ULCC peers show distress metrics.\"\n      },\n      {\n        \"factor\": \"Near-term debt maturities (remainder 2025 and 2026)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Upcoming principal repayments create rollover risk; could raise distress if revenues weaken.\"\n      },\n      {\n        \"factor\": \"Pending Verizon merger close by early 2026\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Strategic deal could stabilize balance sheet and operations, offsetting some distress risk.\"\n      },\n      {\n        \"factor\": \"Forecast dispersion across sources\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Wide divergence in forecasts reflects uncertainty; calibrates but not directional.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The anchor of ≈0.46 is tempered by both downward drivers (liquidity, no-filing, Verizon deal) and upward drivers (sector distress, debt maturities). Because updates may be correlated (sector distress contributing to 24-month risk), a Bayesian calibration yields a modest posterior of 0.08; the 5–11% range accommodates calibration error and forecast dispersion.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.05, 0.11 ]
+    }, {
+      "probability" : 0.08,
+      "narrative" : "Starting from a ULCC-based base-rate anchor, Frontier's solid liquidity and absence of a near-term filing reduce risk, while sector distress signals and imminent maturities push probability upward. The calibrated posterior is 8%, with a range that captures residual uncertainty and forecast dispersion.",
+      "summary" : [ "Frontier's near-term bankruptcy probability appears low due to a solid liquidity cushion and no near-term filing.", "Sector distress signals in ULCCs and near-term debt maturities push risk upward, creating non-negligible downside risk.", "A wide dispersion in forecasts (from single-digit to mid-double-digit percentages) anchors the need for a calibrated posterior rather than a single point.", "The calibrated posterior is 8%, with a modest uncertainty range reflecting correlated factors and divergent forecasts." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.46,
+          "basis" : "Base-rate anchor from the ULCC reference class with Altman Z-score distress signals; initial near-term bankruptcy expectation around 46% in the cited evidence set."
+        },
+        "factor_updates" : [ {
+          "factor" : "Frontier liquidity cushion (undrawn revolver and long-dated debt maturities)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Undrawn $205m revolver and liquidity around $2.6b provide refinancing runway, reducing near-term default risk and pulling probability downward."
+        }, {
+          "factor" : "No bankruptcy filing indicated in Frontier's 2025-03-31 10-Q",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "No filing as of 3/31/2025 lowers immediate risk; supports a lower posterior."
+        }, {
+          "factor" : "Sector-wide ULCC distress signals (Altman Z-scores in distress/grey zone; Spirit bankruptcy)",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Peering into ULCC distress levels and Spirit's Chapter 11 increases baseline expectations for sector risk, offsetting some liquidity cushion."
+        }, {
+          "factor" : "ULCC peer Altman Z-score in distress/grey zone (~0.38–0.43)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Lower Z-scores signal financial stress within the peer group, elevating probability of distress."
+        }, {
+          "factor" : "Near-term debt maturity pressure (remainder 2025 and 2026 payments)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Maturities in 2025-2026 create refinancing risk if revenues underperform; supports higher bankruptcy risk."
+        }, {
+          "factor" : "Forecast dispersion across sources",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Divergent forecasts (9%, 46%, 0.16%) indicate uncertainty; overall effect uncertain, included as caution."
+        } ],
+        "synthesis_rationale" : "Beginning with a relatively high anchor (~46%), the updates from Frontier's liquidity and absence of a filing reduce probability, while sector distress and near-term debt pressures push risk upward. The resulting posterior of 8% reflects net downward pull relative to the anchor, with calibration accounting for correlated factors and forecast dispersion. The range captures residual uncertainty and potential model limitations."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.08,\n  \"range_low\": 0.04,\n  \"range_high\": 0.12,\n  \"summary\": [\n    \"Frontier's near-term bankruptcy probability appears low due to a solid liquidity cushion and no near-term filing.\",\n    \"Sector distress signals in ULCCs and near-term debt maturities push risk upward, creating non-negligible downside risk.\",\n    \"A wide dispersion in forecasts (from single-digit to mid-double-digit percentages) anchors the need for a calibrated posterior rather than a single point.\",\n    \"The calibrated posterior is 8%, with a modest uncertainty range reflecting correlated factors and divergent forecasts.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Starting from a ULCC-based base-rate anchor, Frontier's solid liquidity and absence of a near-term filing reduce risk, while sector distress signals and imminent maturities push probability upward. The calibrated posterior is 8%, with a range that captures residual uncertainty and forecast dispersion.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.46,\n      \"basis\": \"Base-rate anchor from the ULCC reference class with Altman Z-score distress signals; initial near-term bankruptcy expectation around 46% in the cited evidence set.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Frontier liquidity cushion (undrawn revolver and long-dated debt maturities)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Undrawn $205m revolver and liquidity around $2.6b provide refinancing runway, reducing near-term default risk and pulling probability downward.\"\n      },\n      {\n        \"factor\": \"No bankruptcy filing indicated in Frontier's 2025-03-31 10-Q\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"No filing as of 3/31/2025 lowers immediate risk; supports a lower posterior.\"\n      },\n      {\n        \"factor\": \"Sector-wide ULCC distress signals (Altman Z-scores in distress/grey zone; Spirit bankruptcy)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Peering into ULCC distress levels and Spirit's Chapter 11 increases baseline expectations for sector risk, offsetting some liquidity cushion.\"\n      },\n      {\n        \"factor\": \"ULCC peer Altman Z-score in distress/grey zone (~0.38–0.43)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Lower Z-scores signal financial stress within the peer group, elevating probability of distress.\"\n      },\n      {\n        \"factor\": \"Near-term debt maturity pressure (remainder 2025 and 2026 payments)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Maturities in 2025-2026 create refinancing risk if revenues underperform; supports higher bankruptcy risk.\"\n      },\n      {\n        \"factor\": \"Forecast dispersion across sources\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Divergent forecasts (9%, 46%, 0.16%) indicate uncertainty; overall effect uncertain, included as caution.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Beginning with a relatively high anchor (~46%), the updates from Frontier's liquidity and absence of a filing reduce probability, while sector distress and near-term debt pressures push risk upward. The resulting posterior of 8% reflects net downward pull relative to the anchor, with calibration accounting for correlated factors and forecast dispersion. The range captures residual uncertainty and potential model limitations.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.04, 0.12 ]
+    }, {
+      "probability" : 0.58,
+      "narrative" : "Starting from a ULCC reference-class anchor of about 46% bankruptcy probability, sector distress and near-term debt maturities raise Frontier's risk, while Frontier's ample liquidity and a pending Verizon deal mitigate some risk. The net effect yields a probability in the mid-to-high 0.5s with notable uncertainty due to divergent forecasts across sources.",
+      "summary" : [ "Anchor in ULCC base-rate: ~46% 24-month bankruptcy probability for ULCCs used as reference class.", "Sector distress signals (ULCC peers, Spirit) push risk upward; near-term debt maturities add rollover risk.", "Frontier's liquidity cushion and the anticipated Verizon merger provide meaningful downside offsets.", "Overall calibration reflects mixed signals with a moderate-to-high uncertainty band." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.46,
+          "basis" : "ULCC base-rate reference class; 24-month bankruptcy probability used as anchor for Frontier in the ULCC context, acknowledging horizon differences but leveraging relative risk within airline distress."
+        },
+        "factor_updates" : [ {
+          "factor" : "Near-term debt maturities (remainder 2025 and 2026)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Debt principal payments in late 2025-2026 create rollover risk and liquidity strain if conditions worsen."
+        }, {
+          "factor" : "Liquidity cushion and undrawn facilities",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Undrawn revolver and sizable liquidity provide refinancing runway and cushion against stress."
+        }, {
+          "factor" : "Pending Verizon merger close by early 2026",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Strategic financing/structural stabilization from a closing deal could improve resilience."
+        }, {
+          "factor" : "ULCC sector distress signals (Spirit bankruptcy, Altman Z-score)",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Sector-level distress metrics indicate elevated probability of distress spilling to peers."
+        }, {
+          "factor" : "Spirit Airlines bankruptcy/restructuring as sector signal",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Recent ULCC stress in the sector demonstrates ongoing risk contagion."
+        }, {
+          "factor" : "Forecast dispersion across sources",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Divergent forecasts emphasize high uncertainty; we balance accordingly."
+        } ],
+        "synthesis_rationale" : "We began with a 0.46 anchor from ULCC base-rate and adjusted via factors with qualitative magnitudes. Sector distress and near-term maturities tilt up the probability; liquidity and a potential Verizon deal tilt down. Given the dispersion in forecasts (0.16% to 46%), we converge on a mid-0.5s calibrated with a moderate uncertainty band, acknowledging horizon differences and sector-specific dynamics."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.58,\n  \"range_low\": 0.50,\n  \"range_high\": 0.68,\n  \"summary\": [\n    \"Anchor in ULCC base-rate: ~46% 24-month bankruptcy probability for ULCCs used as reference class.\",\n    \"Sector distress signals (ULCC peers, Spirit) push risk upward; near-term debt maturities add rollover risk.\",\n    \"Frontier's liquidity cushion and the anticipated Verizon merger provide meaningful downside offsets.\",\n    \"Overall calibration reflects mixed signals with a moderate-to-high uncertainty band.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Starting from a ULCC reference-class anchor of about 46% bankruptcy probability, sector distress and near-term debt maturities raise Frontier's risk, while Frontier's ample liquidity and a pending Verizon deal mitigate some risk. The net effect yields a probability in the mid-to-high 0.5s with notable uncertainty due to divergent forecasts across sources.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.46,\n      \"basis\": \"ULCC base-rate reference class; 24-month bankruptcy probability used as anchor for Frontier in the ULCC context, acknowledging horizon differences but leveraging relative risk within airline distress.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Near-term debt maturities (remainder 2025 and 2026)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Debt principal payments in late 2025-2026 create rollover risk and liquidity strain if conditions worsen.\"\n      },\n      {\n        \"factor\": \"Liquidity cushion and undrawn facilities\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Undrawn revolver and sizable liquidity provide refinancing runway and cushion against stress.\"\n      },\n      {\n        \"factor\": \"Pending Verizon merger close by early 2026\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Strategic financing/structural stabilization from a closing deal could improve resilience.\"\n      },\n      {\n        \"factor\": \"ULCC sector distress signals (Spirit bankruptcy, Altman Z-score)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Sector-level distress metrics indicate elevated probability of distress spilling to peers.\"\n      },\n      {\n        \"factor\": \"Spirit Airlines bankruptcy/restructuring as sector signal\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Recent ULCC stress in the sector demonstrates ongoing risk contagion.\"\n      },\n      {\n        \"factor\": \"Forecast dispersion across sources\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Divergent forecasts emphasize high uncertainty; we balance accordingly.\"\n      }\n    ],\n    \"synthesis_rationale\": \"We began with a 0.46 anchor from ULCC base-rate and adjusted via factors with qualitative magnitudes. Sector distress and near-term maturities tilt up the probability; liquidity and a potential Verizon deal tilt down. Given the dispersion in forecasts (0.16% to 46%), we converge on a mid-0.5s calibrated with a moderate uncertainty band, acknowledging horizon differences and sector-specific dynamics.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.5, 0.68 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.17936726219798388,
+      "range" : [ 0.08, 0.58 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.07849829351535834,
+    "raw-posterior" : 0.0033098126613050776,
+    "capped" : true,
+    "prior" : 0.46,
+    "factors" : [ {
+      "name" : "Forecast dispersion across sources (Metaculus 9%, valueinvesting ~46% 24 months, Gurufocus ~0.16%)",
+      "p-yes" : 0.5,
+      "p-no" : 0.6,
+      "bf" : 0.8333333333333334
+    }, {
+      "name" : "No bankruptcy filing indicated in Frontier's 2025-03-31 10-Q",
+      "p-yes" : 0.05,
+      "p-no" : 0.85,
+      "bf" : 0.05882352941176471
+    }, {
+      "name" : "Spirit Airlines bankruptcy/restructuring as sector signal",
+      "p-yes" : 0.7,
+      "p-no" : 0.5,
+      "bf" : 1.4
+    }, {
+      "name" : "Spirit sector restructuring implies some sector risk but not Frontier-specific near-term distress",
+      "p-yes" : 0.65,
+      "p-no" : 0.4,
+      "bf" : 1.625
+    }, {
+      "name" : "Near-term debt maturities (remainder of 2025 and 2026)",
+      "p-yes" : 0.7,
+      "p-no" : 0.55,
+      "bf" : 1.2727272727272725
+    }, {
+      "name" : "Frontier liquidity cushion (undrawn revolver and long-dated debt maturities)",
+      "p-yes" : 0.15,
+      "p-no" : 0.8,
+      "bf" : 0.18749999999999997
+    }, {
+      "name" : "Pending Verizon merger close by early 2026",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Near-term community forecasts (Metaculus ~9% before May 1, 2026)",
+      "p-yes" : 0.25,
+      "p-no" : 0.65,
+      "bf" : 0.3846153846153846
+    }, {
+      "name" : "Sector-wide ULCC distress signals (Altman Z-scores in distress/grey zone; Spirit Airlines' Chapter 11)",
+      "p-yes" : 0.7,
+      "p-no" : 0.4,
+      "bf" : 1.7499999999999998
+    }, {
+      "name" : "Liquidity cushion and undrawn facilities",
+      "p-yes" : 0.2,
+      "p-no" : 0.8,
+      "bf" : 0.25
+    }, {
+      "name" : "Near-term debt maturity pressure (remainder 2025 and 2026 payments)",
+      "p-yes" : 0.75,
+      "p-no" : 0.5,
+      "bf" : 1.5
+    }, {
+      "name" : "ULCC sector distress signals (Spirit bankruptcy, Altman Z-score in distress/grey zone)",
+      "p-yes" : 0.75,
+      "p-no" : 0.4,
+      "bf" : 1.875
+    }, {
+      "name" : "ULCC peer Altman Z-score in distress/grey zone (~0.38–0.43)",
+      "p-yes" : 0.65,
+      "p-no" : 0.45,
+      "bf" : 1.4444444444444444
+    }, {
+      "name" : "Regulatory/regulatory risk for Verizon deal (delay/block)",
+      "p-yes" : 0.6,
+      "p-no" : 0.4,
+      "bf" : 1.4999999999999998
+    }, {
+      "name" : "Specific distress probability for Frontier (Gurufocus z-score-based distress estimate)",
+      "p-yes" : 0.18,
+      "p-no" : 0.7,
+      "bf" : 0.2571428571428572
+    }, {
+      "name" : "ULCC sector distress (class anchor from market forecasts)",
+      "p-yes" : 0.75,
+      "p-no" : 0.45,
+      "bf" : 1.6666666666666665
+    } ]
+  },
+  "question" : "Will Frontier Group Holdings, Inc. file for bankruptcy protection before May 1, 2026?",
+  "probability" : 0.18,
+  "summary" : [ "Ensemble aggregate is 18% for Frontier filing before May 1, 2026; Frontier shows a solid liquidity cushion and no bankruptcy filing as of 2025-03-31, suggesting low near-term risk.", "Sector-wide ULCC distress signals (low Altman Z-scores, Spirit's Chapter 11) provide upward pressure on risk, but they are not Frontier-specific and are tempered by Frontier's debt maturity profile through 2029.", "Forecasts are highly dispersed (Metaculus ~9%, Gurufocus ~0.16%, market-based ULCC distress ~46%), indicating substantial uncertainty but no clear near-term breach signal from Frontier itself.", "Based on threshold analysis and Frontier-specific indicators, the evidence supports staying near the ensemble estimate with modest uncertainty; no systematic bias detected warranting adjustment." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.18,
+    "critique_assessment" : "Objections valid in highlighting sector-wide distress and near-term rollovers, but Frontier-specific liquidity and absence of distress signals temper the impact; no compelling evidence to depart from the ensemble.",
+    "adjustment" : "No adjustment to the ensemble; the calibrated range reflects modest uncertainty around 0.18."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.19999999999999998,
+      "reference-class" : "US-listed airline carriers (ULCC/low-cost) evaluated with Altman Z-score distress zones as a base-rate reference class for bankruptcy risk.",
+      "sources" : [ {
+        "url" : "https://valueinvesting.io/ULCC/probability-of-bankruptcy",
+        "claim" : "ULCC Probability of Bankruptcy is 45.74% in the next 24 months."
+      }, {
+        "url" : "https://www.gurufocus.com/term/zscore/ULCC",
+        "claim" : "Altman Z-Score for ULCC is around 0.38, indicating distress zone."
+      }, {
+        "url" : "https://www.chartmill.com/stock/quote/ULCC/fundamental-analysis",
+        "claim" : "Altman-Z score for ULCC is 0.43, indicating distress in health metrics."
+      }, {
+        "url" : "https://www.investopedia.com/terms/a/altman.asp",
+        "claim" : "Altman Z-score thresholds: Z > 2.99 safe; 1.81–2.99 grey; <1.81 distress."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/Altman_Z-score",
+        "claim" : "Altman Z-score zones: distress < 1.81; grey 1.81–2.99; safe > 2.99."
+      }, {
+        "url" : "https://www.mdpi.com/3456588",
+        "claim" : "MDPI notes Z-score zones: distress < 1.81; grey 1.81–2.99; safe > 2.99."
+      }, {
+        "url" : "https://apnews.com/article/spirit-airlines-bankruptcy-92899d09a989e2679e4ba5ef5eef1d96",
+        "claim" : "Spirit Airlines’ parent company expects to exit Chapter 11 bankruptcy in the late spring or early summer 2026."
+      }, {
+        "url" : "https://www.axios.com/2026/02/24/spirit-airlines-bankruptcy-restructuring",
+        "claim" : "Spirit Airlines avoids liquidation after a second bankruptcy and says it expects to emerge from bankruptcy in the late spring or early summer 2026."
+      }, {
+        "url" : "https://www.sec.gov/Archives/edgar/data/1670076/000167007625000111/fron-20250331.htm",
+        "claim" : "Frontier Group Holdings, Inc.'s 2025-03-31 Form 10-Q shows no revolver borrowings (undrawn $205 million), liquidity, and debt maturities through 2029; no bankruptcy filing indicated."
+      }, {
+        "url" : "https://www.metaculus.com/questions/42120/will-frontier-group-holdings-inc-file-for-bankruptcy-protection-before-may-1-2026/",
+        "claim" : "9% chance Frontier Group Holdings, Inc. files for bankruptcy protection before May 1, 2026."
+      }, {
+        "url" : "https://valueinvesting.io/ULCC/probability-of-bankruptcy",
+        "claim" : "ULCC probability of bankruptcy is 45.74% within the next 24 months."
+      }, {
+        "url" : "https://www.gurufocus.com/term/zscore/FYBR",
+        "claim" : "Frontier Group Holdings has a probability of financial distress of 0.16% in the coming year."
+      } ],
+      "confidence" : "high"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Frontier liquidity cushion (undrawn revolving facility of $205 million) and long-dated debt maturities through 2029",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Frontier reports an undrawn $205 million revolving facility and debt maturities through 2029, which provides a sizable liquidity runway that reduces near-term default risk."
+      }, {
+        "name" : "No bankruptcy filing indicated in Frontier's 2025-03-31 10-Q",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The 10-Q shows no bankruptcy filing as of March 31, 2025, suggesting lower near-term bankruptcy risk."
+      }, {
+        "name" : "Sector-wide ULCC distress signals (Altman Z-scores in distress/grey zone; Spirit Airlines' Chapter 11)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Distress indicators in ULCC peers and Spirit Airlines' Chapter 11 proceedings raise industry-wide default risk assumptions."
+      }, {
+        "name" : "ULCC peer Altman Z-score in distress/grey zone (~0.38–0.43)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Lower Altman Z-scores among ULCC peers indicate elevated bankruptcy risk within the reference class."
+      }, {
+        "name" : "Near-term debt maturity pressure (remainder 2025 and 2026 payments)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Significant near-term principal repayments could stress liquidity if revenue trends weaken."
+      }, {
+        "name" : "Forecast dispersion across sources (Metaculus 9%, valueinvesting ~46% 24 months, Gurufocus ~0.16%)",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Divergent forecasts across sources yield no clear directional consensus on near-term bankruptcy risk."
+      }, {
+        "name" : "Near-term debt maturities (remainder of 2025 and 2026)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Frontier's March 31, 2025 10-Q shows debt principal payments of $209 million in the remainder of 2025 and $120 million in 2026, creating rollover risk that could elevate distress probability."
+      }, {
+        "name" : "Liquidity cushion and undrawn facilities",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Frontier reports total liquidity around $2.6 billion as of March 31, 2025, including a $1.3 billion delayed-draw facility and $0.8 billion available on its revolving facility, providing substantial liquidity to weather near-term maturities."
+      }, {
+        "name" : "Pending Verizon merger close by early 2026",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Frontier indicated the Verizon acquisition is expected to close by the first quarter of 2026, which could stabilize the balance sheet and strategic position if completed."
+      }, {
+        "name" : "ULCC sector distress (class anchor from market forecasts)",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "A market-based estimate places ULCC bankruptcy probability around 45.7% within 24 months, signaling substantial sector-specific distress risk."
+      }, {
+        "name" : "Spirit Airlines bankruptcy/restructuring as sector signal",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Spirit’s Chapter 11 proceedings and restructuring demonstrate continued stress in ULCC space and potential contagion effects for peers."
+      }, {
+        "name" : "Regulatory/regulatory risk for Verizon deal (delay/block)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Regulatory approvals risk for the Verizon deal could delay or block the strategic restructuring, adding uncertainty and downside risk."
+      }, {
+        "name" : "Frontier liquidity cushion (undrawn revolver and long-dated debt maturities)",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Frontier's 2025-03-31 10-Q shows an undrawn $205 million revolver, healthy liquidity, and debt maturities through 2029, signaling adequate near-term refinancing capacity and reducing bankruptcy risk."
+      }, {
+        "name" : "ULCC sector distress signals (Spirit bankruptcy, Altman Z-score in distress/grey zone)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "ULCC peers exhibit high 24-month bankruptcy probability (≈45.7%) and low Altman Z-scores (≈0.38–0.43), indicating sector-wide distress that could elevate Frontier's risk."
+      }, {
+        "name" : "Near-term community forecasts (Metaculus ~9% before May 1, 2026)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Community forecast places probability well below the 24-month anchor, suggesting lower near-term risk despite sector signals."
+      }, {
+        "name" : "Specific distress probability for Frontier (Gurufocus z-score-based distress estimate)",
+        "direction" : "down",
+        "magnitude" : "weak",
+        "rationale" : "Gurufocus indicates a very low probability of distress in the coming year (≈0.16%), pulling the forecast modestly toward the downside."
+      }, {
+        "name" : "Spirit sector restructuring implies some sector risk but not Frontier-specific near-term distress",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Spirit's bankruptcy proceedings suggest broader ULCC sector volatility that could raise Frontier's risk profile, even if Frontier's own liquidity is solid."
+      } ],
+      "confidence" : "medium"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "medium",
+  "range" : [ 0.12, 0.28 ],
+  "synthesis" : "Frontier's liquidity runway and lack of near-term distress indicators suggest a low likelihood of bankruptcy before May 1, 2026, aligning with the 18% ensemble. Sector distress signals raise risk generally, but frontier-specific fundamentals keep the probability near the ensemble with moderate uncertainty."
+}

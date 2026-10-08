@@ -1,0 +1,30 @@
+{
+  "primary": "resolution",
+  "note": "Instruction texts verbatim from the study's reranker prompt file.",
+  "criteria": [
+    {
+      "name": "resolution",
+      "positive_instruction": "Two crux questions are equivalent if resolving one would necessarily resolve the other, because they ask about the same underlying factual question. Ignore differences in wording, specificity, or answer-label ordering (A/B may be swapped). Does the following crux question target the same factual uncertainty?",
+      "negative_instruction": "Two crux questions are different if they could be resolved independently — knowing the answer to one would not determine the answer to the other. Even if they use similar vocabulary or concern the same topic, determine whether the following crux question targets a genuinely different factual uncertainty. Answer labels (A/B) may be swapped.",
+      "paper_label": "resolution matching (moderate)",
+      "study_prompt_id": 1,
+      "study_prompt_name": "core_factual_question"
+    },
+    {
+      "name": "equivalence",
+      "positive_instruction": "Given a crux question about a forecasting problem, determine whether the following crux question addresses the same underlying point of disagreement, even if worded differently. The answer labels (A/B) may be swapped.",
+      "negative_instruction": "Given a crux question about a forecasting problem, determine whether the following crux question addresses a DIFFERENT point of disagreement. Consider them different even if they share vocabulary, as long as the core factual question is distinct.",
+      "paper_label": "equivalence matching (strict)",
+      "study_prompt_id": 0,
+      "study_prompt_name": "equivalence_standard"
+    },
+    {
+      "name": "debate",
+      "positive_instruction": "Imagine two forecasters disagreeing. If resolving the query crux would settle their specific point of contention, would resolving the following crux question settle the exact same point of contention? Two cruxes are equivalent if they would end the same debate. Ignore wording differences and answer-label order (A/B may be swapped).",
+      "negative_instruction": "Imagine two forecasters disagreeing. If resolving the query crux would settle one point of contention, would the following crux question address a different point of contention — one that could persist even after the first crux is resolved? Two cruxes are different if they would end different debates. Answer labels (A/B) may be swapped.",
+      "paper_label": "debate matching (broad)",
+      "study_prompt_id": 9,
+      "study_prompt_name": "debate_settlement"
+    }
+  ]
+}

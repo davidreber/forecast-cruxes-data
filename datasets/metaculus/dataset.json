@@ -1,0 +1,147 @@
+{
+ "name": "metaculus",
+ "description": "15 binary Metaculus questions open in February 2026. Introspected premises: gpt-5.4, eleven prompts, 55 calls. Extracted premises: gpt-5.4-mini extraction from pairs of disagreeing forecasts by an automated forecaster (gpt-5-nano with web search).",
+ "question_ids": [
+  "will-afd-win-the-most-seats-in-the-badenwürttemberg-landtag-election",
+  "will-ali-khamenei-cease-to-be-supreme-leader-of-iran-before-april-1-2026",
+  "will-any-political-party-or-coalition-acquire-a-supermajority-in-the-2026-hungar",
+  "will-any-state-actor-use-chemical-weapons-in-ukraine-before-may-1-2026",
+  "will-at-least-one-film-surpass-us1-billion-in-worldwide-box-office-before-may-1-",
+  "will-cdu-win-the-most-seats-in-the-badenwürttemberg-landtag-election",
+  "will-christies-sothebys-or-phillips-report-a-public-auction-sale-of-a-painting-f",
+  "will-frontier-group-holdings-inc-file-for-bankruptcy-protection-before-may-1-202",
+  "will-hr-33-united-statestaiwan-expedited-doubletax-relief-act-be-enacted-into-la",
+  "will-the-cannes-film-festival-publish-its-2026-official-selection-before-april-1",
+  "will-the-english-wikipedia-have-at-least-7145000-articles-before-march-1-2026",
+  "will-the-iom-missing-migrants-project-record-at-least-1000-mediterranean-migrant",
+  "will-the-iom-missing-migrants-project-record-at-least-900-mediterranean-migrant-",
+  "will-the-official-result-of-the-lamag-byelection-sabah-scheduled-for-january-24-",
+  "will-the-uk-increase-the-qualifying-period-for-settlement-to-10-years-before-may"
+ ],
+ "inclusion_rule": "every question both pools cover (15)",
+ "pools": "introspected.json and extracted.json hold every premise as the models produced it, in recorded order, repeats kept. The package removes repeated texts before it selects (rule in build_checks.deduplication) and reports how many it removed.",
+ "noise_reference": "noise_reference/introspected.json is an independent second introspection sample under the same protocol (gpt-5.4, prompts 0 to 10, 55 calls, OpenAI batch batch_6ab45598ade08190be679c8aac52dd14); the verifier's tolerances are measured from runs on it",
+ "provenance": {
+  "introspected": {
+   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search/apriori/apriori_contrasts_2026-03-31T18-55-23.json",
+   "sha256": "633eec35e1aac64f14bcf3b73124e71f8c3bdb5deb72421fee899d7c7185efd5"
+  },
+  "introspection_metadata": {
+   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search/apriori/apriori_metadata_2026-03-31T18-55-23.json",
+   "sha256": "a1c872f354239b4645d0e1f774f0674577c88b737956a582875e53dfbf90562e"
+  },
+  "introspected_noise_reference": {
+   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_rep2/apriori/apriori_contrasts_2026-09-23T17-53-03.json",
+   "sha256": "49866d7bb8250cf081b3afe52a6df64f62596752eec63a56327a7d2a87b237cf"
+  },
+  "introspection_metadata_noise_reference": {
+   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_rep2/apriori/apriori_metadata_2026-09-23T17-53-03.json",
+   "sha256": "5d820d464aafb61f98acee45ed29468a8c76f2a2e9e10e650819621c100103ee"
+  },
+  "extracted": {
+   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search/cruxes/intermediate_contrasts_2026-03-31T16-34-41.json",
+   "sha256": "a952346c4ef92d08afd10711b5876fb351d96a70ed243826ee6fc59a36b8c8c1"
+  },
+  "extracted_deduplicated_by_research_code": {
+   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_dedup/cruxes/intermediate_contrasts_dedup_2026-09-23T16-21-28.json",
+   "sha256": "106557f2d320f34e8ed817625089316bec578d0a264fe067b404b5e34c9b12b4"
+  },
+  "question_list": {
+   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_dedup/apriori/set_inclusion_all_p1_pos_only_2026-09-23T16-50-14.json",
+   "sha256": "a09faaaf74f814832e1c3fea575d5ee208650cd055180bb19b97c1dd201b508e"
+  }
+ },
+ "build_checks": {
+  "introspected": {
+   "questions": 15,
+   "premises": 4727,
+   "min_pool": 243,
+   "max_pool": 359
+  },
+  "extracted": {
+   "questions": 15,
+   "premises": 21129,
+   "min_pool": 1074,
+   "max_pool": 1714
+  },
+  "introspected_noise_reference": {
+   "questions": 15,
+   "premises": 4605,
+   "min_pool": 239,
+   "max_pool": 342
+  },
+  "deduplication": {
+   "rule": "repeated premise texts removed before selection: texts equal after collapsing whitespace runs to one space (case sensitive, no fuzzy matching) are repeats; the first occurrence is kept verbatim in place",
+   "introspected": {
+    "removed": 0,
+    "questions_with_repeats": 0,
+    "required": [
+     0,
+     0
+    ],
+    "equal_to_research_code_pools": "the recorded pool itself, which has no repeats"
+   },
+   "extracted": {
+    "removed": 321,
+    "questions_with_repeats": 8,
+    "required": [
+     321,
+     8
+    ],
+    "equal_to_research_code_pools": {
+     "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_dedup/cruxes/intermediate_contrasts_dedup_2026-09-23T16-21-28.json",
+     "sha256": "106557f2d320f34e8ed817625089316bec578d0a264fe067b404b5e34c9b12b4"
+    }
+   },
+   "noise_reference_introspected": {
+    "removed": 0,
+    "questions_with_repeats": 0
+   }
+  },
+  "forecasts": {
+   "forecast_files": 449,
+   "shipped": 448,
+   "refiled_by_own_question": [],
+   "left_out_other_question": [
+    {
+     "file": "2026-03-01_english-wikipedia-least/forecast15.json",
+     "question_id": "will-the-english-wikipedia-have-at-least-7160000-articles-before-april-1-2026"
+    }
+   ]
+  },
+  "questions_with_two_forecast_directories": 1,
+  "questions_without_forecasts": [],
+  "metaculus_post_ids": {
+   "with_post_id": 15,
+   "without_post_id": [],
+   "by_status": {
+    "ambiguous": 3,
+    "confirmed": 12
+   },
+   "ambiguous": [
+    {
+     "question_id": "will-ali-khamenei-cease-to-be-supreme-leader-of-iran-before-april-1-2026",
+     "metaculus_post_id": 42232,
+     "alternative_post_ids": [
+      42148
+     ]
+    },
+    {
+     "question_id": "will-any-political-party-or-coalition-acquire-a-supermajority-in-the-2026-hungar",
+     "metaculus_post_id": 42231,
+     "alternative_post_ids": [
+      40005
+     ]
+    },
+    {
+     "question_id": "will-the-uk-increase-the-qualifying-period-for-settlement-to-10-years-before-may",
+     "metaculus_post_id": 42230,
+     "alternative_post_ids": [
+      42135
+     ]
+    }
+   ],
+   "note": "a null post id needs a Metaculus API token to resolve (artifact_builder/resolve_metaculus_post_ids.py); an ambiguous one names the post chosen among posts of identical title and lists the others"
+  }
+ }
+}

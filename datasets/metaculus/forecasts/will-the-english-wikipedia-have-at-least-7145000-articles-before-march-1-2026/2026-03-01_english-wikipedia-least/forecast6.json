@@ -1,0 +1,299 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.01,
+      "narrative" : "Evidence shows English Wikipedia sat near 7.14 million by late February 2026, with a 350-article gap to 7,145,000. The two-day window to March 1 would require an outsized surge far beyond recent growth, making the threshold crossing highly unlikely, barring an extraordinary one-off spike.",
+      "summary" : [ "Counts around 7.14 million by late Feb 2026; 7,145,000 is not yet reached as of March 1, 2026, leaving a small 350-article gap.", "To hit 7,145,000 in the next two days would require a surge well above typical daily additions (~600 articles/day), which is highly unlikely.", "A rare one-off spike could push it over the threshold, but the probability remains very low in the near term." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.01,
+          "basis" : "Reference class: near-term growth of the English Wikipedia article count. Observed counts around 7.14 million by late Feb 2026 imply a tiny remaining gap to 7,145,000; the 0.01 anchor reflects the very low likelihood given the two-day horizon."
+        },
+        "factor_updates" : [ {
+          "factor" : "Two-day growth gap to threshold (need ~1,411 new articles in 2 days)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "To reach 7,145,000 in two days would require roughly 1,411 new articles, far above the typical 500–600 per day, making a crossing over the threshold extremely unlikely."
+        }, {
+          "factor" : "Observed counts as of Feb 27, 2026 (~7.143–7.144 million)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "The target was not reached by late Feb 2026, indicating little momentum to crest the threshold in the immediate window."
+        }, {
+          "factor" : "Chance of a one-off surge (bots or campaigns) causing a spike",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "A rare, anomalous surge could push the count over the threshold, but such events are not typical in the near term and cannot be relied upon."
+        }, {
+          "factor" : "Long-run growth momentum (historic milestone of crossing 7M in May 2025)",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Past momentum informs growth but has limited influence on a two-day horizon near the target."
+        } ],
+        "synthesis_rationale" : "Calibrated by combining strong down updates (tight proximity to the threshold and two-day requirement) with weak up factors (possible but unlikely one-off surge). Given the extremely tight time window and observed counts, the posterior probability is anchored near zero, with a narrow plausible range and explicit caveats for sporadic bursts."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.01,\n  \"range_low\": 0.01,\n  \"range_high\": 0.02,\n  \"summary\": [\n    \"Counts around 7.14 million by late Feb 2026; 7,145,000 is not yet reached as of March 1, 2026, leaving a small 350-article gap.\",\n    \"To hit 7,145,000 in the next two days would require a surge well above typical daily additions (~600 articles/day), which is highly unlikely.\",\n    \"A rare one-off spike could push it over the threshold, but the probability remains very low in the near term.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Evidence shows English Wikipedia sat near 7.14 million by late February 2026, with a 350-article gap to 7,145,000. The two-day window to March 1 would require an outsized surge far beyond recent growth, making the threshold crossing highly unlikely, barring an extraordinary one-off spike.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.01,\n      \"basis\": \"Reference class: near-term growth of the English Wikipedia article count. Observed counts around 7.14 million by late Feb 2026 imply a tiny remaining gap to 7,145,000; the 0.01 anchor reflects the very low likelihood given the two-day horizon.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Two-day growth gap to threshold (need ~1,411 new articles in 2 days)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"To reach 7,145,000 in two days would require roughly 1,411 new articles, far above the typical 500–600 per day, making a crossing over the threshold extremely unlikely.\"\n      },\n      {\n        \"factor\": \"Observed counts as of Feb 27, 2026 (~7.143–7.144 million)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"The target was not reached by late Feb 2026, indicating little momentum to crest the threshold in the immediate window.\"\n      },\n      {\n        \"factor\": \"Chance of a one-off surge (bots or campaigns) causing a spike\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"A rare, anomalous surge could push the count over the threshold, but such events are not typical in the near term and cannot be relied upon.\"\n      },\n      {\n        \"factor\": \"Long-run growth momentum (historic milestone of crossing 7M in May 2025)\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Past momentum informs growth but has limited influence on a two-day horizon near the target.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Calibrated by combining strong down updates (tight proximity to the threshold and two-day requirement) with weak up factors (possible but unlikely one-off surge). Given the extremely tight time window and observed counts, the posterior probability is anchored near zero, with a narrow plausible range and explicit caveats for sporadic bursts.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.02 ]
+    }, {
+      "probability" : 0.01,
+      "narrative" : "Counts by late Feb 2026 sit just below 7.145M. The two-day window to March 1 demands an implausible surge in article creation, with only a slim chance from an anomalous spike; the best estimate remains essentially zero probability within the given horizon.",
+      "summary" : [ "As of March 1, 2026, the English Wikipedia count is around 7,144,650, roughly 350 short of 7,145,000.", "Reaching 7,145,000 in two days would require about 1,411 new articles, far above observed daily additions (~600/day).", "A rare one-off surge (e.g., bots or campaigns) could push the count over the threshold, but such events are unlikely in the near term.", "Overall, the near-term probability is effectively zero, consistent with a Bayesian posterior near 0%." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.01,
+          "basis" : "Reference class is near-term growth of the English Wikipedia article count; anchor probability chosen from forecast blocks noting counts around 7.0–7.14M by Feb 2026 and that 7,145,000 by Mar 1 is a highly unlikely tail event."
+        },
+        "factor_updates" : [ {
+          "factor" : "Two-day growth gap to threshold (need ~1,411 new articles in 2 days)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "The required surge is far above observed daily additions (~600/day); a two-day spike of this magnitude is highly unlikely."
+        }, {
+          "factor" : "Observed counts as of Feb 27, 2026 (~7.143–7.144 million)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Threshold not yet reached by late Feb 2026; counts sit just short of target."
+        }, {
+          "factor" : "Chance of a one-off surge (bots or campaigns) causing a spike",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "A rare, anomalous spike could push over threshold, but such events are not typical in near-term."
+        }, {
+          "factor" : "Long-run growth momentum (historic milestone of crossing 7M in May 2025)",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Past momentum informs general growth but has limited impact on a two-day horizon near the target."
+        } ],
+        "synthesis_rationale" : "The combination of a very small remaining gap, a two-day horizon, and the lack of supporting near-term models leads to a near-zero posterior. The anchor probability near 1% reinforces a conservative estimate; while correlated factors can slightly adjust the view (e.g., bots or anniversary activity), they do not materially alter the conclusion of an extremely low probability."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.01,\n  \"range_low\": 0.01,\n  \"range_high\": 0.02,\n  \"summary\": [\n    \"As of March 1, 2026, the English Wikipedia count is around 7,144,650, roughly 350 short of 7,145,000.\",\n    \"Reaching 7,145,000 in two days would require about 1,411 new articles, far above observed daily additions (~600/day).\",\n    \"A rare one-off surge (e.g., bots or campaigns) could push the count over the threshold, but such events are unlikely in the near term.\",\n    \"Overall, the near-term probability is effectively zero, consistent with a Bayesian posterior near 0%.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Counts by late Feb 2026 sit just below 7.145M. The two-day window to March 1 demands an implausible surge in article creation, with only a slim chance from an anomalous spike; the best estimate remains essentially zero probability within the given horizon.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.01,\n      \"basis\": \"Reference class is near-term growth of the English Wikipedia article count; anchor probability chosen from forecast blocks noting counts around 7.0–7.14M by Feb 2026 and that 7,145,000 by Mar 1 is a highly unlikely tail event.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Two-day growth gap to threshold (need ~1,411 new articles in 2 days)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"The required surge is far above observed daily additions (~600/day); a two-day spike of this magnitude is highly unlikely.\"\n      },\n      {\n        \"factor\": \"Observed counts as of Feb 27, 2026 (~7.143–7.144 million)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Threshold not yet reached by late Feb 2026; counts sit just short of target.\"\n      },\n      {\n        \"factor\": \"Chance of a one-off surge (bots or campaigns) causing a spike\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"A rare, anomalous spike could push over threshold, but such events are not typical in near-term.\"\n      },\n      {\n        \"factor\": \"Long-run growth momentum (historic milestone of crossing 7M in May 2025)\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Past momentum informs general growth but has limited impact on a two-day horizon near the target.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The combination of a very small remaining gap, a two-day horizon, and the lack of supporting near-term models leads to a near-zero posterior. The anchor probability near 1% reinforces a conservative estimate; while correlated factors can slightly adjust the view (e.g., bots or anniversary activity), they do not materially alter the conclusion of an extremely low probability.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.02 ]
+    }, {
+      "probability" : 0.02,
+      "narrative" : "Starting from near-term counts, the target threshold is not supported by observed data; updates from growth pace and the close distance to the threshold yield a low posterior probability of crossing by March 1, 2026, with a small chance from an anomalous surge.",
+      "summary" : [ "Observed counts as of late February 2026 place English Wikipedia around 7.0–7.14 million articles, short of 7,145,000 by March 1.", "To reach 7,145,000 in two days would require about 1,411 new English articles in 2 days, far above the typical rate (~600/day), making the threshold unlikely.", "A rare one-off surge (e.g., bot-driven edits) could push it over the line, but such spikes are not supported by the near-term data.", "Overall, the probability is low but not zero; the narrow window creates substantial uncertainty." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.04,
+          "basis" : "Near-term growth of the English-language Wikipedia article count; counts around late Feb 2026 show roughly 7.0–7.14 million, with the 7,145,000 threshold not yet reached."
+        },
+        "factor_updates" : [ {
+          "factor" : "Two-day growth gap to threshold (need ~1,411 new articles in 2 days)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Reaching the threshold in two days requires a daily addition well above the observed rate (~600/day); such a surge is highly unlikely."
+        }, {
+          "factor" : "Observed counts as of Feb 27, 2026 (~7.143–7.144 million)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "The threshold has not been crossed by late Feb 2026, lowering the probability of hitting it exactly by Mar 1."
+        }, {
+          "factor" : "Chance of a one-off surge (bots or campaigns) causing a spike",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "A rare spike could push the count over the line, but evidence suggests such events are not typical in the near term."
+        }, {
+          "factor" : "Long-run growth momentum (historic milestone of crossing 7M in May 2025)",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Past growth informs general trajectory but not the two-day horizon; does not strongly tilt probability."
+        } ],
+        "synthesis_rationale" : "We weighted the immediate proximity to the threshold and the required acceleration in growth as the dominant constraint, applying a conservative downward adjustment from the anchor. The potential for brief, anomalous boosts provides a small upward tail risk, but the narrow window and observed pace keep the final probability low. Calibration emphasizes the extreme-rare-event possibility but does not justify a high probability given current data."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.02,\n  \"range_low\": 0.01,\n  \"range_high\": 0.04,\n  \"summary\": [\n    \"Observed counts as of late February 2026 place English Wikipedia around 7.0–7.14 million articles, short of 7,145,000 by March 1.\",\n    \"To reach 7,145,000 in two days would require about 1,411 new English articles in 2 days, far above the typical rate (~600/day), making the threshold unlikely.\",\n    \"A rare one-off surge (e.g., bot-driven edits) could push it over the line, but such spikes are not supported by the near-term data.\",\n    \"Overall, the probability is low but not zero; the narrow window creates substantial uncertainty.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Starting from near-term counts, the target threshold is not supported by observed data; updates from growth pace and the close distance to the threshold yield a low posterior probability of crossing by March 1, 2026, with a small chance from an anomalous surge.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.04,\n      \"basis\": \"Near-term growth of the English-language Wikipedia article count; counts around late Feb 2026 show roughly 7.0–7.14 million, with the 7,145,000 threshold not yet reached.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Two-day growth gap to threshold (need ~1,411 new articles in 2 days)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Reaching the threshold in two days requires a daily addition well above the observed rate (~600/day); such a surge is highly unlikely.\"\n      },\n      {\n        \"factor\": \"Observed counts as of Feb 27, 2026 (~7.143–7.144 million)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"The threshold has not been crossed by late Feb 2026, lowering the probability of hitting it exactly by Mar 1.\"\n      },\n      {\n        \"factor\": \"Chance of a one-off surge (bots or campaigns) causing a spike\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"A rare spike could push the count over the line, but evidence suggests such events are not typical in the near term.\"\n      },\n      {\n        \"factor\": \"Long-run growth momentum (historic milestone of crossing 7M in May 2025)\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Past growth informs general trajectory but not the two-day horizon; does not strongly tilt probability.\"\n      }\n    ],\n    \"synthesis_rationale\": \"We weighted the immediate proximity to the threshold and the required acceleration in growth as the dominant constraint, applying a conservative downward adjustment from the anchor. The potential for brief, anomalous boosts provides a small upward tail risk, but the narrow window and observed pace keep the final probability low. Calibration emphasizes the extreme-rare-event possibility but does not justify a high probability given current data.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.04 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.012608609077045583,
+      "range" : [ 0.01, 0.02 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.004149377593360997,
+    "raw-posterior" : 0.0010014540039927746,
+    "capped" : true,
+    "prior" : 0.04,
+    "factors" : [ {
+      "name" : "Bots' share of edits contributing to faster growth",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "Anniversary-driven momentum and AI partnerships potentially boosting editing activity",
+      "p-yes" : 0.58,
+      "p-no" : 0.42,
+      "bf" : 1.380952380952381
+    }, {
+      "name" : "Past milestone of crossing 7 million and stable counts around 7.0–7.14 million",
+      "p-yes" : 0.2,
+      "p-no" : 0.8,
+      "bf" : 0.25
+    }, {
+      "name" : "Sustained near-term growth momentum (roughly 530–600 articles/day)",
+      "p-yes" : 0.6,
+      "p-no" : 0.4,
+      "bf" : 1.4999999999999998
+    }, {
+      "name" : "Tiny gap to threshold (7,145,000) as of March 1, 2026",
+      "p-yes" : 0.6,
+      "p-no" : 0.4,
+      "bf" : 1.4999999999999998
+    }, {
+      "name" : "Observed counts as of Feb 27, 2026",
+      "p-yes" : 0.85,
+      "p-no" : 0.15,
+      "bf" : 5.666666666666667
+    }, {
+      "name" : "Two-day growth gap to threshold",
+      "p-yes" : 0.05,
+      "p-no" : 0.95,
+      "bf" : 0.052631578947368425
+    }, {
+      "name" : "Near-term article-creation pace (roughly 600 new English articles per day)",
+      "p-yes" : 0.65,
+      "p-no" : 0.35,
+      "bf" : 1.8571428571428574
+    }, {
+      "name" : "Current count versus threshold as of 1 March 2026",
+      "p-yes" : 0.15,
+      "p-no" : 0.85,
+      "bf" : 0.17647058823529413
+    }, {
+      "name" : "Chance of a one-off surge (bots or campaigns) causing a spike",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Long-run growth momentum (historic milestone of crossing 7M in May 2025)",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Wikipedia 25th anniversary and related promotional activity",
+      "p-yes" : 0.55,
+      "p-no" : 0.45,
+      "bf" : 1.2222222222222223
+    } ]
+  },
+  "question" : "Will the English Wikipedia have at least 7,145,000 articles before March 1, 2026?",
+  "probability" : 0.03,
+  "summary" : [ "Objections highlight plausible near-term momentum that could nudge the count toward the threshold.", "Arithmetic shows crossing by March 1 would require a surge beyond recent daily growth; the window is tight but not impossible.", "Source inconsistency exists (count numbers vary slightly), but the best near-term anchors place the 7.14M range firmly below 7.145M.", "A modest upward adjustment from 1% to 3% accommodates the near-term upsides without overstating likelihood." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.01,
+    "critique_assessment" : "Valid: objections identify plausible near-term momentum that could raise odds, but the arithmetic and recent counts keep crossing unlikely.",
+    "adjustment" : "Adjusted upward from 1% to 3% to account for plausible near-term momentum, bots/AI activity, and anniversary effects, while still recognizing the short window makes such a breach unlikely."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.060000000000000005,
+      "reference-class" : "Near-term growth of the English-language Wikipedia article count (a large, volunteer-edited online encyclopedia).",
+      "sources" : [ {
+        "url" : "https://wikicount.net/",
+        "claim" : "There are approximately 7,143,589 articles in the English Wikipedia as of February 27, 2026."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/English_Wikipedia",
+        "claim" : "The English Wikipedia surpassed seven million articles on 28 May 2025."
+      }, {
+        "url" : "https://www.pewresearch.org/short-reads/2026/01/13/wikipedia-at-25-what-the-data-tells-us/",
+        "claim" : "As of December 2025, around 7 million English-language Wikipedia articles."
+      }, {
+        "url" : "https://wikimediafoundation.org/news/2026/01/15/wikipedia-celebrates-25years/",
+        "claim" : "Wikipedia facts and figures: 65+ million articles across languages."
+      }, {
+        "url" : "https://www.pewresearch.org/short-reads/2026/01/13/wikipedia-at-25-what-the-data-tells-us/",
+        "claim" : "As of December 2025, there are over 7 million English-language articles."
+      }, {
+        "url" : "https://www.statista.com/statistics/1428203/wikipedia-org-english-published/",
+        "claim" : "English-language articles on Wikipedia reached about 6.91 million by the end of 2024."
+      }, {
+        "url" : "https://wikimediafoundation.org/news/2026/01/15/wikipedia-celebrates-25years/",
+        "claim" : "Wikimedia Foundation reports Wikipedia contains over 65 million articles across more than 300 languages (as of January 2026)."
+      }, {
+        "url" : "https://www.pewresearch.org/short-reads/2026/01/13/wikipedia-at-25-what-the-data-tells-us/",
+        "claim" : "As of December 2025, there are around 7 million English-language articles."
+      }, {
+        "url" : "https://wikimediafoundation.org/news/2026/01/15/wikipedia-celebrates-25years/",
+        "claim" : "Wikipedia contains over 65 million articles across more than 300 languages."
+      }, {
+        "url" : "https://blog.reputationx.com/wikipedia-statistics",
+        "claim" : "English Wikipedia averages about 600 new articles per day."
+      } ],
+      "confidence" : "low"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Two-day growth gap to threshold (need ~1,411 new articles in 2 days)",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Hit requires a daily addition rate well above recent averages (~600 articles/day); such a surge over two days is highly unlikely."
+      }, {
+        "name" : "Observed counts as of Feb 27, 2026 (~7.143–7.144 million)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The threshold of 7,145,000 has not yet been reached by late February, lowering the near-term probability."
+      }, {
+        "name" : "Chance of a one-off surge (bots or campaigns) causing a spike",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "A rare, anomalous burst could push the count over the threshold, but such events are not typical in the near term."
+      }, {
+        "name" : "Long-run growth momentum (historic milestone of crossing 7M in May 2025)",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Past momentum informs general growth but has limited influence on a two-day horizon near the target."
+      }, {
+        "name" : "Tiny gap to threshold (7,145,000) as of March 1, 2026",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "As of March 1, 2026, English Wikipedia has about 7,144,650 articles, only 350 short of 7,145,000, so a small surge could push it over the line."
+      }, {
+        "name" : "Sustained near-term growth momentum (roughly 530–600 articles/day)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "If the daily article additions stay in the typical 500–600 range, the remaining ~350 articles could plausibly accumulate within a day or two."
+      }, {
+        "name" : "Past milestone of crossing 7 million and stable counts around 7.0–7.14 million",
+        "direction" : "down",
+        "magnitude" : "weak",
+        "rationale" : "Historical counts show the threshold is not a guaranteed near-term event, and long-standing stability around 7.0–7.14 million reduces the odds of an abrupt jump."
+      }, {
+        "name" : "Wikipedia 25th anniversary and related promotional activity",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Anniversaries and outreach during early 2026 could temporarily boost edits and article creation, providing a modest upward push."
+      }, {
+        "name" : "Current count versus threshold as of 1 March 2026",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "The English Wikipedia has 7,144,650 articles as of March 1, 2026, which is 350 short of the 7,145,000 threshold; with the target date passed, crossing the threshold before March 1 is not evidenced. ([en.wikicount.net](https://en.wikicount.net/?utm_source=openai))"
+      }, {
+        "name" : "Near-term article-creation pace (roughly 600 new English articles per day)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "If the pace continues, the remaining 350-article gap could be closed in 1–2 days, making crossing plausible in the near term, though not guaranteed. ([blog.reputationx.com](https://blog.reputationx.com/wikipedia-statistics?utm_source=openai))"
+      }, {
+        "name" : "Anniversary-driven momentum and AI partnerships potentially boosting editing activity",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Wikimedia Foundation’s 25th anniversary celebrations and announced AI partnerships in January 2026 may spur additional volunteer editing and content creation activity. ([wikimediafoundation.org](https://wikimediafoundation.org/news/2026/01/15/wikipedia-celebrates-25years/?utm_source=openai))"
+      }, {
+        "name" : "Bots' share of edits contributing to faster growth",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Pew Research notes that bots account for a substantial share of edits, which can accelerate article creation and updates in the near term. ([pewresearch.org](https://www.pewresearch.org/short-reads/2026/01/13/wikipedia-at-25-what-the-data-tells-us/?utm_source=openai))"
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "medium",
+  "range" : [ 0.01, 0.07 ],
+  "synthesis" : "The near-term window is tight: the threshold is within reach if a short-lived surge occurs, but typical daily additions make 7,145,000 by March 1 unlikely. A calibrated bump to 3% reflects the small but nonzero chance while preserving overall low probability."
+}

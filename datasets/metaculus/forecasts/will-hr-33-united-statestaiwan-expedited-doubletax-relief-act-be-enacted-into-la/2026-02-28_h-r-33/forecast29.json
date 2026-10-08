@@ -1,0 +1,359 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.05,
+      "narrative" : "Anchoring to the historical base-rate for federal legislation (~6%), updates on Senate inaction and ongoing negotiations shift the probability modestly. The net posterior is 5%, with substantial uncertainty and a possible uptick if the Senate moves on the companion bill or if a Taiwan tax framework is agreed.",
+      "summary" : [ "H.R.33 passed the House in January 2025 with broad bipartisan support, but Senate action remains the key bottleneck.", "A Senate companion (S.199) was introduced, signaling momentum but no recorded passage as of March 2026.", "Overall federal enactment rates are historically low, and current gridlock reduces the odds of enactment by May 1, 2026.", "A Bayesian posterior of 5% was computed to reflect these dynamics, yielding a low but nonzero chance." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.06,
+          "basis" : "Chosen as the base-rate for federal legislation becoming law within this reference class; reflects the typical proportion of introduced bills that ultimately become law (i.e., requires Senate passage and presidential signature)."
+        },
+        "factor_updates" : [ {
+          "factor" : "Senate action status",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "As of May 1, 2026 there is no public record of Senate passage; the Senate companion was introduced but has seen little if any action, which lowers the odds."
+        }, {
+          "factor" : "House passage precedent",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "H.R.33 passed the House by a wide margin, indicating strong bipartisan support that could lift odds if the Senate acts."
+        }, {
+          "factor" : "Senate companion introduced",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "A Senate companion was introduced and referred, signaling momentum toward potential bicameral agreement."
+        }, {
+          "factor" : "Executive negotiations on Taiwan tax framework",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Negotiations on a comprehensive tax framework could provide a pathway for implementing legislation once an agreement is in place."
+        }, {
+          "factor" : "Overall federal enactment rate / political climate",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Historical data show a low enactment rate for introduced bills, and the current Congress has been particularly gridlocked; this weighs on probabilities."
+        }, {
+          "factor" : "Election year dynamics",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Election-year dynamics generally depress legislative output and prioritization, reducing chances of new enactments before May 2026."
+        } ],
+        "synthesis_rationale" : "The posterior probability (5%) is obtained by anchoring to the ~6% base-rate and applying explicit, directional updates for each factor. The magnitude of each update is weighed to reflect how likely each factor would shift enactment odds; the dominant drag comes from Senate inaction and gridlock, with House momentum and external negotiations providing upside. Calibrated to yield a low-but-nonzero posterior, acknowledging substantial uncertainty and the potential for late-stage movement."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.05,\n  \"range_low\": 0.03,\n  \"range_high\": 0.07,\n  \"summary\": [\n    \"H.R.33 passed the House in January 2025 with broad bipartisan support, but Senate action remains the key bottleneck.\",\n    \"A Senate companion (S.199) was introduced, signaling momentum but no recorded passage as of March 2026.\",\n    \"Overall federal enactment rates are historically low, and current gridlock reduces the odds of enactment by May 1, 2026.\",\n    \"A Bayesian posterior of 5% was computed to reflect these dynamics, yielding a low but nonzero chance.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Anchoring to the historical base-rate for federal legislation (~6%), updates on Senate inaction and ongoing negotiations shift the probability modestly. The net posterior is 5%, with substantial uncertainty and a possible uptick if the Senate moves on the companion bill or if a Taiwan tax framework is agreed.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.06,\n      \"basis\": \"Chosen as the base-rate for federal legislation becoming law within this reference class; reflects the typical proportion of introduced bills that ultimately become law (i.e., requires Senate passage and presidential signature).\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Senate action status\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"As of May 1, 2026 there is no public record of Senate passage; the Senate companion was introduced but has seen little if any action, which lowers the odds.\"\n      },\n      {\n        \"factor\": \"House passage precedent\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"H.R.33 passed the House by a wide margin, indicating strong bipartisan support that could lift odds if the Senate acts.\"\n      },\n      {\n        \"factor\": \"Senate companion introduced\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A Senate companion was introduced and referred, signaling momentum toward potential bicameral agreement.\"\n      },\n      {\n        \"factor\": \"Executive negotiations on Taiwan tax framework\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Negotiations on a comprehensive tax framework could provide a pathway for implementing legislation once an agreement is in place.\"\n      },\n      {\n        \"factor\": \"Overall federal enactment rate / political climate\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Historical data show a low enactment rate for introduced bills, and the current Congress has been particularly gridlocked; this weighs on probabilities.\"\n      },\n      {\n        \"factor\": \"Election year dynamics\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Election-year dynamics generally depress legislative output and prioritization, reducing chances of new enactments before May 2026.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The posterior probability (5%) is obtained by anchoring to the ~6% base-rate and applying explicit, directional updates for each factor. The magnitude of each update is weighed to reflect how likely each factor would shift enactment odds; the dominant drag comes from Senate inaction and gridlock, with House momentum and external negotiations providing upside. Calibrated to yield a low-but-nonzero posterior, acknowledging substantial uncertainty and the potential for late-stage movement.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.03, 0.07 ]
+    }, {
+      "probability" : 0.05,
+      "narrative" : "Starting from a base likelihood near 6%, the House passage provides upside while Senate inaction and election-year dynamics pull the probability down. The posterior probability of enactment by May 1, 2026 is estimated at about 5%, with a wide uncertainty range reflecting the fragility of Senate action and ongoing negotiations.",
+      "summary" : [ "H.R.33 has cleared the House but has not advanced to final enactment; no Senate passage by March 2026.", "A Senate companion (S.199) exists, but action remains uncertain, keeping the bill at risk.", "Ongoing US–Taiwan tax framework negotiations could enable implementing legislation but are not guaranteed to conclude before May 1, 2026.", "Overall legislative productivity in 2025-2026 remains low, supporting a low probability of passage." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.06,
+          "basis" : "Reference class: all federal legislation; anchor probability chosen as a conventional enactment rate (~6%) for bills that have cleared the House (but not yet Senate action)."
+        },
+        "factor_updates" : [ {
+          "factor" : "Senate action status",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "No Senate passage by March 2026; S.199 introduced but inactive, implying a significant drag on enactment probability."
+        }, {
+          "factor" : "House passage precedent",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "House passage with large bipartisan margin suggests momentum and credibility for eventual enactment if Senate acts."
+        }, {
+          "factor" : "Senate companion introduced",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Companion bill signals ongoing bicameral momentum, though not yet acted upon in the Senate."
+        }, {
+          "factor" : "Executive negotiations on Taiwan tax framework",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Negotiations could unlock implementing legislation; absence of a finalized framework lowers probability but presence provides upside."
+        }, {
+          "factor" : "Overall legislative productivity context",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Long-standing gridlock and low enactment rates in the current Congress reduce odds of passage before May 2026."
+        } ],
+        "synthesis_rationale" : "Starting from an anchor around 6%, I applied directional updates reflecting House progress, Senate bottlenecks, and high-level political context. The net effect, given the strong House support but stalled Senate action and election-year dynamics, yields a posterior near 5%, with a plausible ±2 percentage-point uncertainty. The model treats the updates as qualitatively calibrated factors with approximate magnitudes rather than precise probability math, consistent with the provided evidence."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.05,\n  \"range_low\": 0.03,\n  \"range_high\": 0.07,\n  \"summary\": [\n    \"H.R.33 has cleared the House but has not advanced to final enactment; no Senate passage by March 2026.\",\n    \"A Senate companion (S.199) exists, but action remains uncertain, keeping the bill at risk.\",\n    \"Ongoing US–Taiwan tax framework negotiations could enable implementing legislation but are not guaranteed to conclude before May 1, 2026.\",\n    \"Overall legislative productivity in 2025-2026 remains low, supporting a low probability of passage.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Starting from a base likelihood near 6%, the House passage provides upside while Senate inaction and election-year dynamics pull the probability down. The posterior probability of enactment by May 1, 2026 is estimated at about 5%, with a wide uncertainty range reflecting the fragility of Senate action and ongoing negotiations.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.06,\n      \"basis\": \"Reference class: all federal legislation; anchor probability chosen as a conventional enactment rate (~6%) for bills that have cleared the House (but not yet Senate action).\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Senate action status\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"No Senate passage by March 2026; S.199 introduced but inactive, implying a significant drag on enactment probability.\"\n      },\n      {\n        \"factor\": \"House passage precedent\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"House passage with large bipartisan margin suggests momentum and credibility for eventual enactment if Senate acts.\"\n      },\n      {\n        \"factor\": \"Senate companion introduced\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Companion bill signals ongoing bicameral momentum, though not yet acted upon in the Senate.\"\n      },\n      {\n        \"factor\": \"Executive negotiations on Taiwan tax framework\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Negotiations could unlock implementing legislation; absence of a finalized framework lowers probability but presence provides upside.\"\n      },\n      {\n        \"factor\": \"Overall legislative productivity context\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Long-standing gridlock and low enactment rates in the current Congress reduce odds of passage before May 2026.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from an anchor around 6%, I applied directional updates reflecting House progress, Senate bottlenecks, and high-level political context. The net effect, given the strong House support but stalled Senate action and election-year dynamics, yields a posterior near 5%, with a plausible ±2 percentage-point uncertainty. The model treats the updates as qualitatively calibrated factors with approximate magnitudes rather than precise probability math, consistent with the provided evidence.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.03, 0.07 ]
+    }, {
+      "probability" : 0.08,
+      "narrative" : "Starting from a baseline congressional enactment rate, H.R.33 has House momentum and a Senate companion, but no Senate approval by May 2026. The combination yields a modest probability with wide uncertainty driven by legislative gridlock and impending Taiwan-tax negotiations.",
+      "summary" : [ "H.R.33 passed the House in Jan 2025 with bipartisan support and a Senate companion was introduced.", "As of May 2026 there is no Senate passage or presidential signature; Senate bottleneck remains a major constraint.", "Ongoing US–Taiwan tax framework negotiations could enable implementing legislation if the Senate acts.", "Using historical enactment rates, the probability remains low, but there is upside risk if the Senate accelerates action." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.06,
+          "basis" : "Reference class is federal legislation introduced in Congress that clears the House and requires Senate passage and presidential signature; anchor chosen due to H.R.33’s status and typical enactment rates in this class."
+        },
+        "factor_updates" : [ {
+          "factor" : "Senate action status",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "No Senate passage or presidential signature by May 1, 2026; S.199 exists but has not advanced; constitutes a significant barrier."
+        }, {
+          "factor" : "House passage precedent",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "House passage by a large bipartisan margin indicates substantial support and raises odds if the Senate acts."
+        }, {
+          "factor" : "Senate companion introduced",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Introduction of S.199 signals momentum; could facilitate bicameral negotiation and faster action if leadership prioritizes."
+        }, {
+          "factor" : "Executive negotiations on Taiwan tax framework",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "A negotiated framework would simplify implementing legislation and reduce political risk; progress supports pathway to enactment."
+        }, {
+          "factor" : "Overall legislative productivity context",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Recent Congresses show gridlock and low enactment rates; a systemic drag on passage likelihood."
+        } ],
+        "synthesis_rationale" : "Anchoring at ~0.06 and incorporating four asymmetrical upside factors (House momentum, Senate companion, tax framework negotiations) against structure-down factors (Senate bottleneck, overall gridlock) yields a modest net uplift but with substantial uncertainty. The final calibrated estimate (~0.08, 0.04–0.14) reflects thin upside potential unless Senate action is taken and negotiations mature; calibrations acknowledge political calendar and election-year dynamics."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.08,\n  \"range_low\": 0.04,\n  \"range_high\": 0.14,\n  \"summary\": [\n    \"H.R.33 passed the House in Jan 2025 with bipartisan support and a Senate companion was introduced.\",\n    \"As of May 2026 there is no Senate passage or presidential signature; Senate bottleneck remains a major constraint.\",\n    \"Ongoing US–Taiwan tax framework negotiations could enable implementing legislation if the Senate acts.\",\n    \"Using historical enactment rates, the probability remains low, but there is upside risk if the Senate accelerates action.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Starting from a baseline congressional enactment rate, H.R.33 has House momentum and a Senate companion, but no Senate approval by May 2026. The combination yields a modest probability with wide uncertainty driven by legislative gridlock and impending Taiwan-tax negotiations.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.06,\n      \"basis\": \"Reference class is federal legislation introduced in Congress that clears the House and requires Senate passage and presidential signature; anchor chosen due to H.R.33’s status and typical enactment rates in this class.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Senate action status\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"No Senate passage or presidential signature by May 1, 2026; S.199 exists but has not advanced; constitutes a significant barrier.\"\n      },\n      {\n        \"factor\": \"House passage precedent\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"House passage by a large bipartisan margin indicates substantial support and raises odds if the Senate acts.\"\n      },\n      {\n        \"factor\": \"Senate companion introduced\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Introduction of S.199 signals momentum; could facilitate bicameral negotiation and faster action if leadership prioritizes.\"\n      },\n      {\n        \"factor\": \"Executive negotiations on Taiwan tax framework\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A negotiated framework would simplify implementing legislation and reduce political risk; progress supports pathway to enactment.\"\n      },\n      {\n        \"factor\": \"Overall legislative productivity context\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Recent Congresses show gridlock and low enactment rates; a systemic drag on passage likelihood.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Anchoring at ~0.06 and incorporating four asymmetrical upside factors (House momentum, Senate companion, tax framework negotiations) against structure-down factors (Senate bottleneck, overall gridlock) yields a modest net uplift but with substantial uncertainty. The final calibrated estimate (~0.08, 0.04–0.14) reflects thin upside potential unless Senate action is taken and negotiations mature; calibrations acknowledge political calendar and election-year dynamics.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.04, 0.14 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.05857564532634009,
+      "range" : [ 0.05, 0.08 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.05491766363029207,
+    "raw-posterior" : 0.05491766363029207,
+    "capped" : false,
+    "prior" : 0.06,
+    "factors" : [ {
+      "name" : "Senate action on S.199/H.R.33 (passage or concurrence)",
+      "p-yes" : 0.55,
+      "p-no" : 0.3,
+      "bf" : 1.8333333333333335
+    }, {
+      "name" : "Executive negotiations on Taiwan tax framework",
+      "p-yes" : 0.4,
+      "p-no" : 0.4,
+      "bf" : 1.0
+    }, {
+      "name" : "Progress toward a US-Taiwan tax framework / negotiations",
+      "p-yes" : 0.55,
+      "p-no" : 0.3,
+      "bf" : 1.8333333333333335
+    }, {
+      "name" : "Senate passage status (S.199) as the primary roadblock",
+      "p-yes" : 0.25,
+      "p-no" : 0.6,
+      "bf" : 0.4166666666666667
+    }, {
+      "name" : "House bipartisan momentum and public advocacy",
+      "p-yes" : 0.4,
+      "p-no" : 0.4,
+      "bf" : 1.0
+    }, {
+      "name" : "Political calendar and election year dynamics (2026)",
+      "p-yes" : 0.25,
+      "p-no" : 0.6,
+      "bf" : 0.4166666666666667
+    }, {
+      "name" : "House-passed momentum and bipartisan support",
+      "p-yes" : 0.55,
+      "p-no" : 0.3,
+      "bf" : 1.8333333333333335
+    }, {
+      "name" : "US-Taiwan tax framework negotiations enabling implementing legislation",
+      "p-yes" : 0.55,
+      "p-no" : 0.3,
+      "bf" : 1.8333333333333335
+    }, {
+      "name" : "Senate companion introduced",
+      "p-yes" : 0.55,
+      "p-no" : 0.3,
+      "bf" : 1.8333333333333335
+    }, {
+      "name" : "Senate action status",
+      "p-yes" : 0.25,
+      "p-no" : 0.6,
+      "bf" : 0.4166666666666667
+    }, {
+      "name" : "Overall federal enactment rate (historical base rate)",
+      "p-yes" : 0.25,
+      "p-no" : 0.6,
+      "bf" : 0.4166666666666667
+    }, {
+      "name" : "Overall legislative productivity context",
+      "p-yes" : 0.25,
+      "p-no" : 0.6,
+      "bf" : 0.4166666666666667
+    }, {
+      "name" : "House passage precedent",
+      "p-yes" : 0.7,
+      "p-no" : 0.2,
+      "bf" : 3.4999999999999996
+    } ]
+  },
+  "question" : "Will H.R. 33 (United States–Taiwan Expedited Double-Tax Relief Act) be enacted into law before May 1, 2026?",
+  "probability" : 0.1,
+  "summary" : [ "Objections present plausible upside paths: Senate action, a finalized US–Taiwan tax framework, and must-pass packaging could accelerate enactment.", "Threshold analysis indicates enactment before May 1, 2026 remains unlikely, so the upside is constrained.", "Historical enactment rates are low, supporting a modest recalibration rather than a high-probability forecast." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.06,
+    "critique_assessment" : "Objections are valid and reveal genuine upside risk, but do not overturn the overall low probability given Senate inaction and historical rates.",
+    "adjustment" : "Raised from 0.06 to 0.10 to reflect upside in the objections (Senate action, tax framework, must-pass vehicle) while keeping the estimate conservative due to persistent Senate inaction and election-year dynamics."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.05333333333333334,
+      "reference-class" : "Federal legislation in the United States: the likelihood that a bill introduced in Congress becomes law, focusing on measures that have cleared the House (e.g., H.R. 33) and require Senate passage and presidential signature to enact.",
+      "sources" : [ {
+        "url" : "https://www.congress.gov/index.php/bill/119th-congress/house-bill/33/all-info",
+        "claim" : "H.R.33 was introduced January 3, 2025 and passed the House on January 15, 2025 (Roll Call 15, 423-1)."
+      }, {
+        "url" : "https://www.congress.gov/bill/119th-congress/house-bill/33/text",
+        "claim" : "Text of H.R.33 published; indicates the bill's content and that it proceeded through the House, with the Senate receiving it for consideration on January 16, 2025."
+      }, {
+        "url" : "https://www.foreign.senate.gov/press/dem/release/finance-foreign-relations-committees-introduce-us-taiwan-tax-legislation",
+        "claim" : "Senate committees introduced a companion U.S.-Taiwan tax measure (S.199) on January 23, 2025."
+      }, {
+        "url" : "https://www.congress.gov/bill/119th-congress/senate-bill/199/all-info",
+        "claim" : "S.199, the Senate companion to H.R.33, was introduced January 23, 2025 and referred to the Senate Finance Committee."
+      }, {
+        "url" : "https://home.treasury.gov/news/press-releases/jy2693",
+        "claim" : "Treasury announcement (October 29, 2024) that the U.S. and Taiwan would begin negotiations on a comprehensive tax agreement addressing double taxation."
+      }, {
+        "url" : "https://www.taipeitimes.com/News/taiwan/archives/2025/01/16/2003830316",
+        "claim" : "Taipei Times reports that the U.S. House passed the United States-Taiwan Expedited Double-Tax Relief Act on January 15, 2025, by a large bipartisan margin."
+      }, {
+        "url" : "https://dhub.deloitte.com/Newsletters/Tax/2025/TNV/250117_3.html",
+        "claim" : "Deloitte Tax News & Views (January 17, 2025) notes that H.R.33 sailed through the House but its path in the Senate was uncertain."
+      }, {
+        "url" : "https://www.congress.gov/bill/119th-congress/house-bill/33/text",
+        "claim" : "H.R.33 text page shows the bill's status: Received in the Senate and Read twice and referred to the Committee on Finance; earlier, it passed the House."
+      }, {
+        "url" : "https://waysandmeans.house.gov/2025/01/16/house-approves-fairer-tax-treatment-for-american-workers-and-manufacturers-strengthening-competitive-edge-against-china/",
+        "claim" : "House approved H.R. 33 on January 16, 2025."
+      }, {
+        "url" : "https://www.foreign.senate.gov/press/dem/release/finance-foreign-relations-committees-introduce-us-taiwan-tax-legislation",
+        "claim" : "Senate Finance/Foreign Relations committees introduced a companion U.S.-Taiwan tax bill on January 23, 2025."
+      }, {
+        "url" : "https://home.treasury.gov/news/press-releases/jy2693",
+        "claim" : "Treasury press release notes upcoming negotiations with Taiwan to address double taxation and references legislative action including H.R. 33."
+      }, {
+        "url" : "https://about.bgov.com/insights/public-affairs-solutions/legislative-bill-tracking-guide/",
+        "claim" : "Bloomberg Government notes that, on average, about 6% of proposed federal legislation passes."
+      }, {
+        "url" : "https://www.axios.com/2024/12/30/congress-118th-passed-fewest-laws",
+        "claim" : "Axios reports the 118th Congress passed the fewest laws in decades, illustrating a low enactment rate for federal legislation."
+      }, {
+        "url" : "https://www.congress.gov/bill/119th-congress/house-bill/33/text",
+        "claim" : "H.R.33 text shows introduced January 3, 2025; the bill status indicates it has passed the House and is referred to the Senate."
+      }, {
+        "url" : "https://www.congress.gov/bill/119th-congress/house-bill/33/all-info",
+        "claim" : "All Info page confirms introduced January 3, 2025; passed House January 15, 2025; referred to the Senate January 16, 2025."
+      }, {
+        "url" : "https://waysandmeans.house.gov/2025/01/16/house-approves-fairer-tax-treatment-for-american-workers-and-manufacturers-strengthening-competitive-edge-against-china/",
+        "claim" : "Ways and Means press release states House passage of H.R.33 on January 15, 2025."
+      }, {
+        "url" : "https://foreign.senate.gov/press/dem/release/finance-foreign-relations-committees-introduce-us-taiwan-tax-legislation",
+        "claim" : "Senate Finance and Senate Foreign Relations committees introduced a companion U.S.-Taiwan tax legislation as a Senate counterpart to H.R.33."
+      }, {
+        "url" : "https://home.treasury.gov/news/press-releases/jy2693",
+        "claim" : "Treasury press release notes negotiations with Taiwan on a comprehensive tax agreement and references related legislative proposals, including expedited relief."
+      }, {
+        "url" : "https://www.washingtonpost.com/politics/2025/12/24/congress-republicans-legislation-trump-2025/",
+        "claim" : "Washington Post characterizes 2025 Congress as having low legislative output and few laws signed, illustrating a challenging enactment environment."
+      }, {
+        "url" : "https://guides.brooklaw.edu/federal_legislative_history_research",
+        "claim" : "BrookLaw guide states that fewer than 3% of introduced federal bills become law, providing a general base-rate benchmark."
+      } ],
+      "confidence" : "low"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Senate action status",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "As of May 1, 2026 there is no public record of Senate passage or presidential signature for H.R.33; the Senate companion S.199 was introduced on January 23, 2025 and referred to the Finance Committee, with no subsequent reported action. ([congress.gov](https://www.congress.gov/bill/119th-congress/senate-bill/199/text?utm_source=openai))"
+      }, {
+        "name" : "House passage precedent",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "H.R.33 passed the House in January 2025 by a 423-1 margin, indicating strong bipartisan support that raises the odds if the Senate acts. ([congress.gov](https://www.congress.gov/bill/119th-congress/house-bill/33/text?utm_source=openai))"
+      }, {
+        "name" : "Senate companion introduced",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "A Senate companion, S.199, was introduced January 23, 2025 and referred to the Senate Finance Committee, signaling ongoing bicameral momentum. ([congress.gov](https://www.congress.gov/bill/119th-congress/senate-bill/199/text?utm_source=openai))"
+      }, {
+        "name" : "Executive negotiations on Taiwan tax framework",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "The Treasury announced negotiations on a comprehensive U.S.–Taiwan tax agreement addressing double taxation in October 2024, which could enable implementing legislation but does not guarantee enactment. ([home.treasury.gov](https://home.treasury.gov/news/press-releases/jy2693?utm_source=openai))"
+      }, {
+        "name" : "Overall legislative productivity context",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Public analyses show the current Congress has been highly unproductive, with only a small share of introduced bills becoming law, suggesting enactment by May 1, 2026 remains unlikely. ([axios.com](https://www.axios.com/2024/12/30/congress-118th-passed-fewest-laws?utm_source=openai))"
+      }, {
+        "name" : "Senate action on S.199/H.R.33 (passage or concurrence)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "A Senate companion was introduced on January 23, 2025, and passage would move the bill toward final approval, but as of March 2026 there is no Senate passage."
+      }, {
+        "name" : "Overall federal enactment rate (historical base rate)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Historical data show only a small fraction of introduced bills become law, and the 2025–2026 window has been particularly gridlocked."
+      }, {
+        "name" : "US-Taiwan tax framework negotiations enabling implementing legislation",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "H.R.33's effectiveness depends on a negotiated US–Taiwan tax agreement to implement its provisions."
+      }, {
+        "name" : "House bipartisan momentum and public advocacy",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "H.R.33 passed the House by a wide margin in January 2025, and ongoing advocacy keeps momentum, though Senate action remains uncertain."
+      }, {
+        "name" : "Political calendar and election year dynamics (2026)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Election-year dynamics and competing legislative priorities in 2026 reduce the probability of passage."
+      }, {
+        "name" : "Senate passage status (S.199) as the primary roadblock",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "As of March 1, 2026 there has been no Senate passage or presidential signature for H.R.33/S.199, and historically few House-passed bills become law, keeping enactment probability low."
+      }, {
+        "name" : "Progress toward a US-Taiwan tax framework / negotiations",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Treasury announced a framework for a reciprocal tax agreement with Taiwan and negotiations began in 2024; a finalized agreement would create a pathway for implementing legislation and reduce double taxation."
+      }, {
+        "name" : "House-passed momentum and bipartisan support",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "H.R.33 passed the House by a wide margin (423-1) and has bicameral, bipartisan backing, which could encourage Senate action."
+      } ],
+      "confidence" : "low"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "low",
+  "range" : [ 0.05, 0.15 ],
+  "synthesis" : "The ensemble baseline is 6%, with credible upside from Senate action and a Taiwan tax framework. Given current momentum and historical enactment rates, a calibrated probability around 10% reflects modest optimism while maintaining skepticism."
+}

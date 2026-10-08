@@ -1,0 +1,326 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.01,
+      "narrative" : "Based on the reference-class evidence and current polling, AfD winning the most seats in Baden-Württemberg is essentially zero. The combined impact of polls showing AfD well behind top two parties and the long-standing BW pattern, plus coalition norms, yields a near-zero calibrated probability with only a small tail-risk upside from turnout shocks.",
+      "summary" : [ "Forecasts consistently show CDU or Greens ahead of AfD in Baden-Württemberg, with AfD around high-teens to ~20%.", "Historical base-rate in BW strongly disfavors AfD leading the largest share of seats; Thuringia in 2024 is an outlier.", "Coalition norms and the explicit 'firewall' against AfD governance further reduce chances of AfD becoming the largest party.", "Unforeseen turnout shocks could marginally lift AfD, but are unlikely to flip the plurality." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.02,
+          "basis" : "reference_class and anchor probability chosen to reflect the consistent historical pattern in Baden-Württemberg that AfD has not held the most seats; base-rate anchor anchored near the low two-percent range to reflect the rarity of the outcome."
+        },
+        "factor_updates" : [ {
+          "factor" : "Polls showing AfD far behind the top two (CDU/Greens) and only in high-teens to ~20%",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Multiple credible polls place AfD well behind CDU/Greens, making a plurality for AfD unlikely and depressing the probability of being the largest party."
+        }, {
+          "factor" : "Main parties' explicit anti-AfD coalitional stance (firewall) and aversion to AfD-led governance",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Even if AfD accrues votes, mainstream parties' reluctance to govern with or be led by AfD reduces the practical likelihood of AfD achieving top-status."
+        }, {
+          "factor" : "Historical Baden-Württemberg base-rate (AfD never led BW; Thuringia 2024 is an outlier)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "BW has a long pattern of CDU/Greens ahead; the outlier Thuringia does not transfer to BW dynamics."
+        }, {
+          "factor" : "Unforeseen turnout swings or issue-driven shocks that could boost AfD",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Possible but unlikely to yield a sustained plurality; any uplift is expected to be small and not sufficient to overcome the baseline gap."
+        } ],
+        "synthesis_rationale" : "The synthesis weights the persistent polling gaps and entrenched BW historical patterns far more than transient shocks. The baseline anchor is near-zero, and even modest positive shocks are insufficient to overcome the structural disadvantages, resulting in a calibrated probability at the near-zero end with a small range to reflect tail risk."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.01,\n  \"range_low\": 0.01,\n  \"range_high\": 0.04,\n  \"summary\": [\n    \"Forecasts consistently show CDU or Greens ahead of AfD in Baden-Württemberg, with AfD around high-teens to ~20%.\",\n    \"Historical base-rate in BW strongly disfavors AfD leading the largest share of seats; Thuringia in 2024 is an outlier.\",\n    \"Coalition norms and the explicit 'firewall' against AfD governance further reduce chances of AfD becoming the largest party.\",\n    \"Unforeseen turnout shocks could marginally lift AfD, but are unlikely to flip the plurality.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Based on the reference-class evidence and current polling, AfD winning the most seats in Baden-Württemberg is essentially zero. The combined impact of polls showing AfD well behind top two parties and the long-standing BW pattern, plus coalition norms, yields a near-zero calibrated probability with only a small tail-risk upside from turnout shocks.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.02,\n      \"basis\": \"reference_class and anchor probability chosen to reflect the consistent historical pattern in Baden-Württemberg that AfD has not held the most seats; base-rate anchor anchored near the low two-percent range to reflect the rarity of the outcome.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Polls showing AfD far behind the top two (CDU/Greens) and only in high-teens to ~20%\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Multiple credible polls place AfD well behind CDU/Greens, making a plurality for AfD unlikely and depressing the probability of being the largest party.\"\n      },\n      {\n        \"factor\": \"Main parties' explicit anti-AfD coalitional stance (firewall) and aversion to AfD-led governance\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Even if AfD accrues votes, mainstream parties' reluctance to govern with or be led by AfD reduces the practical likelihood of AfD achieving top-status.\"\n      },\n      {\n        \"factor\": \"Historical Baden-Württemberg base-rate (AfD never led BW; Thuringia 2024 is an outlier)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"BW has a long pattern of CDU/Greens ahead; the outlier Thuringia does not transfer to BW dynamics.\"\n      },\n      {\n        \"factor\": \"Unforeseen turnout swings or issue-driven shocks that could boost AfD\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Possible but unlikely to yield a sustained plurality; any uplift is expected to be small and not sufficient to overcome the baseline gap.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The synthesis weights the persistent polling gaps and entrenched BW historical patterns far more than transient shocks. The baseline anchor is near-zero, and even modest positive shocks are insufficient to overcome the structural disadvantages, resulting in a calibrated probability at the near-zero end with a small range to reflect tail risk.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.01, 0.04 ]
+    }, {
+      "probability" : 0.01,
+      "narrative" : "Forecasts across polls and BW political history strongly disfavor AfD as the top party seat winner in 2026. While a tail risk exists from turnout surprises, the posterior probability remains effectively near zero.",
+      "summary" : [ "Across established Baden-Württemberg forecasts, the AfD is not projected to win the most seats in the 2026 Landtag election.", "CDU remains the leading party with Greens close behind; AfD is around the high-teens to about 20%.", "Historical base-rate in BW and mainstream coalitional norms reduce the odds of AfD leading, though a rare turnout shock could marginally raise the odds." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.35,
+          "basis" : "reference_class is Baden-Württemberg state elections where AfD has never led; anchor probability reflects a qualitative baseline given historical patterns and current polling."
+        },
+        "factor_updates" : [ {
+          "factor" : "Polls showing AfD far behind the top two (CDU/Greens) and only in high-teens to ~20%",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Multiple credible polls place AfD well behind the top two, making it unlikely to secure the most seats."
+        }, {
+          "factor" : "Main parties' explicit anti-AfD coalitional stance (firewall) and aversion to AfD-led governance",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Even if AfD gained votes, excluding from coalitions reduces practical path to being largest party."
+        }, {
+          "factor" : "Historical Baden-Württemberg base rate (AfD never led BW)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Consistent pattern of CDU/Greens as top parties; Thuringia 2024 is outlier."
+        }, {
+          "factor" : "Tail-risk shocks that could boost AfD",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Unforeseen shocks could raise AfD support modestly, but unlikely to overturn the base pattern."
+        } ],
+        "synthesis_rationale" : "The final probability is dominated by the strong downward pushes from polls and base-rate, with a small upward risk from shocks; given correlation among polls and anti-AfD coalitions, the aggregate posterior remains near zero, so the 0.01 estimate accounts for potential tail risk while remaining calibrated."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.01,\n  \"range_low\": 0.01,\n  \"range_high\": 0.02,\n  \"summary\": [\n    \"Across established Baden-Württemberg forecasts, the AfD is not projected to win the most seats in the 2026 Landtag election.\",\n    \"CDU remains the leading party with Greens close behind; AfD is around the high-teens to about 20%.\",\n    \"Historical base-rate in BW and mainstream coalitional norms reduce the odds of AfD leading, though a rare turnout shock could marginally raise the odds.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Forecasts across polls and BW political history strongly disfavor AfD as the top party seat winner in 2026. While a tail risk exists from turnout surprises, the posterior probability remains effectively near zero.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.35,\n      \"basis\": \"reference_class is Baden-Württemberg state elections where AfD has never led; anchor probability reflects a qualitative baseline given historical patterns and current polling.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Polls showing AfD far behind the top two (CDU/Greens) and only in high-teens to ~20%\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Multiple credible polls place AfD well behind the top two, making it unlikely to secure the most seats.\"\n      },\n      {\n        \"factor\": \"Main parties' explicit anti-AfD coalitional stance (firewall) and aversion to AfD-led governance\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Even if AfD gained votes, excluding from coalitions reduces practical path to being largest party.\"\n      },\n      {\n        \"factor\": \"Historical Baden-Württemberg base rate (AfD never led BW)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Consistent pattern of CDU/Greens as top parties; Thuringia 2024 is outlier.\"\n      },\n      {\n        \"factor\": \"Tail-risk shocks that could boost AfD\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Unforeseen shocks could raise AfD support modestly, but unlikely to overturn the base pattern.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The final probability is dominated by the strong downward pushes from polls and base-rate, with a small upward risk from shocks; given correlation among polls and anti-AfD coalitions, the aggregate posterior remains near zero, so the 0.01 estimate accounts for potential tail risk while remaining calibrated.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.02 ]
+    }, {
+      "probability" : 0.04,
+      "narrative" : "Starting from a BW baseline where AfD has never led, the pre-election signal remains strongly against AfD being the largest seat. Downward pressure from polls and coalition norms dominates, with only a weak tail risk that could push the probability slightly higher in an extreme turnout or issue-driven scenario.",
+      "summary" : [ "Anchor is Baden-Württemberg state elections where AfD has not led in seat share; historical pattern suggests a low starting probability (~2%).", "Current credible polls place AfD well behind the top two (CDU and Greens), around high-teens to ~20%, making the largest-seat outcome unlikely.", "Mainstream parties’ firewall against governing with AfD and BW’s historical base-rate further suppress the odds of AfD becoming the largest party.", "A tail-risk uplift is possible from turnout or issue-driven shocks, but such events would need a sustained shift to meaningfully overtake CDU/Greens." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.02,
+          "basis" : "Reference class is Baden-Württemberg state elections where AfD competes for the largest share of seats; historically CDU or Greens have been the largest party in BW, and AfD has never held the most seats. The anchor probability reflects the long-run base-rate observed in BW."
+        },
+        "factor_updates" : [ {
+          "factor" : "Polls showing AfD far behind the top two (CDU/Greens) and only in high-teens to ~20%",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Credible polls consistently place AfD behind CDU/Greens, making the largest-seat outcome unlikely unless a major shift occurs."
+        }, {
+          "factor" : "Main parties' explicit anti-AfD coalitional stance (firewall) and aversion to AfD-led governance",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Even with improvements in AfD polling, mainstream parties are unlikely to form a coalition with AfD or tolerate AfD-led government in BW."
+        }, {
+          "factor" : "Historical Baden-Württemberg base-rate (AfD never led BW; Thuringia 2024 as outlier)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "BW has a long-standing pattern of CDU/Greens ahead; the Thuringia outlier does not generalize to BW."
+        }, {
+          "factor" : "Unforeseen turnout swings or issue-driven shocks that could boost AfD",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Late surges could modestly raise AfD shares, but sustained lead in seat share would still require a broader realignment."
+        } ],
+        "synthesis_rationale" : "Starting from a conservative anchor (0.02) and applying downward pushes from polls, coalition norms, and BW history, with only a weak upward tail risk from turnout or issues, yields a calibrated probability in the low single digits. The range (0.02–0.08) captures the substantial downside but allows for small upside in extreme scenarios; overall, the contrarian view does not materially overturn the near-consensus view that AfD will not hold the most seats."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.04,\n  \"range_low\": 0.02,\n  \"range_high\": 0.08,\n  \"summary\": [\n    \"Anchor is Baden-Württemberg state elections where AfD has not led in seat share; historical pattern suggests a low starting probability (~2%).\",\n    \"Current credible polls place AfD well behind the top two (CDU and Greens), around high-teens to ~20%, making the largest-seat outcome unlikely.\",\n    \"Mainstream parties’ firewall against governing with AfD and BW’s historical base-rate further suppress the odds of AfD becoming the largest party.\",\n    \"A tail-risk uplift is possible from turnout or issue-driven shocks, but such events would need a sustained shift to meaningfully overtake CDU/Greens.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Starting from a BW baseline where AfD has never led, the pre-election signal remains strongly against AfD being the largest seat. Downward pressure from polls and coalition norms dominates, with only a weak tail risk that could push the probability slightly higher in an extreme turnout or issue-driven scenario.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.02,\n      \"basis\": \"Reference class is Baden-Württemberg state elections where AfD competes for the largest share of seats; historically CDU or Greens have been the largest party in BW, and AfD has never held the most seats. The anchor probability reflects the long-run base-rate observed in BW.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Polls showing AfD far behind the top two (CDU/Greens) and only in high-teens to ~20%\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Credible polls consistently place AfD behind CDU/Greens, making the largest-seat outcome unlikely unless a major shift occurs.\"\n      },\n      {\n        \"factor\": \"Main parties' explicit anti-AfD coalitional stance (firewall) and aversion to AfD-led governance\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Even with improvements in AfD polling, mainstream parties are unlikely to form a coalition with AfD or tolerate AfD-led government in BW.\"\n      },\n      {\n        \"factor\": \"Historical Baden-Württemberg base-rate (AfD never led BW; Thuringia 2024 as outlier)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"BW has a long-standing pattern of CDU/Greens ahead; the Thuringia outlier does not generalize to BW.\"\n      },\n      {\n        \"factor\": \"Unforeseen turnout swings or issue-driven shocks that could boost AfD\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Late surges could modestly raise AfD shares, but sustained lead in seat share would still require a broader realignment.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a conservative anchor (0.02) and applying downward pushes from polls, coalition norms, and BW history, with only a weak upward tail risk from turnout or issues, yields a calibrated probability in the low single digits. The range (0.02–0.08) captures the substantial downside but allows for small upside in extreme scenarios; overall, the contrarian view does not materially overturn the near-consensus view that AfD will not hold the most seats.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.02, 0.08 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.015941422574838698,
+      "range" : [ 0.01, 0.04 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.002036659877800408,
+    "raw-posterior" : 4.2730120259236046E-13,
+    "capped" : true,
+    "prior" : 0.02,
+    "factors" : [ {
+      "name" : "Historical Baden-Württemberg base rate",
+      "p-yes" : 0.09,
+      "p-no" : 0.91,
+      "bf" : 0.0989010989010989
+    }, {
+      "name" : "Main parties' explicit anti-AfD coalitional stance (firewall) and aversion to AfD-led governance",
+      "p-yes" : 0.08,
+      "p-no" : 0.92,
+      "bf" : 0.08695652173913043
+    }, {
+      "name" : "Polls showing AfD far behind the top two (CDU/Greens) and only in high-teens to ~20%",
+      "p-yes" : 0.12,
+      "p-no" : 0.88,
+      "bf" : 0.13636363636363635
+    }, {
+      "name" : "Coalition norms / firewall against AfD",
+      "p-yes" : 0.08,
+      "p-no" : 0.92,
+      "bf" : 0.08695652173913043
+    }, {
+      "name" : "Greens leadership transition (Kretschmann stepping down) introduces short-term uncertainty",
+      "p-yes" : 0.5,
+      "p-no" : 0.5,
+      "bf" : 1.0
+    }, {
+      "name" : "Unforeseen turnout swings or issue-driven shocks that could boost AfD",
+      "p-yes" : 0.55,
+      "p-no" : 0.45,
+      "bf" : 1.2222222222222223
+    }, {
+      "name" : "Historical pattern: AfD has never been the largest party in BW",
+      "p-yes" : 0.08,
+      "p-no" : 0.92,
+      "bf" : 0.08695652173913043
+    }, {
+      "name" : "Greens momentum",
+      "p-yes" : 0.07,
+      "p-no" : 0.93,
+      "bf" : 0.07526881720430108
+    }, {
+      "name" : "Greens momentum vs AfD",
+      "p-yes" : 0.08,
+      "p-no" : 0.92,
+      "bf" : 0.08695652173913043
+    }, {
+      "name" : "Close-poll outlier where AfD edges Greens",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Polling gap vs top two parties",
+      "p-yes" : 0.12,
+      "p-no" : 0.88,
+      "bf" : 0.13636363636363635
+    }, {
+      "name" : "Tail-risk shocks that could boost AfD",
+      "p-yes" : 0.3,
+      "p-no" : 0.7,
+      "bf" : 0.4285714285714286
+    }, {
+      "name" : "Predominant polling outcome favors CDU or Greens over AfD",
+      "p-yes" : 0.12,
+      "p-no" : 0.88,
+      "bf" : 0.13636363636363635
+    }, {
+      "name" : "Historical base-rate in Baden-Württemberg (AfD has never led BW, with Thuringia as rare exception)",
+      "p-yes" : 0.1,
+      "p-no" : 0.9,
+      "bf" : 0.11111111111111112
+    } ]
+  },
+  "question" : "Will AfD win the most seats in the Baden-Württemberg Landtag election?",
+  "probability" : null,
+  "summary" : null,
+  "justification" : null,
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.043333333333333335,
+      "reference-class" : "Baden-Württemberg state elections where the AfD competes for the largest share of seats; historically the CDU or Greens have been the largest party in BW, and AfD has never held the most seats.",
+      "sources" : [ {
+        "url" : "https://presseportal.zdf.de/pressemitteilung/zdf-politbarometer-extra-baden-wuerttemberg-februar-2026",
+        "claim" : "Projection: Grünen 25%, CDU 27%, AfD 19%, SPD 9%, FDP 6%, Linke 6%, Others 8%; CDU/Grüne would form a majority."
+      }, {
+        "url" : "https://swp.de/baden-wuerttemberg/landtagswahl-2026-neue-insa-umfrage-bestaetigt-aufholjagd-der-gruenen-78667008.html",
+        "claim" : "Insa BW-Umfrage (17.–23. Feb. 2026): CDU 28%, Grünen 22%, AfD 20%, SPD 10%, FDP 6%, Linke 7%."
+      }, {
+        "url" : "https://www.stuttgarter-nachrichten.de/inhalt.umfrage-baden-wuerttemberg-afd-liegt-erstmals-vor-den-gruenen.ea37737e-07d5-4f1e-82aa-c9a763910a65.html",
+        "claim" : "BWTrend: AfD liegt erstmals vor Grünen (21%), CDU 29%; AfD 21% vs Grünen 20%."
+      }, {
+        "url" : "https://de.wikipedia.org/wiki/Landtagswahl_in_Baden-Wuerttemberg_2026",
+        "claim" : "FGW-Umfrage (23–26.02.2026): CDU 27%, Grünne 25%, AfD 19% (Greens and CDU leading; AfD not largest)."
+      }, {
+        "url" : "https://www.zeit.de/politik/deutschland/2025-10/landtagswahl-baden-wuerttemberg-cdu-gruene-afd-linke-maerz",
+        "claim" : "Infratest dimap poll for SWR and the Stuttgarter Zeitung shows CDU at 29%, AfD at 21%, Greens at 20% five months before the Baden-Württemberg 2026 election."
+      }, {
+        "url" : "https://www.swp.de/baden-wuerttemberg/landtagswahl-2026-laut-umfragen-schmilzt-der-vorsprung-der-cdu-afd-ueberholt-gruene-78383704.html",
+        "claim" : "SWP summary of Infratest dimap poll: CDU 29%, AfD 21%, Greens 20% (BW 2026 polling context)."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2026_Baden-W%C3%BCrttemberg_state_election",
+        "claim" : "Article noting the 2026 BW state election date (March 8, 2026) and that polling shows Greens and CDU ahead of AfD, with AfD historically around single digits in BW."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2024_Thuringian_state_election",
+        "claim" : "Thuringia 2024: AfD became the largest party in a German state parliament (32.8% of votes, 32 seats), illustrating a rare precedent for AfD leading a Landtag."
+      }, {
+        "url" : "https://euronews.com/2025/10/20/germanys-chancellor-rejects-calls-to-relax-firewall-to-work-with-german-far-right-afd-party",
+        "claim" : "Euronews: Chancellor Merz rejects easing the 'firewall' against cooperation with the AfD."
+      }, {
+        "url" : "https://apnews.com/article/6e4143a2be1c93126749c8f158b5fe12",
+        "claim" : "AP News: discussion of the 'firewall' against AfD and mainstream parties' reluctance to cooperate with the party."
+      }, {
+        "url" : "https://landtag-bw.de/de/aktuelles/dpa-nachrichten/neue-insa-umfrage-sieht-aufholjagd-der-gruenen-620394",
+        "claim" : "INSA poll two weeks before the election shows CDU 28%, Greens 22%, AfD 20%."
+      }, {
+        "url" : "https://www.swp.de/baden-wuerttemberg/landtagswahl-2026-gruene-holen-auf-afd-verliert-cdu-stabil-das-zeigt-eine-neue-umfrage-78594088.html",
+        "claim" : "Infratest dimap poll (for SWR/StZ) shows CDU 29%, Greens 23%, AfD 20%."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2016_Baden-W%C3%BCrttemberg_state_election",
+        "claim" : "2016 election: Greens largest with 47 seats; AfD 23 seats (15.1%); CDU 42 seats."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2021_Baden-W%C3%BCrttemberg_state_election",
+        "claim" : "2021 election: AfD 9.7% but 0 seats; Greens 58 seats; CDU 42 seats."
+      }, {
+        "url" : "https://de.wikipedia.org/wiki/Landtagswahl_in_Baden-W%C3%BCrttemberg_2026",
+        "claim" : "Poll snapshots around Feb 2026 show CDU ~28-29%, Grünen ~23-27%, AfD ~18-20%; AfD not leading in the projected seat distribution."
+      } ],
+      "confidence" : "high"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Polls showing AfD far behind the top two (CDU/Greens) and only in high-teens to ~20%",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Multiple polls place CDU/Greens ahead of AfD with AfD around 18–21%, making AfD the unlikely largest party."
+      }, {
+        "name" : "Main parties' explicit anti-AfD coalitional stance (firewall) and aversion to AfD-led governance",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Even if AfD polled well, mainstream parties' unwillingness to form coalitions with AfD reduces the practical likelihood of AfD converting seat plurality into top-status."
+      }, {
+        "name" : "Historical base-rate in Baden-Württemberg (AfD has never led BW, with Thuringia as the rare exception)",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "BW has a long history of CDU/Greens ahead of AfD; the single precedent of Thuringia in 2024 is an outlier, pulling the baseline probability downward."
+      }, {
+        "name" : "Unforeseen turnout swings or issue-driven shocks that could boost AfD",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "A sudden turnout surge or issue-driven realignment could raise AfD's share modestly, though current data suggest such moves would be limited in impact."
+      }, {
+        "name" : "Predominant polling outcome favors CDU or Greens over AfD",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Major polls (e.g., ZDF Politbarometer Extra; Insa; FGW) show AfD in the high teens to around 20%, with CDU and Greens ahead, making AfD the most seats unlikely."
+      }, {
+        "name" : "Close-poll outlier where AfD edges Greens",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Occasional snapshots (e.g., BWTrend) show AfD near Greens (e.g., 21% vs 20%), which could tilt seat counts if such gaps persist."
+      }, {
+        "name" : "Historical pattern: AfD has never been the largest party in BW",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "BW history has Greens or CDU leading in seat share; Thuringia in 2024 is an outlier and not representative of Baden-Württemberg."
+      }, {
+        "name" : "Greens leadership transition (Kretschmann stepping down) introduces short-term uncertainty",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Transition to Cem Özdemir as lead candidate could affect near-term polling, but Greens maintain continuity in leadership and platform."
+      }, {
+        "name" : "Polling gap vs top two parties",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Credible pre-election polls place AfD around 18–21%, while CDU and Greens sit near 27–29%, making AfD unlikely to be the largest party."
+      }, {
+        "name" : "Historical Baden-Württemberg base rate",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "BW has a history of the Greens or CDU leading the largest share of seats, with AfD never having held the top seat share to date."
+      }, {
+        "name" : "Coalition norms / firewall against AfD",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Mainstream parties in BW typically exclude AfD from governing coalitions, reducing the practical odds of AfD leading the state government even if it gains votes."
+      }, {
+        "name" : "Tail-risk shocks that could boost AfD",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Late political or economic shocks could temporarily lift AfD support, though sustained leadership by AfD remains unlikely."
+      }, {
+        "name" : "Greens momentum vs AfD",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Recent polls show Greens gaining relative to AfD, narrowing the gap and reducing AfD's chances of being the largest party."
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "parse-failed?" : true,
+  "confidence" : "low",
+  "range" : null,
+  "synthesis" : "{\n  \"probability\": 0.06\",\n  \"range_low\": 0.03,\n  \"range_high\": 0.12,\n  \"summary\": [\n    \"Baseline ensemble assigns a very low chance (2%) for AfD to win the most seats in Baden-Württemberg's Landtag, reflecting historical patterns and current polling.\",\n    \"Adversarial objections point to plausible tail risks (late swing, shocks, polling biases) that could raise AfD's support into the high-teens or around 20%, but would still struggle to overtake CDU/Greens in most scenarios.\",\n    \"There is no numeric threshold breach to monitor; historical base-rate and coalition norms further suppress the likelihood of AfD leading the Landtag.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"The ensemble forecast implies a near-zero base probability for AfD leading the BW Landtag. Tail risks exist but, given current polls and history, justify only a modest uplift to around 6%, keeping the outcome highly unlikely.\",\n  \"justification\": {\n    \"ensemble_aggregate\": 0.02,\n    \"critique_assessment\": \"Objections correctly identify nonzero tail risks but do not indicate a systematic error in the baseline; they justify a modest upward reassessment rather than a full overturn of the ensemble.\",\n    \"adjustment\": \"Adjusted upward from 0.02 to 0.06 to reflect plausible tail risks (late swing, turnout dynamics, polling biases) while maintaining the overall view that AfD leading BW remains unlikely; no downward adjustment due to implausible threshold-breach concerns.\"\n  }\n}"
+}

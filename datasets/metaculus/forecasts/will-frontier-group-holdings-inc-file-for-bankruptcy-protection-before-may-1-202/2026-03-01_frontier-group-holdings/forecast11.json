@@ -1,0 +1,386 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.34,
+      "narrative" : "Starting from a base-rate around 5% for airline distress, Frontier's weak fundamentals push risk upward, while sector consolidation pressures and mixed analyst signals temper it. The resulting calibrated probability is 34% with wide uncertainty about near-term outcomes, particularly regarding Spirit-related dynamics.",
+      "summary" : [ "Baseline anchor: US airline-holding companies have an ~5% bankruptcy rate over the relevant horizon, forming a conservative starting point.", "Frontier's Altman Z-score (~0.38–0.39) places it in the distress zone, elevating bankruptcy risk relative to safe peers.", "ULCC-specific model suggests substantial tail risk (≈45% bankruptcy probability over 24 months), raising the posterior odds of distress.", "Spirit dynamics and potential consolidation could mitigate Frontier's risk, yielding a calibrated posterior of 34% with notable uncertainty." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.05,
+          "basis" : "Base-rate anchor: US airline holding companies' bankruptcy rate is commonly cited near 5% for multi-month horizons; Frontier sits in a distressed ULCC subset, justifying anchoring near the base rate before updates."
+        },
+        "factor_updates" : [ {
+          "factor" : "Frontier ULCC Altman Z-Score in distress zone",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Altman Z-score around 0.38–0.39 signals distress and non-trivial bankruptcy risk, pushing the probability upward."
+        }, {
+          "factor" : "ULCC 24-month bankruptcy probability model",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "A published model for ULCCs showing ~45% bankruptcy probability over 24 months implies tail risk that informs Frontier's risk."
+        }, {
+          "factor" : "Spirit bankruptcy dynamics and Frontier takeover prospects",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Spirit's distress and Frontier as potential acquirer could reduce Frontier's bankruptcy risk via consolidation and improved market dynamics."
+        }, {
+          "factor" : "Industry base-rate anchor for airline distress",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Baseline 5% distress risk for airline-holding companies raises Frontier's risk floor relative to the broad market."
+        }, {
+          "factor" : "Analyst sentiment: Deutsche Bank downgrade to Hold (Feb 2026)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Cautious near-term outlook may temper near-term bankruptcy risk assessments."
+        }, {
+          "factor" : "Spirit’s planned exit from bankruptcy by mid-2026",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Expectations of Spirit exiting bankruptcy could reduce sector distress pressures on Frontier."
+        } ],
+        "synthesis_rationale" : "The posterior combines a base-rate anchor with multiple, partly correlated updates. Distress signals push up probabilities, while sector consolidation and favorable near-term developments push down. The net effect yields a calibrated 0.34 with broad uncertainty; calibration accounts for potential double-counting and horizon alignment."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.34,\n  \"range_low\": 0.28,\n  \"range_high\": 0.40,\n  \"summary\": [\n    \"Baseline anchor: US airline-holding companies have an ~5% bankruptcy rate over the relevant horizon, forming a conservative starting point.\",\n    \"Frontier's Altman Z-score (~0.38–0.39) places it in the distress zone, elevating bankruptcy risk relative to safe peers.\",\n    \"ULCC-specific model suggests substantial tail risk (≈45% bankruptcy probability over 24 months), raising the posterior odds of distress.\",\n    \"Spirit dynamics and potential consolidation could mitigate Frontier's risk, yielding a calibrated posterior of 34% with notable uncertainty.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Starting from a base-rate around 5% for airline distress, Frontier's weak fundamentals push risk upward, while sector consolidation pressures and mixed analyst signals temper it. The resulting calibrated probability is 34% with wide uncertainty about near-term outcomes, particularly regarding Spirit-related dynamics.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.05,\n      \"basis\": \"Base-rate anchor: US airline holding companies' bankruptcy rate is commonly cited near 5% for multi-month horizons; Frontier sits in a distressed ULCC subset, justifying anchoring near the base rate before updates.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Frontier ULCC Altman Z-Score in distress zone\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Altman Z-score around 0.38–0.39 signals distress and non-trivial bankruptcy risk, pushing the probability upward.\"\n      },\n      {\n        \"factor\": \"ULCC 24-month bankruptcy probability model\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"A published model for ULCCs showing ~45% bankruptcy probability over 24 months implies tail risk that informs Frontier's risk.\"\n      },\n      {\n        \"factor\": \"Spirit bankruptcy dynamics and Frontier takeover prospects\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Spirit's distress and Frontier as potential acquirer could reduce Frontier's bankruptcy risk via consolidation and improved market dynamics.\"\n      },\n      {\n        \"factor\": \"Industry base-rate anchor for airline distress\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Baseline 5% distress risk for airline-holding companies raises Frontier's risk floor relative to the broad market.\"\n      },\n      {\n        \"factor\": \"Analyst sentiment: Deutsche Bank downgrade to Hold (Feb 2026)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Cautious near-term outlook may temper near-term bankruptcy risk assessments.\"\n      },\n      {\n        \"factor\": \"Spirit’s planned exit from bankruptcy by mid-2026\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Expectations of Spirit exiting bankruptcy could reduce sector distress pressures on Frontier.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The posterior combines a base-rate anchor with multiple, partly correlated updates. Distress signals push up probabilities, while sector consolidation and favorable near-term developments push down. The net effect yields a calibrated 0.34 with broad uncertainty; calibration accounts for potential double-counting and horizon alignment.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.28, 0.4 ]
+    }, {
+      "probability" : 0.34,
+      "narrative" : "A Bayesian-style assessment yields a 34% posterior probability that Frontier files for bankruptcy before May 1, 2026. Distress indicators lift risk, while Spirit-related restructuring and market moves offer partial offsets; substantial uncertainty remains due to correlations among factors and sector dynamics.",
+      "summary" : [ "Frontier ULCC Altman Z-score around 0.38 places it in the distress zone, implying non-trivial bankruptcy risk within the next two years.", "FRISK 2026 distress signal (1.3% probability of corporate failure) exceeds the long-run 1% baseline for U.S. corporates, signaling elevated sector risk.", "Spirit Airlines' bankruptcy dynamics could reduce Frontier's risk via potential consolidation and favorable market-share shifts.", "Frontier's high debt burden and weak liquidity add material financial distress risk, tempered by mixed analyst signals and regulatory considerations." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.05,
+          "basis" : "Base-rate anchor for US airline-holding-company distress around 5% (prior probability before updating with Frontier-specific signals)."
+        },
+        "factor_updates" : [ {
+          "factor" : "Frontier Altman Z-Score distress indicator",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Altman Z around 0.38–0.39 places Frontier in distress territory, elevating bankruptcy risk relative to peers."
+        }, {
+          "factor" : "FRISK Stress Index (2026 distress vs baseline)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "FRISK project 1.3% failure probability vs 1% baseline, signaling elevated systemic distress in the airline sector."
+        }, {
+          "factor" : "Spirit bankruptcy dynamics and Frontier takeover prospects",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Spirit’s bankruptcy and Frontier’s potential acquisition could improve sector structure and reduce Frontier’s standalone risk."
+        }, {
+          "factor" : "Frontier’s high debt burden and weak liquidity",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Debt load and liquidity constraints raise distress risk and potential default probability."
+        }, {
+          "factor" : "Analyst sentiment: Deutsche Bank downgrade to Hold",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Cautious near-term outlook from downgrade tempers some near-term bankruptcy risk signals."
+        } ],
+        "synthesis_rationale" : "The 0.34 posterior results from combining multiple partly correlated distress signals that push probability up from a 5% base-rate, while mitigants from Spirit-related dynamics and cautious analyst sentiment pull probability down. Given correlations among factors (e.g., sector distress and Altman Z) and limited independent evidence, the posterior is calibrated to a mid-single-digit-to-low-teens percentage uplift within the target window, here 34%, with a wide uncertainty range."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.34,\n  \"range_low\": 0.25,\n  \"range_high\": 0.45,\n  \"summary\": [\n    \"Frontier ULCC Altman Z-score around 0.38 places it in the distress zone, implying non-trivial bankruptcy risk within the next two years.\",\n    \"FRISK 2026 distress signal (1.3% probability of corporate failure) exceeds the long-run 1% baseline for U.S. corporates, signaling elevated sector risk.\",\n    \"Spirit Airlines' bankruptcy dynamics could reduce Frontier's risk via potential consolidation and favorable market-share shifts.\",\n    \"Frontier's high debt burden and weak liquidity add material financial distress risk, tempered by mixed analyst signals and regulatory considerations.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"A Bayesian-style assessment yields a 34% posterior probability that Frontier files for bankruptcy before May 1, 2026. Distress indicators lift risk, while Spirit-related restructuring and market moves offer partial offsets; substantial uncertainty remains due to correlations among factors and sector dynamics.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.05,\n      \"basis\": \"Base-rate anchor for US airline-holding-company distress around 5% (prior probability before updating with Frontier-specific signals).\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Frontier Altman Z-Score distress indicator\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Altman Z around 0.38–0.39 places Frontier in distress territory, elevating bankruptcy risk relative to peers.\"\n      },\n      {\n        \"factor\": \"FRISK Stress Index (2026 distress vs baseline)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"FRISK project 1.3% failure probability vs 1% baseline, signaling elevated systemic distress in the airline sector.\"\n      },\n      {\n        \"factor\": \"Spirit bankruptcy dynamics and Frontier takeover prospects\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Spirit’s bankruptcy and Frontier’s potential acquisition could improve sector structure and reduce Frontier’s standalone risk.\"\n      },\n      {\n        \"factor\": \"Frontier’s high debt burden and weak liquidity\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Debt load and liquidity constraints raise distress risk and potential default probability.\"\n      },\n      {\n        \"factor\": \"Analyst sentiment: Deutsche Bank downgrade to Hold\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Cautious near-term outlook from downgrade tempers some near-term bankruptcy risk signals.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The 0.34 posterior results from combining multiple partly correlated distress signals that push probability up from a 5% base-rate, while mitigants from Spirit-related dynamics and cautious analyst sentiment pull probability down. Given correlations among factors (e.g., sector distress and Altman Z) and limited independent evidence, the posterior is calibrated to a mid-single-digit-to-low-teens percentage uplift within the target window, here 34%, with a wide uncertainty range.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.25, 0.45 ]
+    }, {
+      "probability" : 0.16,
+      "narrative" : "Frontier displays distress signals, but sector dynamics and potential consolidation offer mitigating paths. The forecast assigns a mid-range probability reflecting strong tail risk counterbalanced by possible downside to the risk through Spirit-driven recovery, yielding an estimate around 16% with wide uncertainty.",
+      "summary" : [ "Frontier ULCC Altman Z-score around 0.38 places it in the distress zone, signaling elevated bankruptcy risk relative to peers.", "A ULCC 24-month bankruptcy probability model lists ~45.7% risk for ULCCs, implying non-trivial tail risk for Frontier.", "Credit-cycle stress signals in the airline sector (FRISK index) elevate the baseline distress risk beyond the long-run rate.", "However, Spirit Airlines’ bankruptcy dynamics and Frontier’s potential to acquire or merge with Spirit could reduce Frontier’s own bankruptcy risk through consolidation and increased market power." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.05,
+          "basis" : "Base-rate anchor for US airline distress around 5% per year; Frontier sits in a distressed ULCC subgroup, suggesting probabilities above the baseline but not near certainty."
+        },
+        "factor_updates" : [ {
+          "factor" : "Frontier ULCC Altman Z-Score in distress zone",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Altman Z-score around 0.38–0.39 indicates elevated bankruptcy risk vs. safe firms, contributing upward pressure to Frontier's probability."
+        }, {
+          "factor" : "ULCC 24-month bankruptcy probability model",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Model cites ~45.74% bankruptcy probability over 24 months for ULCCs, implying meaningful tail risk for Frontier given industry exposure."
+        }, {
+          "factor" : "Spirit Airlines' bankruptcy dynamics creating competitive shifts",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Spirit's distress and potential restructuring could favor Frontier via consolidation and market-share gains, reducing bankruptcy risk."
+        }, {
+          "factor" : "Frontier's high debt burden and weak liquidity",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "High leverage and slim liquidity increase distress likelihood, supporting a higher probability than the base-rate."
+        }, {
+          "factor" : "Regulatory/antitrust risk around Spirit–Frontier dynamics",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Regulatory hurdles in any Spirit–Frontier integration could raise costs and delay stabilization, nudging probability upward."
+        }, {
+          "factor" : "Analyst sentiment: Deutsche Bank downgrade to Hold (Feb 2026)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Near-term cautious outlook from a major broker can temper risk perception and weigh on probability."
+        }, {
+          "factor" : "Spirit’s planned exit from bankruptcy by mid-2026",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Expected sector normalization due to Spirit's exit could alleviate distress and reduce Frontier's bankruptcy risk."
+        } ],
+        "synthesis_rationale" : "Starting from a base-rate anchor around 5%, each factor was treated as a directional Bayesian update, with 'strong' updates (ULCC 24-month model) having more influence than 'moderate' or 'weak' factors. The net effect combines upward pressure from Frontier’s distress signals and debt with downward pressure from prospective Spirit-driven consolidation and near-term optimism from certain broker signals. Given data quality and the fact that these signals are sector- and company-level with limited direct Frontier bankruptcy forecasts, the calibrated probability is modest (16%) with a wide uncertainty band (8–28%), reflecting substantial tail risk versus near-certain insolvency."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.16,\n  \"range_low\": 0.08,\n  \"range_high\": 0.28,\n  \"summary\": [\n    \"Frontier ULCC Altman Z-score around 0.38 places it in the distress zone, signaling elevated bankruptcy risk relative to peers.\",\n    \"A ULCC 24-month bankruptcy probability model lists ~45.7% risk for ULCCs, implying non-trivial tail risk for Frontier.\",\n    \"Credit-cycle stress signals in the airline sector (FRISK index) elevate the baseline distress risk beyond the long-run rate.\",\n    \"However, Spirit Airlines’ bankruptcy dynamics and Frontier’s potential to acquire or merge with Spirit could reduce Frontier’s own bankruptcy risk through consolidation and increased market power.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Frontier displays distress signals, but sector dynamics and potential consolidation offer mitigating paths. The forecast assigns a mid-range probability reflecting strong tail risk counterbalanced by possible downside to the risk through Spirit-driven recovery, yielding an estimate around 16% with wide uncertainty.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.05,\n      \"basis\": \"Base-rate anchor for US airline distress around 5% per year; Frontier sits in a distressed ULCC subgroup, suggesting probabilities above the baseline but not near certainty.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Frontier ULCC Altman Z-Score in distress zone\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Altman Z-score around 0.38–0.39 indicates elevated bankruptcy risk vs. safe firms, contributing upward pressure to Frontier's probability.\"\n      },\n      {\n        \"factor\": \"ULCC 24-month bankruptcy probability model\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Model cites ~45.74% bankruptcy probability over 24 months for ULCCs, implying meaningful tail risk for Frontier given industry exposure.\"\n      },\n      {\n        \"factor\": \"Spirit Airlines' bankruptcy dynamics creating competitive shifts\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Spirit's distress and potential restructuring could favor Frontier via consolidation and market-share gains, reducing bankruptcy risk.\"\n      },\n      {\n        \"factor\": \"Frontier's high debt burden and weak liquidity\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"High leverage and slim liquidity increase distress likelihood, supporting a higher probability than the base-rate.\"\n      },\n      {\n        \"factor\": \"Regulatory/antitrust risk around Spirit–Frontier dynamics\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Regulatory hurdles in any Spirit–Frontier integration could raise costs and delay stabilization, nudging probability upward.\"\n      },\n      {\n        \"factor\": \"Analyst sentiment: Deutsche Bank downgrade to Hold (Feb 2026)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Near-term cautious outlook from a major broker can temper risk perception and weigh on probability.\"\n      },\n      {\n        \"factor\": \"Spirit’s planned exit from bankruptcy by mid-2026\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Expected sector normalization due to Spirit's exit could alleviate distress and reduce Frontier's bankruptcy risk.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a base-rate anchor around 5%, each factor was treated as a directional Bayesian update, with 'strong' updates (ULCC 24-month model) having more influence than 'moderate' or 'weak' factors. The net effect combines upward pressure from Frontier’s distress signals and debt with downward pressure from prospective Spirit-driven consolidation and near-term optimism from certain broker signals. Given data quality and the fact that these signals are sector- and company-level with limited direct Frontier bankruptcy forecasts, the calibrated probability is modest (16%) with a wide uncertainty band (8–28%), reflecting substantial tail risk versus near-certain insolvency.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.08, 0.28 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.26993766929480506,
+      "range" : [ 0.16, 0.34 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.34482758620689663,
+    "raw-posterior" : 0.743709527318743,
+    "capped" : true,
+    "prior" : 0.05,
+    "factors" : [ {
+      "name" : "Spirit Airlines bankruptcy dynamics and near-term exit plan (late spring/early summer 2026)",
+      "p-yes" : 0.35,
+      "p-no" : 0.6,
+      "bf" : 0.5833333333333334
+    }, {
+      "name" : "Elevated sector distress signals (FRISK index in 2026)",
+      "p-yes" : 0.6,
+      "p-no" : 0.3,
+      "bf" : 2.0
+    }, {
+      "name" : "Analyst sentiment: Deutsche Bank downgrade to Hold (Feb 2026)",
+      "p-yes" : 0.55,
+      "p-no" : 0.35,
+      "bf" : 1.5714285714285716
+    }, {
+      "name" : "ULCC 24-month bankruptcy probability model",
+      "p-yes" : 0.75,
+      "p-no" : 0.2,
+      "bf" : 3.75
+    }, {
+      "name" : "Frontier ULCC Altman Z-Score in distress zone",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "Frontier's Altman Z-score in the distress zone",
+      "p-yes" : 0.68,
+      "p-no" : 0.25,
+      "bf" : 2.72
+    }, {
+      "name" : "Frontier's high debt burden and weak liquidity",
+      "p-yes" : 0.55,
+      "p-no" : 0.3,
+      "bf" : 1.8333333333333335
+    }, {
+      "name" : "Industry base-rate anchor for airline distress",
+      "p-yes" : 0.5,
+      "p-no" : 0.3,
+      "bf" : 1.6666666666666667
+    }, {
+      "name" : "Regulatory/antitrust risk around Spirit-Frontier dynamics",
+      "p-yes" : 0.4,
+      "p-no" : 0.5,
+      "bf" : 0.8
+    }, {
+      "name" : "Frontier Altman Z-Score distress indicator",
+      "p-yes" : 0.65,
+      "p-no" : 0.25,
+      "bf" : 2.6
+    }, {
+      "name" : "Spirit bankruptcy dynamics and Frontier takeover prospects",
+      "p-yes" : 0.3,
+      "p-no" : 0.65,
+      "bf" : 0.4615384615384615
+    }, {
+      "name" : "Spirit's planned exit from bankruptcy by mid-2026",
+      "p-yes" : 0.25,
+      "p-no" : 0.65,
+      "bf" : 0.3846153846153846
+    }, {
+      "name" : "Systemic airline-sector distress (FRISK Stress Index)",
+      "p-yes" : 0.6,
+      "p-no" : 0.3,
+      "bf" : 2.0
+    }, {
+      "name" : "Strategic deal potential (Frontier-Spirit acquisition/restructuring options)",
+      "p-yes" : 0.4,
+      "p-no" : 0.5,
+      "bf" : 0.8
+    }, {
+      "name" : "Spirit Airlines' bankruptcy dynamics creating competitive shifts",
+      "p-yes" : 0.35,
+      "p-no" : 0.6,
+      "bf" : 0.5833333333333334
+    } ]
+  },
+  "question" : "Will Frontier Group Holdings, Inc. file for bankruptcy protection before May 1, 2026?",
+  "probability" : 0.25,
+  "summary" : [ "Ensemble average based on three perspectives is 27%, but signals are mixed with some downside and upside considerations.", "Objections favor a modest downward tilt: Spirit dynamics and non-specific tail-risk avoids a near-term spike; Altman Z-score signals distress but is not a definitive near-term predictor.", "Threshold analysis notes no strong consensus predicting an imminent filing by 2026, supporting a cautious, modest adjustment downward from the ensemble." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.27,
+    "critique_assessment" : "Objections are valid and highlight realistic sector dynamics and diagnostic limits; however, none point to an overwhelming, near-term probability spike for Frontier's bankruptcy, so the ensemble is not overturned but tempered.",
+    "adjustment" : "Adjusted downward modestly from 0.27 to 0.25 to reflect the balance of objections favoring a lower near-term risk due to potential Spirit-driven consolidation and model limitations on distress indicators."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.17246666666666666,
+      "reference-class" : "US public non-financial corporations' annual bankruptcy rate (base rate ~1% per year)",
+      "sources" : [ {
+        "url" : "https://www.creditriskmonitor.com/resources/blog-posts/financial-risk-report-us-corporate-bankruptcies-hit-11-year-high",
+        "claim" : "In 2026, the U.S. FRISK Stress Index reached 1.3%, above the average annual corporate bankruptcy rate of 1%."
+      }, {
+        "url" : "https://www.chartmill.com/stock/quote/ULCC/fundamental-analysis",
+        "claim" : "ULCC's Altman-Z score is 0.43, placing it in the distress zone."
+      }, {
+        "url" : "https://www.gurufocus.com/term/zscore/ULCC",
+        "claim" : "ULCC Altman Z-Score is 0.38 (as of Feb 13, 2026), in the distress zone."
+      }, {
+        "url" : "https://www.valueinvesting.io/ULCC/probability-of-bankruptcy",
+        "claim" : "Probability of bankruptcy for ULCC is 45.74% over the next 24 months."
+      }, {
+        "url" : "https://valueinvesting.io/ULCC/probability-of-bankruptcy",
+        "claim" : "ULCC Probability of Bankruptcy is 45.74% in the next 24 months."
+      }, {
+        "url" : "https://www.gurufocus.com/term/zscore/ULCC",
+        "claim" : "ULCC Altman Z-Score is 0.38, in the distress zone, implying bankruptcy possibility in the next two years."
+      }, {
+        "url" : "https://www.bloomberg.com/news/articles/2025-02-12/spirit-rejects-yet-another-advance-from-discount-rival-frontier",
+        "claim" : "Spirit Airlines rejected Frontier’s takeover offers; Spirit remains in bankruptcy proceedings, highlighting ongoing distress dynamics in the sector."
+      }, {
+        "url" : "https://www.investing.com/news/stock-market-news/deutsche-bank-upgrades-frontier-as-spirit-bankruptcy-to-boost-its-market-share-4219778",
+        "claim" : "Deutsche Bank upgrades Frontier, noting Spirit's bankruptcy could boost Frontier's market share."
+      }, {
+        "url" : "https://www.cnbc.com/2025/01/29/frontier-airlines-proposes-combining-spirit-bankruptcy.html",
+        "claim" : "Frontier Airlines proposed merging with bankrupt Spirit Airlines."
+      }, {
+        "url" : "https://www.cnbc.com/2025/08/26/frontier-routes-spirit-airlines.html",
+        "claim" : "Frontier Airlines announces 20 new routes in major Spirit markets as Spirit undergoes restructuring related to bankruptcy."
+      }, {
+        "url" : "https://www.apnews.com/article/782c7fb892adf1d2f366411bab955668",
+        "claim" : "Spirit filed for Chapter 11 bankruptcy protection."
+      }, {
+        "url" : "https://www.bloomberg.com/news/articles/2025-01-29/frontier-airlines-makes-new-offer-to-acquire-bankrupt-spirit-air",
+        "claim" : "Bloomberg reports Frontier made a new offer to acquire bankrupt Spirit Airlines."
+      }, {
+        "url" : "https://www.bloomberg.com/news/articles/2025-02-20/spirit-airlines-cleared-to-exit-bankruptcy-in-take-private-transaction",
+        "claim" : "Spirit Airlines was cleared to exit bankruptcy via a go-private transaction."
+      }, {
+        "url" : "https://www.bloomberg.com/news/articles/2025-08-29/spirit-airlines-files-for-bankruptcy-protection-second-time-in-under-a-year",
+        "claim" : "Spirit Airlines files for bankruptcy protection for the second time in under a year."
+      }, {
+        "url" : "https://www.guardian.co.uk/business/2025-08-29/spirit-airlines-bankruptcy-protection",
+        "claim" : "Spirit Airlines files for bankruptcy protection for the second time in 2025."
+      }, {
+        "url" : "https://www.cbsnews.com/news/spirit-airlines-bankruptcy-second-time/",
+        "claim" : "Spirit Airlines files for bankruptcy protection for the second time."
+      }, {
+        "url" : "https://www.businessinsider.com/frontier-spirit-airlines-takeover-offer-chapter-11-bankruptcy-2025-1",
+        "claim" : "Business Insider notes Spirit filed for Chapter 11; Frontier proposed a merger."
+      }, {
+        "url" : "https://www.washingtonpost.com/business/2025/01/29/spirit-frontier-merger/",
+        "claim" : "Spirit rejects Frontier's merger offer and plans to emerge from bankruptcy."
+      }, {
+        "url" : "https://apnews.com/article/92899d09a989e2679e4ba5ef5eef1d96",
+        "claim" : "Spirit expects to exit bankruptcy by late spring or early summer 2026."
+      } ],
+      "confidence" : "low"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Frontier ULCC Altman Z-Score in distress zone",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Altman Z-score around 0.38–0.39 places Frontier in the distress zone, signaling higher bankruptcy risk than safe peers (turn1search1; turn1search2)."
+      }, {
+        "name" : "ULCC 24-month bankruptcy probability model",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "ValueInvesting.io reports ULCC probability of bankruptcy at 45.74% over the next 24 months, indicating substantial tail risk (turn1search0)."
+      }, {
+        "name" : "Spirit bankruptcy dynamics and Frontier takeover prospects",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Spirit's bankruptcy proceedings and Frontier's takeover considerations could shift market share in Frontier's favor, reducing bankruptcy risk (AP News turn0news14; MarketWatch turn0news13)."
+      }, {
+        "name" : "Industry base-rate anchor for airline distress",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Industry base-rate distress for US airline-holding companies is around 5%; Frontier’s distressed signals would push the probability above this base-rate anchor (forecast anchor)."
+      }, {
+        "name" : "Analyst sentiment: Deutsche Bank downgrade to Hold (Feb 2026)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "A Deutsche Bank downgrade to Hold signals cautious near-term outlook, potentially tempering near-term bankruptcy risk (Meyka turn0search1)."
+      }, {
+        "name" : "Spirit’s planned exit from bankruptcy by mid-2026",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Spirit’s expectation to exit bankruptcy by late spring/early summer 2026 could alleviate sector distress and reduce Frontier’s bankruptcy risk (AP News turn0news14)."
+      }, {
+        "name" : "Frontier Altman Z-Score distress indicator",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Frontier Group Holdings' Altman Z-Score around 0.38 (as of Feb 13, 2026) places it in the distress zone, implying non-trivial bankruptcy risk within the next two years."
+      }, {
+        "name" : "Systemic airline-sector distress (FRISK Stress Index)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "CreditRiskMonitor's FRISK Stress Index projects a 1.3% probability of corporate failure in 2026, above the long-run 1% baseline, signaling elevated financial stress in the sector."
+      }, {
+        "name" : "Spirit Airlines' bankruptcy dynamics creating competitive shifts",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Deutsche Bank upgrades Frontier on Spirit’s bankruptcy overlap, suggesting Frontier could capture market share and reduce its own bankruptcy risk."
+      }, {
+        "name" : "Frontier's high debt burden and weak liquidity",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Frontier exhibits a heavy debt burden and thin liquidity (e.g., current ratio around 0.4), raising the risk of financial distress or bankruptcy."
+      }, {
+        "name" : "Regulatory/antitrust risk around Spirit–Frontier dynamics",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Historical merger attempts and ongoing restructurings introduce regulatory hurdles and integration risk that could increase bankruptcy risk if plans stall."
+      }, {
+        "name" : "Spirit Airlines bankruptcy dynamics and near-term exit plan (late spring/early summer 2026)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Spirit's ongoing restructuring and anticipated exit could reduce Frontier's bankruptcy risk through sector consolidation and improved market dynamics."
+      }, {
+        "name" : "Frontier's Altman Z-score in the distress zone",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "An Altman Z-score around 0.38–0.46 signals elevated default risk within the next two years."
+      }, {
+        "name" : "Elevated sector distress signals (FRISK index in 2026)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "A higher FRISK stress level in 2026 compared to the base rate suggests greater systemic risk for airlines, increasing Frontier's bankruptcy likelihood."
+      }, {
+        "name" : "Strategic deal potential (Frontier-Spirit acquisition/ restructuring options)",
+        "direction" : "down",
+        "magnitude" : "weak",
+        "rationale" : "Possible acquisition or restructuring synergies with Spirit could improve Frontier's liquidity and competitive position, potentially lowering bankruptcy risk, though funding remains uncertain."
+      } ],
+      "confidence" : "low"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "medium",
+  "range" : [ 0.18, 0.32 ],
+  "synthesis" : "The objections collectively suggest Frontier's bankruptcy risk by 2026 is plausible but not imminent; sector dynamics could dampen risk, while distress indicators remain non-definitive. Net effect is a small downward calibration from the ensemble average to about 25%."
+}

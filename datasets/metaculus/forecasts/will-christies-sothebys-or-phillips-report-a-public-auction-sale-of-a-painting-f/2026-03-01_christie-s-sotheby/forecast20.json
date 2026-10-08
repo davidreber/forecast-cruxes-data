@@ -1,0 +1,417 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.58,
+      "narrative" : "Starting from a 0.65 anchor based on past 100m+ public-auction events at major houses, a set of upward and downward updates yields a calibrated 0.58 probability with a 0.50–0.66 range. The result reflects strong historical precedent tempered by macro headwinds and Phillips-specific limits, producing a moderate-but-not-high posterior likelihood for a 100m+ sale before May 1, 2026.",
+      "summary" : [ "Historical precedent shows multiple 100m+ public-auction paintings at Christie’s and Sotheby’s, establishing a nontrivial baseline.", "Recent top-end sales (e.g., Klimt 2025) and growing ultra-high-net-worth demand lift the odds of a 100m+ public sale.", "Macro headwinds and limited 100m+ track record for Phillips temper the upside and introduce downside risk.", "Bayesian synthesis yields a calibrated posterior around 58% with notable uncertainty." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.65,
+          "basis" : "Past public-auction 100m+ paintings at Christie’s/Sotheby’s (e.g., Picasso 2010, Scream 2012, Picasso 2015, Salvator Mundi 2017, Klimt 2025) provide a plausible starting point above 0.5."
+        },
+        "factor_updates" : [ {
+          "factor" : "Historical precedent for 100m+ public art sales at Christie’s/Sotheby’s",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Multiple prior records establish a nontrivial baseline and plausibly raise odds from the anchor."
+        }, {
+          "factor" : "Klimt 2025 record sale at Sotheby’s",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Demonstrates continued capacity for 100m+ at top houses and reinforces tail risk to the upside."
+        }, {
+          "factor" : "Macro headwinds and market volatility",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Economic uncertainty could dampen willingness to bid at ultra-high prices in a fixed window."
+        }, {
+          "factor" : "Ultra-high-net-worth buyer demand and cross-border participation",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Global collectors maintain appetite for marquee works, supporting high-price outcomes."
+        }, {
+          "factor" : "Phillips' historical capacity for 100m+ single-lot sales",
+          "direction" : "down",
+          "magnitude" : "weak",
+          "rationale" : "Phillips has rarely achieved 100m+; lowers probability contribution from Phillips specifically."
+        }, {
+          "factor" : "Supply constraints and rarity of comparable works entering the market",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Scarcity increases competition when such works are offered, boosting the ceiling."
+        }, {
+          "factor" : "US market liquidity and share of art sales",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "High US liquidity supports large-ticket art auctions, reinforcing upside potential."
+        } ],
+        "synthesis_rationale" : "The initial anchor of 0.65 was tempered by a mix of downward macro/headwind factors and upward momentum from record sales and broad high-end demand. By accounting for correlation and horizon effects, the net update lands at a mid-to-high probability around 0.58, with a calibrated uncertainty band of 0.50–0.66. The result reflects both the potential for another 100m+ public sale and the nontrivial risk that macro conditions or house-specific dynamics dampen the odds within the window."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.58,\n  \"range_low\": 0.50,\n  \"range_high\": 0.66,\n  \"summary\": [\n    \"Historical precedent shows multiple 100m+ public-auction paintings at Christie’s and Sotheby’s, establishing a nontrivial baseline.\",\n    \"Recent top-end sales (e.g., Klimt 2025) and growing ultra-high-net-worth demand lift the odds of a 100m+ public sale.\",\n    \"Macro headwinds and limited 100m+ track record for Phillips temper the upside and introduce downside risk.\",\n    \"Bayesian synthesis yields a calibrated posterior around 58% with notable uncertainty.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Starting from a 0.65 anchor based on past 100m+ public-auction events at major houses, a set of upward and downward updates yields a calibrated 0.58 probability with a 0.50–0.66 range. The result reflects strong historical precedent tempered by macro headwinds and Phillips-specific limits, producing a moderate-but-not-high posterior likelihood for a 100m+ sale before May 1, 2026.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.65,\n      \"basis\": \"Past public-auction 100m+ paintings at Christie’s/Sotheby’s (e.g., Picasso 2010, Scream 2012, Picasso 2015, Salvator Mundi 2017, Klimt 2025) provide a plausible starting point above 0.5.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Historical precedent for 100m+ public art sales at Christie’s/Sotheby’s\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Multiple prior records establish a nontrivial baseline and plausibly raise odds from the anchor.\"\n      },\n      {\n        \"factor\": \"Klimt 2025 record sale at Sotheby’s\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Demonstrates continued capacity for 100m+ at top houses and reinforces tail risk to the upside.\"\n      },\n      {\n        \"factor\": \"Macro headwinds and market volatility\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Economic uncertainty could dampen willingness to bid at ultra-high prices in a fixed window.\"\n      },\n      {\n        \"factor\": \"Ultra-high-net-worth buyer demand and cross-border participation\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Global collectors maintain appetite for marquee works, supporting high-price outcomes.\"\n      },\n      {\n        \"factor\": \"Phillips' historical capacity for 100m+ single-lot sales\",\n        \"direction\": \"down\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Phillips has rarely achieved 100m+; lowers probability contribution from Phillips specifically.\"\n      },\n      {\n        \"factor\": \"Supply constraints and rarity of comparable works entering the market\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Scarcity increases competition when such works are offered, boosting the ceiling.\"\n      },\n      {\n        \"factor\": \"US market liquidity and share of art sales\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"High US liquidity supports large-ticket art auctions, reinforcing upside potential.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The initial anchor of 0.65 was tempered by a mix of downward macro/headwind factors and upward momentum from record sales and broad high-end demand. By accounting for correlation and horizon effects, the net update lands at a mid-to-high probability around 0.58, with a calibrated uncertainty band of 0.50–0.66. The result reflects both the potential for another 100m+ public sale and the nontrivial risk that macro conditions or house-specific dynamics dampen the odds within the window.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.5, 0.66 ]
+    }, {
+      "probability" : 0.58,
+      "narrative" : "Bayesian updating moves the forecast from the anchor of 12% toward a 58% posterior, driven by historical precedent and recent top-end sales. However, macro headwinds and Phillips' weaker track temper the ascent, yielding a calibrated but uncertain near-term chance.",
+      "summary" : [ "Historical precedent confirms that paintings can exceed US$100 million at Christie’s or Sotheby’s, establishing a nontrivial baseline for a near-term sale.", "Klimt’s 2025 record sale demonstrates the market’s top-end capacity, lifting the ceiling beyond $100 million and broadening the tail risk.", "Strong ultra-wealthy demand and cross-border participation increase bidding competition for marquee works, supporting a 100m+ sale possibility.", "Macro headwinds temper the near-term odds, yielding a calibrated 58% posterior probability with notable uncertainty." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.12,
+          "basis" : "From the forecast evidence: the reference class is the probability that a painting sold at public auction by a major house reaches or exceeds US$100 million in a given window; this serves as the base anchor before updates."
+        },
+        "factor_updates" : [ {
+          "factor" : "Historical precedent for 100m+ public art sales at Christie’s/Sotheby’s",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Past 100m+ public paintings (Picasso 2010, The Scream 2012, Picasso 2015, Salvator Mundi 2017, Klimt 2025) show such outcomes occur, justifying a positive update to the posterior."
+        }, {
+          "factor" : "Klimt 2025 record sale at Sotheby’s",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "A 236.4M sale demonstrates the top end can exceed 100M in a public auction, expanding perceived likelihood for a future 100M+ result."
+        }, {
+          "factor" : "Phillips' historical capacity for 100m+ single-lot sales",
+          "direction" : "down",
+          "magnitude" : "weak",
+          "rationale" : "Phillips has rarely achieved 100m+ single-lot sales, dampening the odds relative to Christie’s/Sotheby’s."
+        }, {
+          "factor" : "Top-end market headwinds in 2023-2024",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Macro cooling and high-end market softness temper bidding enthusiasm for ultra-high-price lots in the near term."
+        }, {
+          "factor" : "Ultra-wealthy buyers and cross-border demand",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Continued appetite from global ultra-high-net-worth collectors increases competition for marquee works, supporting the possibility of a 100m+ sale."
+        }, {
+          "factor" : "US market liquidity and share of art sales",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Strong US liquidity and market share suggest capacity to absorb large-ticket auctions."
+        } ],
+        "synthesis_rationale" : "Starting from a modest anchor (12%), the updates collectively tilt the probability upward due to demonstrated 100m+ outcomes and tail-end demand. However, the updates are partly correlated (e.g., Klimt 2025 and US liquidity both reflect top-end demand) and tempered by Phillips' weaker track record and macro headwinds. The final posterior of 0.58 reflects a calibrated, moderately optimistic view with acknowledged uncertainty."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.58,\n  \"range_low\": 0.50,\n  \"range_high\": 0.66,\n  \"summary\": [\n    \"Historical precedent confirms that paintings can exceed US$100 million at Christie’s or Sotheby’s, establishing a nontrivial baseline for a near-term sale.\",\n    \"Klimt’s 2025 record sale demonstrates the market’s top-end capacity, lifting the ceiling beyond $100 million and broadening the tail risk.\",\n    \"Strong ultra-wealthy demand and cross-border participation increase bidding competition for marquee works, supporting a 100m+ sale possibility.\",\n    \"Macro headwinds temper the near-term odds, yielding a calibrated 58% posterior probability with notable uncertainty.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Bayesian updating moves the forecast from the anchor of 12% toward a 58% posterior, driven by historical precedent and recent top-end sales. However, macro headwinds and Phillips' weaker track temper the ascent, yielding a calibrated but uncertain near-term chance.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.12,\n      \"basis\": \"From the forecast evidence: the reference class is the probability that a painting sold at public auction by a major house reaches or exceeds US$100 million in a given window; this serves as the base anchor before updates.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Historical precedent for 100m+ public art sales at Christie’s/Sotheby’s\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Past 100m+ public paintings (Picasso 2010, The Scream 2012, Picasso 2015, Salvator Mundi 2017, Klimt 2025) show such outcomes occur, justifying a positive update to the posterior.\"\n      },\n      {\n        \"factor\": \"Klimt 2025 record sale at Sotheby’s\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A 236.4M sale demonstrates the top end can exceed 100M in a public auction, expanding perceived likelihood for a future 100M+ result.\"\n      },\n      {\n        \"factor\": \"Phillips' historical capacity for 100m+ single-lot sales\",\n        \"direction\": \"down\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Phillips has rarely achieved 100m+ single-lot sales, dampening the odds relative to Christie’s/Sotheby’s.\"\n      },\n      {\n        \"factor\": \"Top-end market headwinds in 2023-2024\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Macro cooling and high-end market softness temper bidding enthusiasm for ultra-high-price lots in the near term.\"\n      },\n      {\n        \"factor\": \"Ultra-wealthy buyers and cross-border demand\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Continued appetite from global ultra-high-net-worth collectors increases competition for marquee works, supporting the possibility of a 100m+ sale.\"\n      },\n      {\n        \"factor\": \"US market liquidity and share of art sales\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Strong US liquidity and market share suggest capacity to absorb large-ticket auctions.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a modest anchor (12%), the updates collectively tilt the probability upward due to demonstrated 100m+ outcomes and tail-end demand. However, the updates are partly correlated (e.g., Klimt 2025 and US liquidity both reflect top-end demand) and tempered by Phillips' weaker track record and macro headwinds. The final posterior of 0.58 reflects a calibrated, moderately optimistic view with acknowledged uncertainty.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.5, 0.66 ]
+    }, {
+      "probability" : 0.43,
+      "narrative" : "Anchoring to a published threshold probability for 100m+ public art sales, the analysis updates upward on historical precedent, recent extreme sales, and rising ultra-wealthy demand, while moderating due to Phillips’ weaker track record and macro headwinds. The calibrated view places the chance in the high 30s to mid-40s percent range, roughly around 0.43 with substantial uncertainty.",
+      "summary" : [ "Historical precedent shows multiple 100m+ paintings sold at Christie’s and Sotheby’s, establishing a nontrivial tail risk that the target could be reached again.", "Recent top-end sales (Klimt 2025) demonstrate the market capacity to clear well above 100m, supporting upside potential.", "Phillips' lack of track record at 100m+ reduces the probability somewhat, acting as a downward constraint.", "Net assessment after updates implies a mid-range probability with meaningful uncertainty; a collision of headwinds and tailwinds yields a calibrated estimate near the mid-40% area." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.35,
+          "basis" : "Defined anchor for the reference class as ‘Public-auction painting sales at major houses reaching or exceeding US$100 million’; anchor probability 0.35 reflects a mid-range starting point within a plausible forecast band used for this reference class."
+        },
+        "factor_updates" : [ {
+          "factor" : "Historical precedent for 100m+ public art sales at Christie’s/Sotheby’s",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Past public auctions have exceeded US$100 million multiple times (e.g., Picasso, Scream, Bacon, Salvator Mundi, Klimt), establishing a nonzero probability that such an outcome recurs within the window."
+        }, {
+          "factor" : "Klimt 2025 record sale at Sotheby’s",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "A $236.4M public auction shows the top end of the market can exceed $100M, reinforcing the feasibility of a new record in the near term."
+        }, {
+          "factor" : "Phillips' historical capacity for 100m+ single-lot sales",
+          "direction" : "down",
+          "magnitude" : "weak",
+          "rationale" : "Phillips has rarely achieved a $100m+ single-lot sale; stronger performance tends to cluster with Christie’s/Sotheby’s, tempering the probability for Phillips-led outcomes."
+        }, {
+          "factor" : "High-end market headwinds in 2023-2024",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Macro headwinds and cooling demand at the high end could dampen ultra-high price bidding in the near term."
+        }, {
+          "factor" : "Ultra-wealthy demand and cross-border participation",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Growing global appetite among ultra-high-net-worth buyers increases competition for marquee lots, lifting odds of crossing the threshold."
+        }, {
+          "factor" : "US market liquidity and share of art sales",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Strong US liquidity supports large-ticket auctions, contributing to the probability of a $100M+ sale in major houses."
+        } ],
+        "synthesis_rationale" : "Starting from a modest anchor around 0.35, the combination of four upward-moderate factors and two downward factors yields a net upward adjustment to a probability near 0.43. The final interval reflects calibration for tail risk and model uncertainty, acknowledging that outcomes remain sensitive to auction calendar placement, provenance on offered works, and macro conditions."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.43,\n  \"range_low\": 0.33,\n  \"range_high\": 0.53,\n  \"summary\": [\n    \"Historical precedent shows multiple 100m+ paintings sold at Christie’s and Sotheby’s, establishing a nontrivial tail risk that the target could be reached again.\",\n    \"Recent top-end sales (Klimt 2025) demonstrate the market capacity to clear well above 100m, supporting upside potential.\",\n    \"Phillips' lack of track record at 100m+ reduces the probability somewhat, acting as a downward constraint.\",\n    \"Net assessment after updates implies a mid-range probability with meaningful uncertainty; a collision of headwinds and tailwinds yields a calibrated estimate near the mid-40% area.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Anchoring to a published threshold probability for 100m+ public art sales, the analysis updates upward on historical precedent, recent extreme sales, and rising ultra-wealthy demand, while moderating due to Phillips’ weaker track record and macro headwinds. The calibrated view places the chance in the high 30s to mid-40s percent range, roughly around 0.43 with substantial uncertainty.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.35,\n      \"basis\": \"Defined anchor for the reference class as ‘Public-auction painting sales at major houses reaching or exceeding US$100 million’; anchor probability 0.35 reflects a mid-range starting point within a plausible forecast band used for this reference class.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Historical precedent for 100m+ public art sales at Christie’s/Sotheby’s\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Past public auctions have exceeded US$100 million multiple times (e.g., Picasso, Scream, Bacon, Salvator Mundi, Klimt), establishing a nonzero probability that such an outcome recurs within the window.\"\n      },\n      {\n        \"factor\": \"Klimt 2025 record sale at Sotheby’s\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A $236.4M public auction shows the top end of the market can exceed $100M, reinforcing the feasibility of a new record in the near term.\"\n      },\n      {\n        \"factor\": \"Phillips' historical capacity for 100m+ single-lot sales\",\n        \"direction\": \"down\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Phillips has rarely achieved a $100m+ single-lot sale; stronger performance tends to cluster with Christie’s/Sotheby’s, tempering the probability for Phillips-led outcomes.\"\n      },\n      {\n        \"factor\": \"High-end market headwinds in 2023-2024\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Macro headwinds and cooling demand at the high end could dampen ultra-high price bidding in the near term.\"\n      },\n      {\n        \"factor\": \"Ultra-wealthy demand and cross-border participation\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Growing global appetite among ultra-high-net-worth buyers increases competition for marquee lots, lifting odds of crossing the threshold.\"\n      },\n      {\n        \"factor\": \"US market liquidity and share of art sales\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Strong US liquidity supports large-ticket auctions, contributing to the probability of a $100M+ sale in major houses.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a modest anchor around 0.35, the combination of four upward-moderate factors and two downward factors yields a net upward adjustment to a probability near 0.43. The final interval reflects calibration for tail risk and model uncertainty, acknowledging that outcomes remain sensitive to auction calendar placement, provenance on offered works, and macro conditions.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.33, 0.53 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.5302709037303832,
+      "range" : [ 0.43, 0.58 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.576923076923077,
+    "raw-posterior" : 0.9999666384910323,
+    "capped" : true,
+    "prior" : 0.12,
+    "factors" : [ {
+      "name" : "Ultra-high-net-worth buyer demand and cross-border participation",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "Klimt’s 2025 record sale at Sotheby’s",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "Historical 100m+ auction precedent",
+      "p-yes" : 0.8,
+      "p-no" : 0.2,
+      "bf" : 4.0
+    }, {
+      "name" : "Historical precedent for 100m+ public art sales at Christie’s/Sotheby’s",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "Macroeconomic headwinds and market volatility",
+      "p-yes" : 0.35,
+      "p-no" : 0.65,
+      "bf" : 0.5384615384615384
+    }, {
+      "name" : "Phillips' historical capacity for 100m+ single-lot sales",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Historical $100M+ public paintings records (e.g., Picasso 2015, Scream 2012, Bacon 2013)",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "Supply constraints and rarity of comparable works entering the market",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "Ultra-wealthy buyers and cross-border demand",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "Leonardo da Vinci Salvator Mundi (Christie’s, NY, 2017)",
+      "p-yes" : 0.8,
+      "p-no" : 0.2,
+      "bf" : 4.0
+    }, {
+      "name" : "Market momentum from record prices and rising top-tier valuations",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "Provenance/attribution clarity and work prestige",
+      "p-yes" : 0.65,
+      "p-no" : 0.35,
+      "bf" : 1.8571428571428574
+    }, {
+      "name" : "Rising new-buyer share in high-end art (UBS 2025)",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "US market liquidity and share of art sales",
+      "p-yes" : 0.65,
+      "p-no" : 0.35,
+      "bf" : 1.8571428571428574
+    }, {
+      "name" : "Top-end market slowdown in 2023-2024 (Art Basel/UBS, The Art Newspaper)",
+      "p-yes" : 0.35,
+      "p-no" : 0.65,
+      "bf" : 0.5384615384615384
+    }, {
+      "name" : "Rising new-buyer participation (UBS 2025)",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "High-end market headwinds in 2024-2025",
+      "p-yes" : 0.35,
+      "p-no" : 0.65,
+      "bf" : 0.5384615384615384
+    }, {
+      "name" : "Historical precedent for 100m+ public paintings records (e.g., Picasso 2015, Scream 2012, Bacon 2013)",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "Klimt Portrait of Elisabeth Lederer (Sotheby’s, NY, Nov 2025)",
+      "p-yes" : 0.8,
+      "p-no" : 0.2,
+      "bf" : 4.0
+    }, {
+      "name" : "Klimt 2025 record sale at Sotheby’s",
+      "p-yes" : 0.8,
+      "p-no" : 0.2,
+      "bf" : 4.0
+    } ]
+  },
+  "question" : "Will Christie’s, Sotheby’s, or Phillips report a public auction sale of a painting for at least US$100 million before May 1, 2026?",
+  "probability" : 0.5,
+  "summary" : [ "Objections are valid and indicate modest downward pressure on near-term odds (macro headwinds, Phillips' track record, and the tight two-month horizon).", "The two-month window to May 1, 2026 reduces likelihood of a new $100m+ public sale in the near term.", "Historical precedents show $100m+ public paintings have occurred, keeping the event plausible despite headwinds.", "Final calibration modestly lowers the ensemble from 0.53 to 0.50, with a range of 0.42–0.58 to reflect residual uncertainty." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.53,
+    "critique_assessment" : "Yes, objections are valid and indicate a modest downward pressure; they reveal a genuine near-term pacing concern but do not negate the historical possibility of a $100m+ public sale.",
+    "adjustment" : "Adjusted downward from 0.53 to 0.50 due to near-term macro headwinds, Phillips' weaker track record for $100m+ sales, and the tight horizon; set range 0.42–0.58 to reflect residual uncertainty and historical precedent."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.355,
+      "reference-class" : "Probability that a painting sold at public auction by a major house (Christie's, Sotheby's, Phillips) reaches or exceeds US$100 million in a given window.",
+      "sources" : [ {
+        "url" : "https://press.christies.com/christies-sells-leonardo-da-vincis-500-year",
+        "claim" : "Salvator Mundi sold for US$450,312,500 at Christie’s New York on 15 November 2017, setting a new auction record."
+      }, {
+        "url" : "https://www.cnbc.com/2013/11/13/bacon-triptych-sells-for-record-1424-million-at-auction.html",
+        "claim" : "Francis Bacon's Three Studies of Lucian Freud sold for US$142.4 million at Christie's in New York in 2013."
+      }, {
+        "url" : "https://www.bloomberg.com/news/articles/2012-05-03/munch-s-the-scream-sets-record-fetching-120-million",
+        "claim" : "Edvard Munch's The Scream sold for US$119.9 million at Sotheby’s New York in 2012, a record for a work sold at auction."
+      }, {
+        "url" : "https://www.thewrap.com/scream-auctioned-record-breaking-1199m-after-12-minute-bidding-38351/",
+        "claim" : "Sotheby’s auction of The Scream realized US$119.9 million."
+      }, {
+        "url" : "https://www.wsj.com/arts-culture/fine-art/klimt-cattelan-sothebys-auction-record-breuer-lauder-eb31ccbe",
+        "claim" : "Gustav Klimt’s Portrait of Elisabeth Lederer sold for US$236.4 million at Sotheby’s in New York in 2025."
+      }, {
+        "url" : "https://time.com/5053495/salvator-mundi-painting-saudi-prince-buyer/",
+        "claim" : "The buyer of Salvator Mundi was identified as a Saudi prince."
+      }, {
+        "url" : "https://www.washingtonpost.com/archive/style/2010/05/05/picasso-painting-sells-for-record-1065m/855e3b6c-27e3-45cd-b555-10f535fddd2f/",
+        "claim" : "Pablo Picasso's Nude, Green Leaves and Bust sold for US$106.5 million at Christie's in 2010."
+      }, {
+        "url" : "https://www.theguardian.com/artanddesign/2010/may/05/picasso-painting-christies-record",
+        "claim" : "Pablo Picasso's Nude, Green Leaves and Bust sold for US$106.5 million at Christie's in 2010."
+      }, {
+        "url" : "https://press.christies.com/christies-sells-leonardo-da-vincis-500-year",
+        "claim" : "Christie's Salvator Mundi sold for US$450,312,500 in 2017, setting a new auction record for any work of art."
+      }, {
+        "url" : "https://press.christies.com/post-sale-looking-forward-to-the-past-christies-curated-evening-sale-achieves-us705858000",
+        "claim" : "Christie’s Looking Forward to the Past (May 11, 2015) realized US$705,858,000; Picasso’s Les Femmes d’Alger, Version O sold for US$179,365,000, a new record for a painting sold at auction."
+      }, {
+        "url" : "https://washingtonpost.com/politics/179-million-picasso-sale-sets-record-for-art-auctions/2015/05/11/1af5b4ec-f847-11e4-9030-b4732caefe81_story.html",
+        "claim" : "Picasso’s Les Femmes d’Alger, Version O sold for about US$179.4 million at Christie's in 2015, setting a world record for a painting sold at auction."
+      }, {
+        "url" : "https://www.forbes.com/sites/vannale/2015/05/11/picasso-painting-sells-for-179-million-setting-new-auction-record-giacometti-sculpture-sells-for-141-million/",
+        "claim" : "Picasso’s Les Femmes d’Alger, Version O fetched US$179.4 million at Christie's in 2015, a new record for a painting at auction."
+      }, {
+        "url" : "https://www.thewrap.com/scream-auctioned-record-breaking-1199m-after-12-minute-bidding-38351/",
+        "claim" : "Sotheby’s sold Edvard Munch’s The Scream for US$119.9 million in 2012, a record for any artwork sold at auction."
+      }, {
+        "url" : "https://www.metaculus.com/questions/42243/public-auction-sale-of-a-painting-for-at-least-us1/",
+        "claim" : "Forecast: 29.5% chance that Christie’s, Sotheby’s, or Phillips reports a public auction sale of a painting for at least US$100 million before May 1, 2026."
+      }, {
+        "url" : "https://www.theartnewspaper.com/2017/11/16/analysis-christies-postwar-and-contemporary-auction-nets-dollar7859m-with-a-big-assist-from-an-old-master",
+        "claim" : "Leonardo da Vinci's Salvator Mundi sold for $450.3 million at Christie’s in New York in 2017, illustrating that such a-price-point public sale is possible."
+      }, {
+        "url" : "https://press.christies.com/press-release/christie%E2%80%99s-leads-global-art-market-2017-sales-total-ps51-billion-66-billion",
+        "claim" : "Christie’s reported that 2017 global art market sales were led by the record sale of Leonardo da Vinci’s Salvator Mundi at $450.3 million."
+      } ],
+      "confidence" : "high"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Historical 100m+ auction precedent",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Past public auctions at Christie’s and Sotheby’s have exceeded US$100 million multiple times (e.g., 2010 Picasso, 2012 The Scream, 2015 Picasso, 2017 Salvator Mundi, 2025 Klimt), establishing a nontrivial baseline likelihood for another such sale."
+      }, {
+        "name" : "Market momentum from record prices and rising top-tier valuations",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Continued record sales and price inflation for the world’s most prestigious works amplify bidding enthusiasm and the probability of reaching or surpassing the 100m threshold."
+      }, {
+        "name" : "Ultra-high-net-worth buyer demand and cross-border participation",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Growing appetite from global ultra-wealthy collectors (including regions like Asia and the Middle East) increases competitive bidding for marquee lots."
+      }, {
+        "name" : "Provenance/attribution clarity and work prestige",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Clear attribution and strong provenance elevate bidder confidence and can unlock premium pricing at auction."
+      }, {
+        "name" : "Macroeconomic headwinds and market volatility",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Economic uncertainty or liquidity constraints can dampen willingness to bid at ultra-high price points in any given window."
+      }, {
+        "name" : "Supply constraints and rarity of comparable works entering the market",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "A limited pipeline of comparable masterpieces increases competition when such works are offered, raising the odds of crossing the 100m threshold."
+      }, {
+        "name" : "Historical precedent for 100m+ public art sales at Christie’s/Sotheby’s",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Past public sales have broken the 100m mark multiple times (Picasso Nude, Green Leaves and Bust in 2010; Munch The Scream in 2012; Picasso Les Femmes d’Algers Version O in 2015; Salvator Mundi in 2017; Klimt Portrait of Elisabeth Lederer in 2025), showing such an outcome is plausible."
+      }, {
+        "name" : "Klimt 2025 record sale at Sotheby’s",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Klimt’s Portrait of Elisabeth Lederer sold for $236.4m in 2025 at Sotheby’s, illustrating that a painting can exceed $100m in a single public auction and broaden the tail risk."
+      }, {
+        "name" : "Phillips' historical capacity for 100m+ single-lot sales",
+        "direction" : "down",
+        "magnitude" : "weak",
+        "rationale" : "Phillips has rarely achieved a $100m+ single-lot sale; its 2018 London auction performed strongly in total but did not feature a confirmed $100m+ single-lot sale, making a Phillips-led $100m+ auction less likely."
+      }, {
+        "name" : "High-end market headwinds in 2024-2025",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The Art Basel/UBS Global Art Market Report 2025 shows a 12% decline in 2024 with the high end thinning, signaling risks to another $100m+ public auction in the near term."
+      }, {
+        "name" : "Ultra-wealthy buyers and cross-border demand",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Historic ultra-wealthy buyers (e.g., the Saudi prince identified as Salvator Mundi’s buyer) and large private collections show continued top-end demand that could support a $100m+ public sale."
+      }, {
+        "name" : "US market liquidity and share of art sales",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "The US accounted for about 43% of global art sales in 2024, indicating strong liquidity that could enable a $100m+ auction."
+      }, {
+        "name" : "Klimt Portrait of Elisabeth Lederer (Sotheby’s, NY, Nov 2025)",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "A $236.4M sale demonstrates the top end of the market can exceed $100M, lifting near-term odds of a public $100M+ painting sale before May 1, 2026."
+      }, {
+        "name" : "Leonardo da Vinci Salvator Mundi (Christie’s, NY, 2017)",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "A $450.3M public auction record shows the $100M+ threshold is routinely attainable under current market conditions."
+      }, {
+        "name" : "Historical $100M+ public paintings records (e.g., Picasso 2015, Scream 2012, Bacon 2013)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Multiple past public auctions above $100M indicate the event is achievable within major houses’ cycles."
+      }, {
+        "name" : "Top-end art-market slowdown in 2023-2024 (Art Basel/UBS, The Art Newspaper)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Macro headwinds and cooling demand at the high end could dampen near-term probability of new $100M+ records."
+      }, {
+        "name" : "Rising new-buyer share in high-end art (UBS 2025)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "An influx of new buyers (e.g., 44% new to dealers, 38% first-time buyers) could fuel trophy purchases and raise odds of a $100M+ sale."
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "high",
+  "range" : [ 0.42, 0.58 ],
+  "synthesis" : "The baseline ensemble sits at 53%, but near-term macro headwinds, Phillips' limited track record at or above $100m, and the very tight two-month horizon justify a modest downward adjustment. Historical outliers still show such sales are possible, so a probability around 50% with a ±8% range captures the balanced view."
+}

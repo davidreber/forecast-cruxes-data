@@ -1,0 +1,308 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.74,
+      "narrative" : "Starting from the IOM reference-class anchor of roughly 2,000–2,500 annual Mediterranean deaths and the ~606 deaths by February 2026, the pace suggests a credible chance of surpassing 1,000 by May. Upward pressure from pace and spring conditions is balanced by potential SAR improvements and deterrence, yielding a calibrated posterior around 0.74 with modest uncertainty.",
+      "summary" : [ "Anchor the forecast to the IOM Missing Migrants Project reference class; anchor probability set at 0.65 based on February 2026 pace and historical toll context.", "Current year-to-date mortality pace is strong, implying a plausible path to 1,000+ deaths before May if the trend continues.", "Seasonal spring crossing dynamics and weather-influenced risk push the probability upward, while improvements in SAR capacity or stricter policy deterrence push it downward.", "Final calibrated probability: 0.74 with a range roughly 0.68–0.80 to reflect calibration uncertainty." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.65,
+          "basis" : "Reference class: IOM Missing Migrants Project annual Mediterranean death tolls; anchor probability drawn from forecast evidence indicating a high but not certain baseline (Feb 2026 pace ~606 deaths in two months)."
+        },
+        "factor_updates" : [ {
+          "factor" : "Current year-to-date mortality pace",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "606 deaths in the first two months implies a trajectory potentially exceeding 1,000 by end-April if the pace persists."
+        }, {
+          "factor" : "March–April weather/sea conditions in the Central Mediterranean",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Spring patterns often increase crossing activity and fatalities, increasing the likelihood of reaching 1,000 before May."
+        }, {
+          "factor" : "Search-and-rescue capacity and policy environment",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Enhanced SAR or restrictive policies can reduce fatalities, mitigating the pace-driven risk."
+        }, {
+          "factor" : "Policy enforcement and deterrence affecting crossing flows",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Stricter controls may reduce crossing attempts and associated deaths, dampening the path to 1,000."
+        }, {
+          "factor" : "Reporting lag and data revisions in IOM Missing Migrants Project",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Initial counts can be revised upward, adding uncertainty but not a clear directional push."
+        } ],
+        "synthesis_rationale" : "Starting from a 0.65 anchor, I added positive updates for pace and seasonality and subtracted value from SAR/policy factors, with a small neutral datapoint for reporting lag. The calibration leaned toward a moderate-to-high probability, arriving at 0.74 with a measured uncertainty band (0.68–0.80) to reflect data volatility and potential revisions."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.74,\n  \"range_low\": 0.68,\n  \"range_high\": 0.80,\n  \"summary\": [\n    \"Anchor the forecast to the IOM Missing Migrants Project reference class; anchor probability set at 0.65 based on February 2026 pace and historical toll context.\",\n    \"Current year-to-date mortality pace is strong, implying a plausible path to 1,000+ deaths before May if the trend continues.\",\n    \"Seasonal spring crossing dynamics and weather-influenced risk push the probability upward, while improvements in SAR capacity or stricter policy deterrence push it downward.\",\n    \"Final calibrated probability: 0.74 with a range roughly 0.68–0.80 to reflect calibration uncertainty.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Starting from the IOM reference-class anchor of roughly 2,000–2,500 annual Mediterranean deaths and the ~606 deaths by February 2026, the pace suggests a credible chance of surpassing 1,000 by May. Upward pressure from pace and spring conditions is balanced by potential SAR improvements and deterrence, yielding a calibrated posterior around 0.74 with modest uncertainty.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.65,\n      \"basis\": \"Reference class: IOM Missing Migrants Project annual Mediterranean death tolls; anchor probability drawn from forecast evidence indicating a high but not certain baseline (Feb 2026 pace ~606 deaths in two months).\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Current year-to-date mortality pace\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"606 deaths in the first two months implies a trajectory potentially exceeding 1,000 by end-April if the pace persists.\"\n      },\n      {\n        \"factor\": \"March–April weather/sea conditions in the Central Mediterranean\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Spring patterns often increase crossing activity and fatalities, increasing the likelihood of reaching 1,000 before May.\"\n      },\n      {\n        \"factor\": \"Search-and-rescue capacity and policy environment\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Enhanced SAR or restrictive policies can reduce fatalities, mitigating the pace-driven risk.\"\n      },\n      {\n        \"factor\": \"Policy enforcement and deterrence affecting crossing flows\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Stricter controls may reduce crossing attempts and associated deaths, dampening the path to 1,000.\"\n      },\n      {\n        \"factor\": \"Reporting lag and data revisions in IOM Missing Migrants Project\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Initial counts can be revised upward, adding uncertainty but not a clear directional push.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a 0.65 anchor, I added positive updates for pace and seasonality and subtracted value from SAR/policy factors, with a small neutral datapoint for reporting lag. The calibration leaned toward a moderate-to-high probability, arriving at 0.74 with a measured uncertainty band (0.68–0.80) to reflect data volatility and potential revisions.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.68, 0.8 ]
+    }, {
+      "probability" : 0.74,
+      "narrative" : "Anchored on historical annual tolls (~2k–2.5k) and current pace (606 deaths by Feb 2026), the posterior odds of hitting 1,000 deaths before May are 74%. Upsides come from spring dynamics and weather; potential downsides include enhanced SAR and deterrence reducing fatalities.",
+      "summary" : [ "606 deaths by February 2026 imply a pace that could exceed 1,000 by end-April if sustained.", "Historical Mediterranean tolls around 2,000–2,500 per year establish a plausible annual scale for a 1,000-by-May threshold.", "Spring crossing dynamics and weather may raise fatalities, while SAR capacity improvements or deterrence could dampen the toll.", "Bayesian update yields a posterior probability of 0.74 with uncertainty, not a guaranteed outcome." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.65,
+          "basis" : "Reference class uses IOM Missing Migrants Project annual Mediterranean death tolls (historical tolls around 2,000–2,500). The 0.65 anchor reflects typical baseline probability before factoring new 2026 data."
+        },
+        "factor_updates" : [ {
+          "factor" : "Current year-to-date mortality pace",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "606 deaths in the first two months of 2026 imply a pace compatible with surpassing 1,000 by end-April if the trend continues."
+        }, {
+          "factor" : "Seasonal spring crossing dynamics in the Central Mediterranean",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Spring months often see higher crossing activity and fatalities, increasing the probability of reaching 1,000 before May."
+        }, {
+          "factor" : "Search-and-rescue capacity and response",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Stronger SAR capacity or policy changes could reduce fatalities, lowering the odds of hitting 1,000 before May."
+        }, {
+          "factor" : "Weather and sea-state conditions in the Central Mediterranean",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Adverse spring weather raises fatality risk at sea, pushing totals higher."
+        }, {
+          "factor" : "Policy enforcement and deterrence affecting crossing flows",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Stricter controls could reduce crossing attempts and related deaths, dampening the path to 1,000."
+        } ],
+        "synthesis_rationale" : "Starting from the 0.65 anchor, the explicit updates from both up and down factors yield a posterior around 0.74. The range 0.66–0.82 captures credible uncertainty given data gaps, monthly variability, and evolving SAR/policy conditions."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.74,\n  \"range_low\": 0.66,\n  \"range_high\": 0.82,\n  \"summary\": [\n    \"606 deaths by February 2026 imply a pace that could exceed 1,000 by end-April if sustained.\",\n    \"Historical Mediterranean tolls around 2,000–2,500 per year establish a plausible annual scale for a 1,000-by-May threshold.\",\n    \"Spring crossing dynamics and weather may raise fatalities, while SAR capacity improvements or deterrence could dampen the toll.\",\n    \"Bayesian update yields a posterior probability of 0.74 with uncertainty, not a guaranteed outcome.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Anchored on historical annual tolls (~2k–2.5k) and current pace (606 deaths by Feb 2026), the posterior odds of hitting 1,000 deaths before May are 74%. Upsides come from spring dynamics and weather; potential downsides include enhanced SAR and deterrence reducing fatalities.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.65,\n      \"basis\": \"Reference class uses IOM Missing Migrants Project annual Mediterranean death tolls (historical tolls around 2,000–2,500). The 0.65 anchor reflects typical baseline probability before factoring new 2026 data.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Current year-to-date mortality pace\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"606 deaths in the first two months of 2026 imply a pace compatible with surpassing 1,000 by end-April if the trend continues.\"\n      },\n      {\n        \"factor\": \"Seasonal spring crossing dynamics in the Central Mediterranean\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Spring months often see higher crossing activity and fatalities, increasing the probability of reaching 1,000 before May.\"\n      },\n      {\n        \"factor\": \"Search-and-rescue capacity and response\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Stronger SAR capacity or policy changes could reduce fatalities, lowering the odds of hitting 1,000 before May.\"\n      },\n      {\n        \"factor\": \"Weather and sea-state conditions in the Central Mediterranean\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Adverse spring weather raises fatality risk at sea, pushing totals higher.\"\n      },\n      {\n        \"factor\": \"Policy enforcement and deterrence affecting crossing flows\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Stricter controls could reduce crossing attempts and related deaths, dampening the path to 1,000.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from the 0.65 anchor, the explicit updates from both up and down factors yield a posterior around 0.74. The range 0.66–0.82 captures credible uncertainty given data gaps, monthly variability, and evolving SAR/policy conditions.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.66, 0.82 ]
+    }, {
+      "probability" : 0.68,
+      "narrative" : "Early-2026 data show a high toll within two months; if March and April sustain or intensify crossing activity and adverse weather, reaching 1,000 deaths before May is plausible. However, SAR capacity and policy changes could dampen fatalities, so the outcome remains uncertain and highly dependent on evolving conditions.",
+      "summary" : [ "606 deaths or missing persons by the end of February 2026 imply a pace that could exceed 1,000 by end-April if March–April stay at or above current tempo.", "Historical annual tolls around 2,000–2,500 and expected spring crossing dynamics suggest the near-term threshold is plausible, though not guaranteed.", "Weather conditions, SAR capacity, and policy shifts can push fatalities up or down in the critical spring window, contributing substantial uncertainty.", "Net forecast: probability of at least 1,000 Mediterranean deaths before May 2026 is plausible with moderate upward tilt, but remains uncertain." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.65,
+          "basis" : "Reference class is IOM Missing Migrants Project annual Mediterranean tolls (calendar year totals). The anchor probability reflects the central expectation given historical tolls (roughly 2,000–2,500 per year) and the observed pace through February 2026 (≈606 deaths), which implies a non-negligible chance of crossing 1,000 by end-April."
+        },
+        "factor_updates" : [ {
+          "factor" : "Current year-to-date mortality pace",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "606 deaths in the first two months implies a baseline pace that could reach or exceed 1,000 by end-April if March–April are not atypically low."
+        }, {
+          "factor" : "March–April weather/sea conditions",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Spring conditions and associated crossing activity can elevate fatalities, increasing the probability of reaching 1,000."
+        }, {
+          "factor" : "Search-and-rescue (SAR) capacity and policy environment",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Enhanced SAR capacity or stricter deterrence could reduce crossings and fatalities, lowering the odds."
+        }, {
+          "factor" : "Historical annual toll context (roughly 2,000–2,500 per year)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "High annual tolls historically make a near-term hit to 1,000 in two months more plausible within a single calendar year."
+        }, {
+          "factor" : "Reporting lag and data revisions in IOM Missing Migrants Project",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Potential upward revisions in early tallies could nudge total toward 1,000."
+        }, {
+          "factor" : "Policy changes reducing crossings",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Stricter controls could suppress crossing attempts and fatalities."
+        } ],
+        "synthesis_rationale" : "Starting from a 0.65 anchor, the updates largely tilt upward due to the high pace to date and spring dynamics, but are partially offset by SAR/policy risks. Calibration reflects the substantial uncertainty in near-term monthly totals, producing a final probability of 0.68 with a 0.58–0.78 range to cover plausible outcomes."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.68,\n  \"range_low\": 0.58,\n  \"range_high\": 0.78,\n  \"summary\": [\n    \"606 deaths or missing persons by the end of February 2026 imply a pace that could exceed 1,000 by end-April if March–April stay at or above current tempo.\",\n    \"Historical annual tolls around 2,000–2,500 and expected spring crossing dynamics suggest the near-term threshold is plausible, though not guaranteed.\",\n    \"Weather conditions, SAR capacity, and policy shifts can push fatalities up or down in the critical spring window, contributing substantial uncertainty.\",\n    \"Net forecast: probability of at least 1,000 Mediterranean deaths before May 2026 is plausible with moderate upward tilt, but remains uncertain.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Early-2026 data show a high toll within two months; if March and April sustain or intensify crossing activity and adverse weather, reaching 1,000 deaths before May is plausible. However, SAR capacity and policy changes could dampen fatalities, so the outcome remains uncertain and highly dependent on evolving conditions.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.65,\n      \"basis\": \"Reference class is IOM Missing Migrants Project annual Mediterranean tolls (calendar year totals). The anchor probability reflects the central expectation given historical tolls (roughly 2,000–2,500 per year) and the observed pace through February 2026 (≈606 deaths), which implies a non-negligible chance of crossing 1,000 by end-April.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Current year-to-date mortality pace\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"606 deaths in the first two months implies a baseline pace that could reach or exceed 1,000 by end-April if March–April are not atypically low.\"\n      },\n      {\n        \"factor\": \"March–April weather/sea conditions\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Spring conditions and associated crossing activity can elevate fatalities, increasing the probability of reaching 1,000.\"\n      },\n      {\n        \"factor\": \"Search-and-rescue (SAR) capacity and policy environment\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Enhanced SAR capacity or stricter deterrence could reduce crossings and fatalities, lowering the odds.\"\n      },\n      {\n        \"factor\": \"Historical annual toll context (roughly 2,000–2,500 per year)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"High annual tolls historically make a near-term hit to 1,000 in two months more plausible within a single calendar year.\"\n      },\n      {\n        \"factor\": \"Reporting lag and data revisions in IOM Missing Migrants Project\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Potential upward revisions in early tallies could nudge total toward 1,000.\"\n      },\n      {\n        \"factor\": \"Policy changes reducing crossings\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Stricter controls could suppress crossing attempts and fatalities.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a 0.65 anchor, the updates largely tilt upward due to the high pace to date and spring dynamics, but are partially offset by SAR/policy risks. Calibration reflects the substantial uncertainty in near-term monthly totals, producing a final probability of 0.68 with a 0.58–0.78 range to cover plausible outcomes.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.58, 0.78 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.7208274296272641,
+      "range" : [ 0.68, 0.74 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.740042105263158,
+    "raw-posterior" : 0.740042105263158,
+    "capped" : false,
+    "prior" : 0.65,
+    "factors" : [ {
+      "name" : "Current year-to-date mortality pace",
+      "p-yes" : 0.8,
+      "p-no" : 0.2,
+      "bf" : 4.0
+    }, {
+      "name" : "Seasonal spring crossing dynamics in the Central Mediterranean",
+      "p-yes" : 0.65,
+      "p-no" : 0.35,
+      "bf" : 1.8571428571428574
+    }, {
+      "name" : "Search-and-rescue capacity and response",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Weather and sea-state conditions in the Central Mediterranean",
+      "p-yes" : 0.65,
+      "p-no" : 0.35,
+      "bf" : 1.8571428571428574
+    }, {
+      "name" : "Policy enforcement and deterrence affecting crossing flows",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    } ]
+  },
+  "question" : "Will the IOM Missing Migrants Project record at least 1,000 Mediterranean migrant deaths in 2026 before May 2026?",
+  "probability" : 0.7,
+  "summary" : [ "Ensemble aggregate suggests 72% probability; objections flag risk that the early-year pace may not persist and policy/weather factors could dampen fatalities.", "Early-2026 pace (606 deaths by February) is an outlier relative to typical monthly totals; sustaining that pace through March–April is uncertain.", "Threshold analysis shows hitting 1,000 by end-April is plausible but uncertain; no clear impossibility, but not guaranteed." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.72,
+    "critique_assessment" : "Objections are valid in signaling real risk that the high early-year pace may not persist and that SAR improvements or deterrence could reduce fatalities; they do not imply an impossibility, only uncertainty.",
+    "adjustment" : "Adjusted downward from 0.72 to 0.70 to reflect caution about persistence of the high early-year pace and potential mitigating factors; range 0.60–0.80 captures plausible variability."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.54,
+      "reference-class" : "Mediterranean migrant deaths per year as tracked by the IOM Missing Migrants Project (historical annual toll around 2,000–2,500; 2025 Mediterranean deaths ~2,185).",
+      "sources" : [ {
+        "url" : "https://apnews.com/article/10d5d7edbd0705be629c2c73923c9bbc",
+        "claim" : "AP News reports that at least 606 migrants had died or gone missing in the Mediterranean in the first two months of 2026."
+      }, {
+        "url" : "https://www.newarab.com/news/least-606-migrants-dead-or-missing-med-start-2026",
+        "claim" : "New Arab summarizes that 606 Mediterranean deaths had been recorded by late February 2026, marking a deadly start to the year."
+      }, {
+        "url" : "https://www.theguardian.com/world/2026/feb/23/migrants-die-trying-to-cross-mediterranean-2026",
+        "claim" : "The Guardian notes that by late February 2026 the Mediterranean death toll had reached at least 606."
+      }, {
+        "url" : "https://www.unognewsroom.org/story/en/3025/un-geneva-press-briefing-27-february-2026/0/WjnegYbwZ1",
+        "claim" : "UN Geneva press briefing cites IOM data that 2025 Mediterranean deaths were 2,185 (with 1,214 on the Atlantic route) and discusses missing figures; provides context for annual tolls."
+      }, {
+        "url" : "https://www.dw.com/en/migrant-deaths-reach-record-high-in-2024-iom-says/a-71994593",
+        "claim" : "DW reports 2024 Mediterranean deaths around 2,452 as part of the global migrant-death toll (context for typical annual scale)."
+      }, {
+        "url" : "https://www.theguardian.com/world/2026/feb/23/migrants-die-trying-to-cross-mediterranean-2026",
+        "claim" : "As of February 2026, more than 600 migrants have died or gone missing in the Mediterranean—the deadliest start to a year on record since IOM began tracking data in 2014."
+      }, {
+        "url" : "https://apnews.com/article/10d5d7edbd0705be629c2c73923c9bbc",
+        "claim" : "AP reports that IOM records 606 migrants dead or missing in the Mediterranean in the first two months of 2026."
+      }, {
+        "url" : "https://www.newarab.com/news/least-606-migrants-dead-or-missing-med-start-2026-un.html",
+        "claim" : "New Arab reports that IOM records 606 migrants dead or missing in the Mediterranean since the start of 2026."
+      }, {
+        "url" : "https://en.hespress.com/132400-at-least-606-migrants-dead-or-missing-in-med-since-start-of-2026-un.html",
+        "claim" : "Hespress reports that IOM says 606 migrants dead or missing in the Mediterranean since the start of 2026."
+      }, {
+        "url" : "https://www.dw.com/en/migrant-deaths-reach-record-high-in-2024-iom-says/a-71994593",
+        "claim" : "Historical context: 2024 Mediterranean deaths around 2,452 according to IOM; 2024 was among the deadliest years on record."
+      }, {
+        "url" : "https://www.theguardian.com/world/2026/feb/23/migrants-die-trying-to-cross-mediterranean-2026",
+        "claim" : "As of Feb 23, 2026, at least 606 migrants had died or gone missing in the Mediterranean in 2026 (IOM)."
+      }, {
+        "url" : "https://apnews.com/article/migrants-boat-crete-greece-capsize-deaths-10d5d7edbd0705be629c2c73923c9bbc",
+        "claim" : "AP reports that by early February 2026, at least 606 migrants had died or gone missing along the Mediterranean, per IOM’s Missing Migrants Project."
+      }, {
+        "url" : "https://www.unognewsroom.org/story/en/3025/un-geneva-press-briefing-27-february-2026/0/WjnegYbwZ1",
+        "claim" : "UN Geneva briefing notes 606 Mediterranean deaths by February 2026 and cites 2,185 Mediterranean deaths in 2025 (IOM Missing Migrants Project)."
+      } ],
+      "confidence" : "low"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Current year-to-date mortality pace",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "606 deaths in the first two months of 2026 imply a pace that would project to roughly 1,212 deaths by end-April if the rate continues."
+      }, {
+        "name" : "Seasonal spring crossing dynamics in the Central Mediterranean",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Historical patterns show spring months tend to see higher crossing activity and fatalities, increasing the likelihood of reaching 1,000 by May."
+      }, {
+        "name" : "Search-and-rescue capacity and response",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Improved SAR capacity or policy changes that enhance rescue outcomes tend to reduce fatalities, lowering the odds of surpassing 1,000 before May."
+      }, {
+        "name" : "Weather and sea-state conditions in the Central Mediterranean",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Adverse weather and rough seas raise fatality risk, so persistent storms in spring could push totals toward or above 1,000."
+      }, {
+        "name" : "Policy enforcement and deterrence affecting crossing flows",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Stricter enforcement and deterrence could reduce crossing attempts and fatalities, diminishing the likelihood of hitting the 1,000-death threshold before May."
+      }, {
+        "name" : "Pace of 2026 Mediterranean deaths to date (Jan–Feb)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "606 deaths/missing by February 2026; if March–April continue at a similar pace, total by end-April could exceed 1,000."
+      }, {
+        "name" : "March–April weather/sea conditions in the Central Mediterranean",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Rough seas or favorable crossing conditions in the critical spring window can increase fatalities or crossing attempts."
+      }, {
+        "name" : "Search-and-rescue (SAR) capacity and policy environment",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Constraints or restrictive policies on SAR can raise the probability of deaths during crossings."
+      }, {
+        "name" : "Historical annual toll context (roughly 2,000–2,500 per year)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "High annual tolls historically make a 1,000-deaths-by-April milestone more plausible within a single year."
+      }, {
+        "name" : "Reporting lag and data revisions in IOM Missing Migrants Project",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Initial counts can be revised upward as new information becomes available, nudging the total higher."
+      }, {
+        "name" : "Policy changes reducing crossings in origin/destination countries",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Stricter controls or deterrence may reduce crossing attempts and related fatalities."
+      }, {
+        "name" : "Current year-to-date pace in 2026",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "As of February 2026, at least 606 migrants have died or gone missing in the Mediterranean, implying a pace that could exceed 1,000 by end-April if the trend persists. ([theguardian.com](https://www.theguardian.com/world/2026/feb/23/migrants-die-trying-to-cross-mediterranean-2026))"
+      }, {
+        "name" : "Weather and sea conditions driving crossing danger",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Media reporting described a deadly start to 2026 with hazardous crossings driven by winter storms, increasing mortality risk at sea. ([theguardian.com](https://www.theguardian.com/world/2026/feb/23/migrants-die-trying-to-cross-mediterranean-2026))"
+      }, {
+        "name" : "Policy/SAR crackdown potentially reducing crossings",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "European policy measures and tightened border controls could reduce crossings and deaths, offsetting the current high pace. ([theguardian.com](https://www.theguardian.com/world/2026/feb/23/migrants-die-trying-to-cross-mediterranean-2026))"
+      }, {
+        "name" : "Data gaps and verification limits in Missing Migrants reporting",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "IOM Missing Migrants data may undercount or be incomplete due to access constraints and verification challenges, injecting uncertainty into near-term tallies. ([unognewsroom.org](https://www.unognewsroom.org/story/en/3025/un-geneva-press-briefing-27-february-2026/0/WjnegYbwZ1?utm_source=openai))"
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "medium",
+  "range" : [ 0.6, 0.8 ],
+  "synthesis" : "The 1,000-death threshold by end-April is plausible given the early toll, but objections about pace sustainability and mitigating factors justify a modest downward calibration from the ensemble. The final probability centers near 70% with a wide uncertainty range."
+}

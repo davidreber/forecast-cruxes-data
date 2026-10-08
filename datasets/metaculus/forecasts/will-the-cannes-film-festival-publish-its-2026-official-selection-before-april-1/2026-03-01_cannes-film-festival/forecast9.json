@@ -1,0 +1,224 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.02,
+      "narrative" : "Based on the official mid-April reveal window and historical variations around April 10, the likelihood of publication before April 10, 2026 is low. The posterior probability is calibrated to about 2%, with a plausible range roughly 1–4% given potential exceptions.",
+      "summary" : [ "Anchor on Cannes Official Selection timing based on historical patterns.", "Cannes communications consistently reference a mid-April press conference window after April 10.", "There is some precedent for earlier announcements (April 10 in 2025; April 11 in 2024), but these are exceptions rather than the rule.", "Posteriors converge to a low probability (about 2%) for publication before April 10, 2026." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.05,
+          "basis" : "Reference class: Cannes Official Selection announcements historically emerge in mid-April; using a prior around 5% reflects occasional exceptions and uncertainty about an earlier reveal."
+        },
+        "factor_updates" : [ {
+          "factor" : "Mid-April press conference window (Paris)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Cannes states the official selection and related events are unveiled at a mid-April press conference, which by design occurs after April 10."
+        }, {
+          "factor" : "Historical precedent: 2025 announcement on April 10",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "The 2025 reveal on April 10 shows the date can be on or before April 10, implying the window can touch that boundary."
+        }, {
+          "factor" : "2024 announcement around April 11",
+          "direction" : "down",
+          "magnitude" : "weak",
+          "rationale" : "The April 11 2024 reveal suggests a pattern of after-April-10 timing, adding downward bias, albeit weakly."
+        } ],
+        "synthesis_rationale" : "The mid-April press-conference constraint is a strong downward update, while the 2025 and 2024 precedents provide modest upward and downward corrections. Taken together (and allowing for correlation among factors), the calibrated posterior collapses toward a low probability, here 0.02, with a plausible say-1 to 4% interval to account for uncertain exceptions."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.02,\n  \"range_low\": 0.01,\n  \"range_high\": 0.04,\n  \"summary\": [\n    \"Anchor on Cannes Official Selection timing based on historical patterns.\",\n    \"Cannes communications consistently reference a mid-April press conference window after April 10.\",\n    \"There is some precedent for earlier announcements (April 10 in 2025; April 11 in 2024), but these are exceptions rather than the rule.\",\n    \"Posteriors converge to a low probability (about 2%) for publication before April 10, 2026.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Based on the official mid-April reveal window and historical variations around April 10, the likelihood of publication before April 10, 2026 is low. The posterior probability is calibrated to about 2%, with a plausible range roughly 1–4% given potential exceptions.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.05,\n      \"basis\": \"Reference class: Cannes Official Selection announcements historically emerge in mid-April; using a prior around 5% reflects occasional exceptions and uncertainty about an earlier reveal.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Mid-April press conference window (Paris)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Cannes states the official selection and related events are unveiled at a mid-April press conference, which by design occurs after April 10.\"\n      },\n      {\n        \"factor\": \"Historical precedent: 2025 announcement on April 10\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"The 2025 reveal on April 10 shows the date can be on or before April 10, implying the window can touch that boundary.\"\n      },\n      {\n        \"factor\": \"2024 announcement around April 11\",\n        \"direction\": \"down\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"The April 11 2024 reveal suggests a pattern of after-April-10 timing, adding downward bias, albeit weakly.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The mid-April press-conference constraint is a strong downward update, while the 2025 and 2024 precedents provide modest upward and downward corrections. Taken together (and allowing for correlation among factors), the calibrated posterior collapses toward a low probability, here 0.02, with a plausible say-1 to 4% interval to account for uncertain exceptions.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.04 ]
+    }, {
+      "probability" : 0.02,
+      "narrative" : "Anchoring from a plausible starting point, updated by clear signals that Cannes targets a mid-April reveal, the probability of publishing before April 10, 2026 remains very low. The convergence of official statements and recent precedents supports a small posterior around 2%.",
+      "summary" : [ "Posterior probability is 0.02 (2%).", "Evidence points to a mid-April reveal window, with sources emphasizing a post-April-10 publication bias.", "Historical patterns (2025 Apr 10; 2024 around Apr 11) support a timing near or after April 10, not before.", "Official Cannes communications tie the Official Selection unveiling to a mid-April press conference, reinforcing the near-term post-April-10 expectation." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.15,
+          "basis" : "reference class and baseline: starting from a plausible mid-range pre-April timing given historical variability, then updating with explicit signals toward mid-April."
+        },
+        "factor_updates" : [ {
+          "factor" : "Mid-April press conference window (Paris)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Cannes states the Official Selection will be unveiled during a mid-April press conference in Paris, which is after April 10, 2026, pushing the publish date away from the target window."
+        }, {
+          "factor" : "Historical precedent: 2025 announcement on April 10",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "The 2025 Official Selection was announced on April 10, showing that an April reveal is within the window, which could nudge probability upward slightly but not override the stronger downstream signals."
+        }, {
+          "factor" : "2024 announcement around April 11",
+          "direction" : "down",
+          "magnitude" : "weak",
+          "rationale" : "Reported April 11 reveal in 2024 suggests proximity to April 10 but still indicates a tendency toward late morning/early April window rather than earlier than April 10."
+        }, {
+          "factor" : "Official Cannes press programme window for 2026 Official Selection",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Explicit scheduling for a mid-April reveal reinforces a bias away from an early date and supports a lower probability of a publish before April 10, 2026."
+        } ],
+        "synthesis_rationale" : "The factors collectively tilt downward, with the strongest signals coming from the mid-April press conference and official programme statements. A moderate upward push from the 2025 Apr 10 precedent is not sufficient to overcome the stronger downstream signals. Given potential correlations among timing signals, the posterior is calibrated downward to around 0.02, acknowledging low but nonzero chance of an exceptional early reveal."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.02,\n  \"range_low\": 0.01,\n  \"range_high\": 0.04,\n  \"summary\": [\n    \"Posterior probability is 0.02 (2%).\",\n    \"Evidence points to a mid-April reveal window, with sources emphasizing a post-April-10 publication bias.\",\n    \"Historical patterns (2025 Apr 10; 2024 around Apr 11) support a timing near or after April 10, not before.\",\n    \"Official Cannes communications tie the Official Selection unveiling to a mid-April press conference, reinforcing the near-term post-April-10 expectation.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Anchoring from a plausible starting point, updated by clear signals that Cannes targets a mid-April reveal, the probability of publishing before April 10, 2026 remains very low. The convergence of official statements and recent precedents supports a small posterior around 2%.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.15,\n      \"basis\": \"reference class and baseline: starting from a plausible mid-range pre-April timing given historical variability, then updating with explicit signals toward mid-April.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Mid-April press conference window (Paris)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Cannes states the Official Selection will be unveiled during a mid-April press conference in Paris, which is after April 10, 2026, pushing the publish date away from the target window.\"\n      },\n      {\n        \"factor\": \"Historical precedent: 2025 announcement on April 10\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"The 2025 Official Selection was announced on April 10, showing that an April reveal is within the window, which could nudge probability upward slightly but not override the stronger downstream signals.\"\n      },\n      {\n        \"factor\": \"2024 announcement around April 11\",\n        \"direction\": \"down\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Reported April 11 reveal in 2024 suggests proximity to April 10 but still indicates a tendency toward late morning/early April window rather than earlier than April 10.\"\n      },\n      {\n        \"factor\": \"Official Cannes press programme window for 2026 Official Selection\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Explicit scheduling for a mid-April reveal reinforces a bias away from an early date and supports a lower probability of a publish before April 10, 2026.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The factors collectively tilt downward, with the strongest signals coming from the mid-April press conference and official programme statements. A moderate upward push from the 2025 Apr 10 precedent is not sufficient to overcome the stronger downstream signals. Given potential correlations among timing signals, the posterior is calibrated downward to around 0.02, acknowledging low but nonzero chance of an exceptional early reveal.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.01, 0.04 ]
+    }, {
+      "probability" : 0.2,
+      "narrative" : "Evidence points to a mid-April reveal after April 10, based on Cannes’ stated window and recent precedents. There remains a nonzero chance of an earlier timing (April 10 or before) due to boundary-date examples, but the overall bias favors post-April 10. The calibrated probability for before-April-10 publication is about 0.20 with a 0.15–0.30 range.",
+      "summary" : [ "Cannes publicly commits to a mid-April press conference window, which typically places the Official Selection after April 10.", "Past years show dates around April 10–11, suggesting a boundary-date timing but not strongly favoring an earlier reveal.", "Calibrated probability that the 2026 Official Selection will be published before April 10 is about 20%, with an uncertainty range roughly 15–30%." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.25,
+          "basis" : "Baseline expectation that the Official Selection is announced in mid-April; before-April-10 timing is not the default and is considered a minority scenario."
+        },
+        "factor_updates" : [ {
+          "factor" : "Mid-April press conference window (Paris)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Cannes explicitly states the Official Selection will be unveiled at a mid-April press conference, which is generally after April 10 and thus reduces the likelihood of an announcement before April 10."
+        }, {
+          "factor" : "Historical precedent: 2025 announcement on April 10",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "There is precedent for timing around the boundary date (April 10), which keeps open the possibility of an earlier or boundary-date reveal."
+        }, {
+          "factor" : "2024 announcement around April 11",
+          "direction" : "down",
+          "magnitude" : "weak",
+          "rationale" : "The date landed just after April 10 in 2024, reinforcing a bias toward post-April 10 timing and slightly reducing the chance of earlier reveal."
+        }, {
+          "factor" : "Official submission window for 2026 signals preparation but does not imply earlier reveal",
+          "direction" : "down",
+          "magnitude" : "weak",
+          "rationale" : "Submission windows indicate planning ahead but do not indicate an earlier-than-April-10 reveal; supports the overall bias toward mid-April/post-April 10 timing."
+        } ],
+        "synthesis_rationale" : "The synthesis weights a strong baseline expectation of a mid-April reveal after April 10, tempered by limited, non-definitive precedents for boundary dates. The final probability of before-April-10 publication is set modestly at 0.20, with an uncertainty band of roughly ±0.05–0.10. Calibrations acknowledge the potential for scheduling changes but maintain the overall post-April-10 bias."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.20,\n  \"range_low\": 0.15,\n  \"range_high\": 0.30,\n  \"summary\": [\n    \"Cannes publicly commits to a mid-April press conference window, which typically places the Official Selection after April 10.\",\n    \"Past years show dates around April 10–11, suggesting a boundary-date timing but not strongly favoring an earlier reveal.\",\n    \"Calibrated probability that the 2026 Official Selection will be published before April 10 is about 20%, with an uncertainty range roughly 15–30%.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Evidence points to a mid-April reveal after April 10, based on Cannes’ stated window and recent precedents. There remains a nonzero chance of an earlier timing (April 10 or before) due to boundary-date examples, but the overall bias favors post-April 10. The calibrated probability for before-April-10 publication is about 0.20 with a 0.15–0.30 range.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.25,\n      \"basis\": \"Baseline expectation that the Official Selection is announced in mid-April; before-April-10 timing is not the default and is considered a minority scenario.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Mid-April press conference window (Paris)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Cannes explicitly states the Official Selection will be unveiled at a mid-April press conference, which is generally after April 10 and thus reduces the likelihood of an announcement before April 10.\"\n      },\n      {\n        \"factor\": \"Historical precedent: 2025 announcement on April 10\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"There is precedent for timing around the boundary date (April 10), which keeps open the possibility of an earlier or boundary-date reveal.\"\n      },\n      {\n        \"factor\": \"2024 announcement around April 11\",\n        \"direction\": \"down\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"The date landed just after April 10 in 2024, reinforcing a bias toward post-April 10 timing and slightly reducing the chance of earlier reveal.\"\n      },\n      {\n        \"factor\": \"Official submission window for 2026 signals preparation but does not imply earlier reveal\",\n        \"direction\": \"down\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Submission windows indicate planning ahead but do not indicate an earlier-than-April-10 reveal; supports the overall bias toward mid-April/post-April 10 timing.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The synthesis weights a strong baseline expectation of a mid-April reveal after April 10, tempered by limited, non-definitive precedents for boundary dates. The final probability of before-April-10 publication is set modestly at 0.20, with an uncertainty band of roughly ±0.05–0.10. Calibrations acknowledge the potential for scheduling changes but maintain the overall post-April-10 bias.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.15, 0.3 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.044931455889494876,
+      "range" : [ 0.02, 0.2 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.02439024390243902,
+    "raw-posterior" : 1.496627350266174E-6,
+    "capped" : true,
+    "prior" : 0.2,
+    "factors" : [ {
+      "name" : "Historical timing of Official Selection announcements (April 10, 2025)",
+      "p-yes" : 0.15,
+      "p-no" : 0.85,
+      "bf" : 0.17647058823529413
+    }, {
+      "name" : "Festival FAQ indicates a mid-April reveal window",
+      "p-yes" : 0.15,
+      "p-no" : 0.85,
+      "bf" : 0.17647058823529413
+    }, {
+      "name" : "Official submission window for 2026 signals planned lead time but does not imply an earlier reveal",
+      "p-yes" : 0.2,
+      "p-no" : 0.8,
+      "bf" : 0.25
+    }, {
+      "name" : "Mid-April press conference window (Paris)",
+      "p-yes" : 0.15,
+      "p-no" : 0.85,
+      "bf" : 0.17647058823529413
+    }, {
+      "name" : "Historical precedent: 2025 announcement on April 10",
+      "p-yes" : 0.4,
+      "p-no" : 0.6,
+      "bf" : 0.6666666666666667
+    }, {
+      "name" : "2024 announcement around April 11",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Official Cannes press programme window for 2026 Official Selection",
+      "p-yes" : 0.1,
+      "p-no" : 0.9,
+      "bf" : 0.11111111111111112
+    }, {
+      "name" : "Historical pattern of 2025 Official Selection announcements in mid-April",
+      "p-yes" : 0.15,
+      "p-no" : 0.85,
+      "bf" : 0.17647058823529413
+    } ]
+  },
+  "question" : "Will the Cannes Film Festival publish its 2026 official selection before April 10, 2026?",
+  "probability" : 0.08,
+  "summary" : [ "Ensemble aggregate is 4%, but objections indicate a non-negligible chance of an earlier-than-April-10 reveal due to scheduling shifts and leaks.", "Cannes publicly frames the reveal as mid-April; historical instances show dates around or just after April 10, making an earlier date plausible but not typical.", "The objections reveal a genuine blind spot in assuming the mid-April window cannot occur before April 10, warranting a modest upward adjustment.", "Overall, a conservative upward calibration is justified, while still acknowledging the strong likelihood of a mid-April reveal." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.04,
+    "critique_assessment" : "Objections are valid to the extent they reveal a non-negligible chance of an earlier reveal, though they do not imply a high-probability breach of the historical pattern.",
+    "adjustment" : "In light of the objections and historical instances near April 10, the probability is raised modestly from 0.04 to 0.08. This reflects a small but credible upward risk without assuming implausible timing."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : null,
+      "reference-class" : null,
+      "sources" : [ ],
+      "confidence" : "low"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Historical timing of Official Selection announcements (April 10, 2025)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The 2025 Official Selection was unveiled on April 10, 2025, indicating a mid-April reveal window rather than earlier dates (turn1search5)."
+      }, {
+        "name" : "Festival FAQ indicates a mid-April reveal window",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The FAQ notes that the 2025 Official Selection is announced in mid-April, which makes an announcement before April 10 unlikely for 2026 (turn1search1)."
+      }, {
+        "name" : "Official submission window for 2026 signals planned lead time but does not imply an earlier reveal",
+        "direction" : "down",
+        "magnitude" : "weak",
+        "rationale" : "The Cannes site states submission windows for 2026, confirming preparation well ahead of the festival but not signaling an earlier-than-April-10 reveal (turn1search0)."
+      }, {
+        "name" : "Mid-April press conference window (Paris)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Cannes states the films of the Official Selection and the events of the 79th edition will be unveiled during a press conference to be held in mid-April in Paris. ([festival-cannes.com](https://www.festival-cannes.com/en/press/programme/?utm_source=openai))"
+      }, {
+        "name" : "Historical precedent: 2025 announcement on April 10",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "The 2025 Official Selection was announced on April 10, 2025, showing the date can fall on or before April 10. ([festival-cannes.com](https://www.festival-cannes.com/en/2025/live-announcement-of-the-official-selection-2025/?utm_source=openai))"
+      }, {
+        "name" : "2024 announcement around April 11",
+        "direction" : "down",
+        "magnitude" : "weak",
+        "rationale" : "Le Monde reports the 2024 Official Selection was unveiled on April 11, indicating a pattern that often lands just after April 10. ([lemonde.fr](https://www.lemonde.fr/culture/article/2024/04/11/festival-de-cannes-la-selection-de-la-77-edition-devoilee_6227276_3246.html?utm_source=openai))"
+      }, {
+        "name" : "Official Cannes press programme window for 2026 Official Selection",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "The Festival de Cannes press programme states the films of the Official Selection will be unveiled during a press conference held in mid-April in Paris, which is after April 10, 2026."
+      }, {
+        "name" : "Historical pattern of 2025 Official Selection announcements in mid-April",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The 2025 edition followed a mid-April reveal pattern, suggesting earlier publication before April 10 is unlikely."
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "medium",
+  "range" : [ 0.04, 0.14 ],
+  "synthesis" : "The official window is mid-April, with recent years clustered around April 10–11. While earlier reveals are possible (due to scheduling shifts or leaks), they remain less typical, so the probability is modestly increased from 4% to about 8% to reflect the new information."
+}

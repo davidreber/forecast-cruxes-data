@@ -1,0 +1,312 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.08,
+      "narrative" : "Starting from a distressed-ULCC anchor (~46%), Bayesian updates driven by Spirit's restructuring progress and Frontier's liquidity reduce Frontier’s bankruptcy probability to ~8% by May 1, 2026. The result reflects meaningful downside updates but acknowledges persistent sector tail risk and deal-uncertainty.",
+      "summary" : [ "Bayesian posteriors place Frontier bankruptcy probability at about 8% within the May 1, 2026 window.", "Anchored to ULCC distress signals with a ~46% baseline, updated downward by sector stabilization cues.", "Downward updates come from Spirit's expected exit and Frontier's liquidity cushion; merger prospects add uncertainty but not clear uplift.", "Residual industry distress risk keeps tail risk, but no strong near-term bankruptcy forecast for Frontier." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.46,
+          "basis" : "Anchor from ULCC distress forecasts: ~46% bankruptcy probability over the next 24 months, used as starting point for Bayes updates."
+        },
+        "factor_updates" : [ {
+          "factor" : "Spirit Airlines Chapter 11 exit by summer 2026",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "A successful exit reduces sector distress spillovers and improves Frontier’s restructuring prospects, lowering bankruptcy probability within the window."
+        }, {
+          "factor" : "Frontier's liquidity cushion (near-term liquidity runway)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "A liquidity buffer around $889m (as of Mar-31-2025) and undrawn revolver dampen near-term distress signals."
+        }, {
+          "factor" : "Frontier not bankrupt / potential Spirit merger reduces risk",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Public signals show Frontier not bankrupt and potential merger with Spirit, reducing probability of bankruptcy."
+        }, {
+          "factor" : "ULCC sector distress signals",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Distress signals and peer Z-scores around 0.38-0.39 indicate higher tail risk for the sector."
+        }, {
+          "factor" : "Uncertainty around Spirit-Frontier merger outcomes",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Deal timing and viability inject uncertainty; not a clear affirmative uplift or downgrade."
+        }, {
+          "factor" : "No strong near-term Frontier bankruptcy forecast",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Across 2025–2026 reporting, credible forecasts do not imply imminent Frontier default; supports downward adjustment."
+        } ],
+        "synthesis_rationale" : "The posterior of 8% results from combining a high-liability distress anchor with multiple, plausibly balanced updates; the positive updates (Spirit exit, Frontier liquidity, merger non-implosion) jointly reduce risk, while industry distress adds tail risk. Given potential correlations (e.g., sector distress correlated with Spirit outcomes) the net adjustment is substantial but not absolute, yielding a low-probability outcome with wide calibration."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.08,\n  \"range_low\": 0.05,\n  \"range_high\": 0.15,\n  \"summary\": [\n    \"Bayesian posteriors place Frontier bankruptcy probability at about 8% within the May 1, 2026 window.\",\n    \"Anchored to ULCC distress signals with a ~46% baseline, updated downward by sector stabilization cues.\",\n    \"Downward updates come from Spirit's expected exit and Frontier's liquidity cushion; merger prospects add uncertainty but not clear uplift.\",\n    \"Residual industry distress risk keeps tail risk, but no strong near-term bankruptcy forecast for Frontier.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Starting from a distressed-ULCC anchor (~46%), Bayesian updates driven by Spirit's restructuring progress and Frontier's liquidity reduce Frontier’s bankruptcy probability to ~8% by May 1, 2026. The result reflects meaningful downside updates but acknowledges persistent sector tail risk and deal-uncertainty.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.46,\n      \"basis\": \"Anchor from ULCC distress forecasts: ~46% bankruptcy probability over the next 24 months, used as starting point for Bayes updates.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Spirit Airlines Chapter 11 exit by summer 2026\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A successful exit reduces sector distress spillovers and improves Frontier’s restructuring prospects, lowering bankruptcy probability within the window.\"\n      },\n      {\n        \"factor\": \"Frontier's liquidity cushion (near-term liquidity runway)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A liquidity buffer around $889m (as of Mar-31-2025) and undrawn revolver dampen near-term distress signals.\"\n      },\n      {\n        \"factor\": \"Frontier not bankrupt / potential Spirit merger reduces risk\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Public signals show Frontier not bankrupt and potential merger with Spirit, reducing probability of bankruptcy.\"\n      },\n      {\n        \"factor\": \"ULCC sector distress signals\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Distress signals and peer Z-scores around 0.38-0.39 indicate higher tail risk for the sector.\"\n      },\n      {\n        \"factor\": \"Uncertainty around Spirit-Frontier merger outcomes\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Deal timing and viability inject uncertainty; not a clear affirmative uplift or downgrade.\"\n      },\n      {\n        \"factor\": \"No strong near-term Frontier bankruptcy forecast\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Across 2025–2026 reporting, credible forecasts do not imply imminent Frontier default; supports downward adjustment.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The posterior of 8% results from combining a high-liability distress anchor with multiple, plausibly balanced updates; the positive updates (Spirit exit, Frontier liquidity, merger non-implosion) jointly reduce risk, while industry distress adds tail risk. Given potential correlations (e.g., sector distress correlated with Spirit outcomes) the net adjustment is substantial but not absolute, yielding a low-probability outcome with wide calibration.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.05, 0.15 ]
+    }, {
+      "probability" : 0.08,
+      "narrative" : "Starting from a distressed ULCC anchor, updating for Spirit-Frontier developments and Frontier liquidity, the posterior probability of Frontier filing for bankruptcy before 5/1/2026 is about 8%, with wide remaining uncertainty.",
+      "summary" : [ "Bayesian posterior places Frontier bankruptcy probability at about 8% within the May 1, 2026 window, far below the 46% anchor from ULCC distress benchmarks.", "Distress signals (low Altman Z-score) raise risk, but mitigants like Spirit’s exit from Chapter 11 and Frontier’s liquidity cushion dampen near-term odds.", "No credible near-term bankruptcy forecast for Frontier has emerged; merger dynamics add uncertainty but do not convert signals to high probability of failure.", "The estimate remains sensitive to deal outcomes and industry contagion, with meaningful uncertainty around timing." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.46,
+          "basis" : "Reference class uses ULCC distress signals (Altman Z-score ~0.38) and bankruptcy probabilities around 45–46% over a 24-month horizon; Frontier sits within this distressed peer group."
+        },
+        "factor_updates" : [ {
+          "factor" : "Altman Z-Score distress signal",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Z-score ~0.38 places Frontier in distress; increases bankruptcy risk within ~2 years, contributing positively to posterior."
+        }, {
+          "factor" : "ULCC sector distress signals",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Peer distress elevates macro risk to Frontier via liquidity and refinancing pressures."
+        }, {
+          "factor" : "Spirit Airlines Chapter 11 exit reduces contagion risk",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Expectations of Spirit’s exit reduce sector distress spillover, lowering Frontier’s near-term risk."
+        }, {
+          "factor" : "Frontier not bankrupt / potential Spirit merger reduces risk",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Public reports of Frontier not bankrupt and potential merger provide strategic options, dampening probability."
+        }, {
+          "factor" : "No strong near-term Frontier bankruptcy forecast by May 1, 2026",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Lack of credible near-term default forecasts in 2025–2026 reports lowers probability."
+        }, {
+          "factor" : "Uncertainty around Spirit-Frontier merger outcomes",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Deal ambiguity injects uncertainty without a clear directional tilt."
+        } ],
+        "synthesis_rationale" : "Anchored at 0.46 from ULCC distress; decayed by downward updates from Spirit/Frontermer and no-forecast signals; moderate positive updates from distress signals; accounted for correlation by not over-weighting twin distress factors; produced a posterior of 0.08 with a 0.04–0.12 range to reflect calibration and uncertainty."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.08,\n  \"range_low\": 0.04,\n  \"range_high\": 0.12,\n  \"summary\": [\n    \"Bayesian posterior places Frontier bankruptcy probability at about 8% within the May 1, 2026 window, far below the 46% anchor from ULCC distress benchmarks.\",\n    \"Distress signals (low Altman Z-score) raise risk, but mitigants like Spirit’s exit from Chapter 11 and Frontier’s liquidity cushion dampen near-term odds.\",\n    \"No credible near-term bankruptcy forecast for Frontier has emerged; merger dynamics add uncertainty but do not convert signals to high probability of failure.\",\n    \"The estimate remains sensitive to deal outcomes and industry contagion, with meaningful uncertainty around timing.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Starting from a distressed ULCC anchor, updating for Spirit-Frontier developments and Frontier liquidity, the posterior probability of Frontier filing for bankruptcy before 5/1/2026 is about 8%, with wide remaining uncertainty.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.46,\n      \"basis\": \"Reference class uses ULCC distress signals (Altman Z-score ~0.38) and bankruptcy probabilities around 45–46% over a 24-month horizon; Frontier sits within this distressed peer group.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Altman Z-Score distress signal\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Z-score ~0.38 places Frontier in distress; increases bankruptcy risk within ~2 years, contributing positively to posterior.\"\n      },\n      {\n        \"factor\": \"ULCC sector distress signals\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Peer distress elevates macro risk to Frontier via liquidity and refinancing pressures.\"\n      },\n      {\n        \"factor\": \"Spirit Airlines Chapter 11 exit reduces contagion risk\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Expectations of Spirit’s exit reduce sector distress spillover, lowering Frontier’s near-term risk.\"\n      },\n      {\n        \"factor\": \"Frontier not bankrupt / potential Spirit merger reduces risk\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Public reports of Frontier not bankrupt and potential merger provide strategic options, dampening probability.\"\n      },\n      {\n        \"factor\": \"No strong near-term Frontier bankruptcy forecast by May 1, 2026\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Lack of credible near-term default forecasts in 2025–2026 reports lowers probability.\"\n      },\n      {\n        \"factor\": \"Uncertainty around Spirit-Frontier merger outcomes\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Deal ambiguity injects uncertainty without a clear directional tilt.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Anchored at 0.46 from ULCC distress; decayed by downward updates from Spirit/Frontermer and no-forecast signals; moderate positive updates from distress signals; accounted for correlation by not over-weighting twin distress factors; produced a posterior of 0.08 with a 0.04–0.12 range to reflect calibration and uncertainty.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.04, 0.12 ]
+    }, {
+      "probability" : 0.39,
+      "narrative" : "Anchored around a 46% two-year bankruptcy risk for ULCC peers, Frontier's distress signals raise risk, but sector stabilization from Spirit's restructuring and potential merger paths dampen the odds. The net effect yields a calibrated probability near 39% with a broad uncertainty band reflecting mixed signals.",
+      "summary" : [ "Distress signals for ULCC peers (Altman Z around 0.38) push Frontier's bankruptcy risk higher within a 2-year window.", "Industry-wide ULCC distress increases financing risk and liquidity needs for Frontier.", "Countervailing forces: Spirit Airlines' expected exit from Chapter 11 and Frontier–Spirit merger discussions reduce downside risk and potential contagion.", "Overall, there is no strong near-term forecast of Frontier filing before May 1, 2026; the estimate remains uncertain and context-dependent." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.46,
+          "basis" : "Reference class: US ultra-low-cost carriers with distressed financials; anchor probability derived from multiple distress signals and a two-year horizon. Includes Altman Z-scores around 0.38 and reported peer bankruptcy probabilities near 45–46%."
+        },
+        "factor_updates" : [ {
+          "factor" : "Altman Z-Score distress signal",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Z-score of ~0.38 places Frontier in distress territory, implying elevated bankruptcy risk within the next ~24 months."
+        }, {
+          "factor" : "ULCC sector distress signals",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Broad distress signals among ULCC peers raise refinancing and liquidity strain, supporting higher near-term bankruptcy risk for Frontier."
+        }, {
+          "factor" : "Spirit Airlines Chapter 11 exit reduces contagion risk",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Projected exit from bankruptcy by mid-2026 could lessen sector stress and improve financing conditions for Frontier."
+        }, {
+          "factor" : "Frontier not bankrupt / potential Spirit merger reduces risk",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Public signals indicate Frontier is not currently bankrupt and may benefit from merger discussions with Spirit, lowering bankruptcy probability."
+        }, {
+          "factor" : "No strong near-term Frontier bankruptcy forecast by May 1, 2026",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Absence of a credible near-term default forecast tempers the implied risk from distress signals."
+        } ],
+        "synthesis_rationale" : "Starting from a 0.46 anchor, distress signals push probability up modestly while diversification of mitigating factors (Spirit exit, potential merger, and lack of a firm near-term default forecast) pull it down. The net is a downward bias relative to the anchor, yielding a final calibrated estimate near 0.39 with a broad uncertainty range to accommodate model and event-uncertainty. Calibration acknowledges mixed signals and the possibility of unforeseen deal outcomes or sector shocks."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.39,\n  \"range_low\": 0.28,\n  \"range_high\": 0.50,\n  \"summary\": [\n    \"Distress signals for ULCC peers (Altman Z around 0.38) push Frontier's bankruptcy risk higher within a 2-year window.\",\n    \"Industry-wide ULCC distress increases financing risk and liquidity needs for Frontier.\",\n    \"Countervailing forces: Spirit Airlines' expected exit from Chapter 11 and Frontier–Spirit merger discussions reduce downside risk and potential contagion.\",\n    \"Overall, there is no strong near-term forecast of Frontier filing before May 1, 2026; the estimate remains uncertain and context-dependent.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Anchored around a 46% two-year bankruptcy risk for ULCC peers, Frontier's distress signals raise risk, but sector stabilization from Spirit's restructuring and potential merger paths dampen the odds. The net effect yields a calibrated probability near 39% with a broad uncertainty band reflecting mixed signals.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.46,\n      \"basis\": \"Reference class: US ultra-low-cost carriers with distressed financials; anchor probability derived from multiple distress signals and a two-year horizon. Includes Altman Z-scores around 0.38 and reported peer bankruptcy probabilities near 45–46%.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Altman Z-Score distress signal\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Z-score of ~0.38 places Frontier in distress territory, implying elevated bankruptcy risk within the next ~24 months.\"\n      },\n      {\n        \"factor\": \"ULCC sector distress signals\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Broad distress signals among ULCC peers raise refinancing and liquidity strain, supporting higher near-term bankruptcy risk for Frontier.\"\n      },\n      {\n        \"factor\": \"Spirit Airlines Chapter 11 exit reduces contagion risk\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Projected exit from bankruptcy by mid-2026 could lessen sector stress and improve financing conditions for Frontier.\"\n      },\n      {\n        \"factor\": \"Frontier not bankrupt / potential Spirit merger reduces risk\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Public signals indicate Frontier is not currently bankrupt and may benefit from merger discussions with Spirit, lowering bankruptcy probability.\"\n      },\n      {\n        \"factor\": \"No strong near-term Frontier bankruptcy forecast by May 1, 2026\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Absence of a credible near-term default forecast tempers the implied risk from distress signals.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a 0.46 anchor, distress signals push probability up modestly while diversification of mitigating factors (Spirit exit, potential merger, and lack of a firm near-term default forecast) pull it down. The net is a downward bias relative to the anchor, yielding a final calibrated estimate near 0.39 with a broad uncertainty range to accommodate model and event-uncertainty. Calibration acknowledges mixed signals and the possibility of unforeseen deal outcomes or sector shocks.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.28, 0.5 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.1446324664899387,
+      "range" : [ 0.08, 0.39 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.07849829351535834,
+    "raw-posterior" : 0.009404940896709216,
+    "capped" : true,
+    "prior" : 0.46,
+    "factors" : [ {
+      "name" : "Altman Z-Score distress signal",
+      "p-yes" : 0.7,
+      "p-no" : 0.4,
+      "bf" : 1.7499999999999998
+    }, {
+      "name" : "ULCC sector distress signals",
+      "p-yes" : 0.65,
+      "p-no" : 0.45,
+      "bf" : 1.4444444444444444
+    }, {
+      "name" : "Spirit exit reduces contagion risk",
+      "p-yes" : 0.25,
+      "p-no" : 0.7,
+      "bf" : 0.35714285714285715
+    }, {
+      "name" : "Frontier not bankrupt / potential Spirit merger reduces risk",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "No strong near-term Frontier bankruptcy forecast by May 1, 2026",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Frontier liquidity runway",
+      "p-yes" : 0.3,
+      "p-no" : 0.7,
+      "bf" : 0.4285714285714286
+    }, {
+      "name" : "Uncertainty around Spirit-Frontier merger outcomes",
+      "p-yes" : 0.4,
+      "p-no" : 0.6,
+      "bf" : 0.6666666666666667
+    }, {
+      "name" : "Frontier as potential beneficiary of Spirit restructuring",
+      "p-yes" : 0.28,
+      "p-no" : 0.72,
+      "bf" : 0.38888888888888895
+    } ]
+  },
+  "question" : "Will Frontier Group Holdings, Inc. file for bankruptcy protection before May 1, 2026?",
+  "probability" : 0.12,
+  "summary" : [ "Objections are valid and reveal blind spots in the ensemble, notably that Altman Z-score signals may overstate risk for Frontier given airline-specific restructuring and liquidity options.", "Spirit Airlines' expected Chapter 11 exit by mid-2026 could reduce sector contagion and improve Frontier's strategic options, lowering bankruptcy probability within the window.", "Frontier's liquidity cushion and ongoing financing options, not fully captured by the distress model, further support a lower near-term risk than the ensemble implies.", "There is no strong Frontier-specific forecast of bankruptcy before May 1, 2026; sector distress signals exist but timing remains uncertain." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.14,
+    "critique_assessment" : "Objections are valid; they reveal that distress signals may overstate Frontier's risk in light of Spirit's restructuring and Frontier's liquidity cushion.",
+    "adjustment" : "Adjusted downward from 0.14 to 0.12 to account for the downward bias from Spirit restructuring prospects and Frontier's liquidity, with a calibrated 8–20% interval to capture residual uncertainty."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.46,
+      "reference-class" : "US airline sector, specifically ultra-low-cost carriers with distressed financials (Altman Z-score in distress range around 0.38–0.39).",
+      "sources" : [ {
+        "url" : "https://valueinvesting.io/ULCC/probability-of-bankruptcy",
+        "claim" : "ULCC Probability of Bankruptcy is 45.74% over the next 24 months based on an integrated distress model (Altman Z-score, Beneish M-score, etc.)."
+      }, {
+        "url" : "https://www.gurufocus.com/term/zscore/ULCC",
+        "claim" : "ULCC Altman Z-Score is 0.38 as of Feb 13, 2026, in the distress zone, implying bankruptcy risk within the next two years."
+      }, {
+        "url" : "https://www.chartmill.com/stock/quote/ULCC/fundamental-analysis",
+        "claim" : "ULCC Altman-Z Score about 0.39, in the distress zone."
+      }, {
+        "url" : "https://www.investopedia.com/terms/a/altman.asp",
+        "claim" : "Altman Z-Score is a tool to predict bankruptcy within two years; scores below 1.8 indicate high risk."
+      }, {
+        "url" : "https://valueinvesting.io/ULCC/probability-of-bankruptcy",
+        "claim" : "The probability of bankruptcy for ULCC in the next 24 months is 45.74%."
+      }, {
+        "url" : "https://www.gurufocus.com/term/zscore/ULCC",
+        "claim" : "Frontier Group Holdings' Altman Z-Score is 0.38 (as of Feb 13, 2026), in the distress zone, implying bankruptcy possibility in the next two years."
+      }, {
+        "url" : "https://www.investopedia.com/terms/a/altman.asp",
+        "claim" : "The Altman Z-Score is a bankruptcy-risk model; scores below about 1.81 indicate high risk of bankruptcy (distress)."
+      }, {
+        "url" : "https://valueinvesting.io/ULCC/probability-of-bankruptcy",
+        "claim" : "ULCC Probability of Bankruptcy: Frontier Group Holdings Inc (ULCC) has a 45.74% probability of bankruptcy in the next 24 months."
+      }, {
+        "url" : "https://www.gurufocus.com/term/zscore/ULCC",
+        "claim" : "Altman Z-Score for ULCC is 0.38, indicating distress and potential bankruptcy within the next two years."
+      }, {
+        "url" : "https://apnews.com/article/92899d09a989e2679e4ba5ef5eef1d96",
+        "claim" : "Spirit Airlines expects to exit Chapter 11 bankruptcy by summer 2026."
+      }, {
+        "url" : "https://www.cnbc.com/2025/01/29/frontier-airlines-proposes-combining-spirit.html",
+        "claim" : "Frontier Airlines proposed merging with bankrupt Spirit; Frontier is not bankrupt."
+      } ],
+      "confidence" : "low"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Altman Z-Score distress signal",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Altman Z-score of 0.38 places Frontier in the distress zone (<1.8), indicating elevated bankruptcy risk within approximately the next two years. ([gurufocus.com](https://www.gurufocus.com/term/zscore/ULCC?utm_source=openai))"
+      }, {
+        "name" : "ULCC sector distress signals",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Distress signals in ultra-low-cost carriers increase refinancing and liquidity risk for Frontier, supporting a higher probability of distress in the near term. ([valueinvesting.io](https://valueinvesting.io/ULCC/probability-of-bankruptcy?utm_source=openai))"
+      }, {
+        "name" : "Spirit Airlines Chapter 11 exit reduces contagion risk",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Spirit expects to exit bankruptcy by mid‑2026, which could reduce sector contagion and improve Frontier’s restructuring prospects. ([apnews.com](https://apnews.com/article/92899d09a989e2679e4ba5ef5eef1d96?utm_source=openai))"
+      }, {
+        "name" : "Frontier not bankrupt / potential Spirit merger reduces risk",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Public reporting indicates Frontier is not bankrupt and has engaged in merger discussions with Spirit, which lowers Frontier's bankruptcy probability. ([cnbc.com](https://www.cnbc.com/2025/01/29/frontier-airlines-proposes-combining-spirit.html?utm_source=openai))"
+      }, {
+        "name" : "No strong near-term Frontier bankruptcy forecast by May 1, 2026",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Available reporting through 2025–2026 timelines does not present a credible near-term default forecast for Frontier, tempering the upward pressure from distress signals. ([cnbc.com](https://www.cnbc.com/2025/01/29/frontier-airlines-proposes-combining-spirit.html?utm_source=openai))"
+      }, {
+        "name" : "Industry distress contagion risk among ULCC peers",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "ULCC distress signals (Altman Z-score around 0.38–0.39 and roughly 45–46% bankruptcy probability over the next 24 months for ULCC peers) raise contagion risk for Frontier. ([gurufocus.com](https://www.gurufocus.com/term/zscore/ULCC?utm_source=openai))"
+      }, {
+        "name" : "Spirit Airlines bankruptcy exit improves sector stability",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Spirit's expected exit from Chapter 11 by late spring/early summer 2026 with debt reduction would reduce sector stress and improve financing conditions for ULCC peers. ([apnews.com](https://apnews.com/article/92899d09a989e2679e4ba5ef5eef1d96?utm_source=openai))"
+      }, {
+        "name" : "Frontier's near-term liquidity runway",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Frontier reported liquidity of about $889 million as of March 31, 2025, with undrawn revolver and planned aircraft deliveries, implying cushion against distress. ([ir.flyfrontier.com](https://ir.flyfrontier.com/news-releases/news-release-details/frontier-airlines-reports-first-quarter-2025-financial-results?utm_source=openai))"
+      }, {
+        "name" : "Uncertainty around Spirit-Frontier merger outcomes",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Public signals show both attempts and rejections for a Spirit-Frontier combo; uncertain whether a deal closes before 5/1/2026, creating mixed risk implications for Frontier. ([cnbc.com](https://www.cnbc.com/2025/02/12/spirit-airlines-rejects-acquisition-offer-from-frontier-group-again.html?utm_source=openai))"
+      }, {
+        "name" : "Frontier as potential beneficiary of Spirit restructuring",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Industry consolidation signals and Frontier's market presence could improve Frontier's competitive position if Spirit restructures or exits bankruptcy; reduces bankruptcy risk. ([cnbc.com](https://www.cnbc.com/2025/08/26/frontier-routes-spirit-airlines.html?utm_source=openai))"
+      }, {
+        "name" : "Spirit Airlines Chapter 11 exit by summer 2026",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "A successful exit and restructuring of a major ULCC reduces industry distress spillovers and improves Frontier's strategic options, lowering Frontier bankruptcy probability within the May 1, 2026 window."
+      }, {
+        "name" : "Frontier's potential merger with Spirit",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "A consolidation with Spirit could bolster Frontier's liquidity and network position, reducing bankruptcy risk if the deal closes."
+      }, {
+        "name" : "ULCC sector distress signals (peer Altman Z-score ~0.38)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Industry-wide distress signals raise tail risk for Frontier if sector dynamics remain weak and debt burdens stay high."
+      } ],
+      "confidence" : "low"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "medium",
+  "range" : [ 0.08, 0.2 ],
+  "synthesis" : "The ensemble suggests 14% bankruptcy risk, but airline-specific restructuring prospects and Frontier's liquidity reduce near-term risk. Incorporating these signals yields a calibrated 12% estimate with an 8–20% range, reflecting remaining uncertainty about merger outcomes and sector dynamics."
+}

@@ -1,0 +1,307 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.01,
+      "narrative" : "Starting from Sabah election petition base-rate, the Lamag margin provides a strong downward pressure on overturn probability, while ongoing petitions provide a modest upward pressure. The short disposition window and Sabah precedents keep the risk non-zero but still very small; the calibrated posterior remains around 1%.",
+      "summary" : [ "Lamag by-election margin (5,681) suggests a strong cushion for BN, reducing the plausibility of overturn however not eliminating it entirely.", "Sabah has active election-petition activity (Sindumin, etc.), which keeps a non-zero path for challenges that could affect the outcome.", "Petitions disposal timelines (six-month window) argue for a relatively compressed resolution, which tends to lower near-term overturn risk.", "Historical precedents in Sabah (Kimanis 2018) show overturns are possible but uncommon, introducing a small but non-zero tail risk." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.35,
+          "basis" : "reference_class is Sabah/Malaysia election petitions and court challenges to electoral results; anchor probability reflects the base-rate used for potential overturns in Sabah within that class."
+        },
+        "factor_updates" : [ {
+          "factor" : "Lamag by-election margin (BN victory margin of 5,681)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "A large margin reduces the plausibility that irregularities could overturn the result."
+        }, {
+          "factor" : "Active Sabah election petitions (Sindumin, etc.)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Ongoing petitions create a non-zero pathway for challenge or reversal."
+        }, {
+          "factor" : "Petitions disposal timeframe (CJ: six months for resolution)",
+          "direction" : "down",
+          "magnitude" : "weak",
+          "rationale" : "The six-month timeframe decreases the chance that a ruling would materialize before May 1, 2026."
+        }, {
+          "factor" : "Historical precedent of overturns in Sabah (e.g., Kimanis 2018)",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Shows that overturns can occur, although they are not common."
+        }, {
+          "factor" : "Outlier overturn example (Kuala Terengganu 2023)",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Demonstrates that judicial overturns are possible in Malaysia, adding a non-zero risk."
+        } ],
+        "synthesis_rationale" : "Starting from a moderate-to-high base-rate anchor, we apply a strong downward adjustment due to the large Lamag margin, with modest upward adjustments from Sabah petition activity and historical precedents. The six-month disposition window provides a weak downward pressure on near-term overturns. Calibrated to produce a very low posterior probability (1%), reflecting the combination of a large margin, absence of Lamag-specific petitions as of early 2026, and the non-zero but small historical risk of overturns."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.01,\n  \"range_low\": 0.01,\n  \"range_high\": 0.02,\n  \"summary\": [\n    \"Lamag by-election margin (5,681) suggests a strong cushion for BN, reducing the plausibility of overturn however not eliminating it entirely.\",\n    \"Sabah has active election-petition activity (Sindumin, etc.), which keeps a non-zero path for challenges that could affect the outcome.\",\n    \"Petitions disposal timelines (six-month window) argue for a relatively compressed resolution, which tends to lower near-term overturn risk.\",\n    \"Historical precedents in Sabah (Kimanis 2018) show overturns are possible but uncommon, introducing a small but non-zero tail risk.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Starting from Sabah election petition base-rate, the Lamag margin provides a strong downward pressure on overturn probability, while ongoing petitions provide a modest upward pressure. The short disposition window and Sabah precedents keep the risk non-zero but still very small; the calibrated posterior remains around 1%.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.35,\n      \"basis\": \"reference_class is Sabah/Malaysia election petitions and court challenges to electoral results; anchor probability reflects the base-rate used for potential overturns in Sabah within that class.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Lamag by-election margin (BN victory margin of 5,681)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"A large margin reduces the plausibility that irregularities could overturn the result.\"\n      },\n      {\n        \"factor\": \"Active Sabah election petitions (Sindumin, etc.)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Ongoing petitions create a non-zero pathway for challenge or reversal.\"\n      },\n      {\n        \"factor\": \"Petitions disposal timeframe (CJ: six months for resolution)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"The six-month timeframe decreases the chance that a ruling would materialize before May 1, 2026.\"\n      },\n      {\n        \"factor\": \"Historical precedent of overturns in Sabah (e.g., Kimanis 2018)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Shows that overturns can occur, although they are not common.\"\n      },\n      {\n        \"factor\": \"Outlier overturn example (Kuala Terengganu 2023)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Demonstrates that judicial overturns are possible in Malaysia, adding a non-zero risk.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a moderate-to-high base-rate anchor, we apply a strong downward adjustment due to the large Lamag margin, with modest upward adjustments from Sabah petition activity and historical precedents. The six-month disposition window provides a weak downward pressure on near-term overturns. Calibrated to produce a very low posterior probability (1%), reflecting the combination of a large margin, absence of Lamag-specific petitions as of early 2026, and the non-zero but small historical risk of overturns.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.02 ]
+    }, {
+      "probability" : 0.01,
+      "narrative" : "The Lamag margin substantially cushions against overturn, while Sabah's petition activity keeps a non-zero risk. Given no Lamag-specific petition publicly reported by March 2026 and a six-month disposal window, the probability of overturn before May 1, 2026 remains very low, around 1%.",
+      "summary" : [ "Lamag by-election result (Jan 24, 2026) shows BN won by a large margin (5,681), which lowers overturn risk.", "Active Sabah election petitions exist (Sindumin) but no publicly reported Lamag-specific petition as of early 2026.", "Historical Sabah overturns (Kimanis 2018) show non-zero risk, though they are uncommon.", "Judicial timelines (six-month disposition window) suggest limited time for a Lamag-specific overturn before May 1, 2026." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.03,
+          "basis" : "Base-rate anchored to Sabah electoral petition activity and historical overturns, chosen to reflect a low baseline risk prior to Lamag-specific developments."
+        },
+        "factor_updates" : [ {
+          "factor" : "Lamag margin of victory (5,681)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "A large margin reduces plausibility that irregularities could overturn the result."
+        }, {
+          "factor" : "Sabah election petition activity (Sindumin, etc.)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Ongoing petitions create a non-zero pathway for challenges that could affect Lamag indirectly."
+        }, {
+          "factor" : "Petitions disposal timeframe (six months)",
+          "direction" : "down",
+          "magnitude" : "weak",
+          "rationale" : "Six-month disposal window reduces the chance of a rapid Lamag-specific overturn before May 1, 2026."
+        }, {
+          "factor" : "Historical Sabah overturn precedent (Kimanis 2018)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Shows overturns can occur in Sabah, though they are not common."
+        }, {
+          "factor" : "Outlier overturn example (Kuala Terengganu 2023)",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Demonstrates that judicial overturns are possible, adding a non-zero risk."
+        } ],
+        "synthesis_rationale" : "The downward impact from a strong Lamag margin dominates the modest upward signals from Sabah petition activity and historical overturns. The six-month disposal window further dampens near-term risk, and potential correlations among Sabah petitions likely reduce net incremental information. Calibrated to a low posterior around 1%, with a narrow uncertainty range reflecting limited recent Lamag-specific overturn signals."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.01,\n  \"range_low\": 0.01,\n  \"range_high\": 0.04,\n  \"summary\": [\n    \"Lamag by-election result (Jan 24, 2026) shows BN won by a large margin (5,681), which lowers overturn risk.\",\n    \"Active Sabah election petitions exist (Sindumin) but no publicly reported Lamag-specific petition as of early 2026.\",\n    \"Historical Sabah overturns (Kimanis 2018) show non-zero risk, though they are uncommon.\",\n    \"Judicial timelines (six-month disposition window) suggest limited time for a Lamag-specific overturn before May 1, 2026.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"The Lamag margin substantially cushions against overturn, while Sabah's petition activity keeps a non-zero risk. Given no Lamag-specific petition publicly reported by March 2026 and a six-month disposal window, the probability of overturn before May 1, 2026 remains very low, around 1%.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.03,\n      \"basis\": \"Base-rate anchored to Sabah electoral petition activity and historical overturns, chosen to reflect a low baseline risk prior to Lamag-specific developments.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Lamag margin of victory (5,681)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"A large margin reduces plausibility that irregularities could overturn the result.\"\n      },\n      {\n        \"factor\": \"Sabah election petition activity (Sindumin, etc.)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Ongoing petitions create a non-zero pathway for challenges that could affect Lamag indirectly.\"\n      },\n      {\n        \"factor\": \"Petitions disposal timeframe (six months)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Six-month disposal window reduces the chance of a rapid Lamag-specific overturn before May 1, 2026.\"\n      },\n      {\n        \"factor\": \"Historical Sabah overturn precedent (Kimanis 2018)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Shows overturns can occur in Sabah, though they are not common.\"\n      },\n      {\n        \"factor\": \"Outlier overturn example (Kuala Terengganu 2023)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Demonstrates that judicial overturns are possible, adding a non-zero risk.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The downward impact from a strong Lamag margin dominates the modest upward signals from Sabah petition activity and historical overturns. The six-month disposal window further dampens near-term risk, and potential correlations among Sabah petitions likely reduce net incremental information. Calibrated to a low posterior around 1%, with a narrow uncertainty range reflecting limited recent Lamag-specific overturn signals.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.04 ]
+    }, {
+      "probability" : 0.07,
+      "narrative" : "The Lamag result has a large margin, making overturn unlikely, but Sabah's active petitions keep a non-zero risk. Given mixed signals from past Sabah overturns and a fixed petition timeline, the probability to overturn before May 1, 2026 remains modest, around 7% with a broad uncertainty band.",
+      "summary" : [ "Lamag by-election margin was large (5,681) reducing overturn risk.", "Active Sabah petition environment introduces non-zero overturn risk.", "No Lamag-specific petitions publicly reported as of early 2026, but timelines and precedents imply potential, though unlikely.", "Historical precedents show overturns possible but rare; six-month disposition window could constrain timing." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.05,
+          "basis" : "Reference-class anchor from Sabah/Malaysia election petitions and historical overturns; margin provides a baseline probability for overturns in Sabah by-elections."
+        },
+        "factor_updates" : [ {
+          "factor" : "Lamag by-election margin (5,681)",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "A large margin reduces likelihood of a successful overturn; reduces probability by a meaningful amount."
+        }, {
+          "factor" : "Active Sabah election petitions (Sindumin, etc.)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Ongoing petitions create a non-zero pathway for challenges that could overturn or impact Lamag indirectly."
+        }, {
+          "factor" : "Petitions disposal timeframe (six months)",
+          "direction" : "down",
+          "magnitude" : "weak",
+          "rationale" : "Timeline could push rulings after May 1, 2026, reducing near-term overturn probability."
+        }, {
+          "factor" : "Historical Sabah overturn precedent (Kimanis 2018)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Demonstrates overturn is possible under certain irregularities; keeps non-zero risk."
+        }, {
+          "factor" : "Outlier Kuala Terengganu 2023 overturn",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Shows that a rare overturn is possible even if uncommon."
+        } ],
+        "synthesis_rationale" : "Weights balance between strong margin downward pressure and ongoing petitions upward pressure, with timeline and precedent providing uncertainty. The net suggests a low-to-moderate overturn probability, with a calibrated central estimate near 7% and a wide uncertainty range due to petition dynamics and jurisdictional timelines."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.07,\n  \"range_low\": 0.04,\n  \"range_high\": 0.12,\n  \"summary\": [\n    \"Lamag by-election margin was large (5,681) reducing overturn risk.\",\n    \"Active Sabah petition environment introduces non-zero overturn risk.\",\n    \"No Lamag-specific petitions publicly reported as of early 2026, but timelines and precedents imply potential, though unlikely.\",\n    \"Historical precedents show overturns possible but rare; six-month disposition window could constrain timing.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"The Lamag result has a large margin, making overturn unlikely, but Sabah's active petitions keep a non-zero risk. Given mixed signals from past Sabah overturns and a fixed petition timeline, the probability to overturn before May 1, 2026 remains modest, around 7% with a broad uncertainty band.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.05,\n      \"basis\": \"Reference-class anchor from Sabah/Malaysia election petitions and historical overturns; margin provides a baseline probability for overturns in Sabah by-elections.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Lamag by-election margin (5,681)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"A large margin reduces likelihood of a successful overturn; reduces probability by a meaningful amount.\"\n      },\n      {\n        \"factor\": \"Active Sabah election petitions (Sindumin, etc.)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Ongoing petitions create a non-zero pathway for challenges that could overturn or impact Lamag indirectly.\"\n      },\n      {\n        \"factor\": \"Petitions disposal timeframe (six months)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Timeline could push rulings after May 1, 2026, reducing near-term overturn probability.\"\n      },\n      {\n        \"factor\": \"Historical Sabah overturn precedent (Kimanis 2018)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Demonstrates overturn is possible under certain irregularities; keeps non-zero risk.\"\n      },\n      {\n        \"factor\": \"Outlier Kuala Terengganu 2023 overturn\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Shows that a rare overturn is possible even if uncommon.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Weights balance between strong margin downward pressure and ongoing petitions upward pressure, with timeline and precedent providing uncertainty. The net suggests a low-to-moderate overturn probability, with a calibrated central estimate near 7% and a wide uncertainty range due to petition dynamics and jurisdictional timelines.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.04, 0.12 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.01934772653117766,
+      "range" : [ 0.01, 0.07 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.005235602094240837,
+    "raw-posterior" : 0.005167305051673051,
+    "capped" : true,
+    "prior" : 0.05,
+    "factors" : [ {
+      "name" : "Lamag by-election margin (BN victory margin of 5,681)",
+      "p-yes" : 0.08,
+      "p-no" : 0.92,
+      "bf" : 0.08695652173913043
+    }, {
+      "name" : "Active Sabah election petitions (Sindumin, etc.)",
+      "p-yes" : 0.65,
+      "p-no" : 0.35,
+      "bf" : 1.8571428571428574
+    }, {
+      "name" : "Petitions disposal timeframe (CJ: six months for resolution)",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Historical precedent of overturns in Sabah (e.g., Kimanis 2018)",
+      "p-yes" : 0.6,
+      "p-no" : 0.4,
+      "bf" : 1.4999999999999998
+    }, {
+      "name" : "Outlier overturn example (Kuala Terengganu 2023)",
+      "p-yes" : 0.55,
+      "p-no" : 0.45,
+      "bf" : 1.2222222222222223
+    } ]
+  },
+  "question" : "Will the official result of the Lamag by-election (Sabah), scheduled for January 24, 2026, be overturned before May 1, 2026?",
+  "probability" : 0.05,
+  "summary" : [ "Objections reveal a non-zero overturn risk due to ongoing Sabah election petitions (Sindumin and related filings).", "Lamag's large margin (5,681) reduces overturn likelihood but does not eliminate the possibility, as historical precedents show overturns can occur in Malaysia/Sabah in rare cases.", "There is no publicly reported Lamag-specific petition as of early 2026, but Sabah's petition activity keeps a non-zero risk by May 1, 2026.", "Disposition timelines (six months) could yield a ruling within the relevant window, though timing remains uncertain." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.02,
+    "critique_assessment" : "Objections identify valid non-zero overturn risk from petitions and precedents, but the large Lamag margin and absence of Lamag-specific petitions reduce the probability meaningfully.",
+    "adjustment" : "Adjusted upward from 0.02 to 0.05 to reflect non-zero Sabah-specific petition risk; no downward adjustment given implausible scenarios are not needed."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.05333333333333334,
+      "reference-class" : "Sabah/Malaysia election petitions and court challenges to electoral results (by-elections and parliamentary seats), including Sabah's Kimanis 2018 overturn and Sindumin petition filed in 2025, used as the base-rate reference for potential overturns in Sabah.",
+      "sources" : [ {
+        "url" : "https://en.wikipedia.org/wiki/2026_Lamag_by-election",
+        "claim" : "Lamag by-election held on Jan 24, 2026; BN candidate Mohd Ismail Ayob won with a majority of 5,681."
+      }, {
+        "url" : "https://www.malaymail.com/news/malaysia/2026/02/10/new-lamag-assemblyman-mohd-ismail-officially-sworn-in-at-sabah-assembly/208704",
+        "claim" : "Mohd Ismail Ayob (Miha) won Lamag by-election with 7,269 votes and a 5,681 vote majority; sworn in Feb 10, 2026."
+      }, {
+        "url" : "https://www.thestar.com.my/news/nation/2026/01/24/liveblog-kinabatangan-lamag-by-elections-13-polling-centres-closed-as-at-2pm",
+        "claim" : "Live update: Lamag result shows BN winning with a majority of 5,681."
+      }, {
+        "url" : "https://www.malaysiakini.com/news/502068",
+        "claim" : "Kimanis by-election (Sabah) 2018: Federal Court upholds ruling to nullify the 2018 result."
+      }, {
+        "url" : "https://www.malaymail.com/news/malaysia/2025/12/27/sabah-polls-election-petition-filed-to-annul-sindumin-seat-result-over-alleged-ballot-misconduct/203430",
+        "claim" : "Election petition filed to annul Sindumin seat result in Sabah."
+      }, {
+        "url" : "https://theedgemalaysia.com/article/cj-all-election-petitions-will-be-disposed-6-months",
+        "claim" : "Chief Justice stated that all election petitions will be disposed of within six months."
+      }, {
+        "url" : "https://aerc.anfrel.org/country/malaysia/electoral-dispute-resolution/",
+        "claim" : "Asian Electoral Resource Center overview: Malaysia allows election petitions; outlines dispute-resolution processes and timeframes."
+      }, {
+        "url" : "https://www.thestar.com.my/news/nation/2023/07/08/ec-must-wait-until-appeal-period-ends-in-election-petition-case-before-taking-next-step",
+        "claim" : "Election Commission must wait until the appeal period ends in an election petition case before taking the next step."
+      }, {
+        "url" : "https://www.malaymail.com/news/malaysia/2026/01/24/bn-sweeps-kinabatangan-lamag-by-elections-with-big-majorities",
+        "claim" : "BN won the Lamag by-election with a majority of 5,681 votes and also won Kinabatangan, as reported by Malay Mail."
+      }, {
+        "url" : "https://www.thestar.com.my/news/nation/2026/01/24/bn-retains-both-kinabatangan-lamag-seats-ec-confirms",
+        "claim" : "The Star reports BN retained both Kinabatangan and Lamag and that EC confirmed the official results."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2023_Kuala_Terengganu_by-election",
+        "claim" : "The Kuala Terengganu by-election was overturned by the Election Court in 2023, annulling the GE15 result, illustrating that election outcomes can be nullified in Malaysia."
+      }, {
+        "url" : "https://www.thestar.com.my/news/nation/2023/10/28/ge15-win-upheld-in-court",
+        "claim" : "The Star reports that, in GE15, some wins were upheld in court, indicating that not all petitions overturn results and outcomes can remain unchanged."
+      }, {
+        "url" : "https://www.malaysiakini.com/news/764873",
+        "claim" : "Warisan confirms contests in Kinabatangan, Lamag by-elections and anticipates up to five possible by-elections following election petitions challenging Sabah polls last November."
+      }, {
+        "url" : "https://malaymail.com/news/malaysia/2025/12/27/sabah-polls-election-petition-filed-to-annul-sindumin-seat-result-over-alleged-ballot-misconduct/203430",
+        "claim" : "Election petition filed to annul Sindumin state seat result in the 2025 Sabah state election."
+      }, {
+        "url" : "https://www.theborneopost.com/2025/12/31/third-election-petition-filed/",
+        "claim" : "Third election petition filed in Sabah; indicates petitions are being filed in Sabah elections."
+      }, {
+        "url" : "https://www.thestar.com.my/news/nation/2026/01/25/kinabatangan-lamag-wins-testament-to-unity-govts-strength-says-gagasan-veep",
+        "claim" : "Media coverage noting Lamag by-election results and broader Sabah political context."
+      } ],
+      "confidence" : "medium"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Lamag by-election margin (BN victory margin of 5,681)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "A large margin reduces the plausibility that irregularities could overturn the result."
+      }, {
+        "name" : "Active Sabah election petitions (Sindumin, etc.)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Ongoing petitions create a non-zero pathway for challenge or reversal."
+      }, {
+        "name" : "Petitions disposal timeframe (CJ: six months for resolution)",
+        "direction" : "down",
+        "magnitude" : "weak",
+        "rationale" : "The six-month timeframe decreases the chance that a ruling would materialize before May 1, 2026."
+      }, {
+        "name" : "Historical precedent of overturns in Sabah (e.g., Kimanis 2018)",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Shows that overturns can occur, although they are not common."
+      }, {
+        "name" : "Outlier overturn example (Kuala Terengganu 2023)",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Demonstrates that judicial overturns are possible in Malaysia, adding a non-zero risk."
+      }, {
+        "name" : "Sabah election petitions activity targeting Lamag / by-elections (Sindumin, Pintasan, etc.)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Ongoing petition filings in Sabah, including Sindumin (Dec 27, 2025) and a Pintasan petition, indicate non-trivial legal challenges that could target Lamag's result. ([malaymail.com](https://www.malaymail.com/news/malaysia/2025/12/27/sabah-polls-election-petition-filed-to-annul-sindumin-seat-result-over-alleged-ballot-misconduct/203430))"
+      }, {
+        "name" : "Lamag by-election margin (5,681) in Jan 2026",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "BN won Lamag by a large margin, which decreases the likelihood that a petition could overturn the result. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2026_Lamag_by-election))"
+      }, {
+        "name" : "Lamag-specific petition status by March 1, 2026",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "As of early March 2026 there were no widely reported Lamag-specific petitions overturning the result, suggesting lower near-term overturn risk. ([sinardaily.my](https://www.sinardaily.my/article/733335/focus/national/bn-retains-lamag-seat-ismail-wins-with-majority-of-5681?utm_source=openai))"
+      }, {
+        "name" : "Historical precedent of overturns in Sabah elections (Kimanis 2018; Kuala Terengganu 2023)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "There are credible cases where Sabah/Sabah-adjacent results were overturned, indicating a non-zero risk of overturn under certain irregularities. ([malaysiakini.com](https://www.malaysiakini.com/news/502068?utm_source=openai))"
+      }, {
+        "name" : "Election-petition disposal timelines (six-month window)",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Higher-level timelines suggest petitions should be disposed within six months, which could accelerate resolution if a Lamag petition exists, but the overall effect on overturn probability remains ambiguous. ([theedgemalaysia.com](https://theedgemalaysia.com/article/cj-all-election-petitions-will-be-disposed-6-months?utm_source=openai))"
+      }, {
+        "name" : "Lamag margin of victory (Jan 24, 2026)",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "The Lamag result showed BN winning by a 5,681 vote margin (7,269 vs 1,588), a large cushion that lowers the probability of a successful overturn. ([malaymail.com](https://www.malaymail.com/news/malaysia/2026/01/24/bn-retains-lamag-seat-mohd-ismail-wins-with-majority-of-5681-kinabatangan-result-still-unofficial/206706?utm_source=openai))"
+      }, {
+        "name" : "Sabah election petition activity (Sindumin and other petitions)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Sabah has active election petitions, including Sindumin filed December 2025 and a third petition filed December 31, 2025, signaling a non-zero pathway for challenges that could affect Lamag indirectly or set procedural precedents. ([theborneopost.com](https://www.theborneopost.com/2025/12/26/sabah-polls-election-petition-filed-after-video-shows-alleged-ballot-misconduct-in-sindumin/?utm_source=openai))"
+      }, {
+        "name" : "Historical precedent of Sabah overturns (Kimanis 2018)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Kimanis 2018 demonstrates that Sabah results have been overturned in the past, indicating that electoral challenges can succeed under certain conditions. ([malaymail.com](https://www.malaymail.com/news/malaysia/2018/11/19/kimanis-parliamentry-seat-belongs-to-anifah-says-election-court/1695054?utm_source=openai))"
+      }, {
+        "name" : "Judicial disposition timeline for election petitions (six-month disposal window)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "There is a potential six-month disposition window for election petitions, which could constrain or accelerate rulings and limit protracted delays, reducing long-lead overturn risk by May 1, 2026. ([theedgemalaysia.com](https://theedgemalaysia.com/article/cj-all-election-petitions-will-be-disposed-6-months?utm_source=openai))"
+      } ],
+      "confidence" : "medium"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "medium",
+  "range" : [ 0.03, 0.08 ],
+  "synthesis" : "The baseline 2% overturn risk is modestly uplifted to about 5% to account for Sabah petition activity and rare overturn cases, while the large Lamag margin and lack of Lamag-specific petitions keep overturn risk low overall. The likelihood of an overturn before May 1, 2026 remains unlikely, but non-zero."
+}

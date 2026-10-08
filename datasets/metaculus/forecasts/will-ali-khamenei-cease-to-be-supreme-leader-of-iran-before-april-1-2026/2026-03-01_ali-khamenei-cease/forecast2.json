@@ -1,0 +1,227 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "persona" : "outside-view",
+      "parse-failed?" : true
+    }, {
+      "persona" : "inside-view",
+      "parse-failed?" : true
+    }, {
+      "probability" : 0.98,
+      "narrative" : " Credible reports confirm Khamenei’s death on Feb 28, 2026, ending his tenure before Apr 1, 2026. The Assembly of Experts will appoint a successor, and the event’s timing is supported by mortality baselines and market expectations, yielding a near-certain outcome within the window, albeit with minor residual uncertainty about the exact transition timeline.",
+      "summary" : [ "Death of Ayatollah Ali Khamenei on Feb 28, 2026 confirms cessation before Apr 1, 2026.", "Independent outlets corroborated the death; succession process is underway via Assembly of Experts.", "Reference-class mortality anchor used; updates from event and institutional process push probability to near certainty.", "Prediction-market signals previously priced turnover but now outcome is realized; remaining uncertainty relates to timing of formal replacement and any post-event reporting." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.0093,
+          "basis" : "Reference class anchor using SSA 2022 life table for a male aged ~86; used as baseline hazard for near-term death within the forecast window"
+        },
+        "factor_updates" : [ {
+          "factor" : "Death of Ayatollah Ali Khamenei (Feb 28, 2026)",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Event confirmation from multiple credible outlets ends tenure before the target date; decisive update."
+        }, {
+          "factor" : "Activation of succession process by Assembly of Experts",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Constitutional mechanism ensures a vacant office and accelerates replacement; increases probability of cessation effectively within window."
+        }, {
+          "factor" : "Age-related mortality baseline for an 86-year-old male",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Hazard remains non-negligible; supports near-term risk of death within months."
+        }, {
+          "factor" : "Prediction-market expectations of leadership change within 2026",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Markets priced turnover within year; aligns with rapid transition after death; supports higher probability."
+        }, {
+          "factor" : "Context of external shocks (US-Israel strikes linked to death)",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Attribution to external event aligns with timing but does not add independent probability beyond the death event itself."
+        } ],
+        "synthesis_rationale" : "Starting from a low baseline anchor (0.93% annual death hazard), the explicit death event plus institutional succession and independent sources yield a near-certainty outcome within the window. The probability was calibrated to 0.98 to reflect near-certain cessation while allowing for rare reporting anomalies or timing delays; the uncertainty range (0.95–0.99) reflects residual risk from reporting errors or atypical succession timelines."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.98,\n  \"range_low\": 0.95,\n  \"range_high\": 0.99,\n  \"summary\": [\n    \"Death of Ayatollah Ali Khamenei on Feb 28, 2026 confirms cessation before Apr 1, 2026.\",\n    \"Independent outlets corroborated the death; succession process is underway via Assembly of Experts.\",\n    \"Reference-class mortality anchor used; updates from event and institutional process push probability to near certainty.\",\n    \"Prediction-market signals previously priced turnover but now outcome is realized; remaining uncertainty relates to timing of formal replacement and any post-event reporting.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \" Credible reports confirm Khamenei’s death on Feb 28, 2026, ending his tenure before Apr 1, 2026. The Assembly of Experts will appoint a successor, and the event’s timing is supported by mortality baselines and market expectations, yielding a near-certain outcome within the window, albeit with minor residual uncertainty about the exact transition timeline.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.0093,\n      \"basis\": \"Reference class anchor using SSA 2022 life table for a male aged ~86; used as baseline hazard for near-term death within the forecast window\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Death of Ayatollah Ali Khamenei (Feb 28, 2026)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Event confirmation from multiple credible outlets ends tenure before the target date; decisive update.\"\n      },\n      {\n        \"factor\": \"Activation of succession process by Assembly of Experts\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Constitutional mechanism ensures a vacant office and accelerates replacement; increases probability of cessation effectively within window.\"\n      },\n      {\n        \"factor\": \"Age-related mortality baseline for an 86-year-old male\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Hazard remains non-negligible; supports near-term risk of death within months.\"\n      },\n      {\n        \"factor\": \"Prediction-market expectations of leadership change within 2026\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Markets priced turnover within year; aligns with rapid transition after death; supports higher probability.\"\n      },\n      {\n        \"factor\": \"Context of external shocks (US-Israel strikes linked to death)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Attribution to external event aligns with timing but does not add independent probability beyond the death event itself.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a low baseline anchor (0.93% annual death hazard), the explicit death event plus institutional succession and independent sources yield a near-certainty outcome within the window. The probability was calibrated to 0.98 to reflect near-certain cessation while allowing for rare reporting anomalies or timing delays; the uncertainty range (0.95–0.99) reflects residual risk from reporting errors or atypical succession timelines.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.95, 0.99 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.98,
+      "range" : [ 0.98, 0.98 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.09174311926605508,
+    "raw-posterior" : 0.9953692876186913,
+    "capped" : true,
+    "prior" : 0.01,
+    "factors" : [ {
+      "name" : "Death of Ayatollah Ali Khamenei (Feb 28, 2026)",
+      "p-yes" : 0.95,
+      "p-no" : 0.01,
+      "bf" : 95.0
+    }, {
+      "name" : "Activation of succession process by Assembly of Experts",
+      "p-yes" : 0.8,
+      "p-no" : 0.05,
+      "bf" : 16.0
+    }, {
+      "name" : "Age-related mortality baseline for an 86-year-old male",
+      "p-yes" : 0.6,
+      "p-no" : 0.25,
+      "bf" : 2.4
+    }, {
+      "name" : "Prediction-market expectations of leadership change within 2026",
+      "p-yes" : 0.7,
+      "p-no" : 0.2,
+      "bf" : 3.4999999999999996
+    }, {
+      "name" : "Context of external shocks (US-Israel strikes linked to death)",
+      "p-yes" : 0.5,
+      "p-no" : 0.3,
+      "bf" : 1.6666666666666667
+    } ]
+  },
+  "question" : "Will Ali Khamenei cease to be supreme leader of Iran before April 1, 2026?",
+  "probability" : 0.99,
+  "summary" : [ "Credible reporting confirmed Khamenei's death on Feb 28, 2026, vacating the office before Apr 1.", "Iran's Assembly of Experts constitutional process ensures a successor is appointed, reinforcing cessation within the window.", "Prediction-market signals and mortality baselines aligned with near-term transition, and the actual event occurred within the target window.", "Objections about misreporting are acknowledged but do not materially undermine the near-certain cessation given multiple corroborating sources." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.98,
+    "critique_assessment" : "Objections highlighted plausible concerns about reporting and timing, but credible confirmation by multiple outlets confirms cessation; thus objections do not undermine the high probability.",
+    "adjustment" : "Modest upward adjustment from 0.98 to 0.99 in light of the confirmed event; no indication of a systematic bias in the ensemble."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.40976666666666667,
+      "reference-class" : "Males aged ~86 (Ali Khamenei's age in Mar 2026); anchor mortality rate from SSA 2022 life table: 11.18% per year (≈0.93% per month).",
+      "sources" : [ {
+        "url" : "https://www.ssa.gov/oact/STATS/table4c6.html",
+        "claim" : "Actuarial Life Table (2022) shows death probability for exact age 86, male: 0.111793 (11.18%) per year."
+      }, {
+        "url" : "https://www.washingtonpost.com/obituaries/2026/02/28/ayatollah-khamenei-dead-iran/",
+        "claim" : "Washington Post obituary confirms Ayatollah Ali Khamenei's death on February 28, 2026."
+      }, {
+        "url" : "https://apnews.com/article/iran-khamenei-death-iran-2026-02-28",
+        "claim" : "Associated Press reports death of Ayatollah Ali Khamenei following the U.S.-Israeli strikes."
+      }, {
+        "url" : "https://www.theguardian.com/world/2026/feb/28/khamenei-likely-killed-us-israel-iran-strikes",
+        "claim" : "The Guardian reports that Khamenei was killed amid U.S.-Israel strikes (Feb 28, 2026)."
+      }, {
+        "url" : "https://news.kalshi.com/p/iran-supreme-leader-khamenei-exit-odds",
+        "claim" : "Kalshi market: odds of Khamenei exiting before 2027; reports ~56% before July 2026 and ~64% before September 2026."
+      }, {
+        "url" : "https://www.thestreet.com/crypto/markets/iran-supreme-leader-succession-odds-kalshi-2026",
+        "claim" : "TheStreet notes Kalshi traders priced significant odds of exit by end of March 2026 (up to ~81% by March 31, 2026)."
+      }, {
+        "url" : "https://predictionnews.com/news/prediction-markets-see-iran-on-the-brink/",
+        "claim" : "Prediction Markets: about 64% chance of exit by Sep 2026; abolition of the position also a possibility."
+      }, {
+        "url" : "https://benzinga.com/markets/prediction-markets/26/03/50953714/after-khameneis-death-prediction-market-bets-on-who-the-next-supreme-leader-will-be/",
+        "claim" : "Benzinga: after Khamenei's death, Mojtaba Khamenei is a top contender; abolition of the position priced at ~23%."
+      }, {
+        "url" : "https://news.kalshi.com/p/iran-supreme-leader-exit-odds-khamenei",
+        "claim" : "Kalshi traders price Ali Khamenei out of power before Sept 1 at 48%, before July 1 at 41%, and before Apr 11 at 22%."
+      }, {
+        "url" : "https://news.kalshi.com/p/iran-supreme-leader-khamenei-exit-odds",
+        "claim" : "Kalshi markets indicate a 56% chance of exit before July and a 64% chance before September 2026."
+      }, {
+        "url" : "https://news.kalshi.com/p/iran-next-supreme-leader-odds-kalshi-2026",
+        "claim" : "Kalshi market for next Supreme Leader: Position abolished at 49%, Hassan Khomeini 24%, Mojtaba Khamenei 14%."
+      }, {
+        "url" : "https://www.valuethemarkets.com/cryptocurrency/news/irans-supreme-leader-growing-odds-of-departure-amid-economic-crisis",
+        "claim" : "Value The Markets reports odds of departure by end-2026 around 65%; Polymarket odds by Dec 31 near 65%, with mid-year breakdowns (24% by Jan 31, 46% by Mar 31, 53% by Jun 30); Kalshi odds of exit before 2027 around 66%."
+      }, {
+        "url" : "https://cryptobriefing.com/iran-leadership-change-prediction-markets/",
+        "claim" : "CryptoBriefing reports prediction markets placing roughly 65% odds of leadership change by end-2026 (Polymarket ~65%, Kalshi ~66%)."
+      }, {
+        "url" : "https://polychances.com/polymarket-events/khamenei-out-as-supreme-leader-of-iran-by-march-31/",
+        "claim" : "Polymarket aggregated view for Khamenei-out-by-Mar-31: No resolution around ~81% (No) with AI consensus near 88% No; indicating low near-term removal likelihood within the March 31, 2026 window."
+      }, {
+        "url" : "https://apnews.com/article/5b13b69b708c4ed38e8f95f5fb41a597",
+        "claim" : "AP News reports that Ayatollah Ali Khamenei has died at age 86; Iranian state media confirmed."
+      }, {
+        "url" : "https://www.washingtonpost.com/world/2026/02/28/iran-supreme-leader-ayatollah-ali-khamenei-dead/39bfa9a8-1511-11f1-8e8d-fe91db44677b_story.html",
+        "claim" : "The Washington Post reports that Khamenei has died and that the Assembly of Experts will appoint a replacement."
+      }, {
+        "url" : "https://www.aljazeera.com/news/2026/2/28/irans-supreme-leader-ali-khamenei-killed-in-us-israeli-attacks-reports",
+        "claim" : "Al Jazeera reports Iran confirms Khamenei is dead after US-Israeli attacks."
+      }, {
+        "url" : "https://www.theguardian.com/us-news/2026/feb/28/khamenei-likely-killed-us-israel-iran-strikes",
+        "claim" : "The Guardian reports Iranian state media confirms the death of Khamenei following US-Israeli strikes."
+      } ],
+      "confidence" : "medium"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Death of Ayatollah Ali Khamenei (Feb 28, 2026)",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Credible outlets reported his death on Feb 28, 2026, which directly ends his tenure as Supreme Leader prior to Apr 1, 2026."
+      }, {
+        "name" : "Activation of succession process by Assembly of Experts",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Death triggers the institutional process to replace the leader, increasing the probability that the position becomes vacant within the target window."
+      }, {
+        "name" : "Age-related mortality baseline for an 86-year-old male",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Anchor mortality rate (~11.18% per year, ~0.93% per month) implies non-negligible short-horizon risk of death, contributing to higher probability in the window."
+      }, {
+        "name" : "Prediction-market expectations of leadership change within 2026",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Kalshi and other markets priced non-negligible chances of exit by late 2026, reflecting expectations consistent with a higher probability within the window."
+      }, {
+        "name" : "Context of external shocks (US-Israel strikes linked to death)",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Reports attribute death to external attacks, which support the event timing but are less about underlying probability dynamics."
+      }, {
+        "name" : "Credible confirmation of death by multiple outlets (Feb 28, 2026)",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Joint reporting by AP/WaPo/Guardian/Al Jazeera provides high-confidence evidence that the office was vacated before Apr 1, 2026."
+      }, {
+        "name" : "Constitutional succession mechanism via Assembly of Experts",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Iran's framework mandates appointment of a new Supreme Leader, accelerating the transition once the position is vacant."
+      }, {
+        "name" : "Prediction-market pricing implying near-term turnover risk",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Markets had priced non-negligible odds of exit by early 2026, aligning with rapid replacement dynamics after death."
+      }, {
+        "name" : "Risk of delays in formal recognition or protracted transition",
+        "direction" : "down",
+        "magnitude" : "weak",
+        "rationale" : "Despite death, official recognition and the succession process can involve interim arrangements or contested outcomes that slow formal cessation."
+      }, {
+        "name" : "Uncertainty about immediate leadership outcomes (possible abolition or alternative successor paths)",
+        "direction" : "down",
+        "magnitude" : "weak",
+        "rationale" : "Some market signals contemplated non-traditional outcomes (e.g., abolition of the post), which could alter the interpretation of “cease to be supreme leader.”"
+      }, {
+        "name" : "Confirmed death of Ali Khamenei (Feb 28, 2026)",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Credible outlets reported Khamenei’s death on Feb 28, 2026, which ends his tenure before Apr 1, 2026."
+      }, {
+        "name" : "Constitutional succession process via Assembly of Experts",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Iran's succession mechanism will appoint a new Supreme Leader, ensuring the office is vacated; timeline is uncertain but the transition is underway."
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "high",
+  "range" : [ 0.95, 0.99 ],
+  "synthesis" : "Credible outlets confirmed Khamenei's death on Feb 28, 2026, ending his tenure before the target date and triggering the succession process. The combination of the vacancy and institutional procedures makes cessation effectively guaranteed within the window; objections about reporting risk are outweighed by the corroborated event."
+}

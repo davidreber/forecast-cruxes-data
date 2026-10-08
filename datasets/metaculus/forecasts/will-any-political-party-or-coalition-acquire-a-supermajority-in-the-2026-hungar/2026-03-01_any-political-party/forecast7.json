@@ -1,0 +1,376 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.07,
+      "narrative" : "Starting from a base-rate anchor near 0.44 for a 2/3 majority, updates from polls, projections, and markets push the probability toward a low single-digit percent. The synthesis yields a calibrated range reflecting substantial uncertainty in turnout and seat-vote translation.",
+      "summary" : [ "Anchor to the reference-class baseline for a two-thirds majority in Hungary (historical base-rate around 0.44).", "Current polls and seat projections indicate no credible path to 133 seats for any party or coalition, lowering the odds of a supermajority.", "Some signals (Real-PR near-2/3 projection, historical precedent) provide a non-zero tail risk, but are outweighed by broader uncertainty.", "Net posterior is low with substantial calibration uncertainty given turnout and translation dynamics." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.44,
+          "basis" : "Reference class: probability that any party/coalition wins a 2/3 majority under Hungary's current electoral rules; historical occurrences anchor this baseline around 0.44."
+        },
+        "factor_updates" : [ {
+          "factor" : "Opposition consolidation around TISZA",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Greater opposition unity reduces fragmentation and makes it less likely for any single bloc to reach 133 seats, depressing the probability of a 2/3 majority."
+        }, {
+          "factor" : "Real-PR seat projection near two-thirds for Fidesz–KDNP",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Some seat-models place Fidesz–KDNP near the threshold under certain turnout and translation assumptions, signaling a non-zero upside."
+        }, {
+          "factor" : "Prediction markets favoring the opposition",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Markets tilted toward the opposition in early 2026, reducing the odds of a ruling-party 2/3 outcome."
+        }, {
+          "factor" : "Pre-election polls indicating no credible path to 2/3",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Polls project seat shares well below 133, signaling a low probability of a constitutional supermajority."
+        }, {
+          "factor" : "Historical base-rate precedent for 2/3 majorities",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Past occurrences show the event is possible under favorable turnout and dynamics, providing a non-zero ceiling."
+        } ],
+        "synthesis_rationale" : "The posterior of 0.07 arises from dampening the anchor with predominantly downward signals from polls, fragmentation risk, and markets, while modestly lifting from favorable but uncertain signals like Real-PR projections and historical precedent. The range accounts for calibration uncertainty and potential correlation among factors, consistent with a cautious Bayesian update."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.07,\n  \"range_low\": 0.04,\n  \"range_high\": 0.12,\n  \"summary\": [\n    \"Anchor to the reference-class baseline for a two-thirds majority in Hungary (historical base-rate around 0.44).\",\n    \"Current polls and seat projections indicate no credible path to 133 seats for any party or coalition, lowering the odds of a supermajority.\",\n    \"Some signals (Real-PR near-2/3 projection, historical precedent) provide a non-zero tail risk, but are outweighed by broader uncertainty.\",\n    \"Net posterior is low with substantial calibration uncertainty given turnout and translation dynamics.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Starting from a base-rate anchor near 0.44 for a 2/3 majority, updates from polls, projections, and markets push the probability toward a low single-digit percent. The synthesis yields a calibrated range reflecting substantial uncertainty in turnout and seat-vote translation.\"\n  ,\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.44,\n      \"basis\": \"Reference class: probability that any party/coalition wins a 2/3 majority under Hungary's current electoral rules; historical occurrences anchor this baseline around 0.44.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Opposition consolidation around TISZA\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Greater opposition unity reduces fragmentation and makes it less likely for any single bloc to reach 133 seats, depressing the probability of a 2/3 majority.\"\n      },\n      {\n        \"factor\": \"Real-PR seat projection near two-thirds for Fidesz–KDNP\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Some seat-models place Fidesz–KDNP near the threshold under certain turnout and translation assumptions, signaling a non-zero upside.\"\n      },\n      {\n        \"factor\": \"Prediction markets favoring the opposition\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Markets tilted toward the opposition in early 2026, reducing the odds of a ruling-party 2/3 outcome.\"\n      },\n      {\n        \"factor\": \"Pre-election polls indicating no credible path to 2/3\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Polls project seat shares well below 133, signaling a low probability of a constitutional supermajority.\"\n      },\n      {\n        \"factor\": \"Historical base-rate precedent for 2/3 majorities\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Past occurrences show the event is possible under favorable turnout and dynamics, providing a non-zero ceiling.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The posterior of 0.07 arises from dampening the anchor with predominantly downward signals from polls, fragmentation risk, and markets, while modestly lifting from favorable but uncertain signals like Real-PR projections and historical precedent. The range accounts for calibration uncertainty and potential correlation among factors, consistent with a cautious Bayesian update.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.04, 0.12 ]
+    }, {
+      "probability" : 0.07,
+      "narrative" : "A Bayesian update yields a 7% posterior probability of any party or coalition winning a 2/3 majority in 2026 Hungary. The baseline rate is eroded by contemporary polls and fragmentation risks, though occasional signals of a near-majority under specific turnout dynamics keep a non-zero possibility alive.",
+      "summary" : [ "Bayesian posterior for a constitutional two-thirds majority in Hungary's 2026 election is 7%.", "Historical base-rate suggests 2/3 occurrences have happened in several cycles, yielding a non-zero, but not dominant, prior probability.", "Current polls show no credible path to 133 seats for any party; TISZA leads in some surveys but remains short of the threshold.", "Prediction markets tilt toward the opposition in some scenarios, reinforcing substantial uncertainty." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.44,
+          "basis" : "Historical base-rate: two-thirds majorities occurred in 2010, 2014, 2018, 2022; overall frequency roughly 4/9 elections (~0.44)."
+        },
+        "factor_updates" : [ {
+          "factor" : "Polling breadth and volatility",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Multiple February 2026 polls show no consistent path to 133 seats; projections cluster well below the threshold, implying reduced odds for any party achieving a 2/3 majority."
+        }, {
+          "factor" : "Opposition consolidation around TISZA",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "FT and other outlets note consolidation behind TISZA reduces fragmentation and the likelihood of a ruling party securing a 2/3 majority."
+        }, {
+          "factor" : "Prediction markets favoring the opposition",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Polymarket and related markets showed odds tilting toward the opposition in early 2026, signaling lower prospects for a 2/3 win by any side."
+        }, {
+          "factor" : "Real-PR near two-thirds projection",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Some seat-models place Fidesz–KDNP near 64% of seats, suggesting a non-trivial but still unlikely path to 2/3 if turnout and translation favors the ruling bloc."
+        }, {
+          "factor" : "Coalition fragmentation risk",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Opposition fragmentation across MH, DK, TISZA reduces the probability that any singular bloc reaches 133 seats."
+        }, {
+          "factor" : "Historical precedent as upper bound",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Past occurrences of 2/3 show a non-zero possibility under favorable turnout conditions; thus the posterior is not zero."
+        } ],
+        "synthesis_rationale" : "Starting from a 0.44 anchor based on historical base-rate, the net effect of multiple downward-upward factors yields a modest posterior near 0.07. Correlation among factors reduces the effective independence; thus the calibrated 7% reflects a cautious, uncertain estimate with a wide plausible range."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.07,\n  \"range_low\": 0.04,\n  \"range_high\": 0.12,\n  \"summary\": [\n    \"Bayesian posterior for a constitutional two-thirds majority in Hungary's 2026 election is 7%.\",\n    \"Historical base-rate suggests 2/3 occurrences have happened in several cycles, yielding a non-zero, but not dominant, prior probability.\",\n    \"Current polls show no credible path to 133 seats for any party; TISZA leads in some surveys but remains short of the threshold.\",\n    \"Prediction markets tilt toward the opposition in some scenarios, reinforcing substantial uncertainty.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"A Bayesian update yields a 7% posterior probability of any party or coalition winning a 2/3 majority in 2026 Hungary. The baseline rate is eroded by contemporary polls and fragmentation risks, though occasional signals of a near-majority under specific turnout dynamics keep a non-zero possibility alive.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.44,\n      \"basis\": \"Historical base-rate: two-thirds majorities occurred in 2010, 2014, 2018, 2022; overall frequency roughly 4/9 elections (~0.44).\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Polling breadth and volatility\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Multiple February 2026 polls show no consistent path to 133 seats; projections cluster well below the threshold, implying reduced odds for any party achieving a 2/3 majority.\"\n      },\n      {\n        \"factor\": \"Opposition consolidation around TISZA\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"FT and other outlets note consolidation behind TISZA reduces fragmentation and the likelihood of a ruling party securing a 2/3 majority.\"\n      },\n      {\n        \"factor\": \"Prediction markets favoring the opposition\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Polymarket and related markets showed odds tilting toward the opposition in early 2026, signaling lower prospects for a 2/3 win by any side.\"\n      },\n      {\n        \"factor\": \"Real-PR near two-thirds projection\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Some seat-models place Fidesz–KDNP near 64% of seats, suggesting a non-trivial but still unlikely path to 2/3 if turnout and translation favors the ruling bloc.\"\n      },\n      {\n        \"factor\": \"Coalition fragmentation risk\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Opposition fragmentation across MH, DK, TISZA reduces the probability that any singular bloc reaches 133 seats.\"\n      },\n      {\n        \"factor\": \"Historical precedent as upper bound\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Past occurrences of 2/3 show a non-zero possibility under favorable turnout conditions; thus the posterior is not zero.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a 0.44 anchor based on historical base-rate, the net effect of multiple downward-upward factors yields a modest posterior near 0.07. Correlation among factors reduces the effective independence; thus the calibrated 7% reflects a cautious, uncertain estimate with a wide plausible range.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.04, 0.12 ]
+    }, {
+      "probability" : 0.28,
+      "narrative" : "The base-rate anchor implies a non-zero chance of a 2/3 majority, but February 2026 polls and seat projections show no clear path to 133 seats for any bloc. The strongest upside rests on unusual turnout and favorable seat translation or a unified opposition, yet the prevailing signal favors sub-2/3 outcomes for 2026.",
+      "summary" : [ "Anchored on historical base-rate for 2/3 majorities (roughly 44% in the post-1990 era) to establish a reference probability.", "Current polls and seat projections cluster well below 133 seats for any bloc, arguing against a guaranteed 2/3 outcome, though there is some upside if opposition unites or turnout translates unusually favorably.", "Real-PR seat projections and some analyses suggest a non-trivial path to near-2/3 for either side under specific turnout and translation conditions, keeping a non-zero tail risk alive.", "Prediction markets and multiple polls generally tilt against a 2/3 majority, supporting a lower probability relative to the anchor." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.44,
+          "basis" : "Reference class probability based on historical frequency of 2/3 majorities since 1990; used as anchor for the current election where 2/3s have occurred in several cycles but not all."
+        },
+        "factor_updates" : [ {
+          "factor" : "Opposition consolidation around TISZA",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "If the opposition unites, there is a non-trivial chance of achieving a 2/3 majority by combining seats; however current polls show totals still falling short, moderating impact."
+        }, {
+          "factor" : "Real-PR seat projection near two-thirds for Fidesz–KDNP",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Projections suggesting near-2/3 share for Fidesz elevate odds of a 2/3 outcome under certain turnout and seat-vote translation conditions."
+        }, {
+          "factor" : "Prediction markets favoring opposition",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Markets tilting toward opposition reduce probability of any bloc achieving 2/3; introduces downside pressure on the 2/3 event."
+        }, {
+          "factor" : "Pre-election polls indicating no credible path to 2/3",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Polls projecting seats around 100–107 for opposition and 80–102 for ruling bloc imply no 2/3 under current dynamics."
+        }, {
+          "factor" : "Historical base-rate precedent for 2/3 majorities",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Past occurrences establish that a 2/3 majority is possible, providing a non-zero upper bound on probability."
+        }, {
+          "factor" : "EP 2024 translation signal into 2/3 under certain conditions",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Some analyses associate European Parliament results with a potential 2/3 in national elections under favorable turnout; not robust but worth noting."
+        } ],
+        "synthesis_rationale" : "Beginning with a 0.44 anchor, updates pull probability downward due to polls and explicit seat projections, while occasional signals (opposition unity, Real-PR near 2/3) pull it upward. The net effect, given current data and seat-to-vote translation uncertainty, is a cautious, lower-bound estimate with a wide calibration range to reflect substantial scenario diversity."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.28,\n  \"range_low\": 0.18,\n  \"range_high\": 0.42,\n  \"summary\": [\n    \"Anchored on historical base-rate for 2/3 majorities (roughly 44% in the post-1990 era) to establish a reference probability.\",\n    \"Current polls and seat projections cluster well below 133 seats for any bloc, arguing against a guaranteed 2/3 outcome, though there is some upside if opposition unites or turnout translates unusually favorably.\",\n    \"Real-PR seat projections and some analyses suggest a non-trivial path to near-2/3 for either side under specific turnout and translation conditions, keeping a non-zero tail risk alive.\",\n    \"Prediction markets and multiple polls generally tilt against a 2/3 majority, supporting a lower probability relative to the anchor.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"The base-rate anchor implies a non-zero chance of a 2/3 majority, but February 2026 polls and seat projections show no clear path to 133 seats for any bloc. The strongest upside rests on unusual turnout and favorable seat translation or a unified opposition, yet the prevailing signal favors sub-2/3 outcomes for 2026.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.44,\n      \"basis\": \"Reference class probability based on historical frequency of 2/3 majorities since 1990; used as anchor for the current election where 2/3s have occurred in several cycles but not all.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Opposition consolidation around TISZA\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"If the opposition unites, there is a non-trivial chance of achieving a 2/3 majority by combining seats; however current polls show totals still falling short, moderating impact.\"\n      },\n      {\n        \"factor\": \"Real-PR seat projection near two-thirds for Fidesz–KDNP\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Projections suggesting near-2/3 share for Fidesz elevate odds of a 2/3 outcome under certain turnout and seat-vote translation conditions.\"\n      },\n      {\n        \"factor\": \"Prediction markets favoring opposition\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Markets tilting toward opposition reduce probability of any bloc achieving 2/3; introduces downside pressure on the 2/3 event.\"\n      },\n      {\n        \"factor\": \"Pre-election polls indicating no credible path to 2/3\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Polls projecting seats around 100–107 for opposition and 80–102 for ruling bloc imply no 2/3 under current dynamics.\"\n      },\n      {\n        \"factor\": \"Historical base-rate precedent for 2/3 majorities\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Past occurrences establish that a 2/3 majority is possible, providing a non-zero upper bound on probability.\"\n      },\n      {\n        \"factor\": \"EP 2024 translation signal into 2/3 under certain conditions\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Some analyses associate European Parliament results with a potential 2/3 in national elections under favorable turnout; not robust but worth noting.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Beginning with a 0.44 anchor, updates pull probability downward due to polls and explicit seat projections, while occasional signals (opposition unity, Real-PR near 2/3) pull it upward. The net effect, given current data and seat-to-vote translation uncertainty, is a cautious, lower-bound estimate with a wide calibration range to reflect substantial scenario diversity.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.18, 0.42 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.11514005727279965,
+      "range" : [ 0.07, 0.28 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.07284768211920528,
+    "raw-posterior" : 0.051856469396501355,
+    "capped" : true,
+    "prior" : 0.44,
+    "factors" : [ {
+      "name" : "Polling breadth and volatility",
+      "p-yes" : 0.25,
+      "p-no" : 0.65,
+      "bf" : 0.3846153846153846
+    }, {
+      "name" : "Real-PR seat projection near two-thirds for Fidesz–KDNP",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "Historical base-rate precedent for 2/3 majorities",
+      "p-yes" : 0.6,
+      "p-no" : 0.3,
+      "bf" : 2.0
+    }, {
+      "name" : "Opposition consolidation around TISZA (FT reporting)",
+      "p-yes" : 0.3,
+      "p-no" : 0.6,
+      "bf" : 0.5
+    }, {
+      "name" : "Opposition consolidation around Tisza (unity against Orbán)",
+      "p-yes" : 0.65,
+      "p-no" : 0.3,
+      "bf" : 2.166666666666667
+    }, {
+      "name" : "Opposition polling advantage for TISZA (Feb 2026 polls)",
+      "p-yes" : 0.25,
+      "p-no" : 0.65,
+      "bf" : 0.3846153846153846
+    }, {
+      "name" : "Historical precedent for 2/3 majorities (2010,2014,2018,2022)",
+      "p-yes" : 0.55,
+      "p-no" : 0.35,
+      "bf" : 1.5714285714285716
+    }, {
+      "name" : "Opposition consolidation around TISZA",
+      "p-yes" : 0.3,
+      "p-no" : 0.6,
+      "bf" : 0.5
+    }, {
+      "name" : "Prediction market sentiment skew toward opposition",
+      "p-yes" : 0.35,
+      "p-no" : 0.6,
+      "bf" : 0.5833333333333334
+    }, {
+      "name" : "Prediction markets favoring the opposition (Feb 2026)",
+      "p-yes" : 0.28,
+      "p-no" : 0.6,
+      "bf" : 0.46666666666666673
+    }, {
+      "name" : "Coalition fragmentation risk among opposition blocs (MH, DK, and TISZA)",
+      "p-yes" : 0.28,
+      "p-no" : 0.65,
+      "bf" : 0.4307692307692308
+    }, {
+      "name" : "Pre-election polls indicating no credible path to 2/3",
+      "p-yes" : 0.25,
+      "p-no" : 0.7,
+      "bf" : 0.35714285714285715
+    }, {
+      "name" : "Fidesz–KDNP near two-thirds seat projection (Real-PR model)",
+      "p-yes" : 0.6,
+      "p-no" : 0.3,
+      "bf" : 2.0
+    }, {
+      "name" : "Prediction markets leaning toward opposition",
+      "p-yes" : 0.3,
+      "p-no" : 0.6,
+      "bf" : 0.5
+    }, {
+      "name" : "Historical base-rate and potential translation to 2/3 majority",
+      "p-yes" : 0.6,
+      "p-no" : 0.35,
+      "bf" : 1.7142857142857144
+    }, {
+      "name" : "EP 2024 translation signal into 2/3 under certain conditions",
+      "p-yes" : 0.55,
+      "p-no" : 0.4,
+      "bf" : 1.375
+    } ]
+  },
+  "question" : "Will any political party or coalition acquire a supermajority in the 2026 Hungarian parliamentary elections?",
+  "probability" : null,
+  "summary" : null,
+  "justification" : null,
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.35333333333333333,
+      "reference-class" : "Historical base rate of obtaining a constitutional two-thirds majority (133/199 seats) in Hungary's parliamentary elections since 1990; two-thirds has been achieved in 2010, 2014, 2018, and 2022 but not in several earlier cycles.",
+      "sources" : [ {
+        "url" : "https://hungarytoday.hu/government-parties-maintain-strong-lead-in-latest-polls",
+        "claim" : "Hungary Today cites Real-PR polling with a seat-calculator projection implying Fidesz-KDNP could secure around two-thirds of parliamentary seats (roughly 64% of seats), indicating a plausible near-two-thirds majority."
+      }, {
+        "url" : "https://www.euronews.com/2026/02/19/hungarian-polls-split-on-april-election-outcome-as-fidesz-and-tisza-trade-leads",
+        "claim" : "Euronews summarizes multiple polls showing split outcomes (Tisza leading in several surveys) and notes prediction-market signals where odds favored the opposition, illustrating uncertainty about a guaranteed two-thirds majority."
+      }, {
+        "url" : "https://apnews.com/article/71b54205f00252ca7c466eb5407a2aa1",
+        "claim" : "AP News reports the election date as April 12, 2026 and notes that most independent polls at the time show Tisza ahead of Fidesz, highlighting uncertainty about a governing two-thirds majority."
+      }, {
+        "url" : "https://www.budapesttimes.hu/hungary/election-2024-analysts-ruling-parties-result-would-translate-to-2-3rds-majority-in-general-election/",
+        "claim" : "The Budapest Times cites analysts who argued that the 2024 European Parliament results would translate into a two-thirds majority in a general election, indicating that such an outcome is plausible under certain electoral dynamics."
+      }, {
+        "url" : "https://www.ft.com/content/85210187-c757-4432-bb57-6b636a669e72",
+        "claim" : "The Financial Times notes the opposition is consolidating around the Tisza party and that polls show Tisza leading, signaling a potentially reduced risk of a guaranteed two-thirds majority for the ruling bloc."
+      }, {
+        "url" : "https://hungarytoday.hu/government-parties-maintain-strong-lead-in-latest-polls",
+        "claim" : "Real-PR seat projection suggests Fidesz–KDNP would win around 64 percent of parliamentary seats, implying a government majority near two-thirds."
+      }, {
+        "url" : "https://www.euronews.com/2026/02/19/hungarian-polls-split-on-april-election-outcome-as-fidesz-and-tisza-trade-leads",
+        "claim" : "Polymarket odds show Magyar (Tisza) leading at 57% vs. Orbán at 39%; betting markets tilt toward the opposition in this polling landscape."
+      }, {
+        "url" : "https://hungarymatters.hu/2024/06/11/fidesz-could-have-won-two-thirds/",
+        "claim" : "Nézőpont Institute analysis from EP results suggested a national translation could yield roughly 135 seats for Fidesz–KDNP, i.e., a two-thirds majority under certain assumptions."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2026_Hungarian_parliamentary_election",
+        "claim" : "Background notes that Fidesz has won two-thirds majorities in 2010, 2014, 2018, and 2022; the 2026 race remains uncertain and subject to polling and coalition dynamics."
+      }, {
+        "url" : "https://politpro.eu/en/hungary/opinion-polls/publicus-research-2026-02-15/parliamentary-election",
+        "claim" : "Publicus Research (Feb 15, 2026) shows TISZA 48%, Fidesz 39%; projected composition: Fidesz 102, TISZA 85, MH 12 — no 133-seat majority."
+      }, {
+        "url" : "https://politpro.eu/en/hungary/opinion-polls/republikon-intezet-2026-02-17/parliamentary-election",
+        "claim" : "Republikon poll (Feb 17, 2026) shows TISZA 47%, Fidesz 39%, MH 6%, DK 3%; projected seats: TISZA 107, Fidesz 82, MH 10."
+      }, {
+        "url" : "https://politpro.eu/en/hungary/opinion-polls/nezopont-intezet-2026-02-11/parliamentary-election",
+        "claim" : "Nézőpont poll (Feb 11, 2026) shows Fidesz 46%, TISZA 40%, MH 7%, DK 4%; projected seats: TISZA 107, Fidesz 82, MH 10."
+      }, {
+        "url" : "https://www.euronews.com/2026/02/19/hungarian-polls-split-on-april-election-outcome-as-fidesz-and-tisza-trade-leads",
+        "claim" : "Euronews summarizes multiple February 2026 polls; leads vary and none consistently indicate a path to a 2/3 majority."
+      }, {
+        "url" : "https://hungarytoday.hu/government-parties-maintain-strong-lead-in-latest-polls",
+        "claim" : "Hungary Today notes a Real-PR seat projection around two-thirds for Fidesz-KDNP in one model, though other polls show divergent results."
+      }, {
+        "url" : "https://politpro.eu/en/hungary/opinion-polls/zri-zavecz-research-2025-11-30/parliamentary-election",
+        "claim" : "Závecz Research (Nov 30, 2025) shows TISZA leading 47% to 38% for Fidesz."
+      } ],
+      "confidence" : "low"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Opposition consolidation around Tisza (unity against Orbán)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "News coverage and polling suggest growing unity behind the Tisza platform, with Tisza leading in several surveys, which could raise the odds of a non-Fidesz two-thirds majority if the opposition translates support into seats."
+      }, {
+        "name" : "Real-PR seat projection near two-thirds for Fidesz–KDNP",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Real-PR-based seat modeling cited by credible outlets indicates Fidesz–KDNP could approach roughly 64% of seats under certain conditions, suggesting a potential near-two-thirds outcome."
+      }, {
+        "name" : "Prediction market sentiment skew toward opposition",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Prediction markets (e.g., Polymarket) show odds that favor the opposition in some scenarios, implying a lower probability of any party achieving the 133-seat threshold."
+      }, {
+        "name" : "Pre-election polls indicating no credible path to 2/3",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Multiple polls project seat shares well short of 133 (e.g., TISZA around 107, Fidesz around 82), signaling no clear route to a two-thirds majority under current dynamics."
+      }, {
+        "name" : "Historical base-rate precedent for 2/3 majorities",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Since 1990, two-thirds majorities have occurred in several cycles, establishing a non-zero probability under favorable conditions."
+      }, {
+        "name" : "EP 2024 translation signal into 2/3 under certain conditions",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Some analyses linked EP results to a potential two-thirds outcome under specific electoral dynamics, illustrating a possible but uncertain path."
+      }, {
+        "name" : "Fidesz–KDNP near two-thirds seat projection (Real-PR model)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Real-PR projections place Fidesz–KDNP around 64% of seats, close to the 133-seat threshold, indicating a non-trivial path to a constitutional majority under certain turnout and seat-vote translation assumptions."
+      }, {
+        "name" : "Opposition polling advantage for TISZA (Feb 2026 polls)",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Multiple February 2026 polls show TISZA ahead of Fidesz with projected seats around 107 vs 82, well short of 133, suggesting a reduced probability of a 2/3 majority."
+      }, {
+        "name" : "Prediction markets favoring the opposition (Feb 2026)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Polymarket and related markets indicated odds tilted toward the opposition in early 2026, signaling lower odds of a ruling-party 2/3 outcome."
+      }, {
+        "name" : "Historical precedent for 2/3 majorities (2010, 2014, 2018, 2022)",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Past occurrences of 2/3 majorities show the outcome is plausible under Hungary’s electoral system, providing a non-trivial upper bound on probability."
+      }, {
+        "name" : "Opposition consolidation around TISZA (FT reporting)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "FT notes the opposition consolidating around TISZA with polls showing TISZA leading, reducing the likelihood of a 2/3 majority for the ruling bloc."
+      }, {
+        "name" : "Coalition fragmentation risk among opposition blocs (MH, DK, and TISZA)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Polls show multiple opposition factions; without full unification, the odds of achieving a single 133-seat majority are diminished."
+      }, {
+        "name" : "Polling breadth and volatility",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Multiple February 2026 polls show no consistent path to a 133-seat majority, with projected seat shares clustering below the threshold and notable cross-polling variation. (Sources: PolitPro Feb 11, 15, 17 2026; AP News; Euronews; Hungary Today)"
+      }, {
+        "name" : "Opposition consolidation around TISZA",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Financial Times and related reporting indicate the opposition is consolidating around TISZA, reducing fragmentation and the likelihood of a guaranteed 2/3 majority for the ruling bloc. (Sources: Financial Times; Euronews)"
+      }, {
+        "name" : "Historical base-rate and potential translation to 2/3 majority",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Hungary has achieved two-thirds majorities in 2010, 2014, 2018, and 2022, showing a non-zero historical possibility under favorable turnout and electoral dynamics. (Sources: Wikipedia background; Budapest Times)"
+      }, {
+        "name" : "Prediction markets leaning toward opposition",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Polymarket and other market signals in early 2026 showed odds tilting toward the opposition in several polls, suggesting a lower probability of a ruling 2/3 majority. (Sources: Euronews)"
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "parse-failed?" : true,
+  "confidence" : "low",
+  "range" : null,
+  "synthesis" : "{\n  \"probability\": 0.28,\n  \"range_low\": 0.18,\n  \"range_high\": 0.40\",\n  \"summary\": [\n    \"Objections identify plausible paths to a 2/3 majority for either side via opposition consolidation or near-2/3 seat translation, suggesting the ensemble underestimates risk.\",\n    \"Real-PR seat projections and credible polling show non-negligible, though still uncertain, chances of 133+ seats for some coalition or party.\",\n    \"Prediction markets tilt toward the opposition in some scenarios, indicating the context is more volatile than the ensemble implies.\",\n    \"The historical base-rate of 2/3 outcomes is non-zero, supporting a non-zero probability for a constitutional majority, albeit with substantial turnout and translation uncertainties.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"The objections reveal non-negligible, albeit uncertain, paths to a 2/3 majority. While most forecasts miss 133 seats, credible near-2/3 scenarios and market signals justify elevating the probability from the ensemble’s 12% toward a few dozen percent, with a wide credible interval.\",\n  \"justification\": {\n    \"ensemble_aggregate\": 0.12,\n    \"critique_assessment\": \"The objections are valid insofar as they point to non-negligible scenarios for a 2/3 majority; they identify realistic channels (opposition consolidation, seat translation near 2/3) that the ensemble underweights.\",\n    \"adjustment\": \"Adjusted probability upward from 0.12 to 0.28 to reflect the non-negligible, though uncertain, risk of 133+ seats under favorable turnout, translation, and coalition dynamics. The shift uses a broad range (0.18–0.40) to capture uncertainty and avoid overprecision.\"\n  }\n}"
+}

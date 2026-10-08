@@ -1,0 +1,419 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.89,
+      "narrative" : "Starting from a 0.44 base-rate, consolidation around the Tisza platform and Hungary's pro-2/3 bias raise the odds of a supermajority. However, fragmentation, turnout variance, and mixed polling keep the outcome uncertain, yielding a calibrated posterior near 0.89 with a wide but bounded range.",
+      "summary" : [ "Base-rate anchor from post-1990 Hungarian elections: 2/3 majorities occurred in about 4 of 9 elections (~0.44).", "Key drivers push probability up: opposition unity behind the Tisza platform and electoral-system amplification of the leading bloc.", "Downsides: vote-splitting among smaller parties and polling divergence introduce uncertainty that tempers the forecast.", "Posterior probability: 0.89 with a plausible uncertainty range around 0.80–0.95." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.44,
+          "basis" : "Base-rate anchor from post-1990 elections; 2/3 majorities occurred in 4 of 9 elections, implying a ~0.44 baseline."
+        },
+        "factor_updates" : [ {
+          "factor" : "Opposition unity behind Tisza coalition",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "FT and other sources indicate opposition coalescence around Tisza; polls show Tisza leading in some surveys, increasing the odds of a 2/3 for the coalition."
+        }, {
+          "factor" : "Electoral-system amplification of the largest bloc",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : " Hungary's system magnifies the leading vote share into a larger seat share, helping reach 133 seats if the leading bloc fares well."
+        }, {
+          "factor" : "Opposition fragmentation by smaller parties",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Several small parties near thresholds risk siphoning votes, which can limit the coalition's ability to reach 133 seats even if the lead is large."
+        }, {
+          "factor" : "Polling divergence across firms",
+          "direction" : "neutral",
+          "magnitude" : "moderate",
+          "rationale" : "Contradictory polls produce scenario-dependent probability for a 2/3 outcome; no single poll consensus."
+        }, {
+          "factor" : "Turnout dynamics: opposition turnout advantage",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Higher mobilization among opposition voters raises probability of a larger seat share for them in some models."
+        }, {
+          "factor" : "Fidesz turnout risk",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Turnout of inactive Fidesz supporters could be mobilized, potentially reducing the swing toward opposition 2/3."
+        }, {
+          "factor" : "Market signals and macro expectations",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Market commentary suggesting plausible opposition win nudges probabilities upward, though not decisive."
+        } ],
+        "synthesis_rationale" : "An initial 0.44 anchor was updated by multiple factors; unity and system bias push probability upward, while fragmentation, turnout variance, and polling divergence pull it back. The combination yields a calibrated posterior around 0.89, with a range reflecting residual uncertainty."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.89,\n  \"range_low\": 0.80,\n  \"range_high\": 0.95,\n  \"summary\": [\n    \"Base-rate anchor from post-1990 Hungarian elections: 2/3 majorities occurred in about 4 of 9 elections (~0.44).\",\n    \"Key drivers push probability up: opposition unity behind the Tisza platform and electoral-system amplification of the leading bloc.\",\n    \"Downsides: vote-splitting among smaller parties and polling divergence introduce uncertainty that tempers the forecast.\",\n    \"Posterior probability: 0.89 with a plausible uncertainty range around 0.80–0.95.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Starting from a 0.44 base-rate, consolidation around the Tisza platform and Hungary's pro-2/3 bias raise the odds of a supermajority. However, fragmentation, turnout variance, and mixed polling keep the outcome uncertain, yielding a calibrated posterior near 0.89 with a wide but bounded range.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.44,\n      \"basis\": \"Base-rate anchor from post-1990 elections; 2/3 majorities occurred in 4 of 9 elections, implying a ~0.44 baseline.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Opposition unity behind Tisza coalition\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"FT and other sources indicate opposition coalescence around Tisza; polls show Tisza leading in some surveys, increasing the odds of a 2/3 for the coalition.\"\n      },\n      {\n        \"factor\": \"Electoral-system amplification of the largest bloc\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \" Hungary's system magnifies the leading vote share into a larger seat share, helping reach 133 seats if the leading bloc fares well.\"\n      },\n      {\n        \"factor\": \"Opposition fragmentation by smaller parties\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Several small parties near thresholds risk siphoning votes, which can limit the coalition's ability to reach 133 seats even if the lead is large.\"\n      },\n      {\n        \"factor\": \"Polling divergence across firms\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Contradictory polls produce scenario-dependent probability for a 2/3 outcome; no single poll consensus.\"\n      },\n      {\n        \"factor\": \"Turnout dynamics: opposition turnout advantage\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Higher mobilization among opposition voters raises probability of a larger seat share for them in some models.\"\n      },\n      {\n        \"factor\": \"Fidesz turnout risk\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Turnout of inactive Fidesz supporters could be mobilized, potentially reducing the swing toward opposition 2/3.\"\n      },\n      {\n        \"factor\": \"Market signals and macro expectations\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Market commentary suggesting plausible opposition win nudges probabilities upward, though not decisive.\"\n      }\n    ],\n    \"synthesis_rationale\": \"An initial 0.44 anchor was updated by multiple factors; unity and system bias push probability upward, while fragmentation, turnout variance, and polling divergence pull it back. The combination yields a calibrated posterior around 0.89, with a range reflecting residual uncertainty.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.8, 0.95 ]
+    }, {
+      "probability" : 0.89,
+      "narrative" : "Starting from a 0.44 anchor based on historical frequency of 2/3 majorities, recent signals (opposition consolidation behind Tisza, plus systemic seat amplification) raise the odds toward 0.89. Poll divergence and turnout risk temper the move, yielding a calibrated range that remains high but not guaranteed.",
+      "summary" : [ "Anchor from post-1990 Hungarian elections places two-thirds-majority probability around 0.44.", "Opposition unity behind the Tisza platform and electoral-system amplification push odds toward the 133-seat threshold.", "Divergent polls and turnout uncertainty temper the forecast, but market signals and mobilization dynamics support a high-probability outcome.", "Calibrated posterior probability is 0.89 with an uncertainty range roughly 0.80–0.97." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.44,
+          "basis" : "Historical frequency of any party or coalition achieving a two-thirds (133+) seat majority in post-1990 Hungarian parliamentary elections (4 of 9) as described in the reference class."
+        },
+        "factor_updates" : [ {
+          "factor" : "Opposition consolidation around the Tisza platform",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "FT and poll signals indicating opposition unity behind Tisza increase the likelihood of crossing the 133-seat threshold, elevating the probability toward a 2/3 outcome."
+        }, {
+          "factor" : "Electoral-system amplification of the largest bloc",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Winner-take-most dynamics in Hungary's system magnify the leading vote share into seats, making a 2/3 outcome more plausible if a bloc leads in votes."
+        }, {
+          "factor" : "Opposition fragmentation by smaller parties",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Presence of smaller parties entering parliament could split votes, reducing the chance of a clean 2/3 for a single bloc."
+        }, {
+          "factor" : "Polling divergence across firms",
+          "direction" : "neutral",
+          "magnitude" : "moderate",
+          "rationale" : "Conflicting polls reduce certainty about which coalition leads; this tempers the confidence of a 2/3 outcome despite other positives."
+        }, {
+          "factor" : "Market expectations and macro effects",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Financial-market commentary pricing in potential regime-change suggests a non-negligible probability of an opposition victory translating into a 2/3 outcome."
+        }, {
+          "factor" : "Mobilization dynamics: opposition turnout advantage",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Improved opposition mobilization increases anti-government votes and strengthens prospects for a high-seat share for the opposition."
+        }, {
+          "factor" : "Fidesz turnout risk: mobilization of inactive supporters",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "If large numbers of inactive Fidesz supporters are mobilized, the leading bloc's seat share could be eroded, reducing the odds of a 2/3 outcome."
+        } ],
+        "synthesis_rationale" : "The posterior 0.89 results from integrating a historical anchor with multiple upward and downward updates. The strongest upward pushes come from opposition unity and systemic seat amplification, tempered by polling divergence and turnout risks. Correlations among factors warrant a calibrated, not naïve, aggregation, yielding a high but not certainty-filled outcome with a roughly 0.80–0.97 credible interval."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.89,\n  \"range_low\": 0.80,\n  \"range_high\": 0.97,\n  \"summary\": [\n    \"Anchor from post-1990 Hungarian elections places two-thirds-majority probability around 0.44.\",\n    \"Opposition unity behind the Tisza platform and electoral-system amplification push odds toward the 133-seat threshold.\",\n    \"Divergent polls and turnout uncertainty temper the forecast, but market signals and mobilization dynamics support a high-probability outcome.\",\n    \"Calibrated posterior probability is 0.89 with an uncertainty range roughly 0.80–0.97.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Starting from a 0.44 anchor based on historical frequency of 2/3 majorities, recent signals (opposition consolidation behind Tisza, plus systemic seat amplification) raise the odds toward 0.89. Poll divergence and turnout risk temper the move, yielding a calibrated range that remains high but not guaranteed.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.44,\n      \"basis\": \"Historical frequency of any party or coalition achieving a two-thirds (133+) seat majority in post-1990 Hungarian parliamentary elections (4 of 9) as described in the reference class.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Opposition consolidation around the Tisza platform\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"FT and poll signals indicating opposition unity behind Tisza increase the likelihood of crossing the 133-seat threshold, elevating the probability toward a 2/3 outcome.\"\n      },\n      {\n        \"factor\": \"Electoral-system amplification of the largest bloc\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Winner-take-most dynamics in Hungary's system magnify the leading vote share into seats, making a 2/3 outcome more plausible if a bloc leads in votes.\"\n      },\n      {\n        \"factor\": \"Opposition fragmentation by smaller parties\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Presence of smaller parties entering parliament could split votes, reducing the chance of a clean 2/3 for a single bloc.\"\n      },\n      {\n        \"factor\": \"Polling divergence across firms\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Conflicting polls reduce certainty about which coalition leads; this tempers the confidence of a 2/3 outcome despite other positives.\"\n      },\n      {\n        \"factor\": \"Market expectations and macro effects\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Financial-market commentary pricing in potential regime-change suggests a non-negligible probability of an opposition victory translating into a 2/3 outcome.\"\n      },\n      {\n        \"factor\": \"Mobilization dynamics: opposition turnout advantage\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Improved opposition mobilization increases anti-government votes and strengthens prospects for a high-seat share for the opposition.\"\n      },\n      {\n        \"factor\": \"Fidesz turnout risk: mobilization of inactive supporters\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"If large numbers of inactive Fidesz supporters are mobilized, the leading bloc's seat share could be eroded, reducing the odds of a 2/3 outcome.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The posterior 0.89 results from integrating a historical anchor with multiple upward and downward updates. The strongest upward pushes come from opposition unity and systemic seat amplification, tempered by polling divergence and turnout risks. Correlations among factors warrant a calibrated, not naïve, aggregation, yielding a high but not certainty-filled outcome with a roughly 0.80–0.97 credible interval.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.8, 0.97 ]
+    }, {
+      "probability" : 0.62,
+      "narrative" : "Starting from a 0.44 historical anchor, multiple positive updates from opposition unity and system amplification elevate the forecast toward 0.62, though divergent polls and potential fragmentation keep the range wide. The final estimate acknowledges both upside and downside dynamics with calibrated uncertainty.",
+      "summary" : [ "Opposition unity behind the Tisza platform increases the odds of a two-thirds majority for the anti-incumbent bloc.", "Electoral-system amplification tends to translate leading vote shares into outsized seat shares, boosting the probability if the opposition leads in votes.", "Polling is divergent across firms, injecting uncertainty into the path to a 2/3 majority, but market signals and mobilization dynamics imply non-negligible upside risk.", "Fragmentation risk from smaller parties entering parliament dampens the odds, acting as a counterbalance to the gains from unity and amplification." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.44,
+          "basis" : "Historical frequency of two-thirds winners in post-1990 Hungary (4/9 elections) and the seat-capacity dynamics of a 199-seat parliament with a 133-seat threshold."
+        },
+        "factor_updates" : [ {
+          "factor" : "Opposition unity behind Tisza platform",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Opposition consolidation raises the probability of crossing the 133-seat threshold; several surveys show Tisza ahead in multiple measures, signaling a plausible path to a 2/3 outcome."
+        }, {
+          "factor" : "Electoral-system amplification of the largest bloc",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "The Hungarian system magnifies leading vote shares into outsized seat shares; if the anti-incumbent bloc leads, this increases chances of reaching 133 seats."
+        }, {
+          "factor" : "Market signals indicating plausible change in government",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Forint dynamics and market pricing suggest a regime-change scenario is plausible, reinforcing the downward/upward shift in probability toward a 2/3 outcome."
+        }, {
+          "factor" : "Polls show mixed results across firms",
+          "direction" : "neutral",
+          "magnitude" : "moderate",
+          "rationale" : "Divergent polling firms create uncertainty about a stable path to 2/3, preventing high confidence in a single outcome."
+        }, {
+          "factor" : "Major-party fragmentation risk from smaller parties entering parliament",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "If several smaller parties clear thresholds, vote fragmentation could dilute the leading bloc’s seat share, reducing the likelihood of a 2/3 result."
+        }, {
+          "factor" : "Turnout volatility around the election",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Turnout variability adds uncertainty to seat allocation, affecting the 2/3 probability but not decisively."
+        } ],
+        "synthesis_rationale" : "Starting from a 0.44 anchor, the strongest positive updates (opposition unity and system amplification) pull the posterior toward 0.62. Mixed polls and fragmentation risk counterbalance, producing a calibrated, not-overconfident forecast with a plausible interval roughly 0.50–0.70. Calibration accounts for structural bias toward the largest bloc and remaining uncertainty in voter behavior."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.62,\n  \"range_low\": 0.50,\n  \"range_high\": 0.70,\n  \"summary\": [\n    \"Opposition unity behind the Tisza platform increases the odds of a two-thirds majority for the anti-incumbent bloc.\",\n    \"Electoral-system amplification tends to translate leading vote shares into outsized seat shares, boosting the probability if the opposition leads in votes.\",\n    \"Polling is divergent across firms, injecting uncertainty into the path to a 2/3 majority, but market signals and mobilization dynamics imply non-negligible upside risk.\",\n    \"Fragmentation risk from smaller parties entering parliament dampens the odds, acting as a counterbalance to the gains from unity and amplification.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Starting from a 0.44 historical anchor, multiple positive updates from opposition unity and system amplification elevate the forecast toward 0.62, though divergent polls and potential fragmentation keep the range wide. The final estimate acknowledges both upside and downside dynamics with calibrated uncertainty.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.44,\n      \"basis\": \"Historical frequency of two-thirds winners in post-1990 Hungary (4/9 elections) and the seat-capacity dynamics of a 199-seat parliament with a 133-seat threshold.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Opposition unity behind Tisza platform\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Opposition consolidation raises the probability of crossing the 133-seat threshold; several surveys show Tisza ahead in multiple measures, signaling a plausible path to a 2/3 outcome.\"\n      },\n      {\n        \"factor\": \"Electoral-system amplification of the largest bloc\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"The Hungarian system magnifies leading vote shares into outsized seat shares; if the anti-incumbent bloc leads, this increases chances of reaching 133 seats.\"\n      },\n      {\n        \"factor\": \"Market signals indicating plausible change in government\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Forint dynamics and market pricing suggest a regime-change scenario is plausible, reinforcing the downward/upward shift in probability toward a 2/3 outcome.\"\n      },\n      {\n        \"factor\": \"Polls show mixed results across firms\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Divergent polling firms create uncertainty about a stable path to 2/3, preventing high confidence in a single outcome.\"\n      },\n      {\n        \"factor\": \"Major-party fragmentation risk from smaller parties entering parliament\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"If several smaller parties clear thresholds, vote fragmentation could dilute the leading bloc’s seat share, reducing the likelihood of a 2/3 result.\"\n      },\n      {\n        \"factor\": \"Turnout volatility around the election\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Turnout variability adds uncertainty to seat allocation, affecting the 2/3 probability but not decisively.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a 0.44 anchor, the strongest positive updates (opposition unity and system amplification) pull the posterior toward 0.62. Mixed polls and fragmentation risk counterbalance, producing a calibrated, not-overconfident forecast with a plausible interval roughly 0.50–0.70. Calibration accounts for structural bias toward the largest bloc and remaining uncertainty in voter behavior.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.5, 0.7 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.8259239087883979,
+      "range" : [ 0.62, 0.89 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.8870967741935484,
+    "raw-posterior" : 0.9999940835285701,
+    "capped" : true,
+    "prior" : 0.44,
+    "factors" : [ {
+      "name" : "Electoral-system amplification of the largest party",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "Opposition unity behind the Tisza coalition",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "Opposition consolidation around Tisza driving poll leads",
+      "p-yes" : 0.85,
+      "p-no" : 0.15,
+      "bf" : 5.666666666666667
+    }, {
+      "name" : "Market signals indicating plausible opposition win",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "Historical precedent of 2/3 majorities in post-1990 Hungary",
+      "p-yes" : 0.5,
+      "p-no" : 0.5,
+      "bf" : 1.0
+    }, {
+      "name" : "Opposition consolidation around the Tisza platform",
+      "p-yes" : 0.75,
+      "p-no" : 0.2,
+      "bf" : 3.75
+    }, {
+      "name" : "Polling divergence across firms (uncertainty in who leads)",
+      "p-yes" : 0.55,
+      "p-no" : 0.4,
+      "bf" : 1.375
+    }, {
+      "name" : "Polls show mixed results and divergent seat projections",
+      "p-yes" : 0.55,
+      "p-no" : 0.4,
+      "bf" : 1.375
+    }, {
+      "name" : "Minor parties crossing the threshold (Our Homeland) entering parliament",
+      "p-yes" : 0.35,
+      "p-no" : 0.55,
+      "bf" : 0.6363636363636362
+    }, {
+      "name" : "Divergent polls across polling firms",
+      "p-yes" : 0.6,
+      "p-no" : 0.4,
+      "bf" : 1.4999999999999998
+    }, {
+      "name" : "Electoral system bias toward the largest party (seat amplification)",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "Electoral-system amplification of the largest bloc (winner-compensation / 2-tier thresholds)",
+      "p-yes" : 0.8,
+      "p-no" : 0.15,
+      "bf" : 5.333333333333334
+    }, {
+      "name" : "Mobilization dynamics: opposition turnout advantage",
+      "p-yes" : 0.75,
+      "p-no" : 0.2,
+      "bf" : 3.75
+    }, {
+      "name" : "Opposition fragmentation by smaller parties (risk of vote-splitting)",
+      "p-yes" : 0.4,
+      "p-no" : 0.55,
+      "bf" : 0.7272727272727273
+    }, {
+      "name" : "Turnout volatility around the April 12, 2026 election",
+      "p-yes" : 0.55,
+      "p-no" : 0.35,
+      "bf" : 1.5714285714285716
+    }, {
+      "name" : "Market expectations and macro effects",
+      "p-yes" : 0.55,
+      "p-no" : 0.45,
+      "bf" : 1.2222222222222223
+    }, {
+      "name" : "Opposition unity behind Tisza platform",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "Fidesz turnout risk: mobilization of inactive supporters",
+      "p-yes" : 0.35,
+      "p-no" : 0.6,
+      "bf" : 0.5833333333333334
+    }, {
+      "name" : "Financial markets pricing in a potential change in government",
+      "p-yes" : 0.6,
+      "p-no" : 0.3,
+      "bf" : 2.0
+    } ]
+  },
+  "question" : "Will any political party or coalition acquire a supermajority in the 2026 Hungarian parliamentary elections?",
+  "probability" : 0.7,
+  "summary" : [ "Ensemble suggests a high likelihood of a two-thirds majority, but credible objections lower the certainty.", "Polling uncertainty, potential opposition vote-splitting, and turnout volatility are material downside risks to crossing 133 seats.", "Electoral-system amplification keeps a 2/3 majority plausible even under uncertainty, though not guaranteed.", "Calibrated probability around 0.70 with a 0.60–0.80 range acknowledges residual risk and structural biases." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.83,
+    "critique_assessment" : "The objections are valid and highlight feasible risks to achieving a 2/3 majority without implying implausible scenarios.",
+    "adjustment" : "Decreased from 0.83 to 0.70 to incorporate credible downside risks; the 0.60–0.80 range captures remaining uncertainty and structural factors."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.45999999999999996,
+      "reference-class" : "Post-1990 Hungarian parliamentary elections (1990-2022) with a 199-seat parliament and a two-thirds threshold (133 seats). Historically, a 2/3 majority has been achieved by the largest party in 4 of 9 elections (roughly 0.44).",
+      "sources" : [ {
+        "url" : "https://www.euronews.com/2026/02/19/hungarian-polls-split-on-april-election-outcome-as-fidesz-and-tisza-trade-leads",
+        "claim" : "Euronews reports polls showing mixed leads for Fidesz and Tisza across firms, with no clear consensus on a 2/3 majority."
+      }, {
+        "url" : "https://hungarytoday.hu/government-parties-maintain-strong-lead-in-latest-polls",
+        "claim" : "Hungary Today notes Real-PR seat projections suggesting Fidesz-KDNP could approach a two-thirds majority based on current data."
+      }, {
+        "url" : "https://www.ft.com/content/85210187-c757-4432-bb57-6b636a669e72",
+        "claim" : "Financial Times reports opposition consolidation around the Tisza platform and varying poll dynamics that could tilt the race."
+      }, {
+        "url" : "https://www.bloomberg.com/news/articles/2025-08-11/barclays-sees-substantial-forint-gain-if-hungary-opposition-wins-2026-vote",
+        "claim" : "Barclays notes market implications if the opposition wins, signaling the plausibility of an outcome contrary to the incumbent."
+      }, {
+        "url" : "https://www.csis.org/programs/europe-russia-and-eurasia-program/projects/european-election-watch/2018-elections/hungary",
+        "claim" : "CSIS overview explains the 2018 election and the electoral system that magnifies the largest party's seat share, aiding a 2/3 majority."
+      }, {
+        "url" : "https://www.dw.com/en/hungarys-center-right-fidesz-secures-two-thirds-majority-in-hungarian-elections/a-5504778",
+        "claim" : "DW recounts Fidesz's 2010 two-thirds majority, illustrating historical occurrence of 2/3 majorities."
+      }, {
+        "url" : "https://www.globalsecurity.org/military/world/europe/hu-politics-system.htm",
+        "claim" : "GlobalSecurity describes the pattern of vote shares translating into large seat shares due to Hungary's electoral system."
+      }, {
+        "url" : "https://apnews.com/article/71b54205f00252ca7c466eb5407a2aa1",
+        "claim" : "Hungary sets April 12 election date as Orbán faces tough challenge; polls show Fidesz trailing and opposition coalescing behind Tisza."
+      }, {
+        "url" : "https://www.euronews.com/2026/02/19/hungarian-polls-split-on-april-election-outcome-as-fidesz-and-tisza-trade-leads",
+        "claim" : "Polling firms report divergent results: some polls show Tisza leading, others show Fidesz leading; different seat projections."
+      }, {
+        "url" : "https://hungarytoday.hu/government-parties-maintain-strong-lead-in-latest-polls",
+        "claim" : "Latest polls show Fidesz-KDNP maintaining a strong lead; seat-models suggest a near two-thirds share of seats."
+      }, {
+        "url" : "https://www.ft.com/content/85210187-c757-4432-bb57-6b636a669e72",
+        "claim" : "Opposition groups unite behind Tisza; polls are mixed, with Tisza leading in some surveys."
+      }, {
+        "url" : "https://www.ft.com/content/85210187-c757-4432-bb57-6b636a669e72",
+        "claim" : "FT reports opposition groups are uniting behind Péter Magyar's Tisza and polls show Tisza ahead of Viktor Orbán's Fidesz by about 8 to 20 percentage points."
+      }, {
+        "url" : "https://hungarytoday.hu/government-parties-maintain-strong-lead-in-latest-polls",
+        "claim" : "Hungary Today reports Real-PR seat projection indicating Fidesz-KDNP would win around 64% of parliamentary seats, near a two-thirds majority."
+      }, {
+        "url" : "https://www.euronews.com/2026/02/19/hungarian-polls-split-on-april-election-outcome-as-fidesz-and-tisza-trade-leads",
+        "claim" : "Euronews notes polls are split: Závecz Research shows Tisza leads; Nézőpont Institute shows Fidesz at 46% vs Tisza 40%."
+      }, {
+        "url" : "https://www.budapesttimes.hu/hungary/tisza-party-takes-the-lead/",
+        "claim" : "Budapest Times reports Tisza taking the lead in polling, with other parties like Mi Hazánk and DK near threshold."
+      } ],
+      "confidence" : "medium"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Opposition consolidation around the Tisza platform",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "FT reports opposition uniting behind Péter Magyar's Tisza and polls showing Tisza ahead or leading in multiple surveys, increasing the odds of a 2/3 outcome for the opposition. (Sources: turn0news11; turn0search0)"
+      }, {
+        "name" : "Electoral system bias toward the largest party (seat amplification)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Hungary's electoral rules magnify the largest party's seat share, which historically has helped large blocs approach or reach the 133-seat threshold. (Source: turn0search3)"
+      }, {
+        "name" : "Opposition fragmentation by smaller parties (risk of vote-splitting)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Polls show several smaller parties near or above thresholds; this fragmentation can siphon votes away from a unified Tisza bid. (Sources: turn0search0; turn0news11)"
+      }, {
+        "name" : "Polling divergence across firms (uncertainty in who leads)",
+        "direction" : "neutral",
+        "magnitude" : "moderate",
+        "rationale" : "Divergent polls (some show Tisza ahead, others show Fidesz ahead) create scenario-dependent probability for a 2/3 outcome. (Source: turn0search0)"
+      }, {
+        "name" : "Market expectations and macro effects",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Financial market commentary (e.g., forint dynamics) responds to anticipated outcomes but does not decisively move the 2/3 probability on its own. (Source: turn0search0)"
+      }, {
+        "name" : "Mobilization dynamics: opposition turnout advantage",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Surveys describe opposition supporters as highly mobilized relative to government supporters, increasing the likelihood of a strong anti-government showing in some models. (Sources: turn0search0; turn0search3)"
+      }, {
+        "name" : "Fidesz turnout risk: mobilization of inactive supporters",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Analyses note a large pool of inactive Fidesz supporters who could be mobilized, potentially diminishing the chance of an opposition 2/3 majority depending on turnout. (Source: turn0search0)"
+      }, {
+        "name" : "Opposition unity behind Tisza coalition",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "A unified opposition increases the chance that a slate crosses the 133-seat threshold, raising the likelihood of a 2/3 outcome for some coalition."
+      }, {
+        "name" : "Electoral-system amplification of the largest party",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Hungary's rules tend to magnify the largest party's seat share, making a 2/3 majority more plausible if that party remains ahead in votes."
+      }, {
+        "name" : "Polls show mixed results and divergent seat projections",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Conflicting polling models reduce forecast certainty about whether a 2/3 majority will emerge."
+      }, {
+        "name" : "Historical precedent of 2/3 majorities in post-1990 Hungary",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Two-thirds winners have occurred in about four of nine elections, indicating plausibility but not inevitability."
+      }, {
+        "name" : "Market signals indicating plausible opposition win",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Financial-market commentary framing an opposition win as plausible nudges probabilities upward from the anchor."
+      }, {
+        "name" : "Turnout volatility around the April 12, 2026 election",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Turnout dynamics add uncertainty to seat shares, potentially dampening a clear 2/3 forecast."
+      }, {
+        "name" : "Opposition consolidation around Tisza driving poll leads",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Opposition groups are coalescing behind Péter Magyar's Tisza; FT reports Tisza leading polls by roughly 8-20 percentage points depending on the survey."
+      }, {
+        "name" : "Divergent polls across polling firms",
+        "direction" : "neutral",
+        "magnitude" : "moderate",
+        "rationale" : "Polling results are highly divergent across firms, creating uncertainty about a stable path to a 2/3 majority."
+      }, {
+        "name" : "Minor parties crossing the threshold (Our Homeland) entering parliament",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Our Homeland and other smaller parties entering parliament fragments the vote, reducing the likelihood that a single bloc can reach 133 seats."
+      }, {
+        "name" : "Electoral-system amplification of the largest bloc (winner-compensation / 2-tier thresholds)",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Hungary's system tends to translate a leading vote share into a disproportionate seat share, boosting the odds of a 2/3 majority if a bloc leads (as described by Journal of Democracy and GlobalSecurity)."
+      }, {
+        "name" : "Financial markets pricing in a potential change in government",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Barclays notes forint appreciation if the opposition wins, signaling market expectations of a regime change that could accompany a 2/3 outcome."
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "medium",
+  "range" : [ 0.6, 0.8 ],
+  "synthesis" : "The aggregate view remains favorable to a 2/3 outcome, but credible downsides from polls, fragmentation, and turnout risk reduce certainty. A calibrated probability of 0.70 (range 0.60–0.80) reflects ongoing uncertainty while acknowledging the system's bias toward the largest bloc."
+}

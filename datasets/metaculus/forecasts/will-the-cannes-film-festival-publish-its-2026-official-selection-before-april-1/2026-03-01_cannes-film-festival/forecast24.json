@@ -1,0 +1,224 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.01,
+      "narrative" : "Starting from a baseline expectation that some pre-April reveals can occur, the official mid-April window and explicit timing reduce the likelihood of a before-April-10 publication to about 1%. The March deadline adds little counterweight, leaving a narrowly small chance of an earlier reveal.",
+      "summary" : [ "Cannes' communications indicate the Official Selection will be unveiled in mid-April in Paris, placing the reveal after April 10, 2026.", "This creates a strong downward signal against an early publication before April 10.", "A March 13 feature submission deadline is a weak, non-decisive signal for timing.", "Overall, the posterior probability of an announcement before April 10 is about 1%." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.15,
+          "basis" : "reference class: forecasts for Cannes Official Selection publication timing; anchor reflects a modest baseline probability before factoring in the established mid-April reveal window."
+        },
+        "factor_updates" : [ {
+          "factor" : "Mid-April press conference to unveil the Official Selection",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Festival pages indicate the reveal occurs in mid-April, which almost always post-dates April 10, pushing the probability of an earlier publish near-zero."
+        }, {
+          "factor" : "Explicit 'mid-April' window across Cannes communications",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Reinforces the timing window and lowers the likelihood of an April 10 or earlier publish date due to consistency across sources."
+        }, {
+          "factor" : "March 13, 2026 feature submission deadline",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Deadline is well before mid-April but does not by itself demand an earlier reveal; at best it aligns with mid-April window."
+        } ],
+        "synthesis_rationale" : "Anchor set at 15% to reflect a plausible baseline. Strong downward updates from the mid-April timing push the posterior toward near-zero; the additional moderate update from the stated window further tightens the interval. The neutral deadline adds minimal downward pressure. Because factors may be correlated, the calibration assumes some overlap, resulting in a final posterior around 1% with a narrow uncertainty band."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.01,\n  \"range_low\": 0.01,\n  \"range_high\": 0.03,\n  \"summary\": [\n    \"Cannes' communications indicate the Official Selection will be unveiled in mid-April in Paris, placing the reveal after April 10, 2026.\",\n    \"This creates a strong downward signal against an early publication before April 10.\",\n    \"A March 13 feature submission deadline is a weak, non-decisive signal for timing.\",\n    \"Overall, the posterior probability of an announcement before April 10 is about 1%.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Starting from a baseline expectation that some pre-April reveals can occur, the official mid-April window and explicit timing reduce the likelihood of a before-April-10 publication to about 1%. The March deadline adds little counterweight, leaving a narrowly small chance of an earlier reveal.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.15,\n      \"basis\": \"reference class: forecasts for Cannes Official Selection publication timing; anchor reflects a modest baseline probability before factoring in the established mid-April reveal window.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Mid-April press conference to unveil the Official Selection\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Festival pages indicate the reveal occurs in mid-April, which almost always post-dates April 10, pushing the probability of an earlier publish near-zero.\"\n      },\n      {\n        \"factor\": \"Explicit 'mid-April' window across Cannes communications\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Reinforces the timing window and lowers the likelihood of an April 10 or earlier publish date due to consistency across sources.\"\n      },\n      {\n        \"factor\": \"March 13, 2026 feature submission deadline\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Deadline is well before mid-April but does not by itself demand an earlier reveal; at best it aligns with mid-April window.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Anchor set at 15% to reflect a plausible baseline. Strong downward updates from the mid-April timing push the posterior toward near-zero; the additional moderate update from the stated window further tightens the interval. The neutral deadline adds minimal downward pressure. Because factors may be correlated, the calibration assumes some overlap, resulting in a final posterior around 1% with a narrow uncertainty band.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.01, 0.03 ]
+    }, {
+      "probability" : 0.01,
+      "narrative" : "The forecast is anchored to a pre-April-10 publish event being unlikely due to a stated mid-April unveiling window. Bayesian updates from explicit scheduling (strong/ moderate downward) and weak evidence from deadlines yield a very low posterior probability, with substantial residual uncertainty.",
+      "summary" : [ "Posterior probability that Cannes publishes the 2026 Official Selection before April 10, 2026 is 1%.", "Official Cannes communications indicate a mid-April unveiling window, implying the reveal is after April 10, reducing early publication likelihood.", "March 13 feature submission deadline is weak evidence and neutral toward early publication; it does not suggest an earlier reveal." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.35,
+          "basis" : "Anchor probability based on a conservative starting point from a generic reference class of Cannes announcements before April 10, prior to accounting for mid-April guidance"
+        },
+        "factor_updates" : [ {
+          "factor" : "Mid-April press conference to unveil the Official Selection",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Festival pages state the Official Selection will be unveiled during a press conference in mid-April, placing the reveal after April 10, which lowers the probability of an earlier publication."
+        }, {
+          "factor" : "Explicit 'mid-April' window across Cannes communications",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Multiple Cannes sources describe the reveal as occurring in mid-April, signaling a window that generally lies after April 10."
+        }, {
+          "factor" : "March 13, 2026 feature submission deadline",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Submission deadline exists well before mid-April; it does not imply an earlier reveal and is not a driver of an April 10 press release."
+        } ],
+        "synthesis_rationale" : "The strong downward update from an explicit mid-April reveal window dominates, with a moderate downward signal from the press conference timing, and a weak neutral deadline that does not offset the trend. Calibrated to a low posterior probability (1%), reflecting potential but unlikely exception cases."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.01,\n  \"range_low\": 0.01,\n  \"range_high\": 0.03,\n  \"summary\": [\n    \"Posterior probability that Cannes publishes the 2026 Official Selection before April 10, 2026 is 1%.\",\n    \"Official Cannes communications indicate a mid-April unveiling window, implying the reveal is after April 10, reducing early publication likelihood.\",\n    \"March 13 feature submission deadline is weak evidence and neutral toward early publication; it does not suggest an earlier reveal.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"The forecast is anchored to a pre-April-10 publish event being unlikely due to a stated mid-April unveiling window. Bayesian updates from explicit scheduling (strong/ moderate downward) and weak evidence from deadlines yield a very low posterior probability, with substantial residual uncertainty.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.35,\n      \"basis\": \"Anchor probability based on a conservative starting point from a generic reference class of Cannes announcements before April 10, prior to accounting for mid-April guidance\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Mid-April press conference to unveil the Official Selection\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Festival pages state the Official Selection will be unveiled during a press conference in mid-April, placing the reveal after April 10, which lowers the probability of an earlier publication.\"\n      },\n      {\n        \"factor\": \"Explicit 'mid-April' window across Cannes communications\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Multiple Cannes sources describe the reveal as occurring in mid-April, signaling a window that generally lies after April 10.\"\n      },\n      {\n        \"factor\": \"March 13, 2026 feature submission deadline\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Submission deadline exists well before mid-April; it does not imply an earlier reveal and is not a driver of an April 10 press release.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The strong downward update from an explicit mid-April reveal window dominates, with a moderate downward signal from the press conference timing, and a weak neutral deadline that does not offset the trend. Calibrated to a low posterior probability (1%), reflecting potential but unlikely exception cases.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.03 ]
+    }, {
+      "probability" : 0.07,
+      "narrative" : "Starting from a plausible pre-announcement baseline, updates from Cannes' stated mid-April window and press conference strengthen the case against an April 10 pre-date. The March deadline offers little push toward an earlier reveal, leaving a small but nonzero chance of an anomaly.",
+      "summary" : [ "Cannes communications target a mid-April unveiling of the Official Selection, placing the reveal after April 10, 2026.", "The explicit mid-April window and festival calendars strongly reduce the likelihood of an announcement before April 10.", "The March 13 submission deadline is weak evidence and does not compel an earlier reveal.", "A small chance remains for an unexpected early announcement, but current signals make it unlikely." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.15,
+          "basis" : "Reference class anchored on Cannes' historical cadence: Official Selection announcements typically occur in mid-April, with some rare exceptions around April 10. This anchors the pre-April-10 probability low."
+        },
+        "factor_updates" : [ {
+          "factor" : "Mid-April press conference window for Official Selection 2026",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Festival communications state the Official Selection will be unveiled during a press conference 'in mid-April,' which generally places the reveal after April 10 rather than before."
+        }, {
+          "factor" : "Explicit 'mid-April' window across Cannes communications",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Multiple Cannes statements describe the reveal as occurring in mid-April, reinforcing a post-April-10 timing."
+        }, {
+          "factor" : "March 13, 2026 feature submission deadline",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Submission deadline precedes mid-April but does not by itself push an earlier reveal; it aligns with the mid-April window rather than forcing an earlier date."
+        } ],
+        "synthesis_rationale" : "The anchor is adjusted downward by the two strong/moderate signals that the reveal will occur in mid-April, typically after April 10. The March deadline neither supports nor requires an earlier reveal, so its impact is neutral. The calibrated final probability (~7%) reflects strong signals against an April 10 pre-date, with a small possibility of an early misalignment or exception."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.07,\n  \"range_low\": 0.04,\n  \"range_high\": 0.12,\n  \"summary\": [\n    \"Cannes communications target a mid-April unveiling of the Official Selection, placing the reveal after April 10, 2026.\",\n    \"The explicit mid-April window and festival calendars strongly reduce the likelihood of an announcement before April 10.\",\n    \"The March 13 submission deadline is weak evidence and does not compel an earlier reveal.\",\n    \"A small chance remains for an unexpected early announcement, but current signals make it unlikely.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Starting from a plausible pre-announcement baseline, updates from Cannes' stated mid-April window and press conference strengthen the case against an April 10 pre-date. The March deadline offers little push toward an earlier reveal, leaving a small but nonzero chance of an anomaly.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.15,\n      \"basis\": \"Reference class anchored on Cannes' historical cadence: Official Selection announcements typically occur in mid-April, with some rare exceptions around April 10. This anchors the pre-April-10 probability low.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Mid-April press conference window for Official Selection 2026\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Festival communications state the Official Selection will be unveiled during a press conference 'in mid-April,' which generally places the reveal after April 10 rather than before.\"\n      },\n      {\n        \"factor\": \"Explicit 'mid-April' window across Cannes communications\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Multiple Cannes statements describe the reveal as occurring in mid-April, reinforcing a post-April-10 timing.\"\n      },\n      {\n        \"factor\": \"March 13, 2026 feature submission deadline\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Submission deadline precedes mid-April but does not by itself push an earlier reveal; it aligns with the mid-April window rather than forcing an earlier date.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The anchor is adjusted downward by the two strong/moderate signals that the reveal will occur in mid-April, typically after April 10. The March deadline neither supports nor requires an earlier reveal, so its impact is neutral. The calibrated final probability (~7%) reflects strong signals against an April 10 pre-date, with a small possibility of an early misalignment or exception.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.04, 0.12 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.01934772653117766,
+      "range" : [ 0.01, 0.07 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.01098901098901099,
+    "raw-posterior" : 4.065516503699783E-9,
+    "capped" : true,
+    "prior" : 0.1,
+    "factors" : [ {
+      "name" : "Historical reference date for 2025 Official Selection (April 10, 2025) as context",
+      "p-yes" : 0.2,
+      "p-no" : 0.8,
+      "bf" : 0.25
+    }, {
+      "name" : "Official Selection unveiling scheduled for mid-April in Paris",
+      "p-yes" : 0.07,
+      "p-no" : 0.93,
+      "bf" : 0.07526881720430108
+    }, {
+      "name" : "Cannes 2026 program calendar anchoring announcements to mid-April press conference",
+      "p-yes" : 0.12,
+      "p-no" : 0.88,
+      "bf" : 0.13636363636363635
+    }, {
+      "name" : "March 13, 2026 feature submission deadline",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Submissions deadline in March for features",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Historical pattern of mid-April announcements (2025 reference)",
+      "p-yes" : 0.15,
+      "p-no" : 0.85,
+      "bf" : 0.17647058823529413
+    }, {
+      "name" : "Mid-April press conference window for Official Selection 2026",
+      "p-yes" : 0.08,
+      "p-no" : 0.92,
+      "bf" : 0.08695652173913043
+    }, {
+      "name" : "Mid-April press conference to unveil the Official Selection",
+      "p-yes" : 0.07,
+      "p-no" : 0.93,
+      "bf" : 0.07526881720430108
+    }, {
+      "name" : "Explicit 'mid-April' window across Cannes communications",
+      "p-yes" : 0.1,
+      "p-no" : 0.9,
+      "bf" : 0.11111111111111112
+    } ]
+  },
+  "question" : "Will the Cannes Film Festival publish its 2026 official selection before April 10, 2026?",
+  "probability" : 0.07,
+  "summary" : [ "Ensemble aggregate is very low at 2%, implying a baseline belief that an early publication before April 10 is unlikely.", "Adversarial objections describe plausible channels (early leaks, mid-April window flexibility, industry-driven push) that could yield an earlier reveal, although these are not strongly deterministic.", "Historical pattern generally places the reveal in mid-April, after April 10, which argues against earlier publication but does not preclude it.", "Overall, a modest upward calibration is justified to reflect non-negligible but still unlikely chances of an earlier reveal." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.02,
+    "critique_assessment" : "Objections are valid in highlighting realistic channels for an earlier reveal, revealing a genuine blind spot in assuming the mid-April window strictly rules out earlier dates.",
+    "adjustment" : "Adjusted upward from 0.02 to 0.07 to reflect plausible but uncertain possibility of an earlier reveal due to leaks, industry scheduling pressures, and flexible timing; no downward adjustment was applied."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : null,
+      "reference-class" : null,
+      "sources" : [ ],
+      "confidence" : "low"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Mid-April press conference to unveil the Official Selection",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Festival pages state the Official Selection will be unveiled during a press conference in mid-April, placing the reveal after April 10, 2026."
+      }, {
+        "name" : "Explicit 'mid-April' window across Cannes communications",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Multiple Cannes sources describe the reveal as occurring in mid-April, signaling a window that generally lies after April 10."
+      }, {
+        "name" : "March 13, 2026 feature submission deadline",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "The submission deadline exists well before mid-April, suggesting announcements may align with the mid-April window but not before."
+      }, {
+        "name" : "Mid-April press conference window for Official Selection 2026",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Festival communications indicate the Official Selection will be unveiled during a press conference 'in mid-April' in Paris, which typically falls after April 10, reducing the likelihood of an earlier publish date."
+      }, {
+        "name" : "Historical reference date for 2025 Official Selection (April 10, 2025) as context",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "The 2025 edition was announced on April 10, suggesting a possible early-April cadence, but the 2026 communications specify mid-April, introducing uncertainty about an earlier date."
+      }, {
+        "name" : "Cannes 2026 program calendar anchoring announcements to mid-April press conference",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The festival's press program states the Official Selection will be unveiled at a mid-April press conference, which would typically occur after April 10."
+      }, {
+        "name" : "Official Selection unveiling scheduled for mid-April in Paris",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Festival communications state the official selection will be unveiled at a press conference in mid-April, making an early announcement before April 10 unlikely."
+      }, {
+        "name" : "Historical pattern of mid-April announcements (2025 reference)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The FAQ and festival coverage indicate mid-April as the typical window for revealing the selection, which reduces the likelihood of an announcement before April 10."
+      }, {
+        "name" : "Submissions deadline in March for features",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Feature submission deadline (March 13) shows ongoing evaluation but does not by itself imply an earlier reveal date."
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "medium",
+  "range" : [ 0.04, 0.12 ],
+  "synthesis" : "The baseline probability is very low, but the objections identify plausible pathways to an earlier reveal that, while unlikely, are not impossible. I’ve nudged the probability upward to 7% and set an interval from 4–12%, reflecting a non-negligible but still low likelihood."
+}

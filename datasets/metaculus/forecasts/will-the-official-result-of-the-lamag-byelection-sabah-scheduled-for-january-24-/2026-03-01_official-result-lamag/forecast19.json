@@ -1,0 +1,353 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.02,
+      "narrative" : "Anchoring on the Malaysian election-petition reference class suggests a low base risk of overturns. Considering the large Lamag margin, absence of an overturned decision by May 1, 2026, and historically rare overturns, the calibrated posterior remains modest at about 2%, with a 1–4% uncertainty band.",
+      "summary" : [ "Reference class: Malaysian election petitions overturning state/parliamentary results; anchor probability set to reflect a cautious baseline in this low-frequency outcome space.", "BN won Lamag by a wide margin and no overturn reported by May 1, 2026, reducing the likelihood of reversal.", "Historical data show overturns are rare, contributing to a low posterior probability around this event.", "Bayesian synthesis yields a final calibrated estimate around 2%, with a plausible 1–4% uncertainty range." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.05,
+          "basis" : "Reference class: Malaysian election petitions overturning state/parliamentary results. An anchor of 5% reflects a cautious baseline from historical overturn rates in this broad class before applying updates."
+        },
+        "factor_updates" : [ {
+          "factor" : "Petition filed to challenge Lamag result",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "A petition increases the chance of an overturn, but Malaysia’s overturn rate remains historically low."
+        }, {
+          "factor" : "Lamag victory margin (BN by 5,681 votes)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "A large margin lowers the likelihood that miscounts or irregularities could overturn the result."
+        }, {
+          "factor" : "No overturn reported by May 1, 2026",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Public reporting through May 1 shows no reversal, reducing the short-term risk."
+        }, {
+          "factor" : "Historical base-rate of election-petitions overturning results in Malaysia",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Overturns are rare, providing a downward pressure on the probability."
+        }, {
+          "factor" : "Evidentiary threshold for overturning (proof of irregularities)",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Even with a petition, the court requires strong evidence; threshold remains high."
+        } ],
+        "synthesis_rationale" : "Starting from a modest anchor in the low single-digit percent range, the large Lamag margin, absence of a reported petition overturn by the deadline, and the historical rarity of overturns collectively pull the posterior down toward 2%. The combination of factors is weighted toward low risk, but the presence of a petition pathway and Sabah’s petition history keeps the possibility non-zero. Calibration acknowledges potential late developments but assigns a small probability to reversal within the May 1, 2026 window."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.02,\n  \"range_low\": 0.01,\n  \"range_high\": 0.04,\n  \"summary\": [\n    \"Reference class: Malaysian election petitions overturning state/parliamentary results; anchor probability set to reflect a cautious baseline in this low-frequency outcome space.\",\n    \"BN won Lamag by a wide margin and no overturn reported by May 1, 2026, reducing the likelihood of reversal.\",\n    \"Historical data show overturns are rare, contributing to a low posterior probability around this event.\",\n    \"Bayesian synthesis yields a final calibrated estimate around 2%, with a plausible 1–4% uncertainty range.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Anchoring on the Malaysian election-petition reference class suggests a low base risk of overturns. Considering the large Lamag margin, absence of an overturned decision by May 1, 2026, and historically rare overturns, the calibrated posterior remains modest at about 2%, with a 1–4% uncertainty band.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.05,\n      \"basis\": \"Reference class: Malaysian election petitions overturning state/parliamentary results. An anchor of 5% reflects a cautious baseline from historical overturn rates in this broad class before applying updates.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Petition filed to challenge Lamag result\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A petition increases the chance of an overturn, but Malaysia’s overturn rate remains historically low.\"\n      },\n      {\n        \"factor\": \"Lamag victory margin (BN by 5,681 votes)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A large margin lowers the likelihood that miscounts or irregularities could overturn the result.\"\n      },\n      {\n        \"factor\": \"No overturn reported by May 1, 2026\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Public reporting through May 1 shows no reversal, reducing the short-term risk.\"\n      },\n      {\n        \"factor\": \"Historical base-rate of election-petitions overturning results in Malaysia\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Overturns are rare, providing a downward pressure on the probability.\"\n      },\n      {\n        \"factor\": \"Evidentiary threshold for overturning (proof of irregularities)\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Even with a petition, the court requires strong evidence; threshold remains high.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a modest anchor in the low single-digit percent range, the large Lamag margin, absence of a reported petition overturn by the deadline, and the historical rarity of overturns collectively pull the posterior down toward 2%. The combination of factors is weighted toward low risk, but the presence of a petition pathway and Sabah’s petition history keeps the possibility non-zero. Calibration acknowledges potential late developments but assigns a small probability to reversal within the May 1, 2026 window.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.04 ]
+    }, {
+      "probability" : 0.02,
+      "narrative" : "The by-election outcome was favorable to BN with a large margin, and no confirmed petition overturned the result by May 1, 2026. While petitions are possible in Sabah, the historical rarity of overturns and the margin argue for a low probability (about 2%).",
+      "summary" : [ "Lamag by-election resulted in a substantial BN majority, reducing the odds of reversal.", "Possible election petition exists, but no overturn reported by May 1, 2026; petitions are rare in Malaysia.", "Historical precedents show reversals exist but are uncommon; Sabah unity government context further reduces risk.", "No confirmed petition reported as of May 1, 2026 further lowers short-term risk." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.02,
+          "basis" : "Bayesian posterior probability for overturn risk in Sabah/Lamag, after considering a petition threat, margin strength, and absence of reported overturn by date"
+        },
+        "factor_updates" : [ {
+          "factor" : "Petition filed to challenge Lamag result",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "A petition alleging irregularities could raise the chance of an overturn, but the actual overturn rate in Malaysia remains historically low."
+        }, {
+          "factor" : "Lamag victory margin (BN by 5,681 votes)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "A wide margin reduces overturn risk unless substantial irregularities are proven."
+        }, {
+          "factor" : "No overturn reported by May 1, 2026",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Public reporting shows no reversal within the window, decreasing overturn risk."
+        }, {
+          "factor" : "Historical base-rate of overturns in Malaysian election petitions",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Overturns are relatively rare, lowering baseline risk."
+        }, {
+          "factor" : "Evidentiary threshold for overturning (proof of irregularities)",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Even a petition would need strong evidence; threshold remains high."
+        } ],
+        "synthesis_rationale" : "The net posterior reflects a downward drift from margin strength, absence of overturn to date, and historical rarity of successful overturns, tempered by a non-negligible petition route and Sabah-specific context that keeps the risk non-zero; the calibrated probability is set at 2% to reflect these mixed dynamics, acknowledging potential correlations between factors instead of treating them as independent."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.02,\n  \"range_low\": 0.01,\n  \"range_high\": 0.05,\n  \"summary\": [\n    \"Lamag by-election resulted in a substantial BN majority, reducing the odds of reversal.\",\n    \"Possible election petition exists, but no overturn reported by May 1, 2026; petitions are rare in Malaysia.\",\n    \"Historical precedents show reversals exist but are uncommon; Sabah unity government context further reduces risk.\",\n    \"No confirmed petition reported as of May 1, 2026 further lowers short-term risk.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"The by-election outcome was favorable to BN with a large margin, and no confirmed petition overturned the result by May 1, 2026. While petitions are possible in Sabah, the historical rarity of overturns and the margin argue for a low probability (about 2%).\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.02,\n      \"basis\": \"Bayesian posterior probability for overturn risk in Sabah/Lamag, after considering a petition threat, margin strength, and absence of reported overturn by date\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Petition filed to challenge Lamag result\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A petition alleging irregularities could raise the chance of an overturn, but the actual overturn rate in Malaysia remains historically low.\"\n      },\n      {\n        \"factor\": \"Lamag victory margin (BN by 5,681 votes)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A wide margin reduces overturn risk unless substantial irregularities are proven.\"\n      },\n      {\n        \"factor\": \"No overturn reported by May 1, 2026\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Public reporting shows no reversal within the window, decreasing overturn risk.\"\n      },\n      {\n        \"factor\": \"Historical base-rate of overturns in Malaysian election petitions\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Overturns are relatively rare, lowering baseline risk.\"\n      },\n      {\n        \"factor\": \"Evidentiary threshold for overturning (proof of irregularities)\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Even a petition would need strong evidence; threshold remains high.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The net posterior reflects a downward drift from margin strength, absence of overturn to date, and historical rarity of successful overturns, tempered by a non-negligible petition route and Sabah-specific context that keeps the risk non-zero; the calibrated probability is set at 2% to reflect these mixed dynamics, acknowledging potential correlations between factors instead of treating them as independent.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.01, 0.05 ]
+    }, {
+      "probability" : 0.15,
+      "narrative" : "Anchored on the historical rarity of overturns in Malaysian election petitions and the Lamag result's large margin, the probability of overturn before May 1, 2026 is estimated to be modest but non-zero. The lack of Lamag-specific overturn reports by that date and Sabah's political context support a low overall risk, though a late petition could shift the outcome if strong irregularities are proven.",
+      "summary" : [ "BN won the Lamag by-election in January 2026 by a wide margin, which generally reduces the likelihood of reversal on petition.", "There is a petition pathway in Sabah/malaysia, but no Lamag-specific overturns had been reported by early May 2026, suggesting low, but non-zero, risk.", "Historical overrides of Malaysian election results are relatively rare, providing a downward bias to overturn probability in this case.", "Sabah's unity-government context and strong BN backing further temper overturn risk, though an unexpected evidentiary breakthrough could still alter the prognosis." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.05,
+          "basis" : "Reference class is Malaysian state/parliamentary election petitions; historical overturns are rare, and Sabah-specific petitions have not produced a Lamag reversal by May 1, 2026 in the provided evidence."
+        },
+        "factor_updates" : [ {
+          "factor" : "Petition threat to overturn Lamag result",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "An independent candidate indicated an intent to file a petition, which raises overturn risk, though successful overturns remain uncommon in Malaysia."
+        }, {
+          "factor" : "Lamag victory margin and BN majority",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "A large margin (BN advantage) lowers the probability that irregularities would overturn the result."
+        }, {
+          "factor" : "No overturn reported by May 1, 2026",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Absence of a reported Lamag overturn within the window reduces the likelihood of reversal."
+        }, {
+          "factor" : "Historical base-rate of election-petitions overturning results in Malaysia",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Overturns are historically rare in Malaysia, providing a downward calibration to the probability."
+        }, {
+          "factor" : "Evidentiary threshold for overturning (proof of irregularities)",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Even if a petition is filed, the court-specified evidentiary standard tends to be high, limiting overturn chances."
+        } ],
+        "synthesis_rationale" : "Starting from a conservative anchor around 5%, the moderate upward push from a possible Lamag petition is tempered by a large by-election margin, absence of reported overturns by the target date, and a long-run pattern of rare overturns in Malaysia. The Sabah-unity context and strong BN backing further tilt the balance toward stability, while still leaving a non-zero tail risk if a petition surfaces with compelling irregularities. Calibration acknowledges both the historical rarity and the non-zero petition possibility."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.15,\n  \"range_low\": 0.08,\n  \"range_high\": 0.25,\n  \"summary\": [\n    \"BN won the Lamag by-election in January 2026 by a wide margin, which generally reduces the likelihood of reversal on petition.\",\n    \"There is a petition pathway in Sabah/malaysia, but no Lamag-specific overturns had been reported by early May 2026, suggesting low, but non-zero, risk.\",\n    \"Historical overrides of Malaysian election results are relatively rare, providing a downward bias to overturn probability in this case.\",\n    \"Sabah's unity-government context and strong BN backing further temper overturn risk, though an unexpected evidentiary breakthrough could still alter the prognosis.\"\n  ],\n  \"confidence\": \"low\",\n  \"narrative\": \"Anchored on the historical rarity of overturns in Malaysian election petitions and the Lamag result's large margin, the probability of overturn before May 1, 2026 is estimated to be modest but non-zero. The lack of Lamag-specific overturn reports by that date and Sabah's political context support a low overall risk, though a late petition could shift the outcome if strong irregularities are proven.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.05,\n      \"basis\": \"Reference class is Malaysian state/parliamentary election petitions; historical overturns are rare, and Sabah-specific petitions have not produced a Lamag reversal by May 1, 2026 in the provided evidence.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Petition threat to overturn Lamag result\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"An independent candidate indicated an intent to file a petition, which raises overturn risk, though successful overturns remain uncommon in Malaysia.\"\n      },\n      {\n        \"factor\": \"Lamag victory margin and BN majority\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A large margin (BN advantage) lowers the probability that irregularities would overturn the result.\"\n      },\n      {\n        \"factor\": \"No overturn reported by May 1, 2026\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Absence of a reported Lamag overturn within the window reduces the likelihood of reversal.\"\n      },\n      {\n        \"factor\": \"Historical base-rate of election-petitions overturning results in Malaysia\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Overturns are historically rare in Malaysia, providing a downward calibration to the probability.\"\n      },\n      {\n        \"factor\": \"Evidentiary threshold for overturning (proof of irregularities)\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Even if a petition is filed, the court-specified evidentiary standard tends to be high, limiting overturn chances.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a conservative anchor around 5%, the moderate upward push from a possible Lamag petition is tempered by a large by-election margin, absence of reported overturns by the target date, and a long-run pattern of rare overturns in Malaysia. The Sabah-unity context and strong BN backing further tilt the balance toward stability, while still leaving a non-zero tail risk if a petition surfaces with compelling irregularities. Calibration acknowledges both the historical rarity and the non-zero petition possibility.\"\n  }\n}",
+      "confidence" : "low",
+      "range" : [ 0.08, 0.25 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.04020427210219095,
+      "range" : [ 0.02, 0.15 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.02439024390243902,
+    "raw-posterior" : 3.2227596242758056E-5,
+    "capped" : true,
+    "prior" : 0.2,
+    "factors" : [ {
+      "name" : "Evidentiary threshold for overturning (proof of irregularities)",
+      "p-yes" : 0.25,
+      "p-no" : 0.6,
+      "bf" : 0.4166666666666667
+    }, {
+      "name" : "Strong BN majority in Lamag by-election",
+      "p-yes" : 0.18,
+      "p-no" : 0.72,
+      "bf" : 0.25
+    }, {
+      "name" : "Incumbent BN advantage and Sabah unity government backing",
+      "p-yes" : 0.25,
+      "p-no" : 0.7,
+      "bf" : 0.35714285714285715
+    }, {
+      "name" : "Election petitions against Lamag result",
+      "p-yes" : 0.6,
+      "p-no" : 0.3,
+      "bf" : 2.0
+    }, {
+      "name" : "Petition threat to overturn Lamag result",
+      "p-yes" : 0.65,
+      "p-no" : 0.3,
+      "bf" : 2.166666666666667
+    }, {
+      "name" : "Lamag by-election margin and BN majority",
+      "p-yes" : 0.2,
+      "p-no" : 0.7,
+      "bf" : 0.28571428571428575
+    }, {
+      "name" : "Historical base-rate of election-petitions overturning results in Malaysia",
+      "p-yes" : 0.15,
+      "p-no" : 0.75,
+      "bf" : 0.19999999999999998
+    }, {
+      "name" : "No confirmed petition reported as of May 1, 2026",
+      "p-yes" : 0.2,
+      "p-no" : 0.7,
+      "bf" : 0.28571428571428575
+    }, {
+      "name" : "Past narrow margin in the preceding Lamag general election",
+      "p-yes" : 0.45,
+      "p-no" : 0.35,
+      "bf" : 1.2857142857142858
+    }, {
+      "name" : "No overturn reported by May 1, 2026",
+      "p-yes" : 0.15,
+      "p-no" : 0.75,
+      "bf" : 0.19999999999999998
+    }, {
+      "name" : "Historical rarity of overturns in Malaysian election petitions",
+      "p-yes" : 0.2,
+      "p-no" : 0.7,
+      "bf" : 0.28571428571428575
+    }, {
+      "name" : "Sabah election-petition environment could trigger more by-elections",
+      "p-yes" : 0.6,
+      "p-no" : 0.3,
+      "bf" : 2.0
+    }, {
+      "name" : "Lamag victory margin (BN by 5,681 votes)",
+      "p-yes" : 0.2,
+      "p-no" : 0.7,
+      "bf" : 0.28571428571428575
+    }, {
+      "name" : "Petition filed to challenge Lamag result",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "Historical precedents of court overturns in Malaysia",
+      "p-yes" : 0.25,
+      "p-no" : 0.6,
+      "bf" : 0.4166666666666667
+    } ]
+  },
+  "question" : "Will the official result of the Lamag by-election (Sabah), scheduled for January 24, 2026, be overturned before May 1, 2026?",
+  "probability" : 0.08,
+  "summary" : [ "Ensemble aggregate is modest at 4%, but objections identify a non-zero risk channel via election petitions in Sabah.", "A petition path is credibly possible, though historically overturns are rare and margins here are large, suggesting the base risk is still low.", "Threshold analysis indicates overturns by May 1, 2026 are unlikely, given the large Lamag margin and lack of reported reversals to date.", "Overall, the calibrated probability remains modestly above the ensemble due to non-zero petition risk and Sabah-specific dynamics." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.04,
+    "critique_assessment" : "Objections are valid in highlighting a non-zero petition route and Sabah-specific dynamics, but the historical rarity of overturns and the large by-election margin argue against a high likelihood of reversal.",
+    "adjustment" : "Adjusted upward from 0.04 to 0.08 to reflect the non-zero but low-probability petition risk, with a plausible range capped at 0.12 given uncertainties around potential late petitions and legal developments."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.09000000000000001,
+      "reference-class" : "Malaysian election petitions challenging state/parliamentary election results (national scope, including Sabah).",
+      "sources" : [ {
+        "url" : "https://www.thestar.com.my/news/nation/2025/11/30/independent-candidate-to-file-petition-over-lamag-result",
+        "claim" : "Independent candidate Mohd Ismail Ayob said he would file an election petition to challenge the Lamag outcome after losing by 153 votes."
+      }, {
+        "url" : "https://www.malaymail.com/news/malaysia/2025/12/27/sabah-polls-election-petition-filed-to-annul-sindumin-seat-result-over-alleged-ballot-misconduct/203430",
+        "claim" : "Election petition filed to annul the Sindumin by-election result in Sabah amid alleged ballot irregularities."
+      }, {
+        "url" : "https://www.malaysiakini.com/news/764873",
+        "claim" : "Warisan confirms it will contest Kinabatangan and Lamag by-elections and notes election petitions could trigger additional by-elections."
+      }, {
+        "url" : "https://www.cilisos.my/election-court-election-petition-re-election-void/",
+        "claim" : "Overview of Malaysian election-petition dynamics; citations that only a small number of petitions have led to voided results (historical rate)."
+      }, {
+        "url" : "https://www.malaymail.com/news/malaysia/2026/01/24/bn-retains-lamag-seat-mohd-ismail-wins-with-majority-of-5681",
+        "claim" : "BN retained Lamag with a large majority; results announced after the by-election."
+      }, {
+        "url" : "https://www.malaymail.com/news/malaysia/2026/02/10/new-lamag-assemblyman-mohd-ismail-officially-sworn-in-at-sabah-assembly/208704",
+        "claim" : "New Lamag assemblyman sworn in; confirms the by-election outcome and transition."
+      }, {
+        "url" : "https://www.malaymail.com/news/malaysia/2026/01/24/bn-retains-lamag-seat-mohd-ismail-wins-with-majority-of-5681-kinabatangan-result-still-unofficial/206706",
+        "claim" : "BN retains Lamag seat, Ismail wins with majority of 5,681"
+      }, {
+        "url" : "https://www.nst.com.my/amp/news/regional/2026/01/1364303/kinabatangan-and-lamag-wins-prove-public-support-bn-remains-strong",
+        "claim" : "Kinabatangan and Lamag wins prove public support for BN remains strong"
+      }, {
+        "url" : "https://www.sinardaily.my/ampArticle/733335",
+        "claim" : "BN retains Lamag seat, Ismail wins with majority of 5,681"
+      }, {
+        "url" : "https://www.thestar.com.my/news/nation/2019/08/16/anifah039s-kimanis-win-declared-null-and-void",
+        "claim" : "Election Court nullified Anifah Aman's Kimanis win in 2019 due to corrupt practices."
+      }, {
+        "url" : "https://www.malaymail.com/news/malaysia/2018/11/30/court-finds-vote-buying-in-cameron-highlands-nullifies-election-of-mic-man",
+        "claim" : "Cameron Highlands 2018: court found vote-buying and nullified the election."
+      }, {
+        "url" : "https://www.malaymail.com/news/malaysia/2019/12/02/ec-to-abide-by-federal-courts-decision-on-kimanis-seat/",
+        "claim" : "Election Commission to abide by Federal Court ruling upholding the Kimanis nullification; by-election to be held."
+      }, {
+        "url" : "https://www.malaysiakini.com/news/454107",
+        "claim" : "Court declares Cameron Highlands seat vacant following an election petition."
+      } ],
+      "confidence" : "low"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Petition filed to challenge Lamag result",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "A petition alleging irregularities would raise the chance of an overturn, though Malaysia's overturn rate is historically low."
+      }, {
+        "name" : "Lamag victory margin (BN by 5,681 votes)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "A wide margin reduces the likelihood of a successful overturn based on miscount or irregularities."
+      }, {
+        "name" : "No overturn reported by May 1, 2026",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Public reporting shows no reversal within the window, decreasing overturn risk."
+      }, {
+        "name" : "Historical base-rate of election-petitions overturning results in Malaysia",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Overturns are rare in Malaysian election petitions, lowering the baseline risk."
+      }, {
+        "name" : "Evidentiary threshold for overturning (proof of irregularities)",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Even if a petition is filed, the court requires strong evidence; threshold remains high."
+      }, {
+        "name" : "Petition threat to overturn Lamag result",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "There was explicit mention that an independent candidate intended to file an election petition to challenge the Lamag outcome after losing by 153 votes in the prior Sabah state election, signaling non-trivial legal challenge risk. ([thestar.com.my](https://www.thestar.com.my/news/nation/2026/01/25/kinabatangan-lamag-wins-testament-to-unity-govts-strength-says-gagasan-veep?utm_source=openai))"
+      }, {
+        "name" : "Historical rarity of overturns in Malaysian election petitions",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Malaysia has a history of election petitions rarely overturning results, with only a small number having led to voided outcomes. ([thestar.com.my](https://www.thestar.com.my/news/nation/2026/01/08/pis-will-not-contest-kinabatangan-lamag-by-elections?utm_source=openai))"
+      }, {
+        "name" : "Lamag by-election margin and BN majority",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "BN won Lamag by a wide margin (7,269 to 1,588, about 82% to 18%), which reduces the likelihood of reversal unless substantial irregularities are proven. ([sinardaily.my](https://www.sinardaily.my/ampArticle/733335?utm_source=openai))"
+      }, {
+        "name" : "Incumbent BN advantage and Sabah unity government backing",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The Lamag by-election occurred under a Sabah unity government with strong BN backing, a context associated with political stability and lower overturn risk. ([thestar.com.my](https://www.thestar.com.my/news/nation/2026/01/25/kinabatangan-lamag-wins-testament-to-unity-govts-strength-says-gagasan-veep?utm_source=openai))"
+      }, {
+        "name" : "No confirmed petition reported as of May 1, 2026",
+        "direction" : "down",
+        "magnitude" : "weak",
+        "rationale" : "As of early May 2026 there are no widely reported petitions overturning Lamag, which modestly lowers the short-term risk. ([malaysia.news.yahoo.com](https://malaysia.news.yahoo.com/bn-retains-lamag-seat-mohd-144419962.html/?utm_source=openai))"
+      }, {
+        "name" : "Election petitions against Lamag result",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "The petition route exists and Sabah has a history of election petitions; while no Lamag petition had been reported by March 1, 2026, a petition could overturn the result. ([malaymail.com](https://www.malaymail.com/news/malaysia/2026/01/24/bn-retains-lamag-seat-mohd-ismail-wins-with-majority-of-5681-kinabatangan-result-still-unofficial/206706?utm_source=openai))"
+      }, {
+        "name" : "Strong BN majority in Lamag by-election",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "BN won Lamag by 5,681 votes, indicating durable support that lowers the likelihood of reversal. ([sinardaily.my](https://www.sinardaily.my/article/733335/focus/national/bn-retains-lamag-seat-ismail-wins-with-majority-of-5681?utm_source=openai))"
+      }, {
+        "name" : "Historical precedents of court overturns in Malaysia",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "There are rare precedents where election results were nullified by courts (e.g., Cameron Highlands 2018, Kimanis 2019), establishing a non-zero overturn risk. ([theborneopost.com](https://www.theborneopost.com/2025/12/31/third-election-petition-filed/?utm_source=openai))"
+      }, {
+        "name" : "Past narrow margin in the preceding Lamag general election",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "The 2025 Lamag general election was decided by only 153 votes, suggesting fragility that petitions could exploit even if the by-election margin is larger. ([en.wikipedia.org](https://en.wikipedia.org/wiki/2026_Lamag_by-election?utm_source=openai))"
+      }, {
+        "name" : "Sabah election-petition environment could trigger more by-elections",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Warisan and others have noted that election petitions could trigger additional by-elections, reflecting an active petition environment in Sabah. ([malaysiakini.com](https://www.malaysiakini.com/news/766473/?utm_source=openai))"
+      } ],
+      "confidence" : "low"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "low",
+  "range" : [ 0.06, 0.12 ],
+  "synthesis" : "The baseline 4% ensemble suggests a small overturn risk. Considering a credible petition path in Sabah and a litigious environment, I modestly scale the probability upward to about 8%, while acknowledging the large margin and historical rarity of reversals keep the risk well below 15%."
+}

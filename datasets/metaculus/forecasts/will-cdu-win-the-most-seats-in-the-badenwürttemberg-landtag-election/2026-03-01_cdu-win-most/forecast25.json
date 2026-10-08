@@ -1,0 +1,381 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.7,
+      "narrative" : "Starting from the reference-class anchor of CDU’s historical lead, recent polls and seat projections support a CDU edge, though Greens closing the gap and past Greens-led results add downside risk. The synthesis yields a calibrated 70% probability that CDU wins the most seats, with an approximate 60–80% uncertainty range to reflect potential last-minute shifts.",
+      "summary" : [ "Anchor from Baden-Württemberg reference class; CDU has historically been the largest party in most elections, with Greens winning the most seats in 2016 and 2021.", "Late-February polling shows CDU leading or narrowly ahead of Greens, with seat projections commonly placing CDU ahead in total seats.", "Greens have narrowed the gap and Greens’ recent seat wins inject uncertainty, but the current polling and projections still favor CDU overall.", "Posterior calibrated to 70% with an uncertainty band roughly spanning 60–80% probability." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.6,
+          "basis" : "Reference class: Baden-Württemberg Landtag elections (1952–2021). CDU has historically been the largest party in most elections; Greens led in 2016 and 2021, which informs a conservative base probability for CDU."
+        },
+        "factor_updates" : [ {
+          "factor" : "Recent CDU polling lead (late Feb 2026)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Infratest dimap around Feb 25 shows CDU ahead or narrowly ahead (e.g., 28% CDU vs 27% Greens), supporting CDU’s edge in seats."
+        }, {
+          "factor" : "Greens closing the gap in polls",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Greens at 27% vs CDU 28% reduces CDU’s margin and increases risk of parity or Greens overtaking in seat totals."
+        }, {
+          "factor" : "Historical Greens leading in seats (2016, 2021)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Past cycles show Greens can top CDU in seats, injecting downside risk to CDU’s lead despite current polling."
+        }, {
+          "factor" : "Seat-projection consensus backing CDU",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Multiple projections continue to place CDU ahead in total seats, reinforcing the top-seat probability."
+        }, {
+          "factor" : "Market signals aligning with CDU lead",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Market-based forecasts (e.g., Polymarket) indicate CDU favored, providing external corroboration."
+        }, {
+          "factor" : "Turnout and late swing uncertainty",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Turnout dynamics could shift outcomes, but direction remains uncertain at this stage."
+        } ],
+        "synthesis_rationale" : "The posterior of 0.70 is derived by starting from the anchor 0.60 and applying multiple modest updates with mixed directions. The CDU lead in late-February polls and seat projections provides a net positive update, while Greens’ closing gap and historical volatility provide countervailing updates. Calibration accounts for potential overlap among factors and residual uncertainty, yielding a final probability of 0.70 with an estimated range of 0.60–0.80 to reflect plausible last-minute shifts."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.70,\n  \"range_low\": 0.60,\n  \"range_high\": 0.80,\n  \"summary\": [\n    \"Anchor from Baden-Württemberg reference class; CDU has historically been the largest party in most elections, with Greens winning the most seats in 2016 and 2021.\",\n    \"Late-February polling shows CDU leading or narrowly ahead of Greens, with seat projections commonly placing CDU ahead in total seats.\",\n    \"Greens have narrowed the gap and Greens’ recent seat wins inject uncertainty, but the current polling and projections still favor CDU overall.\",\n    \"Posterior calibrated to 70% with an uncertainty band roughly spanning 60–80% probability.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Starting from the reference-class anchor of CDU’s historical lead, recent polls and seat projections support a CDU edge, though Greens closing the gap and past Greens-led results add downside risk. The synthesis yields a calibrated 70% probability that CDU wins the most seats, with an approximate 60–80% uncertainty range to reflect potential last-minute shifts.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.60,\n      \"basis\": \"Reference class: Baden-Württemberg Landtag elections (1952–2021). CDU has historically been the largest party in most elections; Greens led in 2016 and 2021, which informs a conservative base probability for CDU.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Recent CDU polling lead (late Feb 2026)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Infratest dimap around Feb 25 shows CDU ahead or narrowly ahead (e.g., 28% CDU vs 27% Greens), supporting CDU’s edge in seats.\"\n      },\n      {\n        \"factor\": \"Greens closing the gap in polls\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Greens at 27% vs CDU 28% reduces CDU’s margin and increases risk of parity or Greens overtaking in seat totals.\"\n      },\n      {\n        \"factor\": \"Historical Greens leading in seats (2016, 2021)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Past cycles show Greens can top CDU in seats, injecting downside risk to CDU’s lead despite current polling.\"\n      },\n      {\n        \"factor\": \"Seat-projection consensus backing CDU\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Multiple projections continue to place CDU ahead in total seats, reinforcing the top-seat probability.\"\n      },\n      {\n        \"factor\": \"Market signals aligning with CDU lead\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Market-based forecasts (e.g., Polymarket) indicate CDU favored, providing external corroboration.\"\n      },\n      {\n        \"factor\": \"Turnout and late swing uncertainty\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Turnout dynamics could shift outcomes, but direction remains uncertain at this stage.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The posterior of 0.70 is derived by starting from the anchor 0.60 and applying multiple modest updates with mixed directions. The CDU lead in late-February polls and seat projections provides a net positive update, while Greens’ closing gap and historical volatility provide countervailing updates. Calibration accounts for potential overlap among factors and residual uncertainty, yielding a final probability of 0.70 with an estimated range of 0.60–0.80 to reflect plausible last-minute shifts.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.6, 0.8 ]
+    }, {
+      "probability" : 0.7,
+      "narrative" : "Bayesian updating yields a 70% posterior probability that CDU will win the most seats in Baden-Württemberg. The update leans on a current CDU polling lead and CDU-favoring seat projections, tempered by Greens closing the gap and the state's history of Greens-led seats in recent elections, which keeps the outcome uncertain but still CDU-favorable barring last-minute shifts.",
+      "summary" : [ "Latest Infratest dimap polls (Feb 2026) show CDU leading or narrowly ahead of Greens, with seat projections favoring CDU.", "Greens have narrowed the gap, increasing uncertainty about CDU maintaining the edge in total seats.", "Greens previously won the most seats in 2016 and 2021, highlighting historical volatility in Baden-Württemberg.", "Overall, current polling and projections imply CDU is the most likely to win the most seats, but the margin remains slim." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.6,
+          "basis" : "reference class anchor: Baden-Württemberg Landtag elections; historically CDU has often been the largest party, though Greens led in 2016 and 2021, establishing a baseline near 60% prior to updates."
+        },
+        "factor_updates" : [ {
+          "factor" : "Recent CDU polling lead (late Feb 2026)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Infratest dimap polls around Feb 25, 2026 show CDU ahead or narrowly ahead of Greens (e.g., 28% vs 27%), supporting CDU as likely to win the most seats."
+        }, {
+          "factor" : "Greens closing the gap in polls",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Continued Green gains or shrinking margins reduce CDU's margin for capturing the most seats."
+        }, {
+          "factor" : "AfD vote share remains sizable (around 18–20%)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "AfD polling around 18–20% can siphon votes from CDU and compress CDU’s lead in both vote share and seats."
+        }, {
+          "factor" : "Historical volatility: Greens won the most seats in 2016 and 2021",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "The state’s recent history shows Greens can lead in seat count, signaling that CDU’s current lead is not guaranteed to persist and margins can flip."
+        }, {
+          "factor" : "Near-term margin and multi-party seat allocation create uncertainty",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Current polls indicate a tight race with a multi-party field; small shifts in vote shares could change who has the most seats, introducing uncertainty around the anchor."
+        }, {
+          "factor" : "Seat-projection consensus backing CDU",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Multiple seat projections continue to place CDU ahead in total seats, reinforcing the top-seat probability."
+        }, {
+          "factor" : "Market signals aligning with CDU lead",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "Market-based forecasts (e.g., Polymarket summaries) indicate CDU is favored, providing external corroboration."
+        } ],
+        "synthesis_rationale" : "Starting from the anchor of 0.60, the updates cohere around a modest net upward shift due to polling leads and seat projections, tempered by Greens’ narrowing margins, a non-trivial AfD share, and Greens historical ability to lead in seat counts. The resulting posterior of 0.70 reflects these dynamics and assumes no dramatic last-minute shocks; uncertainty remains due to turnout and coalition computation."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.70,\n  \"range_low\": 0.60,\n  \"range_high\": 0.80,\n  \"summary\": [\n    \"Latest Infratest dimap polls (Feb 2026) show CDU leading or narrowly ahead of Greens, with seat projections favoring CDU.\",\n    \"Greens have narrowed the gap, increasing uncertainty about CDU maintaining the edge in total seats.\",\n    \"Greens previously won the most seats in 2016 and 2021, highlighting historical volatility in Baden-Württemberg.\",\n    \"Overall, current polling and projections imply CDU is the most likely to win the most seats, but the margin remains slim.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Bayesian updating yields a 70% posterior probability that CDU will win the most seats in Baden-Württemberg. The update leans on a current CDU polling lead and CDU-favoring seat projections, tempered by Greens closing the gap and the state's history of Greens-led seats in recent elections, which keeps the outcome uncertain but still CDU-favorable barring last-minute shifts.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.60,\n      \"basis\": \"reference class anchor: Baden-Württemberg Landtag elections; historically CDU has often been the largest party, though Greens led in 2016 and 2021, establishing a baseline near 60% prior to updates.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Recent CDU polling lead (late Feb 2026)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Infratest dimap polls around Feb 25, 2026 show CDU ahead or narrowly ahead of Greens (e.g., 28% vs 27%), supporting CDU as likely to win the most seats.\"\n      },\n      {\n        \"factor\": \"Greens closing the gap in polls\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Continued Green gains or shrinking margins reduce CDU's margin for capturing the most seats.\"\n      },\n      {\n        \"factor\": \"AfD vote share remains sizable (around 18–20%)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"AfD polling around 18–20% can siphon votes from CDU and compress CDU’s lead in both vote share and seats.\"\n      },\n      {\n        \"factor\": \"Historical volatility: Greens won the most seats in 2016 and 2021\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"The state’s recent history shows Greens can lead in seat count, signaling that CDU’s current lead is not guaranteed to persist and margins can flip.\"\n      },\n      {\n        \"factor\": \"Near-term margin and multi-party seat allocation create uncertainty\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Current polls indicate a tight race with a multi-party field; small shifts in vote shares could change who has the most seats, introducing uncertainty around the anchor.\"\n      },\n      {\n        \"factor\": \"Seat-projection consensus backing CDU\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Multiple seat projections continue to place CDU ahead in total seats, reinforcing the top-seat probability.\"\n      },\n      {\n        \"factor\": \"Market signals aligning with CDU lead\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Market-based forecasts (e.g., Polymarket summaries) indicate CDU is favored, providing external corroboration.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from the anchor of 0.60, the updates cohere around a modest net upward shift due to polling leads and seat projections, tempered by Greens’ narrowing margins, a non-trivial AfD share, and Greens historical ability to lead in seat counts. The resulting posterior of 0.70 reflects these dynamics and assumes no dramatic last-minute shocks; uncertainty remains due to turnout and coalition computation.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.6, 0.8 ]
+    }, {
+      "probability" : 0.65,
+      "narrative" : "Current pre-election indicators tilt toward CDU winning the most seats, reinforced by recent polling and seat projections. The Greens’ past gains and ongoing volatility keep the outcome uncertain, but the weighting of polls and projections supports a calibrated probability around 0.65 for CDU securing the most seats, with a range that accommodates turnout and late shifts.",
+      "summary" : [ "Late-February 2026 polls show CDU ahead or narrowly ahead of Greens, with seat projections often placing CDU on top.", " Greens have a credible historical track record of leading seats in 2016 and 2021, creating upside risk to CDU’s advantage.", "AfD’s sizable share and multi-party fragmentation introduce uncertainty about seat allocation and the margin of CDU’s lead.", "Turnout dynamics and late-stage political developments remain the key sources of potential movement, justifying a calibrated but still favorable probability for CDU." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.6,
+          "basis" : "Long-run reference class: Baden-Württemberg Landtag elections where CDU has historically been the largest party, with Greens breaking that pattern in 2016 and 2021; anchor probability reflects baseline historical dominance tempered by recent deviations."
+        },
+        "factor_updates" : [ {
+          "factor" : "Recent CDU polling lead (late Feb 2026)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Infratest dimap polls around Feb 25, 2026 show CDU ahead or narrowly ahead of Greens (e.g., 28% vs 27%), and seat projections favor CDU, supporting the edge."
+        }, {
+          "factor" : "Greens closing the gap in polls",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Greens narrowing the margin increases the risk of a Greens-led seat count, tempering the CDU advantage."
+        }, {
+          "factor" : "AfD vote share remains sizable (around 18–20%)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "AfD siphons votes from CDU and can compress CDU’s lead in both vote share and seats, introducing downside risk."
+        }, {
+          "factor" : "Historical volatility: Greens won the most seats in 2016 and 2021",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Recent history shows the Greens can lead in seat count, implying the CDU edge is not guaranteed."
+        }, {
+          "factor" : "Near-term seat projection consensus backing CDU",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Multiple seat projections place CDU ahead, reinforcing the top-seat probability despite near-term uncertainties."
+        } ],
+        "synthesis_rationale" : "The final probability reflects a balancing of a CDU lead signal from current polls and seat projections against Greens’ historical strength and the risk from AfD fragmentation. The range captures potential turnout swings and last-minute developments; the calibration intentionally hedges toward CDU strength while acknowledging meaningful upside and downside risks."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.65,\n  \"range_low\": 0.55,\n  \"range_high\": 0.75,\n  \"summary\": [\n    \"Late-February 2026 polls show CDU ahead or narrowly ahead of Greens, with seat projections often placing CDU on top.\",\n    \" Greens have a credible historical track record of leading seats in 2016 and 2021, creating upside risk to CDU’s advantage.\",\n    \"AfD’s sizable share and multi-party fragmentation introduce uncertainty about seat allocation and the margin of CDU’s lead.\",\n    \"Turnout dynamics and late-stage political developments remain the key sources of potential movement, justifying a calibrated but still favorable probability for CDU.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Current pre-election indicators tilt toward CDU winning the most seats, reinforced by recent polling and seat projections. The Greens’ past gains and ongoing volatility keep the outcome uncertain, but the weighting of polls and projections supports a calibrated probability around 0.65 for CDU securing the most seats, with a range that accommodates turnout and late shifts.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.60,\n      \"basis\": \"Long-run reference class: Baden-Württemberg Landtag elections where CDU has historically been the largest party, with Greens breaking that pattern in 2016 and 2021; anchor probability reflects baseline historical dominance tempered by recent deviations.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Recent CDU polling lead (late Feb 2026)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Infratest dimap polls around Feb 25, 2026 show CDU ahead or narrowly ahead of Greens (e.g., 28% vs 27%), and seat projections favor CDU, supporting the edge.\"\n      },\n      {\n        \"factor\": \"Greens closing the gap in polls\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Greens narrowing the margin increases the risk of a Greens-led seat count, tempering the CDU advantage.\"\n      },\n      {\n        \"factor\": \"AfD vote share remains sizable (around 18–20%)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"AfD siphons votes from CDU and can compress CDU’s lead in both vote share and seats, introducing downside risk.\"\n      },\n      {\n        \"factor\": \"Historical volatility: Greens won the most seats in 2016 and 2021\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Recent history shows the Greens can lead in seat count, implying the CDU edge is not guaranteed.\"\n      },\n      {\n        \"factor\": \"Near-term seat projection consensus backing CDU\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Multiple seat projections place CDU ahead, reinforcing the top-seat probability despite near-term uncertainties.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The final probability reflects a balancing of a CDU lead signal from current polls and seat projections against Greens’ historical strength and the risk from AfD fragmentation. The range captures potential turnout swings and last-minute developments; the calibration intentionally hedges toward CDU strength while acknowledging meaningful upside and downside risks.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.55, 0.75 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.6837829381611915,
+      "range" : [ 0.65, 0.7 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.7015914608300258,
+    "raw-posterior" : 0.7015914608300258,
+    "capped" : false,
+    "prior" : 0.6,
+    "factors" : [ {
+      "name" : "Greens closing gap (late Feb 2026)",
+      "p-yes" : 0.45,
+      "p-no" : 0.55,
+      "bf" : 0.8181818181818181
+    }, {
+      "name" : "Turnout and late swing uncertainty",
+      "p-yes" : 0.5,
+      "p-no" : 0.5,
+      "bf" : 1.0
+    }, {
+      "name" : "Near-term margin and multi-party seat allocation create uncertainty",
+      "p-yes" : 0.5,
+      "p-no" : 0.5,
+      "bf" : 1.0
+    }, {
+      "name" : "Historical pattern of Greens winning the most seats in 2016 and 2021",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Greens closing gap (late Feb 2026 Infratest/INSa)",
+      "p-yes" : 0.45,
+      "p-no" : 0.55,
+      "bf" : 0.8181818181818181
+    }, {
+      "name" : "Greens leadership transition (Kretschmann stepping down; Cem Özdemir candidate)",
+      "p-yes" : 0.4,
+      "p-no" : 0.6,
+      "bf" : 0.6666666666666667
+    }, {
+      "name" : "Narrow CDU lead in latest Infratest dimap poll (Feb 25, 2026)",
+      "p-yes" : 0.68,
+      "p-no" : 0.32,
+      "bf" : 2.125
+    }, {
+      "name" : "Seat-projection consensus backing CDU",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "CDU polling lead (Infratest dimap Feb 25, 2026)",
+      "p-yes" : 0.68,
+      "p-no" : 0.32,
+      "bf" : 2.125
+    }, {
+      "name" : "AfD vote share remains sizable (around 18–20%)",
+      "p-yes" : 0.4,
+      "p-no" : 0.6,
+      "bf" : 0.6666666666666667
+    }, {
+      "name" : "Historical volatility: Greens won the most seats in 2016 and 2021",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Recent CDU polling lead (late Feb 2026)",
+      "p-yes" : 0.75,
+      "p-no" : 0.25,
+      "bf" : 3.0
+    }, {
+      "name" : "Greens closing the gap in polls",
+      "p-yes" : 0.55,
+      "p-no" : 0.45,
+      "bf" : 1.2222222222222223
+    }, {
+      "name" : "Market signals aligning with CDU lead",
+      "p-yes" : 0.6,
+      "p-no" : 0.4,
+      "bf" : 1.4999999999999998
+    }, {
+      "name" : "Greens closing the gap and mounting challenge to CDU",
+      "p-yes" : 0.45,
+      "p-no" : 0.55,
+      "bf" : 0.8181818181818181
+    } ]
+  },
+  "question" : "Will CDU win the most seats in the Baden-Württemberg Landtag election?",
+  "probability" : 0.63,
+  "summary" : [ "The ensemble suggests CDU leading, but objections identify credible paths for Greens to overtake through turnout shifts and vote distribution.", "AfD siphoning and polling volatility add downside risk to CDU securing the most seats.", "Historical pattern shows Greens have led seat counts in two of the last three elections, injecting uncertainty into a clean CDU win.", "Overall, CDU remains the more likely outcome, but the margin is narrower than the ensemble alone implies." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.68,
+    "critique_assessment" : "Objections are valid and reveal non-negligible downside risks to CDU retaining the most seats, including Greens overtaking due to turnout and vote distribution shifts and a sizable AfD share affecting seat allocation.",
+    "adjustment" : "Probability adjusted downward from 0.68 to 0.63 to reflect downside risks highlighted by objections; the range 0.55–0.71 captures remaining uncertainty without invoking implausible scenarios."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.5499999999999999,
+      "reference-class" : "Baden-Württemberg Landtag elections (1952–2021): probability that CDU wins the most seats in the state parliament; CDU has historically been the largest party in most elections, while Greens won the most seats in 2016 and 2021.",
+      "sources" : [ {
+        "url" : "https://www.landtag-bw.de/de/der-landtag/parlament/fruehere-landtagswahlen/landtagswahl-2021",
+        "claim" : "Endgültige Ergebnisse der Landtagswahl 2021: Greens 32.6% (58 seats), CDU 24.1% (42 seats)."
+      }, {
+        "url" : "https://www.statistik-bw.de/Wahlen/Landtag/SitzVt.jsp",
+        "claim" : "Sitzverteilung 2021: Greens 58, CDU 42, AfD 17, SPD 19, FDP 18."
+      }, {
+        "url" : "https://im.baden-wuerttemberg.de/de/service/presse-und-oeffentlichkeitsarbeit/pressemitteilung/pid/amtliches-endergebnis-der-landtagswahl-2021",
+        "claim" : "Amtliches Endergebnis 2021: Greens 32.6%, CDU 24.1%."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2016_Baden-W%C3%BCrttemberg_state_election",
+        "claim" : "2016: Greens won the most seats (47) ahead of CDU (42)."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2021_Baden-W%C3%BCrttemberg_state_election",
+        "claim" : "2021: Greens won the most seats (58) ahead of CDU (42)."
+      }, {
+        "url" : "https://www.landtag-bw.de/de/der-landtag/parlament/fruehere-landtagswahlen/landtagswahl-2011",
+        "claim" : "2011: CDU won the most seats (60) ahead of Greens (36)."
+      }, {
+        "url" : "https://www.swp.de/baden-wuerttemberg/landtagswahl-bw-2026-laut-umfragen-schmilzt-der-vorsprung-der-cdu-afd-ueberholt-gruene-78383704.html",
+        "claim" : "May 2025 Infratest dimap poll: CDU ahead of Greens; CDU around 28%, Greens around 21–23%."
+      }, {
+        "url" : "https://www.welt.de/politik/deutschland/article699ca126ee35d0f0647c5227/umfrage-cdu-faellt-in-baden-wuerttemberg-auf-schwaechsten-wert-seit-mitte-2023-gruene-holen-auf.html",
+        "claim" : "February 2026 INSA poll: CDU 28%, Greens 22%, AfD 20%."
+      }, {
+        "url" : "https://polychances.com/polymarket-events/baden-wrttemberg-parliamentary-elections-2nd-place/",
+        "claim" : "Polymarket indicates Greens are unlikely to be first in seat count; predicts a lead for CDU based on market odds."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2011_Baden-W%C3%BCrttemberg_state_election",
+        "claim" : "In 2011, CDU was the largest party by seats (CDU 60 seats vs Greens 36)."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2016_Baden-W%C3%BCrttemberg_state_election",
+        "claim" : "In 2016, Greens were the largest party by seats (Greens 47 vs CDU 42)."
+      }, {
+        "url" : "https://en.wikipedia.org/wiki/2021_Baden-W%C3%BCrttemberg_state_election",
+        "claim" : "In 2021, Greens were the largest party by seats (Greens 58 vs CDU 42)."
+      }, {
+        "url" : "https://swp.de/baden-wuerttemberg/landtagswahl-bw-2026-gruene-holen-auf-kopf-an-kopf-rennen-mit-cdu-in-baden-wuerttemberg-78674884.html",
+        "claim" : "ARD-Deutschlandtrend ahead of the 2026 election shows CDU around 28% and Greens around 27%."
+      }, {
+        "url" : "https://www.fr.de/politik/bw-landtagswahl-2026-umfrage-sieht-gruene-immer-starker-zr-94189197.html",
+        "claim" : "FR reports ARD/Infratest dimap polling showing CDU 28% vs Greens 27% ahead of the 2026 election."
+      }, {
+        "url" : "https://de.wikipedia.org/wiki/Landtagswahl_in_Baden-W%C3%BCrttemberg_2026",
+        "claim" : "Wikipedia compilation of 2026 polls shows CDU around high 20s and Greens around mid-20s to upper 20s across multiple surveys."
+      }, {
+        "url" : "https://politpro.eu/en/baden-wuerttemberg/opinion-polls/infratest-dimap-2026-02-25/state-election",
+        "claim" : "Infratest dimap (Feb. 25, 2026) shows CDU 28%, Greens 27%; seat projection CDU 36 seats, Greens 28; majority threshold 61 seats."
+      }, {
+        "url" : "https://politpro.eu/en/baden-wuerttemberg/opinion-polls/infratest-dimap-2026-01-20/state-election",
+        "claim" : "Infratest dimap (Jan. 20, 2026) shows CDU 29%, Greens 23%; seat projection CDU 37 seats, Greens 35."
+      }, {
+        "url" : "https://www.swp.de/baden-wuerttemberg/landtagswahl-2026-neue-insa-umfrage-bestaetigt-aufholjagd-der-gruenen-78667008.html",
+        "claim" : "Insa poll (Feb. 23, 2026) shows Greens at 22%, CDU at 28%; CDU remains the strongest party; seat projections place CDU ahead."
+      }, {
+        "url" : "https://www.ntv.de/infografik/Infografik-id30409438.html",
+        "claim" : "Infografik (Feb. 26, 2026) summarizing Infratest dimap results for BaWü with CDU leading and corresponding seat projections."
+      } ],
+      "confidence" : "high"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Recent CDU polling lead (late Feb 2026)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Infratest dimap polls around Feb 25, 2026 show CDU ahead or narrowly ahead of Greens (e.g., 28% vs 27%), supporting CDU as likely to win the most seats."
+      }, {
+        "name" : "Greens closing the gap in polls",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Continued Green gains or shrinking margins reduce CDU's margin for capturing the most seats."
+      }, {
+        "name" : "Historical pattern of Greens winning the most seats in 2016 and 2021",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The state's recent history includes Greens with the largest seat share in two of the last three elections, injecting uncertainty into CDU's lead."
+      }, {
+        "name" : "Seat-projection consensus backing CDU",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Multiple seat projections continue to place CDU ahead in total seats, reinforcing the top-seat probability."
+      }, {
+        "name" : "Market signals aligning with CDU lead",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Market-based forecasts (e.g., Polymarket summaries) indicate CDU is favored, providing external corroboration."
+      }, {
+        "name" : "Turnout and late swing uncertainty",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Turnout dynamics and last-minute events could shift outcomes, but the direction remains uncertain at this stage."
+      }, {
+        "name" : "Narrow CDU lead in latest Infratest dimap poll (Feb 25, 2026)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "CDU polls at 28% vs Greens 27% with CDU also leading in seat projections (CDU ~37 seats vs Greens ~35), suggesting the probability of CDU holding the most seats remains elevated above the anchor."
+      }, {
+        "name" : "Greens closing the gap and mounting challenge to CDU",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Greens have moved closer to CDU (27% vs 28% in Feb 25 polling) after previously lagging, increasing the risk that Greens could overtake under favorable turnout or late dynamics."
+      }, {
+        "name" : "AfD vote share remains sizable (around 18–20%)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "AfD polling around 18–20% can siphon votes from CDU and compress CDU’s lead in both vote share and seats."
+      }, {
+        "name" : "Historical volatility: Greens won the most seats in 2016 and 2021",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "The state’s recent history shows Greens can lead in seat count, signaling that CDU’s current lead is not guaranteed to persist and margins can flip."
+      }, {
+        "name" : "Near-term margin and multi-party seat allocation create uncertainty",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Current polls indicate a tight race with a multi-party field; small shifts in vote shares could change who has the most seats, introducing uncertainty around the anchor."
+      }, {
+        "name" : "CDU polling lead (Infratest dimap Feb 25, 2026)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Latest Infratest dimap shows CDU at 28% with Greens at 27%, and a CDU-led seat projection; this sustains CDU's edge in the race for the most seats. ([infratest-dimap.de](https://www.infratest-dimap.de/umfragen-analysen/bundeslaender/baden-wuerttemberg/laendertrend/2026/februar/?utm_source=openai))"
+      }, {
+        "name" : "Greens closing gap (late Feb 2026 Infratest/INSa)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Greens up by 4 points to 27% in the latest poll, narrowing CDU's lead and increasing uncertainty about CDU securing the most seats. ([politpro.eu](https://politpro.eu/en/baden-wuerttemberg/opinion-polls/infratest-dimap-2026-02-25/state-election?utm_source=openai))"
+      }, {
+        "name" : "Greens leadership transition (Kretschmann stepping down; Cem Özdemir candidate)",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Greens have elevated Cem Özdemir as top candidate with Kretschmann not running; this introduces short-term uncertainty but does not clearly shift poll advantage yet. ([swr.de](https://www.swr.de/swraktuell/baden-wuerttemberg/landtagswahl-2026-100.html?utm_source=openai))"
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "medium",
+  "range" : [ 0.55, 0.71 ],
+  "synthesis" : "The ensemble places CDU as the likeliest winner of the most seats in Baden-Württemberg, at 68%. However, objections about Greens closing the gap, AfD siphoning votes, and polling uncertainty introduce meaningful downside risk, justifying a downward calibration to 0.63 with a plausible 0.55–0.71 range."
+}

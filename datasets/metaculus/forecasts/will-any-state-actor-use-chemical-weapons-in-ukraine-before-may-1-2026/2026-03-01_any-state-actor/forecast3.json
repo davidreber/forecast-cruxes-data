@@ -1,0 +1,409 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.58,
+      "narrative" : "Starting from a baseline near 12%, converging evidence from OPCW-confirmed CS presence and intelligence on expanding Russian chemical use pushes the probability higher. Deterrence and monitoring temper the signal, while attribution uncertainty and battlefield dynamics keep the estimate uncertain, yielding a calibrated 0.58 with moderate confidence.",
+      "summary" : [ "Bayesian uplift from OPCW CS findings and credible intelligence on expanding Russian chemical-weapon activity increases the probability above the base anchor.", "International deterrence mechanisms (sanctions, monitoring) temper the rise, keeping the estimate below high confidence.", "Attribution uncertainty and escalation dynamics introduce remaining uncertainty, preserving non-negligible risk within a calibrated range.", "Posterior probability is calibrated to 58% for any state actor using chemical weapons in Ukraine before May 1, 2026." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.12,
+          "basis" : "Reference-class anchor drawn from near-term forecasts (e.g., 12% for any state actor using chemical weapons in Ukraine before May 1, 2026) and the historical base rate for state chemical-weapons use in the Ukraine conflict."
+        },
+        "factor_updates" : [ {
+          "factor" : "OPCW-confirmed presence of riot-control agents CS on Ukrainian frontlines",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "OPCW laboratory analyses confirmed CS in samples from frontline incidents across Oct 2024 and subsequent events, signaling ongoing chemical-weapons activity and higher escalation potential."
+        }, {
+          "factor" : "Intelligence reports of expanding Russian chemical-weapons deployments (chloropicrin and CS)",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Dutch and German intelligence publicly describe increasing and normalized chemical-agent use by Russia, materially elevating the probability of state-level deployment within the window."
+        }, {
+          "factor" : "EU sanctions and intensified monitoring/deterrence",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Sanctions and reinforced norms raise costs and stigma, dampening the incentives for chemical-weapons use."
+        }, {
+          "factor" : "Attribution uncertainty surrounding chemical incidents",
+          "direction" : "down",
+          "magnitude" : "weak",
+          "rationale" : "Ambiguity about perpetrators weakens signal strength and reduces certainty about which state actor might act."
+        }, {
+          "factor" : "Escalation pressure from battlefield dynamics",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Prolonged and intensified fighting increases incentives to employ chemical signals as a battlefield tactic."
+        } ],
+        "synthesis_rationale" : "The posterior of 0.58 reflects a Bayesian uplift dominated by strong upward signals from OPCW CS findings and credible intelligence of expanding Russian usage, tempered by downward pressures from deterrence and attribution uncertainty, with escalation dynamics further contributing to the non-negligible risk. Correlations among factors were treated conservatively to avoid overadjustment, yielding a calibrated mid-range probability."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.58,\n  \"range_low\": 0.46,\n  \"range_high\": 0.70,\n  \"summary\": [\n    \"Bayesian uplift from OPCW CS findings and credible intelligence on expanding Russian chemical-weapon activity increases the probability above the base anchor.\",\n    \"International deterrence mechanisms (sanctions, monitoring) temper the rise, keeping the estimate below high confidence.\",\n    \"Attribution uncertainty and escalation dynamics introduce remaining uncertainty, preserving non-negligible risk within a calibrated range.\",\n    \"Posterior probability is calibrated to 58% for any state actor using chemical weapons in Ukraine before May 1, 2026.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Starting from a baseline near 12%, converging evidence from OPCW-confirmed CS presence and intelligence on expanding Russian chemical use pushes the probability higher. Deterrence and monitoring temper the signal, while attribution uncertainty and battlefield dynamics keep the estimate uncertain, yielding a calibrated 0.58 with moderate confidence.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.12,\n      \"basis\": \"Reference-class anchor drawn from near-term forecasts (e.g., 12% for any state actor using chemical weapons in Ukraine before May 1, 2026) and the historical base rate for state chemical-weapons use in the Ukraine conflict.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"OPCW-confirmed presence of riot-control agents CS on Ukrainian frontlines\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"OPCW laboratory analyses confirmed CS in samples from frontline incidents across Oct 2024 and subsequent events, signaling ongoing chemical-weapons activity and higher escalation potential.\"\n      },\n      {\n        \"factor\": \"Intelligence reports of expanding Russian chemical-weapons deployments (chloropicrin and CS)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Dutch and German intelligence publicly describe increasing and normalized chemical-agent use by Russia, materially elevating the probability of state-level deployment within the window.\"\n      },\n      {\n        \"factor\": \"EU sanctions and intensified monitoring/deterrence\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Sanctions and reinforced norms raise costs and stigma, dampening the incentives for chemical-weapons use.\"\n      },\n      {\n        \"factor\": \"Attribution uncertainty surrounding chemical incidents\",\n        \"direction\": \"down\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Ambiguity about perpetrators weakens signal strength and reduces certainty about which state actor might act.\"\n      },\n      {\n        \"factor\": \"Escalation pressure from battlefield dynamics\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Prolonged and intensified fighting increases incentives to employ chemical signals as a battlefield tactic.\"\n      }\n    ],\n    \"synthesis_rationale\": \"The posterior of 0.58 reflects a Bayesian uplift dominated by strong upward signals from OPCW CS findings and credible intelligence of expanding Russian usage, tempered by downward pressures from deterrence and attribution uncertainty, with escalation dynamics further contributing to the non-negligible risk. Correlations among factors were treated conservatively to avoid overadjustment, yielding a calibrated mid-range probability.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.46, 0.7 ]
+    }, {
+      "probability" : 0.58,
+      "narrative" : "Recent OPCW findings of CS on frontlines and credible intelligence about expanding Russian chemical-weapon use raise the posterior risk above the base anchor, landing near 58%. Deterrence and monitoring temper the signal, while attribution ambiguity maintains uncertainty about who would act, yielding a cautious, non-negligible probability for use before May 1, 2026.",
+      "summary" : [ "OPCW-confirmed presence of riot-control agents (CS) on Ukrainian frontlines across multiple incidents (Nov 2024, Feb 2025) signals ongoing chemical-weapons activity.", "Intelligence reports from European agencies describe expanding and normalized Russian chemical-weapons deployments (chloropicrin and CS), elevating the assessed risk.", "Escalation in battlefield dynamics increases opportunities for chemical-use signaling, while deterrence measures (sanctions, monitoring) exert downward pressure on probability.", "Attribution uncertainty dampens signal clarity, keeping the probability non-trivial but not where confidence would be high." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.12,
+          "basis" : "Baseline near-term forecast for state use of chemical weapons in Ukraine (12%), used as an anchor from published forecasts (e.g., Metaculus) to frame the reference class."
+        },
+        "factor_updates" : [ {
+          "factor" : "OPCW-confirmed presence of riot-control agents CS on Ukrainian frontlines (Nov 2024, Feb 2025 reports)",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Independent lab confirmations of CS in frontline incidents indicate ongoing chemical-weapons activity, raising the likelihood of state involvement within the window."
+        }, {
+          "factor" : "European intelligence reports of expanding Russian chemical-weapons deployments (chloropicrin and CS)",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Credible intelligence suggesting increased use and normalization by Russia increases the probability of any state actor employing chemical weapons."
+        }, {
+          "factor" : "Escalating conflict dynamics and repeated incidents increase opportunity for chemical-weapons use",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "More intense fighting creates incentives and opportunities for signaling chemical-use during offensives or stalemates."
+        }, {
+          "factor" : "International deterrence, sanctions, and OPCW oversight reducing incentives to use chemical weapons",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Raising costs and strengthening norms can deter use, tempering the probability despite signaling signals."
+        }, {
+          "factor" : "Attribution uncertainty (OPCW findings do not identify perpetrators)",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Ambiguity about who would act dampens the decisiveness of the signal and keeps the forecast conditional."
+        } ],
+        "synthesis_rationale" : "Starting from a 12% anchor, the combination of strong upward signals from OPCW findings and credible intelligence increased the posterior, while deterrence and attribution uncertainty provided downward and uncertain corrections. The calibrated 0.58 reflects a non-negligible, but not high-certainty, risk given correlated evidence and remaining attribution ambiguity."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.58,\n  \"range_low\": 0.46,\n  \"range_high\": 0.70,\n  \"summary\": [\n    \"OPCW-confirmed presence of riot-control agents (CS) on Ukrainian frontlines across multiple incidents (Nov 2024, Feb 2025) signals ongoing chemical-weapons activity.\",\n    \"Intelligence reports from European agencies describe expanding and normalized Russian chemical-weapons deployments (chloropicrin and CS), elevating the assessed risk.\",\n    \"Escalation in battlefield dynamics increases opportunities for chemical-use signaling, while deterrence measures (sanctions, monitoring) exert downward pressure on probability.\",\n    \"Attribution uncertainty dampens signal clarity, keeping the probability non-trivial but not where confidence would be high.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Recent OPCW findings of CS on frontlines and credible intelligence about expanding Russian chemical-weapon use raise the posterior risk above the base anchor, landing near 58%. Deterrence and monitoring temper the signal, while attribution ambiguity maintains uncertainty about who would act, yielding a cautious, non-negligible probability for use before May 1, 2026.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.12,\n      \"basis\": \"Baseline near-term forecast for state use of chemical weapons in Ukraine (12%), used as an anchor from published forecasts (e.g., Metaculus) to frame the reference class.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"OPCW-confirmed presence of riot-control agents CS on Ukrainian frontlines (Nov 2024, Feb 2025 reports)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Independent lab confirmations of CS in frontline incidents indicate ongoing chemical-weapons activity, raising the likelihood of state involvement within the window.\"\n      },\n      {\n        \"factor\": \"European intelligence reports of expanding Russian chemical-weapons deployments (chloropicrin and CS)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Credible intelligence suggesting increased use and normalization by Russia increases the probability of any state actor employing chemical weapons.\"\n      },\n      {\n        \"factor\": \"Escalating conflict dynamics and repeated incidents increase opportunity for chemical-weapons use\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"More intense fighting creates incentives and opportunities for signaling chemical-use during offensives or stalemates.\"\n      },\n      {\n        \"factor\": \"International deterrence, sanctions, and OPCW oversight reducing incentives to use chemical weapons\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Raising costs and strengthening norms can deter use, tempering the probability despite signaling signals.\"\n      },\n      {\n        \"factor\": \"Attribution uncertainty (OPCW findings do not identify perpetrators)\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Ambiguity about who would act dampens the decisiveness of the signal and keeps the forecast conditional.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a 12% anchor, the combination of strong upward signals from OPCW findings and credible intelligence increased the posterior, while deterrence and attribution uncertainty provided downward and uncertain corrections. The calibrated 0.58 reflects a non-negligible, but not high-certainty, risk given correlated evidence and remaining attribution ambiguity.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.46, 0.7 ]
+    }, {
+      "probability" : 0.5,
+      "narrative" : "Starting from a 12% anchor, recent OPCW findings and credible intelligence suggest higher risk of state use of chemical weapons in Ukraine before 2026. The calibrated probability around 0.50 reflects substantial but uncertain risk, tempered by deterrence and attribution ambiguity.",
+      "summary" : [ "Anchor is 0.12 for near-term state chemical weapons use; new evidence motivates re-estimation upward.", "OPCW-confirmed presence of CS on Ukrainian frontlines (Nov 2024, Feb 2025) signals ongoing chemical-weapons activity with potential for escalation.", "European intelligence reports indicate expansion and normalization of chemical-weapons deployments by Russia, increasing risk before May 1, 2026.", "Deterrence measures and monitoring dampen the signal somewhat, but attribution uncertainty and escalation dynamics keep the probability non-negligible." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.12,
+          "basis" : "reference_class: Historical base rate for state use of chemical weapons in the Ukraine conflict; anchor anchored to public forecasts (Metaculus) for near-term risk."
+        },
+        "factor_updates" : [ {
+          "factor" : "OPCW-confirmed presence of riot-control agents (CS) on Ukrainian frontlines",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "OPCW analyses confirmed CS in frontline incidents and related samples, signaling ongoing chemical-weapons activity with potential for escalation."
+        }, {
+          "factor" : "Intelligence reports of expanding Russian chemical-weapons usage (chloropicrin and CS)",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Dutch and German intelligence publicly assert increased use and normalization, elevating risk of state deployment before 2026."
+        }, {
+          "factor" : "Escalation dynamics of conflict increasing opportunities",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "More intense fighting raises incentives to employ chemical agents as battlefield tools."
+        }, {
+          "factor" : "International deterrence and monitoring reducing incentives",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Sanctions and OPCW oversight raise costs and stigma, dampening likelihood of use."
+        }, {
+          "factor" : "Attribution uncertainty of incidents",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Inability to assign perpetrators reduces signal strength about which state actor might act, moderating the update."
+        }, {
+          "factor" : "Broader normative constraints and past effects on behavior",
+          "direction" : "down",
+          "magnitude" : "low",
+          "rationale" : "Ongoing international norms against chemical weapons may deter but not fully prevent use in high-pressure contexts."
+        } ],
+        "synthesis_rationale" : "Two strong upward updates from OPCW findings and credible intelligence push the baseline up from 0.12 toward the mid-range; deterrence and attribution uncertainty provide countervailing pressure. The final estimate of 0.50 with a 0.35–0.70 range reflects substantial uncertainty, with calibration aligning to historical performance in similar conflict-risk forecasting."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.50,\n  \"range_low\": 0.35,\n  \"range_high\": 0.70,\n  \"summary\": [\n    \"Anchor is 0.12 for near-term state chemical weapons use; new evidence motivates re-estimation upward.\",\n    \"OPCW-confirmed presence of CS on Ukrainian frontlines (Nov 2024, Feb 2025) signals ongoing chemical-weapons activity with potential for escalation.\",\n    \"European intelligence reports indicate expansion and normalization of chemical-weapons deployments by Russia, increasing risk before May 1, 2026.\",\n    \"Deterrence measures and monitoring dampen the signal somewhat, but attribution uncertainty and escalation dynamics keep the probability non-negligible.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Starting from a 12% anchor, recent OPCW findings and credible intelligence suggest higher risk of state use of chemical weapons in Ukraine before 2026. The calibrated probability around 0.50 reflects substantial but uncertain risk, tempered by deterrence and attribution ambiguity.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.12,\n      \"basis\": \"reference_class: Historical base rate for state use of chemical weapons in the Ukraine conflict; anchor anchored to public forecasts (Metaculus) for near-term risk.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"OPCW-confirmed presence of riot-control agents (CS) on Ukrainian frontlines\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"OPCW analyses confirmed CS in frontline incidents and related samples, signaling ongoing chemical-weapons activity with potential for escalation.\"\n      },\n      {\n        \"factor\": \"Intelligence reports of expanding Russian chemical-weapons usage (chloropicrin and CS)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Dutch and German intelligence publicly assert increased use and normalization, elevating risk of state deployment before 2026.\"\n      },\n      {\n        \"factor\": \"Escalation dynamics of conflict increasing opportunities\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"More intense fighting raises incentives to employ chemical agents as battlefield tools.\"\n      },\n      {\n        \"factor\": \"International deterrence and monitoring reducing incentives\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Sanctions and OPCW oversight raise costs and stigma, dampening likelihood of use.\"\n      },\n      {\n        \"factor\": \"Attribution uncertainty of incidents\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Inability to assign perpetrators reduces signal strength about which state actor might act, moderating the update.\"\n      },\n      {\n        \"factor\": \"Broader normative constraints and past effects on behavior\",\n        \"direction\": \"down\",\n        \"magnitude\": \"low\",\n        \"rationale\": \"Ongoing international norms against chemical weapons may deter but not fully prevent use in high-pressure contexts.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Two strong upward updates from OPCW findings and credible intelligence push the baseline up from 0.12 toward the mid-range; deterrence and attribution uncertainty provide countervailing pressure. The final estimate of 0.50 with a 0.35–0.70 range reflects substantial uncertainty, with calibration aligning to historical performance in similar conflict-risk forecasting.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.35, 0.7 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.5535889455540473,
+      "range" : [ 0.5, 0.58 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.576923076923077,
+    "raw-posterior" : 0.9999990929735746,
+    "capped" : true,
+    "prior" : 0.12,
+    "factors" : [ {
+      "name" : "Confirmed presence/usage of riot-control agent CS and chloropicrin by Russian forces in Ukraine",
+      "p-yes" : 0.65,
+      "p-no" : 0.25,
+      "bf" : 2.6
+    }, {
+      "name" : "International deterrence and monitoring reducing incentives",
+      "p-yes" : 0.4,
+      "p-no" : 0.6,
+      "bf" : 0.6666666666666667
+    }, {
+      "name" : "Escalating conflict dynamics and repeated incidents increase opportunity for chemical-weapons use",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "OPCW monitors for chemical weapons threats in Ukraine and has trained Ukrainian responders; formal attribution remains separate",
+      "p-yes" : 0.6,
+      "p-no" : 0.4,
+      "bf" : 1.4999999999999998
+    }, {
+      "name" : "International deterrence, sanctions, and OPCW oversight reducing incentives to use chemical weapons",
+      "p-yes" : 0.25,
+      "p-no" : 0.7,
+      "bf" : 0.35714285714285715
+    }, {
+      "name" : "OPCW confirmed presence/usage of riot-control agent CS and chloropicrin by Russian forces in Ukraine",
+      "p-yes" : 0.75,
+      "p-no" : 0.25,
+      "bf" : 3.0
+    }, {
+      "name" : "European intelligence reports of expanding Russian chemical-weapons deployments (chloropicrin and CS)",
+      "p-yes" : 0.75,
+      "p-no" : 0.2,
+      "bf" : 3.75
+    }, {
+      "name" : "Al Jazeera reports European spy agencies warn that Russia's use of chemical weapons in Ukraine is expanding, including alleged chloropicrin deployments",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "Intelligence assessments expanding and normalized",
+      "p-yes" : 0.78,
+      "p-no" : 0.22,
+      "bf" : 3.5454545454545454
+    }, {
+      "name" : "OPCW third TAV findings confirm CS presence in samples related to a February 2025 incident (June 2025)",
+      "p-yes" : 0.68,
+      "p-no" : 0.28,
+      "bf" : 2.4285714285714284
+    }, {
+      "name" : "International deterrence and monitoring (OPCW oversight and sanctions) reducing incentives to use chemical weapons",
+      "p-yes" : 0.35,
+      "p-no" : 0.65,
+      "bf" : 0.5384615384615384
+    }, {
+      "name" : "OPCW finds more chemical weapons use in Ukraine (presence of CS riot-control agent) in investigations conducted in 2024-2025; attribution not determined",
+      "p-yes" : 0.75,
+      "p-no" : 0.25,
+      "bf" : 3.0
+    }, {
+      "name" : "Dutch and German intelligence report increased use of banned chemical weapons in Ukraine, including CS and chloropicrin",
+      "p-yes" : 0.72,
+      "p-no" : 0.28,
+      "bf" : 2.571428571428571
+    }, {
+      "name" : "OPCW-confirmed CS on Ukrainian frontlines (Nov 2024, Feb 2025)",
+      "p-yes" : 0.78,
+      "p-no" : 0.18,
+      "bf" : 4.333333333333334
+    }, {
+      "name" : "OPCW-confirmed presence of CS on Ukrainian frontlines (Nov 2024 and Feb 2025 reports)",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "EU sanctions targeting Russian chemical-weapons-related entities",
+      "p-yes" : 0.4,
+      "p-no" : 0.65,
+      "bf" : 0.6153846153846154
+    }, {
+      "name" : "Intelligence assessments that Russia's chemical weapons usage is expanding and becoming normalized",
+      "p-yes" : 0.8,
+      "p-no" : 0.2,
+      "bf" : 4.0
+    }, {
+      "name" : "Attribution uncertainty (OPCW findings do not identify perpetrators)",
+      "p-yes" : 0.4,
+      "p-no" : 0.6,
+      "bf" : 0.6666666666666667
+    }, {
+      "name" : "OPCW findings of riot-control agent CS on Ukrainian frontlines in 2024–25 indicate non-negligible chemical weapons activity",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "Attribution uncertainty surrounding chemical-incidents (who used CS/chloropicrin)",
+      "p-yes" : 0.45,
+      "p-no" : 0.55,
+      "bf" : 0.8181818181818181
+    }, {
+      "name" : "Intelligence reports expanding Russian chemical-weapons usage (chloropicrin and CS)",
+      "p-yes" : 0.8,
+      "p-no" : 0.2,
+      "bf" : 4.0
+    }, {
+      "name" : "OPCW-confirmed presence of riot-control agents (CS) on Ukrainian frontlines (Nov 2024, Feb 2025 Technical Assistance Visits)",
+      "p-yes" : 0.8,
+      "p-no" : 0.15,
+      "bf" : 5.333333333333334
+    }, {
+      "name" : "EU sanctions three Russian entities after OPCW reports confirming CS-related agents on Ukrainian frontlines",
+      "p-yes" : 0.65,
+      "p-no" : 0.35,
+      "bf" : 1.8571428571428574
+    }, {
+      "name" : "OPCW report confirms CS in samples from three October 2024 incidents along the confrontation lines (Feb 2025)",
+      "p-yes" : 0.7,
+      "p-no" : 0.25,
+      "bf" : 2.8
+    }, {
+      "name" : "The Guardian summarizes mounting chemical-weapon accusations in Ukraine, including CS findings and attribution debates",
+      "p-yes" : 0.4,
+      "p-no" : 0.6,
+      "bf" : 0.6666666666666667
+    }, {
+      "name" : "OPCW median forecast: 12% for risk of use of chemical or biological weapons in the next 12 months",
+      "p-yes" : 0.45,
+      "p-no" : 0.55,
+      "bf" : 0.8181818181818181
+    } ]
+  },
+  "question" : "Will any state actor use chemical weapons in Ukraine before May 1, 2026?",
+  "probability" : 0.63,
+  "summary" : [ "Objections highlight attribution uncertainty, deterrence effects, and misclassification risks, impacting signal strength but not negating it.", "OPCW-confirmed presence of riot-control agents CS in Ukraine frontlines, plus credible intelligence on expanding Russian chemical-weapons usage, provide non-trivial risk that a state actor will use chemical weapons before May 1, 2026.", "Ensemble forecast around 55% is modestly revised upward to reflect converging evidence, while still acknowledging significant uncertainty about perpetrator identification.", "No implausible-threshold scenario is invoked; adjustments are grounded in observed signals and policy context." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.55,
+    "critique_assessment" : "Objections are valid in dampening certainty but do not negate the substantive evidence of chemical-weapon activity; attribution remains a key uncertainty.",
+    "adjustment" : "Raised from 0.55 to 0.63 to reflect converging signals (OPCW CS findings and credible intelligence), with a range 0.56–0.70 to capture uncertainty; no downward adjustment due to implausible-threshold concerns."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.22,
+      "reference-class" : "Historical base rate for state use of chemical weapons in the Ukraine conflict (Russia's 2022 invasion onward), including incidents with riot-control agents CS and chloropicrin in Ukraine.",
+      "sources" : [ {
+        "url" : "https://www.metaculus.com/questions/42119/will-any-state-actor-use-chemical-weapons-in-ukraine-before-may-1-2026/",
+        "claim" : "12% chance that any state actor will use chemical weapons in Ukraine before May 1, 2026."
+      }, {
+        "url" : "https://www.afpc.org/publications/bulletins/russia-reform-monitor/russia-policy-monitor-no-2688",
+        "claim" : "Dutch and German intelligence say Russia's chemical weapons usage in Ukraine has increased and become standardized, with reported deaths and thousands of injuries since Feb 2022."
+      }, {
+        "url" : "https://www.aljazeera.com/news/2025/7/4/russia-expanding-chemical-weapons-use-in-ukraine-say-european-spy-agencies",
+        "claim" : "Al Jazeera reports Dutch and German intelligence allege expanding use of chemical weapons (chloropicrin) in Ukraine."
+      }, {
+        "url" : "https://www.opcw.org/media-centre/news/2025/02/opcw-issues-report-second-technical-assistance-visit-ukraine-following",
+        "claim" : "OPCW confirms presence of CS in three incidents in Ukraine and issued a technical assistance visit report."
+      }, {
+        "url" : "https://armscontrol.org/act/2025-04/news/opcw-finds-more-chemical-weapons-use-ukraine",
+        "claim" : "OPCW findings of CS in Ukraine across multiple incidents; attribution not determined."
+      }, {
+        "url" : "https://www.opcw.org/media-centre/news/2024/11/opcw-issues-report-its-technical-assistance-visit-ukraine-following",
+        "claim" : "OPCW report confirms presence of the riot-control agent CS in samples from an alleged incident on Ukraine's frontlines (Nov 2024)."
+      }, {
+        "url" : "https://www.opcw.org/media-centre/news/2025/02/opcw-issues-report-on-its-second-technical-assistance-visit-ukraine-following-three-incidents",
+        "claim" : "OPCW report confirms CS in samples from three October 2024 incidents along the confrontation lines (Feb 2025)."
+      }, {
+        "url" : "https://www.opcw.org/media-centre/news/2025/06/opcw-issues-report-third-technical-assistance-visit-ukraine-following-an-incident-of-alleged-use-of-toxic-chemicals-as-a-weapon",
+        "claim" : "OPCW third TAV findings confirm CS presence in samples related to a February 2025 incident (June 2025)."
+      }, {
+        "url" : "https://www.eeas.europa.eu/delegations/ukraine/chemical-weapons-eu-sanctions-three-entities-russian-armed-forces-over-use-of-chemical-weapons-ukraine_en",
+        "claim" : "EU sanctions three Russian entities after OPCW reports confirming CS-related agents on Ukrainian frontlines."
+      }, {
+        "url" : "https://apnews.com/article/26a1bea82a7d1a57b581c60683628712",
+        "claim" : "Dutch and German intelligence report increased use of banned chemical weapons in Ukraine, including CS and chloropicrin."
+      }, {
+        "url" : "https://www.theguardian.com/world/2024/dec/17/the-chemical-weapon-accusations-against-the-general-killed-in-moscow",
+        "claim" : "The Guardian summarizes mounting chemical-weapon allegations in Ukraine, including CS findings and attribution debates."
+      }, {
+        "url" : "https://www.swiftcentre.org/publicforecasts/russian-invasion-of-ukraine-outlook",
+        "claim" : "Median forecast: 12% for risk of use of chemical or biological weapons in the next 12 months, with forecasters noting a range from 1% to 23%."
+      }, {
+        "url" : "https://www.armscontrol.org/act/2025-04/news/opcw-finds-more-chemical-weapons-use-ukraine",
+        "claim" : "OPCW found additional chemical weapons use in Ukraine (presence of CS riot-control agent) in investigations conducted in 2024-2025; attribution of responsibility not determined."
+      }, {
+        "url" : "https://www.opcw.org/media-centre/featured-topics/ukraine",
+        "claim" : "OPCW monitors for chemical weapons threats in Ukraine and has trained Ukrainian responders; formal attribution remains a separate matter."
+      }, {
+        "url" : "https://www.aljazeera.com/news/2025/7/4/russia-expanding-chemical-weapons-use-in-ukraine-say-european-spy-agencies",
+        "claim" : "European intelligence agencies warn that Russia's use of chemical weapons in Ukraine is expanding, including alleged chloropicrin deployments."
+      } ],
+      "confidence" : "medium"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "OPCW-confirmed presence of riot-control agents (CS) on Ukrainian frontlines (Nov 2024, Feb 2025 Technical Assistance Visits)",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Independent OPCW analyses confirmed CS and CS-related compounds in multiple Oct 2024 incidents and subsequent samples, signaling ongoing chemical-weapons activity with potential for state-level deployment within the window."
+      }, {
+        "name" : "European intelligence reports of expanding Russian chemical-weapons deployments (chloropicrin and CS)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Credible intelligence from Dutch and German agencies (and corroborating reporting) suggest expanded use and normalization of chemical weapons by Russia, elevating the risk of state actors employing such weapons."
+      }, {
+        "name" : "Escalating conflict dynamics and repeated incidents increase opportunity for chemical-weapons use",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "A more intense and protracted front line raises incentives and opportunities for instrumental use of chemical agents as a battlefield tactic."
+      }, {
+        "name" : "International deterrence, sanctions, and OPCW oversight reducing incentives to use chemical weapons",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Imposed sanctions, stronger norms against chemical weapons, and enhanced monitoring raise costs and may deter state actors from deploying such weapons."
+      }, {
+        "name" : "Attribution uncertainty (OPCW findings do not identify perpetrators)",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "The inability to definitively assign responsibility dampens the clarity of the signal regarding which state actor might act, reducing the decisiveness of the forecast."
+      }, {
+        "name" : "OPCW-confirmed presence of riot-control agent CS on Ukrainian frontlines (Nov 2024 and Feb 2025 reports)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "OPCW laboratory analyses confirmed CS in samples from frontline incidents, signaling ongoing chemical-agent deployments and elevated risk of escalation."
+      }, {
+        "name" : "Intelligence reports of expanding Russian chemical-weapons usage (chloropicrin and CS)",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Dutch and German intelligence publicly assert that Russia's use of chemical agents is increasing, implying a higher probability of state-level deployment before May 1, 2026."
+      }, {
+        "name" : "EU sanctions targeting Russian chemical-weapons-related entities",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "International sanctions and reinforced norms reduce incentives for state actors to employ prohibited chemical weapons."
+      }, {
+        "name" : "Attribution uncertainty surrounding chemical-incidents (who used CS/chloropicrin)",
+        "direction" : "down",
+        "magnitude" : "weak",
+        "rationale" : "Ambiguity about perpetrators weakens signaling strength and can dampen the probability estimate for a specific state actor."
+      }, {
+        "name" : "Escalation pressure from battlefield dynamics and attempts to dislodge entrenched forces",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Intense fighting and tactical incentives to gain a positional advantage increase the chance of chemical-use signaling in high-stakes moments."
+      }, {
+        "name" : "Confirmed presence/usage of riot-control agent CS and chloropicrin by Russian forces in Ukraine",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "OPCW findings and multiple reports indicate CS and chloropicrin have been detected on Ukrainian frontlines, signaling ongoing chemical-weapons activity."
+      }, {
+        "name" : "Intelligence assessments that Russia's chemical weapons usage is expanding and becoming normalized",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Dutch and German intelligence have described a trend of increasing and standardized chemical weapons use by Russia, elevating the probability of further deployments."
+      }, {
+        "name" : "International deterrence and monitoring (OPCW oversight and sanctions) reducing incentives to use chemical weapons",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Ongoing OPCW investigations and EU sanctions raise costs and stigma for chemical-weapons use, exerting downward pressure on the likelihood of deployment."
+      } ],
+      "confidence" : "medium"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "medium",
+  "range" : [ 0.56, 0.7 ],
+  "synthesis" : "Evidence of CS on frontline incidents and intelligence on expanding use increases the risk of any state actor using chemical weapons, though attribution and deterrence temper the signal. The calibrated probability modestly ups the ensemble to reflect non-trivial risk with a broad plausible range."
+}

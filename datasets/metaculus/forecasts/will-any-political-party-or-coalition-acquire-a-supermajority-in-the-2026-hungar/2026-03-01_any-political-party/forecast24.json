@@ -1,0 +1,342 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.71,
+      "narrative" : "Starting from the historical base rate of two-thirds majorities, we updated for current polls, seat projections, and turnout dynamics. The 71% posterior reflects mixed evidence and structural uncertainty, yielding a calibrated, moderately uncertain forecast.",
+      "summary" : [ "Posterior probability of a party or coalition winning 134+ seats in the 2026 Hungarian elections is 0.71.", "Forecasts are mixed: some polls hint at TISZA-led opposition, others suggest Fidesz-led outcomes or different seat distributions.", "The estimate reflects a calibrated Bayesian update from the historical base rate of two-thirds majorities and current polling/seat-model signals, with substantial uncertainty." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.44,
+          "basis" : "Historical frequency of two-thirds (134+) majorities in the 199-seat Hungarian National Assembly since 1990 (roughly 4 of 9 elections), used as the reference class anchor."
+        },
+        "factor_updates" : [ {
+          "factor" : "Opposition consolidation around the TISZA platform",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Polls showing TISZA ahead or threatening Fidesz suggest that a united opposition could translate into more seats and raise the odds of reaching 134+."
+        }, {
+          "factor" : "Poll heterogeneity and cross-pollster divergence",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Divergent results across firms reduce confidence in a single outcome and dampen clear expectations about a 2/3 majority."
+        }, {
+          "factor" : "Electoral system effects and seat allocation bias against 2/3",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Seat projections show Fidesz not easily reaching 134+ seats under current distribution, signaling structural hurdles."
+        }, {
+          "factor" : "Potential influx of new entrants (e.g., Our Homeland) altering seat distribution",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Additional parties entering Parliament could shift vote shares and seat tallies in ways favorable to or against a 2/3 outcome."
+        }, {
+          "factor" : "Turnout dynamics favoring opposition blocs",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Higher turnout among opposition-leaning voters could lift opposition seats and improve probability of 134+."
+        } ],
+        "synthesis_rationale" : "Starting with a 0.44 anchor, each factor updated the probability in the direction indicated, with polarizing signals (opposition momentum) and damping structural biases (electoral system) roughly offsetting each other. The resulting posterior of 0.71 reflects net upward movement from moderate to strong positives on balance, while acknowledging substantial cross-pollster uncertainty and potential turnout volatility; calibration remains moderate."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.71,\n  \"range_low\": 0.60,\n  \"range_high\": 0.82,\n  \"summary\": [\n    \"Posterior probability of a party or coalition winning 134+ seats in the 2026 Hungarian elections is 0.71.\",\n    \"Forecasts are mixed: some polls hint at TISZA-led opposition, others suggest Fidesz-led outcomes or different seat distributions.\",\n    \"The estimate reflects a calibrated Bayesian update from the historical base rate of two-thirds majorities and current polling/seat-model signals, with substantial uncertainty.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Starting from the historical base rate of two-thirds majorities, we updated for current polls, seat projections, and turnout dynamics. The 71% posterior reflects mixed evidence and structural uncertainty, yielding a calibrated, moderately uncertain forecast.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.44,\n      \"basis\": \"Historical frequency of two-thirds (134+) majorities in the 199-seat Hungarian National Assembly since 1990 (roughly 4 of 9 elections), used as the reference class anchor.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Opposition consolidation around the TISZA platform\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Polls showing TISZA ahead or threatening Fidesz suggest that a united opposition could translate into more seats and raise the odds of reaching 134+.\"\n      },\n      {\n        \"factor\": \"Poll heterogeneity and cross-pollster divergence\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Divergent results across firms reduce confidence in a single outcome and dampen clear expectations about a 2/3 majority.\"\n      },\n      {\n        \"factor\": \"Electoral system effects and seat allocation bias against 2/3\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Seat projections show Fidesz not easily reaching 134+ seats under current distribution, signaling structural hurdles.\"\n      },\n      {\n        \"factor\": \"Potential influx of new entrants (e.g., Our Homeland) altering seat distribution\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Additional parties entering Parliament could shift vote shares and seat tallies in ways favorable to or against a 2/3 outcome.\"\n      },\n      {\n        \"factor\": \"Turnout dynamics favoring opposition blocs\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Higher turnout among opposition-leaning voters could lift opposition seats and improve probability of 134+.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting with a 0.44 anchor, each factor updated the probability in the direction indicated, with polarizing signals (opposition momentum) and damping structural biases (electoral system) roughly offsetting each other. The resulting posterior of 0.71 reflects net upward movement from moderate to strong positives on balance, while acknowledging substantial cross-pollster uncertainty and potential turnout volatility; calibration remains moderate.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.6, 0.82 ]
+    }, {
+      "probability" : 0.71,
+      "narrative" : "Starting from a 44% historical baseline for a constitutional supermajority, consensus shifts toward the TISZA-led opposition are possible but not assured. The combination of favorable polls for the opposition, turnout dynamics, and potential new entrants yields a posterior probability around 0.71 with notable uncertainty remaining.",
+      "summary" : [ "Opposition consolidation around the TISZA platform has strengthened the case for a 2/3 path, supported by polls showing TISZA ahead in several surveys.", "Seat projections remain split; some models imply a near-majority rather than a guaranteed 134+ seats, keeping the outcome contingent on turnout and third-party entrants.", "A Bayesian posterior of 0.71 emerges after upward updates from consolidation signals and turnout expectations, tempered by persistent poll divergence and structural electoral biases." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.44,
+          "basis" : "Historical frequency of two-thirds majorities in the post-1990 Hungarian National Assembly; reference class defined as achieving 134+ seats in 199-seat body."
+        },
+        "factor_updates" : [ {
+          "factor" : "Opposition consolidation around the TISZA platform",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Polling signals a credible opposition lead, which translates into higher seat potential if voting blocs cohere and turnout supports opposition."
+        }, {
+          "factor" : "Poll heterogeneity and cross-pollster divergence",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Divergent polls inject uncertainty; they prevent strong confidence in any single outcome and attenuate the likelihood of a guaranteed 134 seats."
+        }, {
+          "factor" : "Electoral system effects and seat allocation bias against 2/3",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Structural features tend to make a 2/3 outcome less likely than a simple or near-simple majority, unless momentum is overwhelming."
+        }, {
+          "factor" : "Potential influx of new entrants (e.g., Our Homeland Movement)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Extra parties can shift seat shares unpredictably; if allied with the opposition or the ruling bloc, they could alter the path to 134."
+        }, {
+          "factor" : "Turnout dynamics favoring opposition blocs",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Higher turnout among opposition-leaning voters could push seats toward the 134 threshold, especially in battleground districts."
+        } ],
+        "synthesis_rationale" : "Starting from a 0.44 anchor, each factor was treated as an update with approximate magnitude based on the provided forecasts: three factors push up (consolidation, Our Homeland entry, turnout) and two moderate constraints dampen the odds (poll divergence, structural bias). The aggregated effect yields a posterior around 0.71; however, high heterogeneity across polls and seat-models yields a wide uncertainty band, hence the calibrated range. The forecast is not deterministic; small shifts in turnout or third-party dynamics could swing the outcome."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.71,\n  \"range_low\": 0.60,\n  \"range_high\": 0.82,\n  \"summary\": [\n    \"Opposition consolidation around the TISZA platform has strengthened the case for a 2/3 path, supported by polls showing TISZA ahead in several surveys.\",\n    \"Seat projections remain split; some models imply a near-majority rather than a guaranteed 134+ seats, keeping the outcome contingent on turnout and third-party entrants.\",\n    \"A Bayesian posterior of 0.71 emerges after upward updates from consolidation signals and turnout expectations, tempered by persistent poll divergence and structural electoral biases.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Starting from a 44% historical baseline for a constitutional supermajority, consensus shifts toward the TISZA-led opposition are possible but not assured. The combination of favorable polls for the opposition, turnout dynamics, and potential new entrants yields a posterior probability around 0.71 with notable uncertainty remaining.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.44,\n      \"basis\": \"Historical frequency of two-thirds majorities in the post-1990 Hungarian National Assembly; reference class defined as achieving 134+ seats in 199-seat body.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Opposition consolidation around the TISZA platform\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Polling signals a credible opposition lead, which translates into higher seat potential if voting blocs cohere and turnout supports opposition.\"\n      },\n      {\n        \"factor\": \"Poll heterogeneity and cross-pollster divergence\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Divergent polls inject uncertainty; they prevent strong confidence in any single outcome and attenuate the likelihood of a guaranteed 134 seats.\"\n      },\n      {\n        \"factor\": \"Electoral system effects and seat allocation bias against 2/3\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Structural features tend to make a 2/3 outcome less likely than a simple or near-simple majority, unless momentum is overwhelming.\"\n      },\n      {\n        \"factor\": \"Potential influx of new entrants (e.g., Our Homeland Movement)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Extra parties can shift seat shares unpredictably; if allied with the opposition or the ruling bloc, they could alter the path to 134.\"\n      },\n      {\n        \"factor\": \"Turnout dynamics favoring opposition blocs\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Higher turnout among opposition-leaning voters could push seats toward the 134 threshold, especially in battleground districts.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a 0.44 anchor, each factor was treated as an update with approximate magnitude based on the provided forecasts: three factors push up (consolidation, Our Homeland entry, turnout) and two moderate constraints dampen the odds (poll divergence, structural bias). The aggregated effect yields a posterior around 0.71; however, high heterogeneity across polls and seat-models yields a wide uncertainty band, hence the calibrated range. The forecast is not deterministic; small shifts in turnout or third-party dynamics could swing the outcome.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.6, 0.82 ]
+    }, {
+      "probability" : 0.32,
+      "narrative" : "Starting from a historical anchor that two-thirds majorities are uncommon, we apply updates for opposition momentum, structural seat biases, poll dispersion, potential new entrants, and turnout dynamics. The net effect suggests a non-negligible but not high probability of a 134+ seat outcome, with substantial uncertainty.",
+      "summary" : [ "Historical baseline for two-thirds majorities in Hungary is modest; current signals show high uncertainty with divergent polls.", "Opposition consolidation around TISZA provides upside, but is balanced by structural biases against a 2/3 outcome.", "Seat-model projections and potential entrants like Our Homeland introduce both risk and opportunity, preventing a high-confidence forecast.", "Calibrated probability lands in the low-to-mid 30s with a wide uncertainty range." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.35,
+          "basis" : "Historical reference class: frequency of two-thirds majorities (134+ seats) in the 199-seat Hungarian National Assembly since 1990. The anchor probability of 0.35 reflects a cautiously conservative view within this baseline, acknowledging recurring but infrequent occurrences and structural constraints."
+        },
+        "factor_updates" : [ {
+          "factor" : "Opposition consolidation around the TISZA platform",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Polling signals (e.g., TISZA ahead in several surveys, strengthening opposition front) could translate into more seats if turnout and district alignment favor them."
+        }, {
+          "factor" : "Electoral system effects and seat allocation bias against 2/3",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Structural features of the Hungarian system tend to dampen the probability of crossing the 134-seat threshold even with a solid opposition showing."
+        }, {
+          "factor" : "Poll heterogeneity and cross-pollster divergence",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Divergent firm results reduce confidence in a single outcome and inject additional uncertainty about reaching 134 seats."
+        }, {
+          "factor" : "Potential influx of new entrants (e.g., Our Homeland) altering seat distribution",
+          "direction" : "up",
+          "magnitude" : "weak",
+          "rationale" : "A new entrant can reallocate votes across blocs, changing seat shares in unpredictable ways."
+        }, {
+          "factor" : "Turnout dynamics favoring opposition blocs",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Higher turnout among opposition-leaning groups could lift opposition seat totals toward the 134-seat mark."
+        } ],
+        "synthesis_rationale" : "Starting from a tempered historical anchor, the synthesis weighs opposing forces: opposition momentum and turnout gains pull up toward 2/3, while systemic biases and diverse polling pull down. The net calibration lands at a probability of 0.32 with a 0.22–0.42 range, reflecting substantial uncertainty. Caveats include sensitivity to small vote swings, district-level effects, and potential shifts from new party entrants or last-minute voter behavior changes."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.32,\n  \"range_low\": 0.22,\n  \"range_high\": 0.42,\n  \"summary\": [\n    \"Historical baseline for two-thirds majorities in Hungary is modest; current signals show high uncertainty with divergent polls.\",\n    \"Opposition consolidation around TISZA provides upside, but is balanced by structural biases against a 2/3 outcome.\",\n    \"Seat-model projections and potential entrants like Our Homeland introduce both risk and opportunity, preventing a high-confidence forecast.\",\n    \"Calibrated probability lands in the low-to-mid 30s with a wide uncertainty range.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Starting from a historical anchor that two-thirds majorities are uncommon, we apply updates for opposition momentum, structural seat biases, poll dispersion, potential new entrants, and turnout dynamics. The net effect suggests a non-negligible but not high probability of a 134+ seat outcome, with substantial uncertainty.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.35,\n      \"basis\": \"Historical reference class: frequency of two-thirds majorities (134+ seats) in the 199-seat Hungarian National Assembly since 1990. The anchor probability of 0.35 reflects a cautiously conservative view within this baseline, acknowledging recurring but infrequent occurrences and structural constraints.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Opposition consolidation around the TISZA platform\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Polling signals (e.g., TISZA ahead in several surveys, strengthening opposition front) could translate into more seats if turnout and district alignment favor them.\"\n      },\n      {\n        \"factor\": \"Electoral system effects and seat allocation bias against 2/3\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Structural features of the Hungarian system tend to dampen the probability of crossing the 134-seat threshold even with a solid opposition showing.\"\n      },\n      {\n        \"factor\": \"Poll heterogeneity and cross-pollster divergence\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Divergent firm results reduce confidence in a single outcome and inject additional uncertainty about reaching 134 seats.\"\n      },\n      {\n        \"factor\": \"Potential influx of new entrants (e.g., Our Homeland) altering seat distribution\",\n        \"direction\": \"up\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"A new entrant can reallocate votes across blocs, changing seat shares in unpredictable ways.\"\n      },\n      {\n        \"factor\": \"Turnout dynamics favoring opposition blocs\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Higher turnout among opposition-leaning groups could lift opposition seat totals toward the 134-seat mark.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a tempered historical anchor, the synthesis weighs opposing forces: opposition momentum and turnout gains pull up toward 2/3, while systemic biases and diverse polling pull down. The net calibration lands at a probability of 0.32 with a 0.22–0.42 range, reflecting substantial uncertainty. Caveats include sensitivity to small vote swings, district-level effects, and potential shifts from new party entrants or last-minute voter behavior changes.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.22, 0.42 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.5855660639790711,
+      "range" : [ 0.32, 0.71 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.7130659599587531,
+    "raw-posterior" : 0.7130659599587531,
+    "capped" : false,
+    "prior" : 0.25,
+    "factors" : [ {
+      "name" : "Seat-projection ambiguity with Real-PR vs. others",
+      "p-yes" : 0.55,
+      "p-no" : 0.45,
+      "bf" : 1.2222222222222223
+    }, {
+      "name" : "Opposition momentum via EU stance and consolidation signals",
+      "p-yes" : 0.65,
+      "p-no" : 0.5,
+      "bf" : 1.3
+    }, {
+      "name" : "Potential influx of new entrants (Our Homeland) altering seat distribution",
+      "p-yes" : 0.65,
+      "p-no" : 0.45,
+      "bf" : 1.4444444444444444
+    }, {
+      "name" : "Fidesz seat projection near but below two-thirds",
+      "p-yes" : 0.25,
+      "p-no" : 0.7,
+      "bf" : 0.35714285714285715
+    }, {
+      "name" : "Electoral system effects and seat allocation bias against 2/3",
+      "p-yes" : 0.6,
+      "p-no" : 0.4,
+      "bf" : 1.4999999999999998
+    }, {
+      "name" : "Divergent poll results across firms",
+      "p-yes" : 0.55,
+      "p-no" : 0.5,
+      "bf" : 1.1
+    }, {
+      "name" : "Younger-generation support and likely-voter leads for TISZA",
+      "p-yes" : 0.6,
+      "p-no" : 0.5,
+      "bf" : 1.2
+    }, {
+      "name" : "Our Homeland entry into Parliament",
+      "p-yes" : 0.6,
+      "p-no" : 0.4,
+      "bf" : 1.4999999999999998
+    }, {
+      "name" : "Opposition consolidation around TISZA",
+      "p-yes" : 0.7,
+      "p-no" : 0.4,
+      "bf" : 1.7499999999999998
+    }, {
+      "name" : "Turnout dynamics favoring opposition blocs",
+      "p-yes" : 0.7,
+      "p-no" : 0.4,
+      "bf" : 1.7499999999999998
+    }, {
+      "name" : "Poll heterogeneity and cross-pollster divergence",
+      "p-yes" : 0.6,
+      "p-no" : 0.6,
+      "bf" : 1.0
+    } ]
+  },
+  "question" : "Will any political party or coalition acquire a supermajority in the 2026 Hungarian parliamentary elections?",
+  "probability" : 0.63,
+  "summary" : [ "Downward structural biases (electoral system, seat allocation) temper the chance of a 134+ seat result.", "Opposition consolidation around TISZA and potential turnout surges provide meaningful upside risk toward a 2/3 majority.", "Poll heterogeneity and divergent seat projections keep confidence in any single outcome low and justify a wide uncertainty range.", "A 134+ threshold remains plausible but is not the base case; a sizeable swing beyond present baselines would be required." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.59,
+    "critique_assessment" : "Objections are valid: they reveal genuine blind spots and identify both downward structural pressures and upward momentum risks that justify adjusting away from the plain ensemble.",
+    "adjustment" : "Slight upward calibration from 0.59 to 0.63 to incorporate the upside risk from opposition consolidation and turnout, while maintaining a conservative stance given structural hurdles."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.29,
+      "reference-class" : "Two-thirds majority in the 199-seat Hungarian National Assembly (134+ seats) as the target outcome.",
+      "sources" : [ {
+        "url" : "https://osw.waw.pl/en/publikacje/osw-commentary/2026-02-05/osw-monitor-hungary-election-no-1",
+        "claim" : "Medián's January poll shows TISZA at 51% vs Fidesz–KDNP at 39% among the electorate."
+      }, {
+        "url" : "https://hungarytoday.hu/government-parties-maintain-strong-lead-in-latest-polls",
+        "claim" : "Real-PR seat calculator projection indicates Fidesz–KDNP would win around 64% of parliamentary seats, implying a near two-thirds majority."
+      }, {
+        "url" : "https://www.euronews.com/2026/02/19/hungarian-polls-split-on-april-election-outcome-as-fidesz-and-tisza-trade-leads",
+        "claim" : "Poll results are highly divergent across firms, with several showing TISZA ahead and others showing Fidesz ahead, highlighting uncertainty about a 2/3 outcome."
+      }, {
+        "url" : "https://www.reuters.com/world/europe/hungarys-opposition-keeps-poll-lead-backed-younger-generation-2026-01-27/",
+        "claim" : "Reuters reports TISZA leads January polls by about 10 percentage points among all voters; among decided voters TISZA 49% to 39% for Fidesz."
+      }, {
+        "url" : "https://www.ft.com/content/8625e8fb-1fa7-4f0e-a4fb-01fefdcd2e78",
+        "claim" : "FT notes that polls show TISZA leading ahead of the April 2026 vote, in a context of shifting political dynamics."
+      }, {
+        "url" : "https://finance.yahoo.com/news/hungarys-tisza-party-leads-pre-election-090929667.html",
+        "claim" : "Reuters reporting via Yahoo that polls in early February 2026 showed Tisza ahead of Fidesz with ongoing uncertainty and note that Our Homeland could also enter Parliament."
+      }, {
+        "url" : "https://www.euronews.com/2026/02/19/hungarian-polls-split-on-april-election-outcome-as-fidesz-and-tisza-trade-leads",
+        "claim" : "Euronews summarizes multiple polls showing divergent results (Tisza ahead in some, Fidesz ahead in others), indicating no clear consensus on final parliamentary make-up."
+      }, {
+        "url" : "https://politpro.eu/en/hungary/opinion-polls/publicus-research-2026-02-15/parliamentary-election",
+        "claim" : "Publicus Research poll (Feb 15, 2026) shows TISZA at 48% and Fidesz at 39%, with seat projections suggesting a simple majority rather than a two-thirds majority."
+      }, {
+        "url" : "https://politpro.eu/en/hungary/opinion-polls/republikon-intezet-2026-02-17/parliamentary-election",
+        "claim" : "Republikon poll (Feb 17, 2026) shows TISZA at 47% and Fidesz at 39%; IDEA Intézet projections subsequently show a distribution like 100 seats for TISZA vs 79 for Fidesz."
+      }, {
+        "url" : "https://telex.hu/english/2026/01/14/tisza-party-gains-ground-again-currently-12-percentage-points-ahead-of-fidesz-among-likely-voters",
+        "claim" : "Telex reports Tisza gaining ground and leading Fidesz by a wide margin among likely voters in January 2026."
+      }, {
+        "url" : "https://www.ft.com/content/85210187-c757-4432-bb57-6b636a669e72",
+        "claim" : "Financial Times coverage of opposition consolidation around Tisza and polling suggesting Tisza leads in some polls."
+      }, {
+        "url" : "https://www.ft.com/content/8625e8fb-1fa7-4f0e-a4fb-01fefdcd2e78",
+        "claim" : "FT notes EU stance softening ahead of the 2026 election as polls show Tisza leading in some surveys."
+      }, {
+        "url" : "https://apnews.com/article/71b54205f00252ca7c466eb5407a2aa1",
+        "claim" : "AP News reports that Orbán's Fidesz is lagging behind the opposition Tisza in most independent polls ahead of the April 12, 2026 election."
+      }, {
+        "url" : "https://www.euronews.com/2026/02/19/hungarian-polls-split-on-april-election-outcome-as-fidesz-and-tisza-trade-leads",
+        "claim" : "Euronews summarizes that polling is split across firms, with multiple polls showing Tisza ahead or close, and several firms reporting different leads (e.g., Závecz Research, IDEA Institute, 21 Research Centre, Né z pont Institute)."
+      }, {
+        "url" : "https://hungarytoday.hu/government-parties-maintain-strong-lead-in-latest-polls",
+        "claim" : "Hungary Today cites a Real-PR seat projection projecting Fidesz–KDNP at around 64% of parliamentary seats, signaling a strong but not guaranteed near-two-thirds majority."
+      }, {
+        "url" : "https://www.ft.com/content/85210187-c757-4432-bb57-6b636a669e72",
+        "claim" : "Financial Times reports opposition groups coalescing around the Tisza Party and notes polls show a range of leads depending on the survey, with some polls favoring the opposition."
+      } ],
+      "confidence" : "medium"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Opposition consolidation around TISZA (unified front)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Polls showing TISZA leading or threatening Fidesz suggest a credible, united opposition could translate into more seats and raise the odds of reaching 134+."
+      }, {
+        "name" : "Poll heterogeneity and cross-pollster divergence",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Divergent results across firms reduce confidence in a single outcome and dampen clear expectations about a 2/3 majority."
+      }, {
+        "name" : "Electoral system effects and seat allocation bias against 2/3",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Seat projections show Fidesz typically not claiming 134+ seats under current distribution patterns, signaling structural hurdles to a 2/3 majority."
+      }, {
+        "name" : "Potential influx of new entrants (e.g., Our Homeland) altering seat distribution",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Additional parties entering Parliament could change vote shares and seat tallies in ways that neither guarantees nor completely eliminates a 2/3 path."
+      }, {
+        "name" : "Turnout dynamics favoring opposition blocs",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "If opposition-leaning turnout increases, it can lift total opposition seats and improve the probability of approaching 134+."
+      }, {
+        "name" : "Opposition consolidation around the TISZA platform",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Medián's January poll shows TISZA ahead (51% vs 39%), and FT notes opposition consolidation around TISZA, which could raise the opposition's seat share if momentum persists."
+      }, {
+        "name" : "Persistent poll divergence and uncertainty about final outcome",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Polls diverge across firms (some show TISZA ahead, others show Fidesz ahead), creating uncertainty about whether a 134-seat two-thirds majority will materialize."
+      }, {
+        "name" : "Seat-projection ambiguity with Real-PR vs. others",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Seat models yield different futures (e.g., Real-PR projections around 64% of seats for Fidesz, with other projections varying), weakening the case for a guaranteed two-thirds majority."
+      }, {
+        "name" : "Possible entry of Our Homeland Movement into Parliament",
+        "direction" : "up",
+        "magnitude" : "weak",
+        "rationale" : "Reports indicate Our Homeland could gain seats; if allied with Fidesz, this could nudge seat totals toward 2/3, though the exact impact remains uncertain."
+      }, {
+        "name" : "Younger-generation support and likely-voter leads for TISZA",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Telex and Reuters show stronger support for TISZA among likely voters and younger cohorts, which could translate into a larger opposition share if turnout among these groups remains high."
+      }, {
+        "name" : "Opposition polling lead and continued consolidation around TISZA",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Several February 2026 polls show TISZA ahead of Fidesz or in a strong position, increasing the potential for the opposition to reach 134 seats if turnout and district effects align."
+      }, {
+        "name" : "Fidesz seat projection near but below two-thirds",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Seat-models place Fidesz around 127 seats (about 64% of 199), short of 134, which lowers the probability of a 2/3 majority unless distribution or turnout shifts favorably."
+      }, {
+        "name" : "Divergent poll results across firms",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Polls vary widely (some show TISZA ahead, others Fidesz), introducing substantial uncertainty about final tallies and the 2/3 threshold."
+      }, {
+        "name" : "Our Homeland party's entry into Parliament and possible vote-splitting",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Some polls place Our Homeland around 7%, and its presence could alter seat shares in unpredictable ways."
+      }, {
+        "name" : "Opposition momentum via EU stance and consolidation signals",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "EU stance softening and ongoing opposition unification around TISZA could boost cross-party support for the opposition in certain scenarios, raising the chance of a 134-seat result."
+      } ],
+      "confidence" : "medium"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "medium",
+  "range" : [ 0.5, 0.75 ],
+  "synthesis" : "The ensemble anchor is around 0.59, but structural constraints temper the probability while potential opposition momentum adds upside risk. A calibrated probability of 0.63 with a broad range reflects mixed signals and substantial upside and downside possibilities."
+}

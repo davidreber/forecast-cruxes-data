@@ -1,0 +1,388 @@
+{
+  "ensemble" : {
+    "estimates" : [ {
+      "probability" : 0.89,
+      "narrative" : "Anchored in ULCC distress evidence with a ~45.7% 24-month bankruptcy probability, Frontier's liquidity cushion and 2026 maturities mitigate near-term risk while sector distress and ongoing losses push the probability higher. The calibrated posterior reaches 89% with caveats for evolving liquidity, sector dynamics, and potential mitigants, yielding a non-trivial but not imminent risk before May 1, 2026.",
+      "summary" : [ "Frontier is analyzed within a distressed ULCC reference class with a published ~45.7% bankruptcy probability over 24 months.", "Frontier's sizable near-term liquidity (~$874M) against 2026 debt maturities (~$303M) provides runway that dampens immediate default risk.", "Industry distress signals, including Spirit Airlines' bankruptcy and elevated 2025–2026 bankruptcies, raise contagion risk and underlying credit stress.", "Ongoing 2025 losses and cost-cutting actions contribute to bankruptcy risk, but no filing has occurred yet, keeping risk elevated but not certain before May 1, 2026." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.4574,
+          "basis" : "Reference class anchored to US ULCC distress with Altman Z-score in the distress zone; forecast evidence shows ~45.7% bankruptcy probability over the next 24 months."
+        },
+        "factor_updates" : [ {
+          "factor" : "Near-term debt maturities in 2026",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "About $303 million of principal is due in 2026, creating refinancing pressure if liquidity wanes."
+        }, {
+          "factor" : "Total available liquidity as of 12/31/2025",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Frontier reports roughly $874 million of total liquidity, which helps cover near-term obligations but remains tight against sizable debt service and leases."
+        }, {
+          "factor" : "Industry distress from Spirit Airlines bankruptcy and sector pressures",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Spirit’s bankruptcy proceedings and going-concern signs add sector-wide credit and demand risks that can spill over to Frontier."
+        }, {
+          "factor" : "Frontier 2025 profitability trajectory (net loss)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "A full-year 2025 net loss signals continued earnings pressure that can elevate bankruptcy risk under stressed conditions."
+        }, {
+          "factor" : "Fleet/capex adjustments (delivery deferrals and early returns with cost savings)",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Non-binding fleet adjustments aim to cut near-term capital outlays and improve liquidity by reducing near-term cash burn."
+        }, {
+          "factor" : "Broader 2025–2026 US corporate bankruptcy surge",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "A rising tempo of bankruptcies and elevated credit stress in 2025–2026 raises the base risk environment for distressed ULCCs like Frontier."
+        } ],
+        "synthesis_rationale" : "Starting from a 0.4574 anchor, proximate risk-increasing factors (debt maturities, sector distress, macro bankruptcy momentum, ongoing losses) push probability upward, while the liquidity cushion and fleet-cost actions provide mitigations. The combination yields a calibrated posterior of 0.89, reflecting a high but not absolute risk; correlations among factors and sector dynamics were treated conservatively to avoid double-counting."
+      },
+      "persona" : "outside-view",
+      "raw-text" : "{\n  \"probability\": 0.89,\n  \"range_low\": 0.80,\n  \"range_high\": 0.97,\n  \"summary\": [\n    \"Frontier is analyzed within a distressed ULCC reference class with a published ~45.7% bankruptcy probability over 24 months.\",\n    \"Frontier's sizable near-term liquidity (~$874M) against 2026 debt maturities (~$303M) provides runway that dampens immediate default risk.\",\n    \"Industry distress signals, including Spirit Airlines' bankruptcy and elevated 2025–2026 bankruptcies, raise contagion risk and underlying credit stress.\",\n    \"Ongoing 2025 losses and cost-cutting actions contribute to bankruptcy risk, but no filing has occurred yet, keeping risk elevated but not certain before May 1, 2026.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"Anchored in ULCC distress evidence with a ~45.7% 24-month bankruptcy probability, Frontier's liquidity cushion and 2026 maturities mitigate near-term risk while sector distress and ongoing losses push the probability higher. The calibrated posterior reaches 89% with caveats for evolving liquidity, sector dynamics, and potential mitigants, yielding a non-trivial but not imminent risk before May 1, 2026.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.4574,\n      \"basis\": \"Reference class anchored to US ULCC distress with Altman Z-score in the distress zone; forecast evidence shows ~45.7% bankruptcy probability over the next 24 months.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Near-term debt maturities in 2026\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"About $303 million of principal is due in 2026, creating refinancing pressure if liquidity wanes.\"\n      },\n      {\n        \"factor\": \"Total available liquidity as of 12/31/2025\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Frontier reports roughly $874 million of total liquidity, which helps cover near-term obligations but remains tight against sizable debt service and leases.\"\n      },\n      {\n        \"factor\": \"Industry distress from Spirit Airlines bankruptcy and sector pressures\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Spirit’s bankruptcy proceedings and going-concern signs add sector-wide credit and demand risks that can spill over to Frontier.\"\n      },\n      {\n        \"factor\": \"Frontier 2025 profitability trajectory (net loss)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A full-year 2025 net loss signals continued earnings pressure that can elevate bankruptcy risk under stressed conditions.\"\n      },\n      {\n        \"factor\": \"Fleet/capex adjustments (delivery deferrals and early returns with cost savings)\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Non-binding fleet adjustments aim to cut near-term capital outlays and improve liquidity by reducing near-term cash burn.\"\n      },\n      {\n        \"factor\": \"Broader 2025–2026 US corporate bankruptcy surge\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"A rising tempo of bankruptcies and elevated credit stress in 2025–2026 raises the base risk environment for distressed ULCCs like Frontier.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a 0.4574 anchor, proximate risk-increasing factors (debt maturities, sector distress, macro bankruptcy momentum, ongoing losses) push probability upward, while the liquidity cushion and fleet-cost actions provide mitigations. The combination yields a calibrated posterior of 0.89, reflecting a high but not absolute risk; correlations among factors and sector dynamics were treated conservatively to avoid double-counting.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.8, 0.97 ]
+    }, {
+      "probability" : 0.89,
+      "narrative" : "The posterior probability of Frontier Group Holdings filing for bankruptcy before May 1, 2026 is 89%. Distress signals from the ULCC sector increase risk, while Frontier's liquidity cushion reduces acute near-term pressure; the net result is a high, though not certain, likelihood of bankruptcy in the specified window.",
+      "summary" : [ "Frontier sits in a distressed ULCC reference class with non-trivial bankruptcy risk in the near term.", "Sector-wide distress signals (Spirit bankruptcy and going-concern warnings) elevate Frontier's risk profile.", "Frontier's substantial liquidity and 2026 debt maturities provide runway, but do not eliminate near-term insolvency risk.", "Altman Z-score in distress zone reinforces elevated probability, even after accounting for mitigants and sector dynamics." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.457,
+          "basis" : "Anchor from the provided forecast evidence: US ULCCs with Z<1.8; initial distress probability around 45.7% over 24 months."
+        },
+        "factor_updates" : [ {
+          "factor" : "Sector distress contagion from Spirit ULCC bankruptcy and going-concern warnings",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Spirit's bankruptcy proceedings and peers' warnings signal sector-wide distress that raises contagion risk for Frontier."
+        }, {
+          "factor" : "Frontier liquidity cushion vs near-term debt maturities",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Frontier reported about $874 million in liquidity against roughly $303 million of debt due in 2026, providing substantial runway to meet near-term obligations."
+        }, {
+          "factor" : "Altman Z-score distress signal",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Frontier's Altman Z-score around 0.38 places it in the distress zone, reinforcing elevated bankruptcy probability."
+        }, {
+          "factor" : "Industry-wide bankruptcy momentum in 2025-2026",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Rising 2025-2026 bankruptcy activity raises the baseline risk environment for distressed ULCCs like Frontier."
+        }, {
+          "factor" : "No Frontier bankruptcy filing as of current public reports",
+          "direction" : "neutral",
+          "magnitude" : "weak",
+          "rationale" : "Absence of a filing reduces near-term probability modestly but does not negate risk given sector pressures."
+        } ],
+        "synthesis_rationale" : "Starting from a 0.457 anchor for a distressed ULCC reference class, the factor updates collectively push the posterior upward due to sector contagion, distress signals, and industry momentum, while Frontier's liquidity runway and absence of an actual filing temper the move. Recognizing potential correlation among factors, updates are applied with moderate-to-strong weights but not assumed independent, yielding a calibrated posterior of 0.89. The uncertainty range reflects remaining model and market uncertainty, particularly around sector dynamics and timing of any potential restructuring actions."
+      },
+      "persona" : "inside-view",
+      "raw-text" : "{\n  \"probability\": 0.89,\n  \"range_low\": 0.79,\n  \"range_high\": 0.95,\n  \"summary\": [\n    \"Frontier sits in a distressed ULCC reference class with non-trivial bankruptcy risk in the near term.\",\n    \"Sector-wide distress signals (Spirit bankruptcy and going-concern warnings) elevate Frontier's risk profile.\",\n    \"Frontier's substantial liquidity and 2026 debt maturities provide runway, but do not eliminate near-term insolvency risk.\",\n    \"Altman Z-score in distress zone reinforces elevated probability, even after accounting for mitigants and sector dynamics.\"\n  ],\n  \"confidence\": \"high\",\n  \"narrative\": \"The posterior probability of Frontier Group Holdings filing for bankruptcy before May 1, 2026 is 89%. Distress signals from the ULCC sector increase risk, while Frontier's liquidity cushion reduces acute near-term pressure; the net result is a high, though not certain, likelihood of bankruptcy in the specified window.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.457,\n      \"basis\": \"Anchor from the provided forecast evidence: US ULCCs with Z<1.8; initial distress probability around 45.7% over 24 months.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Sector distress contagion from Spirit ULCC bankruptcy and going-concern warnings\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Spirit's bankruptcy proceedings and peers' warnings signal sector-wide distress that raises contagion risk for Frontier.\"\n      },\n      {\n        \"factor\": \"Frontier liquidity cushion vs near-term debt maturities\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Frontier reported about $874 million in liquidity against roughly $303 million of debt due in 2026, providing substantial runway to meet near-term obligations.\"\n      },\n      {\n        \"factor\": \"Altman Z-score distress signal\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Frontier's Altman Z-score around 0.38 places it in the distress zone, reinforcing elevated bankruptcy probability.\"\n      },\n      {\n        \"factor\": \"Industry-wide bankruptcy momentum in 2025-2026\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Rising 2025-2026 bankruptcy activity raises the baseline risk environment for distressed ULCCs like Frontier.\"\n      },\n      {\n        \"factor\": \"No Frontier bankruptcy filing as of current public reports\",\n        \"direction\": \"neutral\",\n        \"magnitude\": \"weak\",\n        \"rationale\": \"Absence of a filing reduces near-term probability modestly but does not negate risk given sector pressures.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a 0.457 anchor for a distressed ULCC reference class, the factor updates collectively push the posterior upward due to sector contagion, distress signals, and industry momentum, while Frontier's liquidity runway and absence of an actual filing temper the move. Recognizing potential correlation among factors, updates are applied with moderate-to-strong weights but not assumed independent, yielding a calibrated posterior of 0.89. The uncertainty range reflects remaining model and market uncertainty, particularly around sector dynamics and timing of any potential restructuring actions.\"\n  }\n}",
+      "confidence" : "high",
+      "range" : [ 0.79, 0.95 ]
+    }, {
+      "probability" : 0.4,
+      "narrative" : "Frontier sits in a distressed ULCC reference class, but near-term liquidity and manageable 2026 maturities temper the risk of an imminent filing. Sector pressures and a low Z-score keep the risk non-trivial, leading to a centered probability near 40% with a broad plausible range.",
+      "summary" : [ "Anchor grounded in ULCC distress reference class with ~45.7% 24-month bankruptcy probability.", "Frontier's substantial liquidity (~$874M) and 2026 debt maturities (~$303M) provide runway, arguing against an imminent filing before May 1, 2026.", "Sector distress signals from Spirit and going-concern warnings push risk higher, maintaining non-trivial probability.", "Altman Z-score ≈ 0.38 reinforces distress signals, supporting elevated risk above the base-case.", "Net synthesis yields a calibrated probability around 0.40 with notable uncertainty." ],
+      "justification" : {
+        "anchor" : {
+          "probability" : 0.457,
+          "basis" : "ULCC reference class with distress indicators; a ~45.7% 24-month bankruptcy probability provides a baseline anchor."
+        },
+        "factor_updates" : [ {
+          "factor" : "Near-term debt maturities in 2026",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Debt due in 2026 creates refinancing pressure, nudging probability higher, but countered by liquidity runway."
+        }, {
+          "factor" : "Total available liquidity as of 12/31/2025",
+          "direction" : "down",
+          "magnitude" : "strong",
+          "rationale" : "Larger liquidity cushion reduces default risk; this factor strongly dampens the probability."
+        }, {
+          "factor" : "Industry distress from Spirit bankruptcy and sector pressures",
+          "direction" : "up",
+          "magnitude" : "strong",
+          "rationale" : "Sector-wide stress increases risk to Frontier despite its buffers."
+        }, {
+          "factor" : "Frontier 2025 profitability trajectory (net loss)",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Ongoing losses elevate distress indicators in a liquidity-tight environment."
+        }, {
+          "factor" : "Fleet/capex adjustments and cost savings",
+          "direction" : "down",
+          "magnitude" : "moderate",
+          "rationale" : "Deferrals and cost reductions improve near-term liquidity, mitigating bankruptcy risk."
+        }, {
+          "factor" : "Broader 2025–2026 US corporate bankruptcy surge",
+          "direction" : "up",
+          "magnitude" : "moderate",
+          "rationale" : "Rising bankruptcies raise baseline risk for distressed ULCCs."
+        } ],
+        "synthesis_rationale" : "Starting from a distressed ULCC anchor, updates tilt probability both up (sector distress, near-term maturities, losses) and down (liquidity runway, cost-cutting). The balanced weighting yields a mid-range, credible forecast of ~0.40 with a wide uncertainty band, reflecting mixed signals and the absence of an actual bankruptcy filing to date."
+      },
+      "persona" : "contrarian",
+      "raw-text" : "{\n  \"probability\": 0.40,\n  \"range_low\": 0.28,\n  \"range_high\": 0.53,\n  \"summary\": [\n    \"Anchor grounded in ULCC distress reference class with ~45.7% 24-month bankruptcy probability.\",\n    \"Frontier's substantial liquidity (~$874M) and 2026 debt maturities (~$303M) provide runway, arguing against an imminent filing before May 1, 2026.\",\n    \"Sector distress signals from Spirit and going-concern warnings push risk higher, maintaining non-trivial probability.\",\n    \"Altman Z-score ≈ 0.38 reinforces distress signals, supporting elevated risk above the base-case.\",\n    \"Net synthesis yields a calibrated probability around 0.40 with notable uncertainty.\"\n  ],\n  \"confidence\": \"medium\",\n  \"narrative\": \"Frontier sits in a distressed ULCC reference class, but near-term liquidity and manageable 2026 maturities temper the risk of an imminent filing. Sector pressures and a low Z-score keep the risk non-trivial, leading to a centered probability near 40% with a broad plausible range.\",\n  \"justification\": {\n    \"anchor\": {\n      \"probability\": 0.457,\n      \"basis\": \"ULCC reference class with distress indicators; a ~45.7% 24-month bankruptcy probability provides a baseline anchor.\"\n    },\n    \"factor_updates\": [\n      {\n        \"factor\": \"Near-term debt maturities in 2026\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Debt due in 2026 creates refinancing pressure, nudging probability higher, but countered by liquidity runway.\"\n      },\n      {\n        \"factor\": \"Total available liquidity as of 12/31/2025\",\n        \"direction\": \"down\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Larger liquidity cushion reduces default risk; this factor strongly dampens the probability.\"\n      },\n      {\n        \"factor\": \"Industry distress from Spirit bankruptcy and sector pressures\",\n        \"direction\": \"up\",\n        \"magnitude\": \"strong\",\n        \"rationale\": \"Sector-wide stress increases risk to Frontier despite its buffers.\"\n      },\n      {\n        \"factor\": \"Frontier 2025 profitability trajectory (net loss)\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Ongoing losses elevate distress indicators in a liquidity-tight environment.\"\n      },\n      {\n        \"factor\": \"Fleet/capex adjustments and cost savings\",\n        \"direction\": \"down\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Deferrals and cost reductions improve near-term liquidity, mitigating bankruptcy risk.\"\n      },\n      {\n        \"factor\": \"Broader 2025–2026 US corporate bankruptcy surge\",\n        \"direction\": \"up\",\n        \"magnitude\": \"moderate\",\n        \"rationale\": \"Rising bankruptcies raise baseline risk for distressed ULCCs.\"\n      }\n    ],\n    \"synthesis_rationale\": \"Starting from a distressed ULCC anchor, updates tilt probability both up (sector distress, near-term maturities, losses) and down (liquidity runway, cost-cutting). The balanced weighting yields a mid-range, credible forecast of ~0.40 with a wide uncertainty band, reflecting mixed signals and the absence of an actual bankruptcy filing to date.\"\n  }\n}",
+      "confidence" : "medium",
+      "range" : [ 0.28, 0.53 ]
+    } ],
+    "aggregate" : {
+      "probability" : 0.7787974776162101,
+      "range" : [ 0.4, 0.89 ]
+    }
+  },
+  "bayes" : {
+    "posterior" : 0.8949416342412452,
+    "raw-posterior" : 0.9166348328853634,
+    "capped" : true,
+    "prior" : 0.46,
+    "factors" : [ {
+      "name" : "Broader 2025–2026 US corporate bankruptcy surge",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "Altman Z-score distress signal",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "Fleet/capex adjustments (delivery deferrals and early returns with cost savings)",
+      "p-yes" : 0.55,
+      "p-no" : 0.45,
+      "bf" : 1.2222222222222223
+    }, {
+      "name" : "Sector distress contagion from Spirit ULCC bankruptcy and going-concern warnings",
+      "p-yes" : 0.75,
+      "p-no" : 0.25,
+      "bf" : 3.0
+    }, {
+      "name" : "Frontier 2025 results show ongoing losses but cost-optimization initiatives",
+      "p-yes" : 0.5,
+      "p-no" : 0.5,
+      "bf" : 1.0
+    }, {
+      "name" : "Frontier 2025 profitability trajectory (net loss)",
+      "p-yes" : 0.65,
+      "p-no" : 0.35,
+      "bf" : 1.8571428571428574
+    }, {
+      "name" : "Industry-wide bankruptcy momentum in 2025-2026",
+      "p-yes" : 0.65,
+      "p-no" : 0.35,
+      "bf" : 1.8571428571428574
+    }, {
+      "name" : "Industry-wide distress signals from Spirit bankruptcy and elevated 2025-2026 bankruptcies",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "Frontier–Spirit merger discussions and related restructuring context",
+      "p-yes" : 0.4,
+      "p-no" : 0.6,
+      "bf" : 0.6666666666666667
+    }, {
+      "name" : "Frontier's liquidity cushion vs near-term debt maturities",
+      "p-yes" : 0.15,
+      "p-no" : 0.85,
+      "bf" : 0.17647058823529413
+    }, {
+      "name" : "Total available liquidity as of 12/31/2025",
+      "p-yes" : 0.7,
+      "p-no" : 0.3,
+      "bf" : 2.3333333333333335
+    }, {
+      "name" : "Spirit's plan to emerge from Chapter 11 by late spring/early summer 2026",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "No Frontier bankruptcy filing as of current public reports",
+      "p-yes" : 0.25,
+      "p-no" : 0.75,
+      "bf" : 0.3333333333333333
+    }, {
+      "name" : "Industry distress from Spirit Airlines bankruptcy and sector pressures",
+      "p-yes" : 0.8,
+      "p-no" : 0.2,
+      "bf" : 4.0
+    }, {
+      "name" : "Frontier liquidity cushion and 2026 debt maturities",
+      "p-yes" : 0.18,
+      "p-no" : 0.82,
+      "bf" : 0.21951219512195122
+    }, {
+      "name" : "Near-term debt maturities in 2026",
+      "p-yes" : 0.75,
+      "p-no" : 0.25,
+      "bf" : 3.0
+    } ]
+  },
+  "question" : "Will Frontier Group Holdings, Inc. file for bankruptcy protection before May 1, 2026?",
+  "probability" : 0.65,
+  "summary" : [ "Frontier's liquidity cushion (~$874 million) and only $303 million debt due in 2026 imply a meaningful near-term runway, reducing bankruptcy risk relative to the raw distress signal.", "Spirit Airlines' restructuring progress and potential sector stabilization could ease financing conditions for Frontier, supporting a lower risk view.", "Altman Z-score and other distress models may overstate airline-specific risk by not fully capturing liquidity cushions and external support, suggesting the ensemble may be overweight on bankruptcy probability.", "Public signals show no Frontier bankruptcy filing to date; while 24-month distress evidence remains non-trivial, near-term risk before May 1, 2026 is unlikely to be imminent." ],
+  "justification" : {
+    "ensemble_aggregate" : 0.78,
+    "critique_assessment" : "Yes, objections are valid; they reveal a genuine blind spot in interpreting the ensemble as capturing near-term liquidity buffers and sector contagion effects that can materially thin the probability mass of a Frontier bankruptcy before May 1, 2026.",
+    "adjustment" : "Adjusted from 0.78 to 0.65 to reflect Frontier's liquidity cushion and the possibility of sector stabilization reducing near-term bankruptcy risk; no implausible threshold breach was assumed, and the adjustment aligns with the presented evidence."
+  },
+  "briefs" : {
+    "forecasts" : {
+      "anchor-probability" : 0.45726666666666665,
+      "reference-class" : "US ultra-low-cost carriers (ULCCs) with distressed financials, as indicated by Altman Z-score in the distress zone (Z < 1.8) and related distress indicators",
+      "sources" : [ {
+        "url" : "https://valueinvesting.io/ULCC/probability-of-bankruptcy",
+        "claim" : "The Probability of Bankruptcy for Frontier Group Holdings (ULCC) is 45.74% over the next 24 months."
+      }, {
+        "url" : "https://www.gurufocus.com/term/zscore/ULCC",
+        "claim" : "ULCC's Altman Z-Score is 0.38 (distress zone), implying bankruptcy possibility in the next two years."
+      }, {
+        "url" : "https://www.investopedia.com/terms/a/altman.asp",
+        "claim" : "Altman Z-score thresholds: below 1.8 signals bankruptcy risk; above 3 indicates safety."
+      }, {
+        "url" : "https://www.investopedia.com/terms/z/zeta_model.asp",
+        "claim" : "Zeta Model (Altman variants) uses zones: Z < 1.8 distress, Z > 3 safe."
+      }, {
+        "url" : "https://www.theguardian.com/business/2024/nov/18/spirit-airlines-files-bankruptcy-financial-losses",
+        "claim" : "Spirit Airlines filed for bankruptcy protection in November 2024, illustrating sector bankruptcy risk and informing base-rate context for ULCCs."
+      }, {
+        "url" : "https://valueinvesting.io/ULCC/probability-of-bankruptcy",
+        "claim" : "ULCC Probability of Bankruptcy is 45.74% in the next 24 months based on Altman Z-score and other distress indicators."
+      }, {
+        "url" : "https://www.sec.gov/Archives/edgar/data/1670076/000167007626000020/fron-20251231.htm",
+        "claim" : "As of December 31, 2025, Frontier Group Holdings had total available liquidity of $874 million and debt obligations of $303 million due in 2026."
+      }, {
+        "url" : "https://apnews.com/article/d11c3b8d6f904ce8213a3306786d11c1",
+        "claim" : "Frontier engaged in merger discussions with Spirit Airlines as Spirit pursued bankruptcy-related restructuring."
+      }, {
+        "url" : "https://www.wsj.com/articles/spirit-airlines-issues-going-concern-warning-e6c5f97a",
+        "claim" : "Spirit Airlines issued a going-concern warning, highlighting liquidity and restructuring pressures in the sector that can affect peers."
+      }, {
+        "url" : "https://www.spglobal.com/market-intelligence/en/news-insights/articles/2025/7/63-us-corporate-bankruptcies-in-june-set-up-2025-for-highest-pace-since-2010-91441423",
+        "claim" : "S&P Global Market Intelligence notes a high pace of US corporate bankruptcies in 2025, signaling a stressed environment for credit risk."
+      }, {
+        "url" : "https://www.washingtonpost.com/business/2025/12/27/corporate-bankruptcies-economy/",
+        "claim" : "Washington Post reports 2025 corporate bankruptcies at elevated levels, reflecting broad liquidity stress in several sectors including transportation."
+      }, {
+        "url" : "https://www.creditriskmonitor.com/resources/blog-posts/financial-risk-report-us-corporate-bankruptcies-hit-11-year-high",
+        "claim" : "CreditRiskMonitor notes a high level of 2025 corporate bankruptcies and cites the FRISK index framework for short-term distress risk."
+      }, {
+        "url" : "https://www.gurufocus.com/term/zscore/ULCC",
+        "claim" : "ULCC's Altman Z-Score is 0.38 as of Feb 13, 2026, placing it in the distress zone and implying bankruptcy risk within the next two years."
+      }, {
+        "url" : "https://valueinvesting.io/ULCC/probability-of-bankruptcy",
+        "claim" : "ULCC probability of bankruptcy is about 45.74% over the next 24 months according to their distress-model assessment."
+      }, {
+        "url" : "https://apnews.com/article/92899d09a989e2679e4ba5ef5eef1d96",
+        "claim" : "Spirit Airlines, a key competitor, expects to exit Chapter 11 by late spring or early summer 2026, having filed for bankruptcy in 2024, which heightens industry distress signals for peers like Frontier."
+      }, {
+        "url" : "https://www.marketwatch.com/story/heres-why-frontier-airlines-stock-may-have-reached-the-end-of-its-runway-for-now-19dbfedf",
+        "claim" : "MarketWatch notes Frontier faces risk factors tied to aggressive capacity growth and industry dynamics; Spirit's bankruptcy adds context to the sector's risk."
+      }, {
+        "url" : "https://www.marketwatch.com/story/frontiers-stock-slides-3-as-spirit-rebuffs-budget-airlines-takeover-offer-for-a-third-time-d3e75398",
+        "claim" : "MarketWatch reports Spirit's bankruptcy backdrop and Frontier's strategic actions amid ongoing industry turbulence."
+      }, {
+        "url" : "https://www.benzinga.com//node/43654635",
+        "claim" : "Benzinga reports Spirit's bankruptcy proceedings and Frontier's restructuring proposals within that broader context."
+      } ],
+      "confidence" : "high"
+    },
+    "forecast-challenges" : null,
+    "causal" : {
+      "causal-factors" : [ {
+        "name" : "Near-term debt maturities in 2026",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "About $303 million of principal is due in 2026, creating refinancing pressure if liquidity wanes."
+      }, {
+        "name" : "Total available liquidity as of 12/31/2025",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Frontier reports roughly $874 million of total liquidity, which helps cover near-term obligations but remains tight against sizable debt service and leases."
+      }, {
+        "name" : "Industry distress from Spirit Airlines bankruptcy and sector pressures",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Spirit’s bankruptcy proceedings and going-concern signs add sector-wide credit and demand risks that can spill over to Frontier."
+      }, {
+        "name" : "Frontier 2025 profitability trajectory (net loss)",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "A full-year 2025 net loss signals continued earnings pressure that can elevate bankruptcy risk under stressed conditions."
+      }, {
+        "name" : "Fleet/capex adjustments (delivery deferrals and early returns with cost savings)",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Non-binding fleet adjustments aim to cut near-term capital outlays and improve liquidity by reducing near-term cash burn."
+      }, {
+        "name" : "Broader 2025–2026 US corporate bankruptcy surge",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "A rising tempo of bankruptcies and elevated credit stress in 2025–2026 raises the base risk environment for distressed peers like Frontier."
+      }, {
+        "name" : "Sector distress contagion from Spirit ULCC bankruptcy and going-concern warnings",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Spirit Airlines' bankruptcy proceedings and peers' going-concern warnings signal sector-wide distress that raises contagion risk for Frontier."
+      }, {
+        "name" : "Frontier's liquidity cushion vs near-term debt maturities",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Frontier reported about $874 million in liquidity against roughly $303 million of debt due in 2026, providing substantial runway to meet obligations and reducing bankruptcy risk."
+      }, {
+        "name" : "Altman Z-score distress signal",
+        "direction" : "up",
+        "magnitude" : "strong",
+        "rationale" : "Frontier's Altman Z-score around 0.38 places it in the distress zone, reinforcing elevated bankruptcy probability."
+      }, {
+        "name" : "Industry-wide bankruptcy momentum in 2025-2026",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Reports of elevated corporate bankruptcies in 2025 and stressed credit conditions raise the baseline risk environment for distressed ULCCs like Frontier."
+      }, {
+        "name" : "Frontier–Spirit merger discussions and related restructuring context",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Merger talks could provide strategic relief or create integration risk; current information does not reveal a clear directional impact on Frontier's insolvency probability."
+      }, {
+        "name" : "No Frontier bankruptcy filing as of current public reports",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Absence of a filed bankruptcy lowers near-term probability but does not eliminate risk given sector pressures and leverage dynamics."
+      }, {
+        "name" : "Frontier liquidity cushion and 2026 debt maturities",
+        "direction" : "down",
+        "magnitude" : "strong",
+        "rationale" : "Frontier ended 2025 with total liquidity of about $874 million and only $303 million of debt due in 2026, plus an undrawn revolver, implying substantial runway to meet near-term obligations. (Source: Frontier Group Holdings 2025 Form 10-K, Dec 31, 2025; turn0search8)"
+      }, {
+        "name" : "Industry-wide distress signals from Spirit bankruptcy and elevated 2025-2026 bankruptcies",
+        "direction" : "up",
+        "magnitude" : "moderate",
+        "rationale" : "Spirit Airlines' bankruptcy and continued high U.S. corporate bankruptcy activity raise sector credit risk, increasing the baseline risk for ULCC peers like Frontier. (Sources: AP News Spirit exit coverage turn3news12; Washington Post turn3search3)"
+      }, {
+        "name" : "Spirit's plan to emerge from Chapter 11 by late spring/early summer 2026",
+        "direction" : "down",
+        "magnitude" : "moderate",
+        "rationale" : "Spirit announced an agreement-in-principle aiming to exit Chapter 11 by mid-2026, which could alleviate sector-wide distress pressures and improve financing conditions for peers. (Sources: Spirit press release turn3search0; AP News turn3search2)"
+      }, {
+        "name" : "Frontier 2025 results show ongoing losses but cost-optimization initiatives",
+        "direction" : "neutral",
+        "magnitude" : "weak",
+        "rationale" : "Frontier posted a full-year 2025 net loss with a quarterly profit signal in Q4 2025, and announced fleet/cost-cut initiatives; the mix implies ongoing liquidity pressures but potential profitability improvements. (Sources: Frontier 2025 results turn0search4; 2025 Form 10-K turn0search8)"
+      } ],
+      "confidence" : "high"
+    }
+  },
+  "iterations" : 2,
+  "confidence" : "high",
+  "range" : [ 0.55, 0.75 ],
+  "synthesis" : "The initial 78% ensemble is tempered by Frontier's liquidity runway and sector dynamics reducing near-term risk. While bankruptcy remains possible in a stressed ULCC environment, evidence suggests a non-imminent outcome through May 1, 2026, justifying a calibrated probability around 0.65."
+}
